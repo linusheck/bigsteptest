@@ -1,15 +1,29 @@
 [
 	{
-		"memory_bound": [1, 2, 3, 4],
+		"memory_bound": [1, 2],
 		"constants": {
 		},
 		"prism": "maze2.prism",
-		"prop": {
-			"type": "reward",
-			"dir": "min",
-			"bound": 6,
-			"label": "goal"
-		},
+		"prop": [
+			{
+				"type": "reward",
+				"dir": "min",
+				"bound": 30,
+				"label": "goal"
+			},
+			{
+				"type": "reward",
+				"dir": "min",
+				"bound": 35,
+				"label": "goal"
+			},
+			{
+				"type": "reward",
+				"dir": "min",
+				"bound": 40,
+				"label": "goal"
+			}
+		],
 		"method": ["tt", "no-tt"]
 	}
 ]

@@ -75,3 +75,4 @@ endrewards
 // target observation
 label "goal" = o=2;
 label "bad" = o=3;
+label "notbad" = o!=3;

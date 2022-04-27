@@ -1,6 +1,6 @@
 [
   {
-		"memory_bound": [1, 2, 3],
+		"memory_bound": [1, 2],
 		"constants": {
 		},
 		"prism": "4x4grid-avoid.prism",
@@ -9,13 +9,13 @@
 				"type": "probability",
 				"dir": "max",
 				"bound": 0.9,
-				"label": "goal"
+				"label": "\"notbad\" U \"goal\""
 			}
 		],
 		"method": ["tt", "no-tt"]
 	},
   {
-		"memory_bound": [1, 2, 3],
+		"memory_bound": [1, 2],
 		"constants": {
 		},
 		"prism": "4x4grid.prism",
@@ -48,10 +48,16 @@
 		"method": ["tt", "no-tt"]
 	},
   {
-		"memory_bound": [1, 2],
+		"memory_bound": [1],
 		"constants": [
 			{
 				"N": 3
+			},
+			{
+				"N": 5
+			},
+			{
+				"N": 10
 			}
 		],
 		"prism": "newgrid.prism",

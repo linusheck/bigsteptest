@@ -1,0 +1,33 @@
+[
+	{
+		"memory_bound": 1,
+		"constants": [
+			{
+				"N": 3,
+				"R": 1
+			}
+		],
+		"prism": "drone.prism",
+		"prop": [
+			{
+				"type": "probability",
+				"dir": "max",
+				"bound": 0.8,
+				"label": "\"notbad\" U \"goal\""
+			},
+			{
+				"type": "probability",
+				"dir": "max",
+				"bound": 0.85,
+				"label": "\"notbad\" U \"goal\""
+			},
+			{
+				"type": "probability",
+				"dir": "max",
+				"bound": 0.9,
+				"label": "\"notbad\" U \"goal\""
+			}
+		],
+		"method": ["tt", "no-tt"]
+	}
+]

@@ -1,0 +1,15 @@
+[
+	{
+		"memory_bound": [1, 2, 3, 4],
+		"constants": {
+		},
+		"prism": "maze2.prism",
+		"prop": {
+			"type": "reward",
+			"dir": "min",
+			"bound": 6,
+			"label": "goal"
+		},
+		"method": ["tt", "no-tt"]
+	}
+]

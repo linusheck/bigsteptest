@@ -1,0 +1,19 @@
+[
+	{
+		"memory_bound": [1, 2],
+		"constants": {
+			"K": 3
+		},
+		"prism": "nrp.prism",
+		"prop": 
+		[
+			{
+				"type": "probability",
+				"dir": "min",
+				"bound": 0.001,
+				"label": "unfair"
+			}
+		],
+		"method": ["tt", "no-tt"]
+	}
+]

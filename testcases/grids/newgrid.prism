@@ -1,0 +1,71 @@
+// 4x4 grid
+// from Littman, Cassandra and Kaelbling
+// Learning policies for partially observable environments: Scaling up  
+// Technical Report CS, Brown University
+
+pomdp
+
+
+// only the target is observable which is in the south east corner
+observables
+	o
+endobservables
+
+const int N;
+
+formula badstates = o=1 & x=1 & y=0;
+formula goalstates = o=1 & y=2 & x=2;
+formula ingrid = o=1 & !badstates & !goalstates;
+
+module grid
+	
+	x : [0..N]; // x coordinate
+	y : [0..N]; // y coordinate
+	o : [0..3]; // observables
+	// 0 - initial observation
+	// 1 - in the grid (but not in target or sink)
+	// 2 - observe target
+	// 3 - observe sink
+		
+	// initially randomly placed within the grid (not at the target)
+	[] o=0 -> 1/4 : (o'=1) & (x'=0) & (y'=0)
+			+ 1/4 : (o'=1) & (x'=0) & (y'=1)
+			+ 1/4 : (o'=1) & (x'=0) & (y'=2)
+			+ 1/4 : (o'=1) & (x'=0) & (y'=3);
+			
+	// move around the grid
+	[east] ingrid -> (x'=min(x+1,N)); // not reached target
+	[east] badstates -> (o'=3); // reached bad state
+	[east] goalstates -> (o'=2); // reached target
+	
+	[west] ingrid -> (x'=max(x-1,0)); // not reached target
+	[west] badstates -> (o'=3); // reached bad state
+	[west] goalstates -> (o'=2); // reached target
+	
+	[north] ingrid -> (y'=min(y+1,N)); // not reached target
+	[north] badstates -> (o'=3); // reached bad state
+	[north] goalstates -> (o'=2); // reached target
+	
+	[south] ingrid -> (y'=max(y-1,0)); // not reached target
+	[south] badstates -> (o'=3); // reached bad state
+	[south] goalstates -> (o'=2); // reached target
+	
+	// reached target
+	[done] o=2 -> true;
+	
+	//reached bad state
+	[bad] o=3 -> true;
+	
+endmodule
+
+// reward structure for number of steps to reach the target
+rewards
+        [east] true : 1;
+        [west] true : 1;
+        [north] true : 1;
+        [south] true : 1;
+endrewards
+
+// target observation
+label "goal" = o=2;
+label "notbad" = o!=3;

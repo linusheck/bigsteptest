@@ -1,0 +1,23 @@
+[
+  {
+		"memory_bound": [1, 2],
+		"constants": [
+			{
+				"N": 1
+			},
+			{
+				"N": 2
+			}
+		],
+		"prism": "samplerocks.prism",
+		"prop": [
+			{
+				"type": "reward",
+				"dir": "min",
+				"bound": 40,
+				"label": "goal"
+			}
+		],
+		"method": ["tt", "no-tt"]
+	}
+]

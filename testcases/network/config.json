@@ -16,7 +16,7 @@
 			{
 				"type": "reward",
 				"dir": "min",
-				"bound": 0.1,
+				"bound": 1,
 				"label": "goal"
 			}
 		],
@@ -24,16 +24,22 @@
 	},
 	{
 		"memory_bound": [1],
-		"constants": {
-			"K": 1,
-			"T": 1
-		},
+		"constants": [
+			{
+				"K": 3,
+				"T": 3
+			},
+			{
+				"K": 2,
+				"T": 2
+			}
+		],
 		"prism": ["network2_packets_sent.prism"],
 		"prop": [
 			{
 				"type": "reward",
 				"dir": "min",
-				"bound": 0.1,
+				"bound": 1,
 				"label": "goal"
 			}
 		],
@@ -41,16 +47,18 @@
 	},
 	{
 		"memory_bound": [1],
-		"constants": {
-			"K": 1,
-			"T": 1
-		},
+		"constants": [
+			{
+				"K": 2,
+				"T": 1
+			}
+		],
 		"prism": ["network2_priorities_dropped_packets.prism"],
 		"prop": [
 			{
 				"type": "reward",
 				"dir": "min",
-				"bound": 3.5,
+				"bound": 1.5,
 				"label": "goal"
 			}
 		],

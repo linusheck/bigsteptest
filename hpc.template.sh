@@ -29,6 +29,6 @@
 source $HOME/hpc-scripts/prepareEnvironmentGcc.sh
 
 ### Change Directory to your working directory (binaries, etc)
-cd $HOME/novatest/
+cd $HOME/tt-benchmark/
 
 ./{command_file}

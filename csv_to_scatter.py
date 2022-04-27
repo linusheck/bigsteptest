@@ -31,7 +31,7 @@ parser.add_argument('--symbols', help='symbols instead of letters', type=bool, d
 
 TO_VALUE = 11000
 ERR_VALUE = 20000
-MIN_VALUE = 0.01
+MIN_VALUE = 0.0001
 MAX_VALUE = 10000
 
 args = parser.parse_args()
@@ -278,8 +278,8 @@ ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
 
 locs, labels = plt.xticks()
-locs = [0.1, 1, 10, 100, 1000, TO_VALUE, ERR_VALUE]
-labels = ["0.1", "1", "10", "100", "1000", "TO/MO", "ERR"]
+locs = [0.001, 0.01, 0.1, 1, 10, 100, 1000, TO_VALUE, ERR_VALUE]
+labels = ["0.001", "0.01", "0.1", "1", "10", "100", "1000", "TO/MO", "ERR"]
 plt.xticks(locs, labels, rotation=45, ha="right")
 plt.yticks(locs, labels)
 ax.set_xlabel(args.labelx, labelpad=0)

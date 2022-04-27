@@ -1,10 +1,16 @@
 [ 
 	{
 		"memory_bound": [1],
-		"constants": {
-			"K": 1,
-			"T": 1
-		},
+		"constants": [
+			{
+				"K": 3,
+				"T": 3
+			},
+			{
+				"K": 2,
+				"T": 2
+			}
+		],
 		"prism": ["network2_packets_sent.prism"],
 		"prop": [
 			{

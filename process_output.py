@@ -67,31 +67,31 @@ for file in args.files:
         current_line.append(len(variables_lines[-1].split(" ")) - 1)
 
     # Learning Rate
-    current_line.append("lr="+str(info_json["learning_rate"]) + (" args="+str(info_json["additional_storm_args"]) if "additional_storm_args" in info_json else ""))
+    current_line.append(" args="+str(info_json["additional_storm_args"]) if "additional_storm_args" in info_json else "")
     current_line.append(str(info_json["method"]))
 
     # The "finished in x" line:
-    finished_in_x = lines[-6]
-
-    print(finished_in_x)
+    finished_in_x = lines[-7]
 
     def parse_time(real_time):
         return int(real_time.split("m")[0]) * 60 + float(real_time.split("m")[1][:-1])
 
     # If benchmark has not terminated, this will be the case:
-    if finished_in_x.startswith("Finished in"):
+    if finished_in_x.startswith("Time for model checking"):
         # user_time = lines[-3]
         # sys_time = lines[-2]
         # if not (user_time.startswith("user") and sys_time.startswith("sys")):
         #     print("time needs to start with correct starts")
         #     sys.exit(1)
         # current_line.append(parse_time(sys_time.split("\t")[1]) + parse_time(user_time.split("\t")[1]))
-        time_as_string = finished_in_x.split(" ")[2]
-        current_line.append(round(float(time_as_string[:-1]), 4))
+        time_as_string = finished_in_x.split(" ")[4]
+        current_line.append(round(float(time_as_string[:-2]), 4))
 
-        # The "found value at" line
-        found_value_at = lines[-8]
-        value = found_value_at.split(" ")[2]
+        # unknown fraction
+        print(lines[-13:])
+        unknown_fraction = [l for l in lines if "Unknown fraction" in l][0]
+        value = unknown_fraction.split(" ")[-1][:-1]
+        print(value)
         current_line.append(round(float(value), 4))
     elif finished_in_x.startswith("This procedure took"):
         # user_time = lines[-3]

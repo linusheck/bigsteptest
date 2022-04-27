@@ -23,7 +23,7 @@ parser.add_argument('--only-feasible', type=bool, default=True,
                     help="only include feasible instantiation problems")
 parser.add_argument('--dry-run', type=bool, default=False,
                     help="dry run")
-parser.add_argument('--folder', type=str, default="testcases-paper",
+parser.add_argument('--folder', type=str, default="testcases",
                     help="testcases folder")
 parser.add_argument('--global-override', type=str, default=None,
                     help="global override json file - change stuff in every testcase")

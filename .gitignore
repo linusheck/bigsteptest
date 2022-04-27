@@ -2,3 +2,6 @@ commands.sh
 hpc.sh
 .build/*
 core*
+*.out
+manual_*
+slurm_*

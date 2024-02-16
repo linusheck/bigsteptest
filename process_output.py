@@ -9,7 +9,7 @@ parser.add_argument("files", nargs="+", help="The files to process the output of
 
 args = parser.parse_args()
 
-table_headers = ["Model", "Const", "Mem", "Prop", "#States (min)", "#Params (min)", "Add. Settings", "Method", "Time", "Found"]
+table_headers = ["Model", "Const", "Mem", "Prop", "Param Region", "BigStep Horizon", "Time-Travelling", "#States (after)",  "Time", "% Known", "# Regions"]
 table = [table_headers]
 
 for file in args.files:
@@ -29,6 +29,8 @@ for file in args.files:
     # Model
     if "prism" in info_json:
         current_line.append(info_json["prism"].split(".")[0])
+    if "pomdp" in info_json:
+        current_line.append(info_json["pomdp"].split(".")[0])
     elif "drn" in info_json:
         current_line.append(info_json["drn"].split(".")[0])
     else:
@@ -44,13 +46,26 @@ for file in args.files:
     current_line.append(constants_str)
 
     # Memory Bound
-    current_line.append(str(info_json["memory_bound"]))
+    if "memory_bound" in info_json:
+        current_line.append(str(info_json["memory_bound"]))
+    else:
+        current_line.append("N/A")
 
     # Property
     prop_dict = info_json["prop"]
-    prop_str = str(prop_dict["bound"]) + "_" + prop_dict["type"] + "_" + (prop_dict["reward_model"] if "reward_model" in prop_dict else "") + "_" + prop_dict["dir"] + "_" + prop_dict["label"]
+    prop_str = str(prop_dict["bound"]) + "_" + prop_dict["type"] + ("_" + prop_dict["reward_model"] if "reward_model" in prop_dict else "") + "_" + prop_dict["dir"] + "_" + prop_dict["label"]
     current_line.append(prop_str)
     # current_line.append("?")
+
+    # Number of parameters
+    variables_lines = [x for x in lines if x.startswith("Analyzing parameter region")]
+    if len(variables_lines) == 0:
+        current_line.append("?")
+    else:
+        current_line.append(variables_lines[-1].split(" ")[3].replace(";", ""))
+
+    current_line.append(info_json["horizon"])
+    current_line.append(info_json["timetravel"])
 
     # Number of states
     states_lines = [x for x in lines if x.startswith("States:")]
@@ -59,19 +74,9 @@ for file in args.files:
     else:
         current_line.append(states_lines[-1].split(" ")[-1])
 
-    # Number of parameters
-    variables_lines = [x for x in lines if x.startswith("Parameters:")]
-    if len(variables_lines) == 0:
-        current_line.append("?")
-    else:
-        current_line.append(len(variables_lines[-1].split(" ")) - 1)
-
-    # Learning Rate
-    current_line.append(" args="+str(info_json["additional_storm_args"]) if "additional_storm_args" in info_json else "")
-    current_line.append(str(info_json["method"]))
 
     # The "finished in x" line:
-    finished_in_x = lines[-7]
+    finished_in_x = lines[-4]
 
     def parse_time(real_time):
         return int(real_time.split("m")[0]) * 60 + float(real_time.split("m")[1][:-1])
@@ -88,47 +93,24 @@ for file in args.files:
         current_line.append(round(float(time_as_string[:-2]), 4))
 
         # unknown fraction
-        print(lines[-13:])
         unknown_fraction = [l for l in lines if "Unknown fraction" in l][0]
         value = unknown_fraction.split(" ")[-1][:-1]
-        print(value)
-        current_line.append(round(float(value), 4))
-    elif finished_in_x.startswith("This procedure took"):
-        # user_time = lines[-3]
-        # sys_time = lines[-2]
-        # if not (user_time.startswith("user") and sys_time.startswith("sys")):
-        #     print("time needs to start with correct starts")
-        #     sys.exit(1)
-        # current_line.append(parse_time(sys_time.split("\t")[1]) + parse_time(user_time.split("\t")[1]))
-        if "Qcqp" in content:
-            solver_time_line = [x for x in lines if x.startswith("solver time=")][0]
-            encoding_time_line = [x for x in lines if x.startswith("encoding time=")][0]
-            solver_time = float(solver_time_line.split("=")[1])
-            encoding_time = float(encoding_time_line.split("=")[1])
-            current_line.append(round(solver_time + encoding_time, 4))
-        else:
-            time_as_string = finished_in_x.split(" ")[3]
-            current_line.append(round(float(time_as_string[:-1]), 4))
+        current_line.append(round(100.0 - float(value), 4))
 
-
-        # The "found value at" line
-        found_value_at = lines[-7]
-        value = found_value_at.split(" ")[-1][:-1]
-        current_line.append(round(float(value), 4))
+        # unknown fraction
+        unknown_fraction = [l for l in lines if "Total number of regions" in l][0]
+        value = unknown_fraction.split(" ")[-1][:-1]
+        current_line.append(value)
     else:
-        # TODO: we don't know how to handle GD errors, but they currently did not occur
-        if info_json["method"] in ["qcqp", "pso"] and "Error" in content:
-            current_line.append("ERR")
-            current_line.append("ERR")
-        elif info_json["method"] not in ["qcqp", "pso"] and "ERROR" in content:
-            current_line.append("ERR")
-            current_line.append("ERR")
+        if "Received signal 14" in content:
+            current_line.append("TO")
+            current_line.append("TO")
         else:
-            current_line.append("N/A")
-            current_line.append("N/A")
+            current_line.append("ERR")
+            current_line.append("ERR")
     table.append(current_line)
 
-with open('out' + str(int(datetime.now().timestamp())) + '.csv', 'w') as csvfile:
+with open('csvs/out' + str(int(datetime.now().timestamp())) + '.csv', 'w') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerows(table)
 

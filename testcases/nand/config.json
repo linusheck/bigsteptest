@@ -1,0 +1,30 @@
+[
+	{
+		"constants": [
+			{
+				"N": 5,
+				"K": 10
+			},
+			{
+				"N": 5,
+				"K": 25
+			},
+			{
+				"N": 1,
+				"K": 1 
+			}
+		],
+		"prism": "nand.pm",
+		"prop": 
+		[
+			{
+				"type": "probability",
+				"dir": "max",
+				"bound": 0.5,
+				"label": "target"
+			}
+		],
+		"timetravel": ["false", "true"],
+		"horizon": [0, 1, 2, 3, 4]
+	}
+]

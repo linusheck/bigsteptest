@@ -1,0 +1,1 @@
+cat {command_file} | parallel sh -c {{}}

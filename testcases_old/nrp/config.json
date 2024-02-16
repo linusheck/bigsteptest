@@ -1,10 +1,10 @@
 [
 	{
+		"memory_bound": [1, 2],
 		"constants": {
 			"K": 10
 		},
-		"pomdp": "nrp.prism",
-		"memory_bound": 1,
+		"prism": "nrp.prism",
 		"prop": 
 		[
 			{
@@ -14,7 +14,6 @@
 				"label": "unfair"
 			}
 		],
-		"timetravel": ["false", "true"],
-		"horizon": [0, 1, 2, 3, 4]
+		"method": ["tt", "no-tt"]
 	}
 ]

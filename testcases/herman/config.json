@@ -1,0 +1,17 @@
+[
+	{
+		"constants": {},
+		"prism": ["herman5_pla.pm", "herman9_pla.pm"],
+		"prop": 
+		[
+			{
+				"type": "reward",
+				"dir": "max",
+				"bound": 3,
+				"label": "stable"
+			}
+		],
+		"timetravel": ["false", "true"],
+		"horizon": [0, 1, 2, 3, 4]
+	}
+]

@@ -1,0 +1,36 @@
+[
+  {
+		"memory_bound": [1],
+		"constants": [
+			{
+				"N": 3
+			},
+			{
+				"N": 4
+			}
+		],
+		"pomdp": "refuel.prism",
+		"prop": [
+			{
+				"type": "probability",
+				"dir": "max",
+				"bound": 0.05,
+				"label": "\"notbad\" U \"goal\""
+			},
+			{
+				"type": "probability",
+				"dir": "max",
+				"bound": 0.06,
+				"label": "\"notbad\" U \"goal\""
+			},
+			{
+				"type": "probability",
+				"dir": "max",
+				"bound": 0.07,
+				"label": "\"notbad\" U \"goal\""
+			}
+		],
+		"timetravel": ["false", "true"],
+		"horizon": [0, 1, 2, 3, 4]
+	}
+]

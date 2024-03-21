@@ -1,23 +1,18 @@
 [
-	{
+  {
+		"memory_bound": 1,
 		"constants": [
 			{
-				"N": 5,
-				"K": 10
-			},
-			{
-				"N": 5,
-				"K": 25
+				"N": 2
 			}
 		],
-		"prism": "nand.pm",
-		"prop": 
-		[
+		"pomdp": "refuel.prism",
+		"prop": [
 			{
 				"type": "probability",
 				"dir": "max",
-				"bound": 0.5,
-				"label": "target"
+				"bound": 0.05,
+				"label": "\"notbad\" U \"goal\""
 			}
 		],
 		"timetravel": ["false", "true"],

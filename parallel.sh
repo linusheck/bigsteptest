@@ -1,1 +1,1 @@
-cat scripts/manual_commands1708093752.sh | parallel sh -c {}
+cat scripts/manual_commands1711013085.sh | parallel -j4 sh -c {}

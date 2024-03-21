@@ -9,7 +9,21 @@ parser.add_argument("files", nargs="+", help="The files to process the output of
 
 args = parser.parse_args()
 
-table_headers = ["Model", "Const", "Mem", "Prop", "Param Region", "BigStep Horizon", "Time-Travelling", "#States (after)",  "Time", "% Known", "# Regions"]
+table_headers = [
+    "Model",
+    "Const",
+    "Mem",
+    "Prop",
+    "Param Region",
+    "Robust",
+    "BigStep Horizon",
+    "Time-Travelling",
+    "#States (after)",
+    "Time (Total)",
+    "Time (MC)",
+    "% Known",
+    "# Regions",
+]
 table = [table_headers]
 
 for file in args.files:
@@ -22,20 +36,19 @@ for file in args.files:
     lines = content.split("\n")
     lines = [x for x in lines if not "commands.sh" in x]
 
-    info_str = [x for x in lines if x.startswith("{\"")][0]
-    info_str = info_str.replace("\\", "\\\"")
+    info_str = [x for x in lines if x.startswith('{"')][0]
+    info_str = info_str.replace("\\", '\\"')
     info_json = json.loads(info_str)
 
     # Model
     if "prism" in info_json:
         current_line.append(info_json["prism"].split(".")[0])
-    if "pomdp" in info_json:
+    elif "pomdp" in info_json:
         current_line.append(info_json["pomdp"].split(".")[0])
     elif "drn" in info_json:
         current_line.append(info_json["drn"].split(".")[0])
     else:
         current_line.append("???")
-
 
     # Constants
     constants_str = ""
@@ -53,7 +66,16 @@ for file in args.files:
 
     # Property
     prop_dict = info_json["prop"]
-    prop_str = str(prop_dict["bound"]) + "_" + prop_dict["type"] + ("_" + prop_dict["reward_model"] if "reward_model" in prop_dict else "") + "_" + prop_dict["dir"] + "_" + prop_dict["label"]
+    prop_str = (
+        str(prop_dict["bound"])
+        + "_"
+        + prop_dict["type"]
+        + ("_" + prop_dict["reward_model"] if "reward_model" in prop_dict else "")
+        + "_"
+        + prop_dict["dir"]
+        + "_"
+        + prop_dict["label"]
+    )
     current_line.append(prop_str)
     # current_line.append("?")
 
@@ -64,6 +86,7 @@ for file in args.files:
     else:
         current_line.append(variables_lines[-1].split(" ")[3].replace(";", ""))
 
+    current_line.append(str(info_json["use_robust_pla"]).lower())
     current_line.append(info_json["horizon"])
     current_line.append(info_json["timetravel"])
 
@@ -74,22 +97,20 @@ for file in args.files:
     else:
         current_line.append(states_lines[-1].split(" ")[-1])
 
-
     # The "finished in x" line:
-    finished_in_x = lines[-4]
+    mc_time = lines[-4]
 
     def parse_time(real_time):
         return int(real_time.split("m")[0]) * 60 + float(real_time.split("m")[1][:-1])
 
     # If benchmark has not terminated, this will be the case:
-    if finished_in_x.startswith("Time for model checking"):
-        # user_time = lines[-3]
-        # sys_time = lines[-2]
-        # if not (user_time.startswith("user") and sys_time.startswith("sys")):
-        #     print("time needs to start with correct starts")
-        #     sys.exit(1)
-        # current_line.append(parse_time(sys_time.split("\t")[1]) + parse_time(user_time.split("\t")[1]))
-        time_as_string = finished_in_x.split(" ")[4]
+    if mc_time.startswith("Time for model checking"):
+        sys_time = lines[-2]
+        if not ("real" in sys_time):
+            print("sys_time incorrect:", sys_time)
+        current_line.append(float([x for x in sys_time.split(" ") if x][0]))
+
+        time_as_string = mc_time.split(" ")[4]
         current_line.append(round(float(time_as_string[:-2]), 4))
 
         # unknown fraction
@@ -97,20 +118,24 @@ for file in args.files:
         value = unknown_fraction.split(" ")[-1][:-1]
         current_line.append(round(100.0 - float(value), 4))
 
-        # unknown fraction
-        unknown_fraction = [l for l in lines if "Total number of regions" in l][0]
-        value = unknown_fraction.split(" ")[-1][:-1]
+        # Total number of regions
+        num_regions = [l for l in lines if "Total number of regions" in l][0]
+        value = num_regions.split(" ")[-1]
         current_line.append(value)
     else:
         if "Received signal 14" in content:
             current_line.append("TO")
             current_line.append("TO")
+            current_line.append("TO")
+            current_line.append("TO")
         else:
+            current_line.append("ERR")
+            current_line.append("ERR")
             current_line.append("ERR")
             current_line.append("ERR")
     table.append(current_line)
 
-with open('csvs/out' + str(int(datetime.now().timestamp())) + '.csv', 'w') as csvfile:
+with open("csvs/out" + str(int(datetime.now().timestamp())) + ".csv", "w") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerows(table)
 

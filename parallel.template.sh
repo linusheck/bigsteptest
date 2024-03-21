@@ -1,1 +1,1 @@
-cat {command_file} | parallel sh -c {{}}
+cat {command_file} | parallel -j4 sh -c {{}}

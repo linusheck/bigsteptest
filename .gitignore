@@ -1,5 +1,6 @@
 commands.sh
 hpc.sh
+parallel.sh
 .build/*
 core*
 *.out

@@ -4,8 +4,8 @@
         "timetravel": false,
         "horizon": 0,
         "storm_location": [
-            "~/git/normalstorm",
-            "~/git/rrstorm"
+            "~/git/normalstorm/build/bin/",
+            "~/git/rrstorm/build/bin/"
         ]
     }
 ]

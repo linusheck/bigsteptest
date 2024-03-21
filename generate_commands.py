@@ -173,7 +173,7 @@ def main():
                 use_robust_pla = "use_robust_pla" in invocation and invocation["use_robust_pla"]
                 command = 'time {binary} {file} {constants} --prop "{property}" {method} --mode partitioning --regionbound 0.000001 --terminationCondition 0.01 {robust_pla} -bisim {additional_storm_args}'.format(
                     binary=(
-                        invocation["storm_location"]
+                        Path(invocation["storm_location"]) / "storm-pars"
                         if "storm_location" in invocation
                         else args.storm_location / "storm-pars"
                     ),

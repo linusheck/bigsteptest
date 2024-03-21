@@ -1,0 +1,11 @@
+[
+    {
+        "use_robust_pla": false,
+        "timetravel": false,
+        "horizon": 0,
+        "storm_location": [
+            "~/git/normalstorm",
+            "~/git/rrstorm"
+        ]
+    }
+]

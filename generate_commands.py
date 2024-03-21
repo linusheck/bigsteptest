@@ -66,6 +66,12 @@ def create_prop_from_dict(prop_dict: dict) -> str:
         prop += f' [F "{label}"]'
     return prop.replace("\"", "\\\"")
 
+def bool_to_cli_string(b):
+    if b:
+        return "true"
+    else:
+        return "false"
+
 
 def create_drn_file_name(invocation: dict, constant_string: str) -> str:
     prop_dict = invocation["prop"]
@@ -163,10 +169,14 @@ def main():
             # run everything n times
             for i in range(args.times):
                 horizon = invocation["horizon"]
-                timetravel = invocation["timetravel"]
+                timetravel = bool_to_cli_string(invocation["timetravel"])
                 use_robust_pla = "use_robust_pla" in invocation and invocation["use_robust_pla"]
                 command = 'time {binary} {file} {constants} --prop "{property}" {method} --mode partitioning --regionbound 0.000001 --terminationCondition 0.01 {robust_pla} -bisim {additional_storm_args}'.format(
-                    binary=args.storm_location / "storm-pars",
+                    binary=(
+                        invocation["storm_location"]
+                        if "storm_location" in invocation
+                        else args.storm_location / "storm-pars"
+                    ),
                     file=(
                         "--explicit-drn " + str(drn_file)
                         if drn_file
@@ -191,7 +201,7 @@ def main():
                     ),
                 )
 
-                json_str = json.dumps(invocation)
+                json_str = json.dumps(invocation).replace('"', '\\"').replace("~", "home").replace("/", "slash")
                 slurm_script += (
                     'if [[ "$SLURM_ARRAY_TASK_ID" -eq '
                     + ""
@@ -199,13 +209,13 @@ def main():
                     + " ]]\n"
                 )
                 slurm_script += "then\n"
-                slurm_script += 'echo "' + json_str.replace('"', '\\"') + '"\n'
+                slurm_script += 'echo "' + json_str + '"\n'
                 slurm_script += command + "\n"
                 slurm_script += "fi \n\n"
 
                 manual_script += (
                     '( echo "'
-                    + json_str.replace('"', '\\"')
+                    + json_str
                     + '"'
                     + " && timeout 300 "
                     + command
@@ -228,6 +238,9 @@ def main():
     if args.dry_run:
         print(slurm_script)
         sys.exit(0)
+
+    makedirs("scripts", exist_ok=True)
+    makedirs("output", exist_ok=True)
 
     slurm_command_file_name = (
         "scripts/slurm_commands" + str(int(datetime.now().timestamp())) + ".sh"

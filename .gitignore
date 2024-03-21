@@ -3,5 +3,5 @@ hpc.sh
 .build/*
 core*
 *.out
-manual_*
-slurm_*
+scripts/*
+output/*

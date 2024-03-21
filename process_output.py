@@ -19,7 +19,6 @@ table_headers = [
     "BigStep Horizon",
     "Time-Travelling",
     "#States (after)",
-    "Time (Total)",
     "Time (MC)",
     "% Known",
     "# Regions",
@@ -98,24 +97,20 @@ for file in args.files:
         current_line.append(states_lines[-1].split(" ")[-1])
 
     # The "finished in x" line:
-    mc_time = lines[-4]
+    mc_time = lines[-7]
 
     def parse_time(real_time):
         return int(real_time.split("m")[0]) * 60 + float(real_time.split("m")[1][:-1])
 
+
     # If benchmark has not terminated, this will be the case:
     if mc_time.startswith("Time for model checking"):
-        sys_time = lines[-2]
-        if not ("real" in sys_time):
-            print("sys_time incorrect:", sys_time)
-        current_line.append(float([x for x in sys_time.split(" ") if x][0]))
-
-        time_as_string = mc_time.split(" ")[4]
+        time_as_string = mc_time.split()[4]
         current_line.append(round(float(time_as_string[:-2]), 4))
 
         # unknown fraction
         unknown_fraction = [l for l in lines if "Unknown fraction" in l][0]
-        value = unknown_fraction.split(" ")[-1][:-1]
+        value = unknown_fraction.split()[-1][:-1]
         current_line.append(round(100.0 - float(value), 4))
 
         # Total number of regions
@@ -140,3 +135,4 @@ with open("csvs/out" + str(int(datetime.now().timestamp())) + ".csv", "w") as cs
     writer.writerows(table)
 
 print(tabulate.tabulate(table))
+

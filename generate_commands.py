@@ -171,7 +171,7 @@ def main():
                 horizon = invocation["horizon"]
                 timetravel = bool_to_cli_string(invocation["timetravel"])
                 use_robust_pla = "use_robust_pla" in invocation and invocation["use_robust_pla"]
-                command = 'time {binary} {file} {constants} --prop "{property}" {method} --mode partitioning --regionbound 0.000001 --terminationCondition 0.01 {robust_pla} -bisim {additional_storm_args}'.format(
+                command = '{binary} {file} {constants} --prop "{property}" {method} --mode partitioning --regionbound 0.000001 --terminationCondition 0.01 {robust_pla} -bisim {additional_storm_args}'.format(
                     binary=(
                         Path(invocation["storm_location"]) / "storm-pars"
                         if "storm_location" in invocation
@@ -201,7 +201,9 @@ def main():
                     ),
                 )
 
-                json_str = json.dumps(invocation).replace('"', '\\"').replace("~", "home").replace("/", "slash")
+                json_str = json.dumps(invocation)
+                echo_str = json_str.replace("\\\"", "").replace("\"", "\\\"")
+
                 slurm_script += (
                     'if [[ "$SLURM_ARRAY_TASK_ID" -eq '
                     + ""
@@ -209,17 +211,17 @@ def main():
                     + " ]]\n"
                 )
                 slurm_script += "then\n"
-                slurm_script += 'echo "' + json_str + '"\n'
-                slurm_script += command + "\n"
+                slurm_script += 'echo "' + echo_str + '"\n'
+                slurm_script += "time " +  command + "\n"
                 slurm_script += "fi \n\n"
 
                 manual_script += (
                     '( echo "'
-                    + json_str
+                    + echo_str
                     + '"'
-                    + " && timeout 300 "
+                    + " && time timeout 300 "
                     + command
-                    + " ) >> "
+                    + "  ) > "
                     + "output/"
                     + json_str.replace('"', "")
                     .replace("{", "")
@@ -229,6 +231,8 @@ def main():
                     .replace(",", "-")
                     .replace(">", "greater")
                     .replace("<", "less")
+                    .replace("~", "home")
+                    .replace("/", "slash")
                     + ".out 2>&1"
                     + "\n"
                 )

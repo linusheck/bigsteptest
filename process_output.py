@@ -122,9 +122,7 @@ for file in args.files:
             current_line.append("TO")
             current_line.append("TO")
             current_line.append("TO")
-            current_line.append("TO")
         else:
-            current_line.append("ERR")
             current_line.append("ERR")
             current_line.append("ERR")
             current_line.append("ERR")

@@ -6,14 +6,6 @@
                 "TotalRuns": 5
 			},
 			{
-				"CrowdSize": 5,
-                "TotalRuns": 5
-			},
-			{
-				"CrowdSize": 10,
-                "TotalRuns": 3
-			},
-			{
 				"CrowdSize": 20,
                 "TotalRuns": 2
 			}
@@ -28,6 +20,7 @@
 				"label": "observe0Greater1"
 			}
 		],
-		"big_step": [false, true]
+		"timetravel": ["false", "true"],
+		"horizon": [0, 1, 2, 3, 4]
 	}
 ]

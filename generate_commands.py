@@ -168,10 +168,8 @@ def main():
 
             # run everything n times
             for i in range(args.times):
-                horizon = invocation["horizon"]
-                timetravel = bool_to_cli_string(invocation["timetravel"])
                 use_robust_pla = "use_robust_pla" in invocation and invocation["use_robust_pla"]
-                command = '{binary} {file} {constants} --prop "{property}" {method} --mode partitioning --regionbound 0.000001 --terminationCondition 0.01 {robust_pla} -bisim {additional_storm_args}'.format(
+                command = '{binary} {file} {constants} --prop "{property}" {method} --mode partitioning --regionbound 0.01 --terminationCondition 1e-4 {robust_pla} -bisim {additional_storm_args}'.format(
                     binary=(
                         Path(invocation["storm_location"]) / "storm-pars"
                         if "storm_location" in invocation
@@ -188,7 +186,7 @@ def main():
                         else "-const " + constant_string
                     ),
                     property=prop,
-                    method=f"--big-step {horizon} {timetravel}" if horizon >= 1 else "",
+                    method="--big-step" if "big_step" in invocation and invocation["big_step"] else "",
                     robust_pla=(
                         "--regionverif:engine robustpl --minmax:method vi"
                         if use_robust_pla

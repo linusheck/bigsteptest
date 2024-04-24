@@ -7,6 +7,6 @@
     {
         "use_robust_pla": [true],
         "timetravel": true,
-        "horizon": [2, 4]
+        "horizon": 2
     }
 ]

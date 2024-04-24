@@ -20,6 +20,7 @@
 				"label": "target"
 			}
 		],
-		"big_step": [false, true]
+		"timetravel": ["false", "true"],
+		"horizon": [0, 1, 2, 3, 4]
 	}
 ]

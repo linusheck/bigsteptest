@@ -1,1 +1,1 @@
-cat {command_file} | parallel --progress -j16 bash -c {{}}
+cat {command_file} | parallel --progress -j8 bash -c {{}}

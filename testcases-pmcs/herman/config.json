@@ -3,24 +3,12 @@
 		"constants": {},
 		"prism": [
 			"herman5_pla.pm",
-			"herman_random_pass_speedreducer_2-5.pm"
+			"herman_random_pass_speedreducer_2-5.pm",
 		],
 		"prop": {
 			"type": "reward",
 			"dir": "max",
 			"bound": 3,
-			"label": "stable"
-		}
-	},
-	{
-		"constants": {},
-		"prism": [
-			"herman7_pla.pm"
-		],
-		"prop": {
-			"type": "reward",
-			"dir": "max",
-			"bound": 5,
 			"label": "stable"
 		}
 	},

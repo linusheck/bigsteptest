@@ -3,7 +3,7 @@
 		"memory_bound": 1,
 		"constants": [
 			{
-				"N": 2
+				"N": 4
 			}
 		],
 		"pomdp": "refuel.prism",
@@ -15,7 +15,6 @@
 				"label": "\"notbad\" U \"goal\""
 			}
 		],
-		"timetravel": ["false", "true"],
-		"horizon": [0, 1, 2, 3, 4]
+		"big_step": [false, true]
 	}
 ]

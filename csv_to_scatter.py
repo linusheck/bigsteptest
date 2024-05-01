@@ -1,4 +1,3 @@
-import pylab
 import tabulate
 import csv
 import argparse
@@ -36,7 +35,10 @@ parser.add_argument(
     help="location of output pdf file",
 )
 parser.add_argument(
-    "--comp-field", help="fields to compare", type=str, default="Method"
+    "--comp-field", help="fields to compare", type=str, default="BigStep"
+)
+parser.add_argument(
+    "--compare-by", help="fields to compare", type=str, default="Time (MC)"
 )
 parser.add_argument(
     "--filter", help="key/values to only include e.g. a:x;b:y", type=str, default=None
@@ -81,15 +83,7 @@ with open(args.input) as csvfile:
                     break
         if skip:
             continue
-        if row["Model"].startswith("network2"):
-            row["Model"] = (
-                row["Model"]
-                .replace("network2", "n2")
-                .replace("priorities", "prios")
-                .replace("packets", "ps")
-                .replace("dropped", "dr")
-            )
-        join_params = ["Model", "Const", "Mem", "Prop", "Method", "Add. Settings"]
+        join_params = ["Model", "Const", "Mem", "Prop", "RobustPLA", "BigStep"]
         if args.comp_field in join_params:
             join_params.remove(args.comp_field)
         benchmark_id = "-".join([row[x] for x in join_params])
@@ -111,8 +105,8 @@ for benchmark_id in benchmark_map:
             belongs_into_bucket = True
             for key in keys:
                 if (
-                    key != "Time"
-                    and key != "Found"
+                    key != args.compare_by
+                    and key != "# Regions"
                     and benchmark2[key] != benchmark[key]
                 ):
                     belongs_into_bucket = False
@@ -130,8 +124,8 @@ for benchmark_id in benchmark_map:
         avg_time = None
         avg_found = None
         for benchmark in benchmark_bucket:
-            times.append(benchmark["Time"])
-            founds.append(benchmark["Found"])
+            times.append(benchmark[args.compare_by])
+            founds.append(benchmark["# Regions"])
         if "N/A" in times:
             for t in times:
                 if t != "N/A":
@@ -141,7 +135,7 @@ for benchmark_id in benchmark_map:
                     )
                 avg_time = "N/A"
                 avg_found = "N/A"
-        elif "ERR" in times:
+        elif "ERR" in times or "TO" in times:
             for t in times:
                 if t != "ERR":
                     print(
@@ -154,8 +148,8 @@ for benchmark_id in benchmark_map:
             avg_time = sum([float(x) for x in times]) / len(times)
             avg_found = sum([float(x) for x in founds]) / len(founds)
         first_benchmark = benchmark_bucket[0].copy()
-        first_benchmark["Time"] = avg_time
-        first_benchmark["Found"] = avg_found
+        first_benchmark[args.compare_by] = avg_time
+        first_benchmark["# Regions"] = avg_found
         benchmark_map_averaged[benchmark_id].append(first_benchmark)
 benchmark_map = benchmark_map_averaged
 
@@ -217,7 +211,7 @@ def marker_discriminator(compy_benchmark):
         return compy_benchmark[args.comp_field]
     return compy_benchmark["Model"]
 
-
+print(benchmark_map)
 for benchmark_id in benchmark_map:
     benchmarks = benchmark_map[benchmark_id]
     compx_benchmark = None
@@ -248,8 +242,8 @@ for benchmark_id in benchmark_map:
         return float(time)
 
     for compy_benchmark in compy_benchmarks:
-        x.append(time_to_int(compx_benchmark["Time"]))
-        y.append(time_to_int(compy_benchmark["Time"]))
+        x.append(time_to_int(compx_benchmark[args.compare_by]))
+        y.append(time_to_int(compy_benchmark[args.compare_by]))
         colors.append(color_map[marker_discriminator(compy_benchmark)])
         markers.append(marker_map[marker_discriminator(compy_benchmark)])
         hatches.append(hatch_map[marker_discriminator(compy_benchmark)])
@@ -332,7 +326,7 @@ if args.symbols:
 
 
 if not args.seperate_legend:
-    leg = ax.legend(custom_legend_plots, custom_legend_labels, loc="lower right")
+    leg = ax.legend(custom_legend_plots, custom_legend_labels, bbox_to_anchor=(1.04, 1), borderaxespad=0)
 
 
 ax.spines["right"].set_visible(False)
@@ -346,11 +340,10 @@ plt.yticks(locs, labels)
 ax.set_xlabel(args.labelx, labelpad=0)
 ax.set_ylabel(args.labely, labelpad=0)
 
-plt.tight_layout()
-plt.savefig(args.output_pdf)
+plt.savefig(args.output_pdf, bbox_inches="tight")
 
 if args.seperate_legend:
-    figlegend = pylab.figure(figsize=(5, 5))
+    figlegend = plt.figure(figsize=(5, 5))
     leg = figlegend.legend(custom_legend_plots, custom_legend_labels)
     if args.symbols:
         for vpack in leg._legend_handle_box.get_children()[:1]:

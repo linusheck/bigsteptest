@@ -169,7 +169,7 @@ def main():
             # run everything n times
             for i in range(args.times):
                 use_robust_pla = "use_robust_pla" in invocation and invocation["use_robust_pla"]
-                command = '{binary} {file} {constants} --prop "{property}" {method} --mode partitioning --regionbound 0.01 --terminationCondition 1e-4 {robust_pla} -bisim {additional_storm_args}'.format(
+                command = '{binary} {file} {constants} --prop "{property}" {method} --mode partitioning --regionbound 0.01 --terminationCondition 1e-2 {robust_pla} -bisim {additional_storm_args}'.format(
                     binary=(
                         Path(invocation["storm_location"]) / "storm-pars"
                         if "storm_location" in invocation
@@ -217,7 +217,7 @@ def main():
                     '( echo "'
                     + echo_str
                     + '"'
-                    + " && time timeout 300 "
+                    + " && time timeout 600 "
                     + command
                     + "  ) > "
                     + "output/"

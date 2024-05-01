@@ -1,12 +1,4 @@
-[
-    {
-        "use_robust_pla": [true, false],
-        "timetravel": false,
-        "horizon": 0
-    },
-    {
-        "use_robust_pla": [true],
-        "timetravel": true,
-        "horizon": 2
-    }
-]
+{
+    "big_step": [true, false],
+    "use_robust_pla": true
+}

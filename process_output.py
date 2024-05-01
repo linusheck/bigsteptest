@@ -15,9 +15,8 @@ table_headers = [
     "Mem",
     "Prop",
     "Param Region",
-    "Robust",
-    "BigStep Horizon",
-    "Time-Travelling",
+    "RobustPLA",
+    "BigStep",
     "#States (after)",
     "Time (MC)",
     "% Known",
@@ -86,8 +85,7 @@ for file in args.files:
         current_line.append(variables_lines[-1].split(" ")[3].replace(";", ""))
 
     current_line.append(str(info_json["use_robust_pla"]).lower())
-    current_line.append(info_json["horizon"])
-    current_line.append(info_json["timetravel"])
+    current_line.append(str(info_json["big_step"]).lower())
 
     # Number of states
     states_lines = [x for x in lines if x.startswith("States:")]

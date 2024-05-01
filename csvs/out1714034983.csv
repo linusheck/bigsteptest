@@ -1,0 +1,23 @@
+Model,Const,Mem,Prop,Param Region,BigStep,Time-Travelling,#States (after),Time (MC),% Known,# Regions
+herman5_pla,N/A,N/A,3_reward_max_stable,1/100<=p<=99/100,true,false,	196,0.431,99.9908,53
+herman5_pla,N/A,N/A,3_reward_max_stable,1/100<=p<=99/100,true,true,	75,0.055,99.9908,33
+herman7_pla,N/A,N/A,5_reward_max_stable,1/100<=p<=99/100,true,false,	1422,25.027,99.9901,147
+herman7_pla,N/A,N/A,5_reward_max_stable,1/100<=p<=99/100,true,true,	499,0.843,99.9908,58
+herman9_pla,N/A,N/A,10_reward_max_stable,1/100<=p<=99/100,true,false,	8008,188.652,99.9901,109
+herman9_pla,N/A,N/A,10_reward_max_stable,1/100<=p<=99/100,true,true,	2856,162.668,99.9908,45
+herman_random_pass_speedreducer_2-5,N/A,N/A,3_reward_max_stable,"1/100<=q<=99/100,1/100<=r<=99/100,1/100<=p<=99/100",true,false,	673,ERR,ERR,ERR
+herman_random_pass_speedreducer_2-5,N/A,N/A,3_reward_max_stable,"1/100<=q<=99/100,1/100<=r<=99/100,1/100<=p<=99/100",true,true,	895,ERR,ERR,ERR
+herman_random_pass_speedreducer_2-9,N/A,N/A,10_reward_max_stable,?,true,false,?,ERR,ERR,ERR
+herman_random_pass_speedreducer_2-9,N/A,N/A,10_reward_max_stable,?,true,true,?,ERR,ERR,ERR
+crowds,CrowdSize=2 TotalRuns=5 ,N/A,0.25_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,false,	80,25.776,99.99,106735
+crowds,CrowdSize=2 TotalRuns=5 ,N/A,0.25_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,true,	26,29.315,99.99,108214
+crowds,CrowdSize=5 TotalRuns=5 ,N/A,0.25_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,false,	80,29.586,99.99,113926
+crowds,CrowdSize=5 TotalRuns=5 ,N/A,0.25_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,true,	26,36.011,99.99,122899
+crowds,CrowdSize=10 TotalRuns=3 ,N/A,0.25_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,false,	40,15.016,99.99,88165
+crowds,CrowdSize=10 TotalRuns=3 ,N/A,0.25_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,true,	14,22.461,99.99,97066
+crowds,CrowdSize=20 TotalRuns=2 ,N/A,0.25_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,false,	20,10.399,99.99,74080
+crowds,CrowdSize=20 TotalRuns=2 ,N/A,0.25_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,true,	8,10.957,99.99,72370
+nand,N=5 K=10 ,N/A,0.5_probability_max_target,"1/100<=prob1<=99/100,1/100<=perr<=99/100",true,false,	5447,ERR,ERR,ERR
+nand,N=5 K=10 ,N/A,0.5_probability_max_target,"1/100<=prob1<=99/100,1/100<=perr<=99/100",true,true,	1054,ERR,ERR,ERR
+nand,N=5 K=25 ,N/A,0.5_probability_max_target,"1/100<=prob1<=99/100,1/100<=perr<=99/100",true,false,	13727,ERR,ERR,ERR
+nand,N=5 K=25 ,N/A,0.5_probability_max_target,"1/100<=prob1<=99/100,1/100<=perr<=99/100",true,true,	2554,ERR,ERR,ERR

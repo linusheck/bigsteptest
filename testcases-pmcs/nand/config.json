@@ -2,6 +2,14 @@
 	{
 		"constants": [
 			{
+				"N": 2,
+				"K": 2 
+			},
+			{
+				"N": 5,
+				"K": 5 
+			},
+			{
 				"N": 5,
 				"K": 10
 			},
@@ -16,11 +24,10 @@
 			{
 				"type": "probability",
 				"dir": "max",
-				"bound": 0.5,
+				"bound": 0.1,
 				"label": "target"
 			}
 		],
-		"timetravel": ["false", "true"],
-		"horizon": [0, 1, 2, 3, 4]
+		"big_step": [false, true]
 	}
 ]

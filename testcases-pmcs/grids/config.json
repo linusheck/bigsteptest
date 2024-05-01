@@ -1,0 +1,58 @@
+[
+  {
+		"memory_bound": 1,
+		"constants": {
+		},
+		"pomdp": "4x4grid-avoid.prism",
+		"prop": [
+			{
+				"type": "probability",
+				"dir": "max",
+				"bound": 0.9,
+				"label": "\"notbad\" U \"goal\""
+			}
+		],
+		"timetravel": ["false", "true"],
+		"horizon": [0, 1, 2, 3, 4]
+	},
+  {
+		"memory_bound": 1,
+		"constants": {
+		},
+		"pomdp": "4x4grid.prism",
+		"prop": [
+			{
+				"type": "reward",
+				"dir": "min",
+				"bound": 10,
+				"label": "goal"
+			}
+		],
+		"timetravel": ["false", "true"],
+		"horizon": [0, 1, 2, 3, 4]
+	},
+  {
+		"memory_bound": 1,
+		"constants": [
+			{
+				"N": 2
+			},
+			{
+				"N": 5
+			},
+			{
+				"N": 10
+			}
+		],
+		"pomdp": "newgrid.prism",
+		"prop": [
+			{
+				"type": "probability",
+				"dir": "max",
+				"bound": 0.99,
+				"label": "\"notbad\" U \"goal\""
+			}
+		],
+		"big_step": [false, true]
+	}
+]

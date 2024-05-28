@@ -1,0 +1,20 @@
+[
+  {
+		"memory_bound": 1,
+		"constants": [
+			{
+				"N": 3
+			}
+		],
+		"pomdp": "refuel.prism",
+		"prop": [
+			{
+				"type": "probability",
+				"dir": "max",
+				"bound": 0.05,
+				"label": "\"notbad\" U \"goal\""
+			}
+		],
+		"big_step": [false, true]
+	}
+]

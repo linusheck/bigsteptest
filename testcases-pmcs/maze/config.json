@@ -1,0 +1,16 @@
+[
+	{
+		"memory_bound": [1, 2],
+		"constants": {
+		},
+		"pomdp": "maze2.prism",
+		"prop": [
+			{
+				"type": "reward",
+				"dir": "max",
+				"bound": 30,
+				"label": "goal"
+			}
+		]
+	}
+]

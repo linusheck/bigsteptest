@@ -1,0 +1,26 @@
+[
+	{
+		"memory_bound": 1,
+		"constants": [
+			{
+				"K": 1
+			},
+			{
+				"K": 3
+			},
+			{
+				"K": 5
+			}
+		],
+		"pomdp": "nrp.prism",
+		"prop": 
+		[
+			{
+				"type": "probability",
+				"dir": "min",
+				"bound": 0.1,
+				"label": "unfair"
+			}
+		]
+	}
+]

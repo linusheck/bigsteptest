@@ -23,7 +23,7 @@
 		"prop": [
 			{
 				"type": "reward",
-				"dir": "min",
+				"dir": "max",
 				"bound": 10,
 				"label": "goal"
 			}

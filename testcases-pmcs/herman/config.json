@@ -34,17 +34,5 @@
 			"bound": 9,
 			"label": "stable"
 		}
-	},
-	{
-		"constants": {},
-		"prism": [
-			"herman11_pla.pm"
-		],
-		"prop": {
-			"type": "reward",
-			"dir": "max",
-			"bound": 16,
-			"label": "stable"
-		}
 	}
 ]

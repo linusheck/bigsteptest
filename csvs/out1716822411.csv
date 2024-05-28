@@ -1,0 +1,75 @@
+Model,Const,Mem,Prop,Param Region,RobustPLA,BigStep,#States (after),Time (MC),% Known,# Regions
+herman5_pla,N/A,N/A,1.83666514825_reward_max_stable,1/100<=p<=99/100,true,false,	196,0.02,100.0,22
+herman5_pla,N/A,N/A,1.83666514825_reward_max_stable,1/100<=p<=99/100,true,true,	59,0.076,100.0,1
+herman7_pla,N/A,N/A,4.26866341925_reward_max_stable,1/100<=p<=99/100,true,false,	1422,0.271,100.0,32
+herman7_pla,N/A,N/A,4.26866341925_reward_max_stable,1/100<=p<=99/100,true,true,	440,0.22,100.0,8
+herman9_pla,N/A,N/A,7.52498491155_reward_max_stable,1/100<=p<=99/100,true,false,	8008,4.792,100.0,58
+herman9_pla,N/A,N/A,7.52498491155_reward_max_stable,1/100<=p<=99/100,true,true,	2566,0.72,100.0,18
+crowds,CrowdSize=2 TotalRuns=5 ,N/A,0.000940381217795_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,false,	80,0.001,100.0,1
+crowds,CrowdSize=2 TotalRuns=5 ,N/A,0.000940381217795_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,true,	27,0.001,100.0,1
+crowds,CrowdSize=5 TotalRuns=5 ,N/A,0.000934832063165_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,false,	80,0.001,100.0,1
+crowds,CrowdSize=5 TotalRuns=5 ,N/A,0.000934832063165_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,true,	27,0.001,100.0,1
+crowds,CrowdSize=10 TotalRuns=3 ,N/A,0.00028366443205_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,false,	40,0.0,100.0,1
+crowds,CrowdSize=10 TotalRuns=3 ,N/A,0.00028366443205_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,true,	15,0.002,100.0,10
+crowds,CrowdSize=20 TotalRuns=2 ,N/A,9.509501339499999e-05_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,false,	20,0.001,100.0,1
+crowds,CrowdSize=20 TotalRuns=2 ,N/A,9.509501339499999e-05_probability_max_observe0Greater1,"1/100<=pL<=99/100,1/100<=pK<=99/100",true,true,	10,0.0,100.0,1
+nand,N=2 K=2 ,N/A,0.025231905779_probability_max_target,"1/100<=prob1<=99/100,1/100<=perr<=99/100",true,false,	124,0.011,100.0,43
+nand,N=2 K=2 ,N/A,0.025231905779_probability_max_target,"1/100<=prob1<=99/100,1/100<=perr<=99/100",true,true,	36,0.01,100.0,1
+nand,N=5 K=5 ,N/A,0.0219551905265_probability_max_target,"1/100<=prob1<=99/100,1/100<=perr<=99/100",true,false,	2687,ERR,ERR,ERR
+nand,N=5 K=5 ,N/A,0.0219551905265_probability_max_target,"1/100<=prob1<=99/100,1/100<=perr<=99/100",true,true,	550,ERR,ERR,ERR
+nand,N=5 K=10 ,N/A,0.021955288100999996_probability_max_target,"1/100<=prob1<=99/100,1/100<=perr<=99/100",true,false,	5447,75.067,100.0,4558
+nand,N=5 K=10 ,N/A,0.021955288100999996_probability_max_target,"1/100<=prob1<=99/100,1/100<=perr<=99/100",true,true,	1050,14.668,100.0,280
+nand,N=5 K=25 ,N/A,0.021955269709_probability_max_target,"1/100<=prob1<=99/100,1/100<=perr<=99/100",true,false,	13727,409.228,100.0,4540
+nand,N=5 K=25 ,N/A,0.021955269709_probability_max_target,"1/100<=prob1<=99/100,1/100<=perr<=99/100",true,true,	2550,48.789,100.0,262
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	45,5.455,100.0,218
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	47,0.004,100.0,1
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	45,5.444,100.0,218
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	47,0.002,100.0,1
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	45,5.402,100.0,218
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	47,0.002,100.0,1
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	45,5.32,100.0,218
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	47,0.002,100.0,1
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	45,5.36,100.0,218
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	47,0.002,100.0,1
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	45,5.327,100.0,218
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	47,0.002,100.0,1
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	45,5.501,100.0,218
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	47,0.002,100.0,1
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	45,5.53,100.0,218
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	47,0.002,100.0,1
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	45,5.687,100.0,218
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	47,0.002,100.0,1
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	45,5.819,100.0,218
+4x4grid-avoid,N/A,1,0.000695745720485_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	47,0.002,100.0,1
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,false,	47,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,true,	49,0.018,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,false,	47,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,true,	49,0.008,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,false,	47,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,true,	49,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,false,	47,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,true,	49,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,false,	47,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,true,	49,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,false,	47,0.01,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,true,	49,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,false,	47,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,true,	49,0.01,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,false,	47,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,true,	49,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,false,	47,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,true,	49,0.008,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,false,	47,0.009,100.0,50
+4x4grid,N/A,1,4.89600004225_reward_max_goal,"1/100<=p1_0<=99/100,1/100<=p3_0<=99/100,1/100<=p4_0<=99/100",true,true,	49,0.009,100.0,50
+nrp,K=1 ,1,1.0395_probability_min_unfair,1/100<=p2_0<=99/100,true,false,	5,0.007,100.0,1
+nrp,K=1 ,1,1.0395_probability_min_unfair,1/100<=p2_0<=99/100,true,true,	3,0.006,100.0,1
+nrp,K=3 ,1,0.34999965_probability_min_unfair,"1/100<=p2_0<=99/100,1/100<=p7_0<=99/100,1/100<=p12_0<=99/100",true,false,	15,1.311,100.0,14351
+nrp,K=3 ,1,0.34999965_probability_min_unfair,"1/100<=p2_0<=99/100,1/100<=p7_0<=99/100,1/100<=p12_0<=99/100",true,true,	8,0.006,100.0,1
+nrp,K=5 ,1,0.21000000000000002_probability_min_unfair,"1/100<=p2_0<=99/100,1/100<=p7_0<=99/100,1/100<=p12_0<=99/100,1/100<=p17_0<=99/100,1/100<=p22_0<=99/100",true,false,	33,ERR,ERR,ERR
+nrp,K=5 ,1,0.21000000000000002_probability_min_unfair,"1/100<=p2_0<=99/100,1/100<=p7_0<=99/100,1/100<=p12_0<=99/100,1/100<=p17_0<=99/100,1/100<=p22_0<=99/100",true,true,	12,0.0,100.0,1
+newgrid,N=2 ,1,4.8339613885499996e-08_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	32,3.95,100.0,1002
+newgrid,N=2 ,1,4.8339613885499996e-08_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	32,ERR,ERR,ERR
+newgrid,N=5 ,1,3.82027146005e-07_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	105,ERR,ERR,ERR
+newgrid,N=5 ,1,3.82027146005e-07_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	107,ERR,ERR,ERR
+newgrid,N=10 ,1,4.2176230571e-07_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,false,	360,ERR,ERR,ERR
+newgrid,N=10 ,1,4.2176230571e-07_probability_max_notbad U goal,"1/100<=p1_0<=99/100,1/100<=p4_0<=99/100,1/100<=p5_0<=99/100",true,true,	362,ERR,ERR,ERR

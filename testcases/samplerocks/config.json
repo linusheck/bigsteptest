@@ -1,0 +1,19 @@
+[
+  {
+		"memory_bound": [1],
+		"constants": [
+			{
+				"N": 1
+			}
+		],
+		"pomdp": "samplerocks.prism",
+		"prop": [
+			{
+				"type": "reward",
+				"dir": "max",
+				"bound": 1,
+				"label": "goal"
+			}
+		]
+	}
+]

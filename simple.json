@@ -1,0 +1,11 @@
+{
+    "use_robust_pla": true,
+    "epsilon": [0.1, 0.01, 0.001],
+    "estimate_method": "delta",
+    "splitting_strategy": "roundrobin",
+    "splitting_threshold": 4,
+    "simple": [true, false],
+    "only_pomdps": true,
+    "big_step": false,
+    "region_bound": 0.000001
+}

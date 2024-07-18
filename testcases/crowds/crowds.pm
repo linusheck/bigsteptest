@@ -172,7 +172,7 @@ module crowds
 	[] lastSeen=9  & badObserve & observe9 <TotalRuns -> (observe9' =observe9 +1) & (deliver'=true) & (run'=true) & (badObserve'=false);
 	[] lastSeen=10 & badObserve & observe10<TotalRuns -> (observe10'=observe10+1) & (deliver'=true) & (run'=true) & (badObserve'=false);
 	[] lastSeen=11 & badObserve & observe11<TotalRuns -> (observe11'=observe11+1) & (deliver'=true) & (run'=true) & (badObserve'=false);
-	[] lastSeen=12 & badObserve & observe12<TotalRuns -> (observe12'=observe12+1) & (deliver'=true) & (run'=true) & (badObserve'=false);
+[] lastSeen=12 & badObserve & observe12<TotalRuns -> (observe12'=observe12+1) & (deliver'=true) & (run'=true) & (badObserve'=false);
 	[] lastSeen=13 & badObserve & observe13<TotalRuns -> (observe13'=observe13+1) & (deliver'=true) & (run'=true) & (badObserve'=false);
 	[] lastSeen=14 & badObserve & observe14<TotalRuns -> (observe14'=observe14+1) & (deliver'=true) & (run'=true) & (badObserve'=false);
 	[] lastSeen=15 & badObserve & observe15<TotalRuns -> (observe15'=observe15+1) & (deliver'=true) & (run'=true) & (badObserve'=false);

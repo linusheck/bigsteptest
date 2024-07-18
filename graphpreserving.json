@@ -1,0 +1,13 @@
+[
+    {
+        "big_step": true,
+        "use_robust_pla": true,
+        "epsilon": 0.1,
+        "splitting_strategy": "estimate",
+        "estimate_method": "deltaweighted",
+        "splitting_threshold": 4,
+        "only_pomdps": false,
+        "simple": true,
+        "region_bound": 0
+    }
+]

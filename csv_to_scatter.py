@@ -40,6 +40,9 @@ parser.add_argument(
     "--compare-by", help="fields to compare", type=str, default="Time (MC)"
 )
 parser.add_argument(
+    "--ignore", help="fields to ignore", type=str, default=None
+)
+parser.add_argument(
     "--filter", help="key/values to only include e.g. a:x;b:y", type=str, default=None
 )
 parser.add_argument(
@@ -53,7 +56,7 @@ parser.add_argument(
 )
 
 parser.add_argument(
-    "--min", help="min shown value (power of 10)", type=int, default=-4
+    "--min", help="min shown value (power of 10)", type=int, default=-1
 )
 parser.add_argument(
     "--max", help="max shown value (power of 10)", type=int, default=5
@@ -62,6 +65,7 @@ parser.add_argument(
 args = parser.parse_args()
 
 MIN_VALUE = 10**args.min
+ACTUAL_MIN_VALUE = 10**(args.min - .2)
 MAX_VALUE = 10**args.max
 
 TO_VALUE = 2*MAX_VALUE
@@ -88,7 +92,10 @@ with open(args.input) as csvfile:
                     break
         if skip:
             continue
-        join_params = ["Model", "Const", "Mem", "Prop", "RobustPLA", "BigStep"]
+        join_params = ["Model", "Const", "Mem", "Prop", "RobustPLA", "BigStep", "Simple"]
+        if args.ignore:
+            for x in args.ignore.split(","):
+                join_params.remove(x)
         if args.comp_field in join_params:
             join_params.remove(args.comp_field)
         benchmark_id = "-".join([row[x] for x in join_params])
@@ -210,6 +217,7 @@ for benchmark_id in benchmark_map:
     model = None
     for benchmark in benchmarks:
         if benchmark[args.comp_field] == args.compx:
+            
             compx_benchmark = benchmark
         if benchmark[args.comp_field] in args.compy.split(","):
             compy_benchmarks.append(benchmark)
@@ -230,7 +238,7 @@ for benchmark_id in benchmark_map:
             return TO_VALUE
         if time == "ERR":
             return ERR_VALUE
-        return float(time)
+        return float(time) if time > MIN_VALUE else MIN_VALUE
 
     for compy_benchmark in compy_benchmarks:
         x.append(time_to_int(compx_benchmark[args.compare_by]))
@@ -261,15 +269,15 @@ for model in color_map:
     custom_legend_labels.append(model)
 
 line = mlines.Line2D(
-    [MIN_VALUE, MAX_VALUE], [MIN_VALUE, MAX_VALUE], color="black", ls="-"
+    [ACTUAL_MIN_VALUE, MAX_VALUE], [ACTUAL_MIN_VALUE, MAX_VALUE], color="black", ls="-"
 )
 ax.add_line(line)
 line2 = mlines.Line2D(
-    [MIN_VALUE, MAX_VALUE / 10], [MIN_VALUE * 10, MAX_VALUE], color="black", ls="--"
+    [ACTUAL_MIN_VALUE, MAX_VALUE / 10], [ACTUAL_MIN_VALUE * 10, MAX_VALUE], color="black", ls="--"
 )
 ax.add_line(line2)
 line3 = mlines.Line2D(
-    [MIN_VALUE, MAX_VALUE / 100], [MIN_VALUE * 100, MAX_VALUE], color="black", ls="--"
+    [ACTUAL_MIN_VALUE, MAX_VALUE / 100], [ACTUAL_MIN_VALUE * 100, MAX_VALUE], color="black", ls="--"
 )
 ax.add_line(line3)
 
@@ -301,8 +309,8 @@ for i in range(len(x)):
     #     ax.scatter([x[i]], [y[i]], c=[colors[i]], marker=markers[i], s=[160], zorder=1000, alpha=1)
 ax.set_yscale("log")
 ax.set_xscale("log")
-ax.set_xlim([MIN_VALUE - MIN_VALUE * 0.1, ERR_VALUE + ERR_VALUE * 0.25])
-ax.set_ylim([MIN_VALUE - MIN_VALUE * 0.1, ERR_VALUE + ERR_VALUE * 0.25])
+ax.set_xlim([ACTUAL_MIN_VALUE, ERR_VALUE + ERR_VALUE * 0.25])
+ax.set_ylim([ACTUAL_MIN_VALUE, ERR_VALUE + ERR_VALUE * 0.25])
 
 if args.symbols:
     empty_marker = plt.scatter([0], [0], s=[0], marker=None)
@@ -330,14 +338,14 @@ numbers = [10**x for x in range(args.min, args.max)]
 locs = numbers + [TO_VALUE, ERR_VALUE]
 
 number_labels = [f"$10^{{{x}}}$" for x in range(args.min, args.max)]
-labels = number_labels + ["TO/MO", "ERR"]
+labels = ["$\\leq$" + number_labels[0]] + number_labels[1:] + ["TO/MO", "ERR"]
 
 plt.xticks(locs, labels, rotation=45, ha="right")
 plt.yticks(locs, labels)
 ax.set_xlabel(args.labelx, labelpad=0)
 ax.set_ylabel(args.labely, labelpad=0)
 
-plt.title(f"{args.compare_by}, {args.filter.replace(":", "=")}")
+plt.title(f"{args.compare_by}, {args.filter.replace(":", "=") if args.filter else ""}")
 
 plt.savefig(args.output_pdf, bbox_inches="tight")
 

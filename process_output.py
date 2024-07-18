@@ -18,6 +18,9 @@ table_headers = [
     "Epsilon",
     "RobustPLA",
     "BigStep",
+    "SplitStrat",
+    "Estimate",
+    "Simple",
     "#States (after)",
     "Time (MC)",
     "% Known",
@@ -46,6 +49,8 @@ for file in args.files:
         current_line.append(info_json["pomdp"].split(".")[0])
     elif "drn" in info_json:
         current_line.append(info_json["drn"].split(".")[0])
+    elif "jani" in info_json:
+        current_line.append(info_json["jani"].split(".")[0])
     else:
         current_line.append("???")
 
@@ -89,6 +94,9 @@ for file in args.files:
 
     current_line.append(str(info_json["use_robust_pla"]).lower())
     current_line.append(str(info_json["big_step"]).lower())
+    current_line.append(info_json["splitting_strategy"])
+    current_line.append(info_json["estimate_method"])
+    current_line.append(str(info_json["simple"]).lower())
 
     # Number of states
     states_lines = [x for x in lines if x.startswith("States:")]

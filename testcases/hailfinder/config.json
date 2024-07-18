@@ -1,0 +1,12 @@
+[
+	{
+		"constants": {},
+		"jani": "hailfinder.jani",
+		"prop": {
+			"type": "probability",
+			"dir": "max",
+			"bound": 1,
+			"label": "WindAloft=0"
+		}
+	}
+]

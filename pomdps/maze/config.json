@@ -1,30 +1,15 @@
 [
 	{
-		"memory_bound": [1, 2],
 		"constants": {
 		},
 		"pomdp": "maze2.prism",
 		"prop": [
 			{
 				"type": "reward",
-				"dir": "min",
+				"dir": "max",
 				"bound": 30,
 				"label": "goal"
-			},
-			{
-				"type": "reward",
-				"dir": "min",
-				"bound": 35,
-				"label": "goal"
-			},
-			{
-				"type": "reward",
-				"dir": "min",
-				"bound": 40,
-				"label": "goal"
 			}
-		],
-		"timetravel": ["false", "true"],
-		"horizon": [0, 1, 2, 3, 4]
+		]
 	}
 ]

@@ -1,6 +1,6 @@
 [ 
 	{
-		"memory_bound": [1, 2],
+		"memory_bound": 1,
 		"constants": [
 			{
 				"K": 2,
@@ -15,12 +15,10 @@
 				"bound": 1,
 				"label": "goal"
 			}
-		],
-		"timetravel": ["false", "true"],
-		"horizon": [0, 1, 2, 3, 4]
+		]
 	},
 	{
-		"memory_bound": [1, 2],
+		"memory_bound": 1,
 		"constants": [
 			{
 				"K": 2,
@@ -35,12 +33,10 @@
 				"bound": 1,
 				"label": "goal"
 			}
-		],
-		"timetravel": ["false", "true"],
-		"horizon": [0, 1, 2, 3, 4]
+		]
 	},
 	{
-		"memory_bound": [1, 2],
+		"memory_bound": 1,
 		"constants": [
 			{
 				"K": 2,
@@ -55,8 +51,6 @@
 				"bound": 1.5,
 				"label": "goal"
 			}
-		],
-		"timetravel": ["false", "true"],
-		"horizon": [0, 1, 2, 3, 4]
+		]
 	}
 ]

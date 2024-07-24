@@ -20,17 +20,14 @@ parser.add_argument("compx", type=str, help="method on x axis")
 parser.add_argument("compy", type=str, help="method(s) on y axis")
 parser.add_argument("labelx", type=str, help="label on x axis")
 parser.add_argument("labely", type=str, help="label on y axis")
-output_file_name = "scatter-plot/scatter" + str(int(datetime.now().timestamp()))
 parser.add_argument(
     "--output-csv",
     type=str,
-    default=output_file_name + ".csv",
     help="location of output csv file",
 )
 parser.add_argument(
     "--output-pdf",
     type=str,
-    default=output_file_name + ".pdf",
     help="location of output pdf file",
 )
 parser.add_argument(

@@ -1,8 +1,2 @@
-commands.sh
-hpc.sh
-parallel.sh
 .build/*
-core*
-*.out
-scripts/*
-output/*
+experiments/*

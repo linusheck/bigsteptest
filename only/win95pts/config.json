@@ -1,0 +1,12 @@
+[
+	{
+		"constants": {},
+		"jani": "win95pts.jani",
+		"prop": {
+			"type": "probability",
+			"dir": "min",
+			"bound": 1,
+			"label": "TTOK=0"
+		}
+	}
+]

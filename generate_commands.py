@@ -120,6 +120,12 @@ def main():
         default=None,
         help="global override json file - change stuff in every testcase",
     )
+    parser.add_argument(
+        "--output", type=Path, default="/tmp/output", help="output folder"
+    )
+    parser.add_argument(
+        "--jobs", type=int, default=8, help="number of parallel jobs"
+    )
     args = parser.parse_args()
 
     slurm_script = ""
@@ -310,17 +316,6 @@ def main():
                 json_str = json.dumps(invocation)
                 echo_str = json_str.replace('\\"', "").replace('"', '\\"')
 
-                slurm_script += (
-                    'if [[ "$SLURM_ARRAY_TASK_ID" -eq '
-                    + ""
-                    + str(number_of_task)
-                    + " ]]\n"
-                )
-                slurm_script += "then\n"
-                slurm_script += 'echo "' + echo_str + '"\n'
-                slurm_script += "time " + command + "\n"
-                slurm_script += "fi \n\n"
-
                 manual_script += (
                     '( echo "'
                     + echo_str
@@ -328,49 +323,37 @@ def main():
                     + " && time timeout 600 "
                     + command
                     + "  ) > "
-                    + "output/"
-                    + create_file_name(invocation, constant_string, invocation["simple"])
+                    + str(args.output / "output"
+                    / (create_file_name(invocation, constant_string, invocation["simple"])
                     + str(base64.b64encode(str(hash(json_str)).encode()))
-                    + ".out 2>&1"
+                    + ".out")) +  " 2>&1"
                     + "\n"
                 )
 
                 number_of_task += 1
 
+    (args.output / "output").mkdir()
+
     if args.dry_run:
-        print(slurm_script)
+        print(manual_script)
         sys.exit(0)
 
-    makedirs("scripts", exist_ok=True)
-    makedirs("output", exist_ok=True)
-
-    slurm_command_file_name = (
-        "scripts/slurm_commands" + str(int(datetime.now().timestamp())) + ".sh"
-    )
     manual_command_file_name = (
-        "scripts/manual_commands" + str(int(datetime.now().timestamp())) + ".sh"
+        args.output / "manual_commands.sh"
     )
 
-    with open(slurm_command_file_name, "w") as command_file:
-        command_file.write(slurm_script)
     with open(manual_command_file_name, "w") as command_file:
         command_file.write(manual_script)
 
-    chmod(slurm_command_file_name, 0o777)
     chmod(manual_command_file_name, 0o777)
 
-    for template, command_file in {
-        "hpc": slurm_command_file_name,
-        "parallel": manual_command_file_name,
-    }.items():
-        template_file = open(f"{template}.template.sh")
-        content = template_file.read()
-        template_file.close()
+    content = "cat {command_file} | parallel --progress -j{jobs} bash -c {{}}"
 
-        content = content.format(num=str(number_of_task - 1), command_file=command_file)
-        with open(f"{template}.sh", "w") as hpc_out_file:
-            hpc_out_file.write(content)
-        chmod(f"{template}.sh", 0o777)
+    content = content.format(num=str(number_of_task - 1), command_file=manual_command_file_name, jobs=args.jobs)
+    out_file_path = args.output / f"parallel.sh"
+    with open(out_file_path, "w") as hpc_out_file:
+        hpc_out_file.write(content)
+    chmod(out_file_path, 0o777)
 
 
 if __name__ == "__main__":

@@ -6,6 +6,7 @@ from datetime import datetime
 
 parser = argparse.ArgumentParser(description="Process output of jobs.")
 parser.add_argument("files", nargs="+", help="The files to process the output of.")
+parser.add_argument("--results", help="Result file.")
 
 args = parser.parse_args()
 
@@ -137,7 +138,7 @@ for file in args.files:
             current_line.append("ERR")
     table.append(current_line)
 
-with open("csvs/out" + str(int(datetime.now().timestamp())) + ".csv", "w") as csvfile:
+with open(args.results, "w") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerows(table)
 

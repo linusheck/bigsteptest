@@ -5,7 +5,5 @@
     "estimate_method": "delta",
     "splitting_strategy": "estimate",
     "splitting_threshold": 4,
-    "simple": true,
-    "only_pomdps": false,
-    "region_bound": 0
+    "simple": true
 }

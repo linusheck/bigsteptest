@@ -1,37 +1,37 @@
 [
 	{
 		"constants": {},
+		"region_bound": 0,
 		"prism": [
 			"herman5_pla.pm"
 		],
 		"prop": {
 			"type": "reward",
 			"dir": "max",
-			"bound": 3,
 			"label": "stable"
 		}
 	},
 	{
 		"constants": {},
+		"region_bound": 0,
 		"prism": [
 			"herman7_pla.pm"
 		],
 		"prop": {
 			"type": "reward",
 			"dir": "max",
-			"bound": 5,
 			"label": "stable"
 		}
 	},
 	{
 		"constants": {},
+		"region_bound": 0,
 		"prism": [
 			"herman9_pla.pm"
 		],
 		"prop": {
 			"type": "reward",
 			"dir": "max",
-			"bound": 9,
 			"label": "stable"
 		}
 	}

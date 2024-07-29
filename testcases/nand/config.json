@@ -18,16 +18,15 @@
 				"K": 25
 			}
 		],
+		"region_bound": 0.1,
 		"prism": "nand.pm",
 		"prop": 
 		[
 			{
 				"type": "probability",
-				"dir": "max",
-				"bound": 0.1,
+				"dir": "min",
 				"label": "target"
 			}
-		],
-		"big_step": [false, true]
+		]
 	}
 ]

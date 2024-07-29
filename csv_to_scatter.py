@@ -342,7 +342,7 @@ plt.yticks(locs, labels)
 ax.set_xlabel(args.labelx, labelpad=0)
 ax.set_ylabel(args.labely, labelpad=0)
 
-plt.title(f"{args.compare_by}, {args.filter.replace(":", "=") if args.filter else ""}")
+plt.title(f"{args.compare_by}, {args.filter.replace(':', '=') if args.filter else ''}")
 
 plt.savefig(args.output_pdf, bbox_inches="tight")
 

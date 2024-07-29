@@ -1,0 +1,11 @@
+[
+    {
+        "big_step": false,
+        "use_robust_pla": true,
+        "epsilon": 0,
+        "region_bound": [0, 1e-6],
+        "splitting_strategy": "estimate",
+        "estimate_method": "delta",
+        "simple": true
+    }
+]

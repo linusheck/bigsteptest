@@ -2,15 +2,27 @@
     {
         "big_step": false,
         "use_robust_pla": false,
-        "epsilon": [0.1],
-        "splitting_strategy": ["estimate", "roundrobin"],
-        "estimate_method": "delta"
+        "epsilon": 0,
+        "region_bound": 0.1,
+        "splitting_strategy": "roundrobin",
+        "simple": true
+    },
+    {
+        "big_step": false,
+        "use_robust_pla": false,
+        "epsilon": 0,
+        "region_bound": 0.1,
+        "splitting_strategy": "estimate",
+        "estimate_method": "delta",
+        "simple": true
     },
     {
         "big_step": false,
         "use_robust_pla": true,
-        "epsilon": [0.1],
-        "splitting_strategy": ["estimate"],
-        "estimate_method": "minmaxdelta"
+        "epsilon": 0,
+        "region_bound": 0.1,
+        "splitting_strategy": "estimate",
+        "estimate_method": "delta",
+        "simple": true
     }
 ]

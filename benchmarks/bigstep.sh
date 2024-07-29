@@ -4,7 +4,7 @@ mkdir -p experiments
 set folder experiments/bigstep-$(date '+%Y-%m-%d-%H-%M-%S')
 mkdir $folder
 
-python3 generate_commands.py --folder only --global-override benchmarks/bigstep.json --storm-location ../storm/build_release/bin/ --output $folder
+python3 generate_commands.py --folder testcases --global-override benchmarks/bigstep.json --storm-location ../storm/build_release/bin/ --output $folder --jobs 32 --timeout 1200
 ./$folder/parallel.sh
 
 set result_file $folder/results.csv

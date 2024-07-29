@@ -1,6 +1,7 @@
 [
 	{
 		"memory_bound": 1,
+		"region_bound": 0,
 		"constants": {
 		},
 		"pomdp": "maze2.prism",
@@ -8,7 +9,6 @@
 			{
 				"type": "reward",
 				"dir": "max",
-				"bound": 30,
 				"label": "goal"
 			}
 		]

@@ -54,7 +54,8 @@ def create_prop_from_dict(prop_dict: dict, gd_prop=False) -> str:
     if not gd_prop:
         prop += prop_dict["dir"]
 
-    if prop_dict["bound"] is None:
+
+    if not gd_prop and ("bound" not in prop_dict or prop_dict["bound"] is None):
         prop += "=?"
     else:
         if prop_dict["dir"] == "max":
@@ -63,7 +64,7 @@ def create_prop_from_dict(prop_dict: dict, gd_prop=False) -> str:
             prop += (">=" + str(1e9) if gd_prop else "<=" + str(prop_dict["bound"]))
 
     label = prop_dict["label"]
-    if label.startswith('"'):
+    if label.startswith('"') or label.startswith("F"):
         prop += f" [{label}]"
     elif "=" in label:
         prop += f" [F {label}]"
@@ -78,7 +79,7 @@ def bool_to_cli_string(b):
         return "false"
 
 def get_model(invocation):
-    for typ in ["pomdp", "prism", "jani"]:
+    for typ in ["pomdp", "prism", "jani", "drn"]:
         if typ in invocation:
             return invocation[typ]
 
@@ -90,8 +91,11 @@ def create_file_name(invocation: dict, constant_string: str, simple: bool) -> st
                 get_model(invocation).split(".")[0],
                 prop_dict["type"],
                 prop_dict["dir"],
-                prop_dict["label"].replace(" ", "_").replace('"', ""),
+                prop_dict["label"].replace(" ", "_").replace('"', "").replace("|", "").replace("(", "").replace(")", ""),
                 prop_dict["reward_model"] if "reward_model" in prop_dict else "",
+                prop_dict["use_robust_pla"] if "use_robust_pla" in prop_dict else "",
+                prop_dict["splitting_strategy"] if "splitting_strategy" in prop_dict else "",
+                prop_dict["estimate_method"] if "estimate_method" in prop_dict else "",
                 "nonsimple" if not simple else "",
                 constant_string,
                 str(invocation["region_bound"]),
@@ -126,6 +130,9 @@ def main():
     parser.add_argument(
         "--jobs", type=int, default=8, help="number of parallel jobs"
     )
+    parser.add_argument(
+        "--timeout", type=int, default=600, help="job timeout"
+    )
     args = parser.parse_args()
 
     slurm_script = ""
@@ -144,9 +151,6 @@ def main():
         )
 
         for invocation in config:
-            if invocation["only_pomdps"] and not "pomdp" in invocation:
-                continue
-
             # run storm-pomdp on the prism file to make a pmc
             constant_strings = []
             for key in invocation["constants"]:
@@ -201,8 +205,6 @@ def main():
                 print("neither a prism nor a drn file specified!")
                 sys.exit(1)
 
-            if invocation["only_pomdps"] and not "pomdp" in invocation:
-                continue
             gd_result_file = (
                 Path(getcwd())
                 / ".build"
@@ -211,13 +213,20 @@ def main():
                 / (create_file_name(invocation, constant_string, True) + ".gdresult")
             )
 
-            if gd_result_file.exists():
+            print(invocation)
+
+            if "override_bound" in invocation["prop"]:
+                # override GD with manually found bound (we never do this)
+                print(f"Overriding bound of {gd_result_file} with {invocation['prop']['bound']}")
+                found_bound = invocation["prop"]["override_bound"]
+            elif gd_result_file.exists():
+                # cached GD
                 found_bound = float(gd_result_file.read_text())
             else:
                 # find a good bound with GD
-                timeout = 4
+                timeout = 30
                 while True:
-                    gd_command = '{binary} {file} {constants} -prop "{property}" --mode feasibility --feasibility:method gd --regionbound {region_bound} -bisim --timeout {timeout}'.format(
+                    gd_command = '{binary} {file} {constants} -prop "{property}" --mode feasibility --feasibility:method gd --regionbound {region_bound} -bisim --timeout {timeout} --learning-rate 0.001'.format(
                         binary=(
                             Path(invocation["storm_location"]) / "storm-pars"
                             if "storm_location" in invocation
@@ -296,21 +305,21 @@ def main():
                         else ""
                     ),
                     splitting_strategy=(
-                        f"--splitting-strategy {invocation["splitting_strategy"]}"
+                        f"--splitting-heuristic {invocation['splitting_strategy']}"
                         if "splitting_strategy" in invocation
                         else ""
                     ),
                     splitting_estimate=(
-                        f"--estimate-method {invocation["estimate_method"]}"
+                        f"--estimate-method {invocation['estimate_method']}"
                         if "estimate_method" in invocation
                         else ""
                     ),
                     splitting_threshold=(
-                        f"--splitting-threshold {invocation["splitting_threshold"]}"
+                        f"--splitting-threshold {invocation['splitting_threshold']}"
                         if "splitting_threshold" in invocation
                         else ""
                     ),
-                    region_bound=invocation["region_bound"],
+                    region_bound=invocation['region_bound'],
                 )
 
                 json_str = json.dumps(invocation)
@@ -320,7 +329,7 @@ def main():
                     '( echo "'
                     + echo_str
                     + '"'
-                    + " && time timeout 600 "
+                    + f" && time timeout {args.timeout} "
                     + command
                     + "  ) > "
                     + str(args.output / "output"

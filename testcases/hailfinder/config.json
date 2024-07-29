@@ -1,12 +1,12 @@
 [
 	{
 		"constants": {},
-		"jani": "hailfinder.jani",
+		"region_bound": 0.1,
+		"drn": "hailfinder_32.drn",
 		"prop": {
 			"type": "probability",
 			"dir": "max",
-			"bound": 1,
-			"label": "WindAloft=0"
+			"label": "F \"R5Fcst1\"|\"Dewpoints1\"|\"LowLLapse1\"|\"WindFieldPln1\"|\"PlainsFcst1\""
 		}
 	}
 ]

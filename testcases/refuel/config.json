@@ -1,5 +1,6 @@
 [
   {
+		"region_bound": 0,
 		"memory_bound": 1,
 		"constants": [
 			{
@@ -11,7 +12,6 @@
 			{
 				"type": "probability",
 				"dir": "min",
-				"bound": 1,
 				"label": "\"notbad\" U \"goal\""
 			}
 		]

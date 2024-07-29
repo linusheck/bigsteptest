@@ -1,6 +1,7 @@
 [
   {
-		"memory_bound": [1],
+		"memory_bound": 1,
+		"region_bound": 0,
 		"constants": [
 			{
 				"N": 1
@@ -11,7 +12,6 @@
 			{
 				"type": "reward",
 				"dir": "max",
-				"bound": 1,
 				"label": "goal"
 			}
 		]

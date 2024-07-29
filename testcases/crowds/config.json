@@ -2,12 +2,16 @@
 	{
 		"constants": [
 			{
-				"CrowdSize": 20,
+				"CrowdSize": 10,
                 "TotalRuns": 2
 			},
 			{
-				"CrowdSize": 20,
+				"CrowdSize": 10,
                 "TotalRuns": 4
+			},
+			{
+				"CrowdSize": 20,
+                "TotalRuns": 2
 			}
 		],
 		"prism": "crowds.pm",
@@ -16,10 +20,9 @@
 			{
 				"type": "probability",
 				"dir": "min",
-				"bound": 0.25,
 				"label": "observeIGreater1"
 			}
 		],
-		"big_step": [false, true]
+		"region_bound": 0
 	}
 ]

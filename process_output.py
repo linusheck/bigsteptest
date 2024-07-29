@@ -96,7 +96,7 @@ for file in args.files:
     current_line.append(str(info_json["use_robust_pla"]).lower())
     current_line.append(str(info_json["big_step"]).lower())
     current_line.append(info_json["splitting_strategy"])
-    current_line.append(info_json["estimate_method"])
+    current_line.append(info_json["estimate_method"] if "estimate_method" in info_json else "")
     current_line.append(str(info_json["simple"]).lower())
 
     # Number of states
@@ -109,14 +109,16 @@ for file in args.files:
     # The "finished in x" line:
     mc_time = lines[-7]
 
+    # Real time
+    real_time = lines[-4]
+
     def parse_time(real_time):
         return int(real_time.split("m")[0]) * 60 + float(real_time.split("m")[1][:-1])
 
 
     # If benchmark has not terminated, this will be the case:
     if mc_time.startswith("Time for model checking"):
-        time_as_string = mc_time.split()[4]
-        current_line.append(round(float(time_as_string[:-2]), 4))
+        current_line.append(parse_time(real_time.split()[-1]))
 
         # unknown fraction
         unknown_fraction = [l for l in lines if "Unknown fraction" in l][0]

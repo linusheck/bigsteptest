@@ -1,6 +1,7 @@
 [
 	{
 		"memory_bound": 1,
+		"region_bound": 0,
 		"constants": [
 			{
 				"K": 5
@@ -18,7 +19,6 @@
 			{
 				"type": "probability",
 				"dir": "min",
-				"bound": 0.1,
 				"label": "unfair"
 			}
 		]

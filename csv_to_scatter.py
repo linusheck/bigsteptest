@@ -81,7 +81,7 @@ with open(args.input) as csvfile:
     for row in reader:
         skip = False
         if args.filter != None:
-            for keyvalue in args.filter.split(";"):
+            for keyvalue in args.filter.split(","):
                 key = keyvalue.split(":")[0]
                 value = keyvalue.split(":")[1]
                 if row[key] != value:

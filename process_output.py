@@ -15,7 +15,8 @@ table_headers = [
     "Const",
     "Mem",
     "Prop",
-    "Param Region",
+    "Region",
+    "Region Bound",
     "Epsilon",
     "RobustPLA",
     "BigStep",
@@ -91,6 +92,8 @@ for file in args.files:
     else:
         current_line.append(variables_lines[-1].split(" ")[3].replace(";", ""))
     
+    current_line.append(info_json["region_bound"])
+
     current_line.append(info_json["epsilon"])
 
     current_line.append(str(info_json["use_robust_pla"]).lower())

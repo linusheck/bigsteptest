@@ -5,6 +5,9 @@
 		"constants": [
 			{
 				"N": 3
+			},
+			{
+				"N": 5
 			}
 		],
 		"pomdp": "refuel.prism",

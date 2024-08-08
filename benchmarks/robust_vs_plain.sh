@@ -6,7 +6,7 @@ mkdir $folder
 
 echo $folder
 
-python3 generate_commands.py --folder testcases --global-override benchmarks/robust_vs_plain.json --storm-location ../storm/build_release/bin/ --output $folder --jobs 32 --timeout 600
+python3 generate_commands.py --folder testcases --global-override benchmarks/robust_vs_plain.json --storm-location ../storm/build_release/bin/ --output $folder --jobs 16 --timeout 600
 ./$folder/parallel.sh
 
 set result_file $folder/results.csv

@@ -139,6 +139,9 @@ def main():
     parser.add_argument(
         "--timeout", type=int, default=600, help="job timeout"
     )
+    parser.add_argument(
+        "--drop-region-bound", type=bool, default=False, help="drop region bound in GD results"
+    )
     args = parser.parse_args()
 
     slurm_script = ""
@@ -216,7 +219,7 @@ def main():
                 / ".build"
                 / folder
                 # GD should search the simple model, even if PLA model is the nonsimple variant
-                / (create_file_name(invocation, constant_string, True) + ".gdresult")
+                / (create_file_name(invocation, constant_string, True, drop_region_bound=args.drop_region_bound) + ".gdresult")
             )
 
             print(invocation)
@@ -273,6 +276,15 @@ def main():
                     print(f"Increasing timeout to {timeout}")
 
             invocation["prop"]["bound"] = found_bound * ((1 + invocation["epsilon"]) if invocation["prop"]["dir"] == "min" else (1 - invocation["epsilon"]))
+            
+            if invocation["prop"]["type"] == "probability":
+                if invocation["prop"]["dir"] == "min" and invocation["prop"]["bound"] >= 1:
+                    print("Probability bound is bigger than one 1, skipping")
+                    continue
+            if invocation["prop"]["dir"] == "max" and invocation["prop"]["bound"] <= 0:
+                print("Probability/reward bound is smaller than 0, skipping")
+                continue
+
             prop = create_prop_from_dict(invocation["prop"])
             print(prop)
 

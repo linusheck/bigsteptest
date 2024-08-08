@@ -34,5 +34,17 @@
 			"dir": "max",
 			"label": "stable"
 		}
+	},
+	{
+		"constants": {},
+		"region_bound": 0,
+		"prism": [
+			"herman11_pla.pm"
+		],
+		"prop": {
+			"type": "reward",
+			"dir": "max",
+			"label": "stable"
+		}
 	}
 ]

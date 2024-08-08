@@ -13,7 +13,7 @@ set result_file $folder/results.csv
 
 python3 process_output.py $folder/output/* --results $result_file
 
-python3 csv_to_scatter.py $result_file true false "Robust PLA" "Standard PLA" --compare-by "Time (MC)" --comp-field RobustPLA --filter "Estimate:delta" --output-pdf $folder/"time_robust_plain.pdf"
+python3 csv_to_scatter.py $result_file true false "Robust PLA" "Standard PLA" --compare-by "Time (wall)" --comp-field RobustPLA --filter "Estimate:delta" --output-pdf $folder/"time_robust_plain.pdf"
 python3 csv_to_scatter.py $result_file true false "Robust PLA" "Standard PLA" --compare-by "# Regions" --min 0 --max 6 --comp-field RobustPLA --filter "Estimate:delta" --output-pdf $folder/"regions_robust_plain.pdf"
 
 python3 csv_to_scatter.py $result_file "estimate" "roundrobin" "State-value-delta estimate" "Round-robin" --compare-by "Time (MC)" --comp-field SplitStrat --filter "Estimate:delta"

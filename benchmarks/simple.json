@@ -1,7 +1,6 @@
 {
     "use_robust_pla": true,
-    "epsilon": [0.1, 0.01, 0.001],
-    "estimate_method": "delta",
+    "epsilon": [0.1, 1e-5],
     "splitting_strategy": "roundrobin",
     "splitting_threshold": 4,
     "simple": [true, false],

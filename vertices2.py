@@ -49,8 +49,8 @@ pdash_values_ordered = [pdash_values[i] for i in points]
 ax.fill([x[0] for x in pdash_values_ordered], [x[1] for x in pdash_values_ordered])
 ax.scatter([x[0] for x in pdash_values], [x[1] for x in pdash_values], c='b', marker='o')
 
-ax.set_xlabel('p1')
-ax.set_ylabel('p2')
+ax.set_xlabel('x2')
+ax.set_ylabel('x1')
 
 plt.savefig('vertices.png')
 

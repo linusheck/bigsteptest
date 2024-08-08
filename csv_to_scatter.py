@@ -34,7 +34,7 @@ parser.add_argument(
     "--comp-field", help="fields to compare", type=str, default="BigStep"
 )
 parser.add_argument(
-    "--compare-by", help="fields to compare", type=str, default="Time (MC)"
+    "--compare-by", help="fields to compare", type=str, default="Time (wall)"
 )
 parser.add_argument(
     "--ignore", help="fields to ignore", type=str, default=None
@@ -231,11 +231,13 @@ for benchmark_id in benchmark_map:
     # output_table.append(["pdtmc", benchmark_id, model, color_map[model], compx_benchmark["Time"], compy_benchmark["Time"]])
 
     def time_to_int(time):
-        if time == "N/A" or time == "ERR":
-            return TO_VALUE
-        if time == "ERR":
+        if time == "N/A" or time == "ERR" or time == "ERR":
             return ERR_VALUE
-        return float(time) if time > MIN_VALUE else MIN_VALUE
+        if float(time) > MAX_VALUE:
+            return TO_VALUE
+        if float(time) < MIN_VALUE:
+            return MIN_VALUE
+        return float(time)
 
     for compy_benchmark in compy_benchmarks:
         x.append(time_to_int(compx_benchmark[args.compare_by]))
@@ -296,7 +298,7 @@ for i in range(len(x)):
         [y[i]],
         c=[colors[i]],
         marker=markers[i],
-        s=[160],
+        s=[200],
         zorder=1000,
         alpha=0.65,
         hatch=hatches[i],
@@ -306,8 +308,8 @@ for i in range(len(x)):
     #     ax.scatter([x[i]], [y[i]], c=[colors[i]], marker=markers[i], s=[160], zorder=1000, alpha=1)
 ax.set_yscale("log")
 ax.set_xscale("log")
-ax.set_xlim([ACTUAL_MIN_VALUE, ERR_VALUE + ERR_VALUE * 0.25])
-ax.set_ylim([ACTUAL_MIN_VALUE, ERR_VALUE + ERR_VALUE * 0.25])
+ax.set_xlim([ACTUAL_MIN_VALUE, ERR_VALUE + ERR_VALUE])
+ax.set_ylim([ACTUAL_MIN_VALUE, ERR_VALUE + ERR_VALUE])
 
 if args.symbols:
     empty_marker = plt.scatter([0], [0], s=[0], marker=None)
@@ -335,7 +337,7 @@ numbers = [10**x for x in range(args.min, args.max)]
 locs = numbers + [TO_VALUE, ERR_VALUE]
 
 number_labels = [f"$10^{{{x}}}$" for x in range(args.min, args.max)]
-labels = ["$\\leq$" + number_labels[0]] + number_labels[1:] + ["TO/MO", "ERR"]
+labels = ["$\\leq$" + number_labels[0]] + number_labels[1:] + ["$\\geq$"f"$10^{{{args.max}}}$", "TO"]
 
 plt.xticks(locs, labels, rotation=45, ha="right")
 plt.yticks(locs, labels)

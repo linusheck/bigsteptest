@@ -24,7 +24,7 @@ table_headers = [
     "Estimate",
     "Simple",
     "#States (after)",
-    "Time (MC)",
+    "Time (wall)",
     "% Known",
     "# Regions",
 ]

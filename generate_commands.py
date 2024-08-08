@@ -83,7 +83,13 @@ def get_model(invocation):
         if typ in invocation:
             return invocation[typ]
 
-def create_file_name(invocation: dict, constant_string: str, simple: bool, drop_region_bound=False) -> str:
+def get_region(invocation):
+    if "region" in invocation:
+        return f"--region \"{invocation['region']}\""
+    elif "region_bound" in invocation:
+        return f"--regionbound {invocation['region_bound']}"
+
+def create_file_name(invocation: dict, constant_string: str, simple: bool) -> str:
     prop_dict = invocation["prop"]
     return (
         "_".join(
@@ -98,7 +104,7 @@ def create_file_name(invocation: dict, constant_string: str, simple: bool, drop_
                 prop_dict["estimate_method"] if "estimate_method" in prop_dict else "",
                 "nonsimple" if not simple else "",
                 constant_string,
-                str(invocation["region_bound"]) if not drop_region_bound else "",
+                get_region(invocation),
                 str(invocation["memory_bound"]) if "memory_bound" in invocation else "",
             ]
         )
@@ -229,7 +235,7 @@ def main():
                 # find a good bound with GD
                 timeout = 30
                 while True:
-                    gd_command = '{binary} {file} {constants} -prop "{property}" --mode feasibility --feasibility:method gd --regionbound {region_bound} -bisim --timeout {timeout} --learning-rate 0.001'.format(
+                    gd_command = '{binary} {file} {constants} -prop "{property}" --mode feasibility --feasibility:method gd {region} -bisim --timeout {timeout} --learning-rate 0.001 {additional_storm_args}'.format(
                         binary=(
                             Path(invocation["storm_location"]) / "storm-pars"
                             if "storm_location" in invocation
@@ -250,7 +256,12 @@ def main():
                         ),
                         property=gd_prop,
                         timeout=timeout,
-                        region_bound=invocation["region_bound"],
+                        region=get_region(invocation),
+                        additional_storm_args=(
+                            invocation["additional_storm_args"]
+                            if "additional_storm_args" in invocation
+                            else ""
+                        ),
                     )
                     print(gd_command)
                     output_gd = subprocess.getoutput(gd_command)
@@ -282,7 +293,7 @@ def main():
                 use_robust_pla = (
                     "use_robust_pla" in invocation and invocation["use_robust_pla"]
                 )
-                command = '{binary} {file} {constants} -prop "{property}" {method} --mode partitioning --regionbound {region_bound} --terminationCondition 0 {robust_pla} -bisim {additional_storm_args} {splitting_strategy} {splitting_estimate} {splitting_threshold}'.format(
+                command = '{binary} {file} {constants} -prop "{property}" {method} --mode partitioning {region} --terminationCondition 0 {robust_pla} -bisim {additional_storm_args} {splitting_strategy} {splitting_estimate} {splitting_threshold}'.format(
                     binary=(
                         Path(invocation["storm_location"]) / "storm-pars"
                         if "storm_location" in invocation
@@ -331,7 +342,7 @@ def main():
                         if "splitting_threshold" in invocation
                         else ""
                     ),
-                    region_bound=invocation['region_bound'],
+                    region=get_region(invocation),
                 )
 
                 json_str = json.dumps(invocation)

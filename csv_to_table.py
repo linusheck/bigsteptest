@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser(
 )
 parser.add_argument("input", type=str, help="location of input csv file")
 parser.add_argument(
-    "--methods", type=str, help="methods to compare (seperated by commas)"
+    "--methods", type=str, help="methods to compare (separated by commas)"
 )
 
 args = parser.parse_args()

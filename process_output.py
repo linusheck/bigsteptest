@@ -26,7 +26,7 @@ table_headers = [
     "#States (after)",
     "Time (wall)",
     "% Known",
-    "# Regions",
+    "Regions",
 ]
 table = [table_headers]
 

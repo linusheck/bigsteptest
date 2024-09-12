@@ -7,7 +7,7 @@ import json
 import sys
 from pathlib import Path
 import base64
-
+import hashlib
 
 # Preprocess json config by unwrapping all arrays in x into multiple objects of x
 def unwrap_config(config: dict, global_override: dict) -> dict:
@@ -104,7 +104,8 @@ def create_file_name(invocation: dict, constant_string: str, simple: bool) -> st
                 prop_dict["estimate_method"] if "estimate_method" in prop_dict else "",
                 "nonsimple" if not simple else "",
                 constant_string,
-                get_region(invocation),
+                prop_dict["region_bound"] if "region_bound" in prop_dict else "",
+                str(hashlib.sha256(get_region(invocation).encode()).hexdigest()),
                 str(invocation["memory_bound"]) if "memory_bound" in invocation else "",
             ]
         )
@@ -219,7 +220,7 @@ def main():
                 / ".build"
                 / folder
                 # GD should search the simple model, even if PLA model is the nonsimple variant
-                / (create_file_name(invocation, constant_string, True, drop_region_bound=args.drop_region_bound) + ".gdresult")
+                / (create_file_name(invocation, constant_string, True) + ".gdresult")
             )
 
             print(invocation)
@@ -278,11 +279,11 @@ def main():
             invocation["prop"]["bound"] = found_bound * ((1 + invocation["epsilon"]) if invocation["prop"]["dir"] == "min" else (1 - invocation["epsilon"]))
             
             if invocation["prop"]["type"] == "probability":
-                if invocation["prop"]["dir"] == "min" and invocation["prop"]["bound"] >= 1:
-                    print("Probability bound is bigger than one 1, skipping")
+                if invocation["prop"]["dir"] == "min" and invocation["prop"]["bound"] >= 0.9999:
+                    print("Probability bound is bigger than 0.9999, skipping")
                     continue
-            if invocation["prop"]["dir"] == "max" and invocation["prop"]["bound"] <= 0:
-                print("Probability/reward bound is smaller than 0, skipping")
+            if invocation["prop"]["dir"] == "max" and invocation["prop"]["bound"] <= 0.0001:
+                print("Probability/reward bound is smaller than 0.0001, skipping")
                 continue
 
             prop = create_prop_from_dict(invocation["prop"])

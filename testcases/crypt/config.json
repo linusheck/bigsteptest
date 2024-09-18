@@ -1,0 +1,18 @@
+[
+  {
+		"region_bound": 0,
+		"memory_bound": 1,
+		"constants": {},
+		"pomdp": [
+			"crypt_small.prism",
+			"crypt3.prism"
+		],
+		"prop": [
+			{
+				"type": "probability",
+				"dir": "max",
+				"label": "goal"
+			}
+		]
+	}
+]

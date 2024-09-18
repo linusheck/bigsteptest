@@ -3,43 +3,23 @@
 		"constants": {},
 		"region_bound": 0,
 		"prism": [
-			"herman5_pla.pm"
-		],
-		"prop": {
-			"type": "reward",
-			"dir": "max",
-			"label": "stable"
-		}
-	},
-	{
-		"constants": {},
-		"region_bound": 0,
-		"prism": [
-			"herman7_pla.pm"
-		],
-		"prop": {
-			"type": "reward",
-			"dir": "max",
-			"label": "stable"
-		}
-	},
-	{
-		"constants": {},
-		"region_bound": 0,
-		"prism": [
-			"herman9_pla.pm"
-		],
-		"prop": {
-			"type": "reward",
-			"dir": "max",
-			"label": "stable"
-		}
-	},
-	{
-		"constants": {},
-		"region_bound": 0,
-		"prism": [
+			"herman5_pla.pm",
+			"herman7_pla.pm",
+			"herman9_pla.pm",
 			"herman11_pla.pm"
+		],
+		"prop": {
+			"type": "reward",
+			"dir": "max",
+			"label": "stable"
+		}
+	},
+	{
+		"constants": {},
+		"region_bound": 0,
+		"prism": [
+			"herman_random_pass_speedreducer_2-3.pm",
+			"herman_random_pass_speedreducer_2-5.pm"
 		],
 		"prop": {
 			"type": "reward",

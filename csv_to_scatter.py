@@ -86,6 +86,10 @@ model_map = {}
 with open(args.input) as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
+        # hermans are different prism files, but we want to treat them as the
+        # same in this plot
+        if row["Model"].startswith("herman"):
+            row["Model"] = "herman"
         skip = False
         if args.filter != None:
             for keyvalue in args.filter.split(","):

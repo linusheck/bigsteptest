@@ -1,0 +1,60 @@
+[
+    {
+          "region_bound": 0,
+          "memory_bound": 1,
+          "constants": [
+              {
+                  "N": 2,
+                  "RADIUS": 1
+              }
+          ],
+          "pomdp": [
+              "evade.prism"
+          ],
+          "prop": [
+              {
+                  "type": "probability",
+                  "dir": "min",
+                  "label": "\"notbad\" U \"goal\""
+              }
+          ]
+      },
+      {
+        "region_bound": 0,
+        "memory_bound": 1,
+        "constants": [
+            {
+                "N": 4,
+                "RADIUS": 1
+            }
+        ],
+        "pomdp": [
+            "avoid.prism"
+        ],
+        "prop": [
+            {
+                "type": "probability",
+                "dir": "min",
+                "label": "\"notbad\" U \"goal\""
+            }
+        ]
+    },
+      {
+        "region_bound": 0,
+        "memory_bound": 1,
+        "constants": [
+            {
+                "N": 2
+            }
+        ],
+        "pomdp": "rocks2.prism",
+        "prop": [
+            {
+                "type": "probability",
+                "dir": "min",
+                "label": "\"notbad\" U \"goal\""
+            }
+        ]
+    }
+  ]
+  

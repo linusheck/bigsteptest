@@ -92,7 +92,10 @@ for file in args.files:
     else:
         current_line.append(variables_lines[-1].split(" ")[3].replace(";", ""))
     
-    current_line.append(info_json["region_bound"])
+    if "region_interval" in info_json:
+        current_line.append(info_json["region_interval"])
+    else:
+        current_line.append(info_json["region_bound"])
 
     current_line.append(info_json["epsilon"])
 

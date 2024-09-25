@@ -12,6 +12,10 @@
 			{
 				"CrowdSize": 20,
                 "TotalRuns": 2
+			},
+			{
+				"CrowdSize": 20,
+                "TotalRuns": 4
 			}
 		],
 		"prism": "crowds.pm",

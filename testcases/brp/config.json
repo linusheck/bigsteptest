@@ -19,8 +19,8 @@
 		[
 			{
 				"type": "probability",
-				"dir": "max",
-				"label": "error"
+				"dir": "min",
+				"label": "uncertain"
 			}
 		],
 		"region_bound": 0

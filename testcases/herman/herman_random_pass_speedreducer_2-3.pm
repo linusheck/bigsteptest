@@ -10,9 +10,9 @@ dtmc
 const double r;
 
 // Probability to switch from speed reducer to normal mode
-const double p; // = 1/n
+const double p;
 // Probability to switch from normal to speed reducer mode
-const double q; // = 1/(n*(n-1))
+const double q;
 
 // module process 1
 module process1

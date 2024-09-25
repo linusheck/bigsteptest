@@ -1,0 +1,15 @@
+[
+	{
+		"constants": {
+		},
+		"prism": "dpm.pm",
+		"prop": 
+		[
+			{
+				"type": "reward",
+				"dir": "min",
+				"label": "finished"
+			}
+		]
+	}
+]

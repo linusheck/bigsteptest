@@ -139,6 +139,7 @@ module  channelL
 endmodule
 
 label "error" = s=5;
+label "uncertain" = s=5 & srep=2;
 
 rewards
 	[TO_Msg] true : TOMsg;

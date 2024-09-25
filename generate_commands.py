@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 import base64
 import hashlib
+import re
 
 # Preprocess json config by unwrapping all arrays in x into multiple objects of x
 def unwrap_config(config: dict, global_override: dict) -> dict:
@@ -83,9 +84,47 @@ def get_model(invocation):
         if typ in invocation:
             return invocation[typ]
 
-def get_region(invocation):
+def parse_jani_params(prism_file):
+    content = Path(prism_file).read_text()
+    return [x["name"] for x in json.loads(content)["constants"]]
+
+def parse_prism_params(prism_file):
+    content = Path(prism_file).read_text()
+    result = re.findall(r"^const double (\w+);", content, re.MULTILINE)
+    return result
+
+def parse_drn_params(drn_file):
+    content = Path(drn_file).read_text()
+    lines = content.split("\n")
+    parameters_line = None
+    for i, line in enumerate(lines):
+        if "@parameters" in line:
+            parameters_line = lines[i + 1]
+            break
+    return [x for x in parameters_line.split(" ") if x]
+
+def get_constants(invocation, params_file):
+    model = get_model(invocation)
+    if "prism" in invocation:
+        return parse_prism_params(params_file)
+    elif "drn" in invocation or "pomdp" in invocation:
+        return parse_drn_params(params_file)
+    elif "jani" in invocation:
+        return parse_jani_params(params_file)
+    raise RuntimeError("not supported invocation in combination with custom interval", invocation)
+
+def get_region(invocation, params_file=None):
     if "region" in invocation:
         return f"--region \"{invocation['region']}\""
+    elif "region_interval" in invocation:
+        interval = invocation["region_interval"]
+        if not params_file:
+            return interval
+        constants = get_constants(invocation, params_file)
+        lower = interval.split(",")[0]
+        upper = interval.split(",")[1]
+        region = ",".join([f"{lower}<={c}<={upper}" for c in constants])
+        return f"--region \"{region}\""
     elif "region_bound" in invocation:
         return f"--regionbound {invocation['region_bound']}"
 
@@ -236,20 +275,19 @@ def main():
                 # find a good bound with GD
                 timeout = 30
                 while True:
+                    # GD should search the simple model, even if PLA model is the nonsimple variant
+                    file = ("--explicit-drn " + str(drn_file).replace("nonsimple", "")
+                        if drn_file
+                        else "--prism " + str(prism_file)
+                        if prism_file
+                        else "--jani " + str(jani_file))
                     gd_command = '{binary} {file} {constants} -prop "{property}" --mode feasibility --feasibility:method gd {region} -bisim --timeout {timeout} --learning-rate 0.001 {additional_storm_args}'.format(
                         binary=(
                             Path(invocation["storm_location"]) / "storm-pars"
                             if "storm_location" in invocation
                             else args.storm_location / "storm-pars"
                         ),
-                        file=(
-                            # GD should search the simple model, even if PLA model is the nonsimple variant
-                            "--explicit-drn " + str(drn_file).replace("nonsimple", "")
-                            if drn_file
-                            else "--prism " + str(prism_file)
-                            if prism_file
-                            else "--jani " + str(jani_file)
-                        ),
+                        file=file,
                         constants=(
                             ""
                             if (drn_file or not constant_string)
@@ -257,7 +295,7 @@ def main():
                         ),
                         property=gd_prop,
                         timeout=timeout,
-                        region=get_region(invocation),
+                        region=get_region(invocation, params_file=file.split(" ")[1]),
                         additional_storm_args=(
                             invocation["additional_storm_args"]
                             if "additional_storm_args" in invocation
@@ -294,19 +332,20 @@ def main():
                 use_robust_pla = (
                     "use_robust_pla" in invocation and invocation["use_robust_pla"]
                 )
+
+                file = ("--explicit-drn " + str(drn_file)
+                    if drn_file
+                    else "--prism " + str(prism_file)
+                    if prism_file
+                    else "--jani " + str(jani_file))
+
                 command = '{binary} {file} {constants} -prop "{property}" {method} --mode partitioning {region} --terminationCondition 0 {robust_pla} -bisim {additional_storm_args} {splitting_strategy} {splitting_estimate} {splitting_threshold}'.format(
                     binary=(
                         Path(invocation["storm_location"]) / "storm-pars"
                         if "storm_location" in invocation
                         else args.storm_location / "storm-pars"
                     ),
-                    file=(
-                        "--explicit-drn " + str(drn_file)
-                        if drn_file
-                        else "--prism " + str(prism_file)
-                        if prism_file
-                        else "--jani " + str(jani_file)
-                    ),
+                    file=file,
                     constants=(
                         ""
                         if (drn_file or not constant_string)
@@ -343,7 +382,7 @@ def main():
                         if "splitting_threshold" in invocation
                         else ""
                     ),
-                    region=get_region(invocation),
+                    region=get_region(invocation, params_file=file.split(" ")[1]),
                 )
 
                 json_str = json.dumps(invocation)
@@ -353,7 +392,7 @@ def main():
                     '( echo "'
                     + echo_str
                     + '"'
-                    + f" && ulimit -v 16000000 && time timeout {args.timeout} "
+                    + f" && ulimit -v 128000000 && time timeout {args.timeout} "
                     + command
                     + "  ) > "
                     + str(args.output / "output"

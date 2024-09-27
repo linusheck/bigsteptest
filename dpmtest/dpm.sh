@@ -1,5 +1,7 @@
 #!/usr/bin/env fish
 
+# ./dpm_feas says bound is 18.62915, so we use 18.629
+
 # Run dpm test
 echo "Running DPM benchmark:"
 ./dpm_test.sh

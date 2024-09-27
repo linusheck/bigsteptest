@@ -1,12 +1,12 @@
 Storm-pars 1.8.1
 
-Date: Fri Sep 27 16:19:19 2024
-Command line arguments: --prism dpm.pm -prop 'R>=19 [F "finished"]' --mode partitioning --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --discrete-variables 'P11,P12,P21,P22,P31,P32,P41,P42,P51,P52,P61,P62,P71,P72,P81,P82' --region '0.4<=startsend<=0.6,0.7<=contsend<=0.9,0<=P11<=1,0<=P12<=1,0<=P21<=1,0<=P22<=1,0<=P31<=1,0<=P32<=1,0<=P41<=1,0<=P42<=1,0<=P51<=1,0<=P52<=1,0<=P61<=1,0<=P62<=1,0<=P71<=1,0<=P72<=1,0<=P81<=1,0<=P82<=1' --resultfile dpm_out_split_all.txt
+Date: Fri Sep 27 16:45:10 2024
+Command line arguments: --prism dpm.pm -prop 'R>=18.62914837 [F "finished"]' --mode partitioning --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --discrete-variables 'P11,P12,P21,P22,P31,P32,P41,P42,P51,P52,P61,P62,P71,P72,P81,P82' --region '0.4<=startsend<=0.6,0.7<=contsend<=0.9,0<=P11<=1,0<=P12<=1,0<=P21<=1,0<=P22<=1,0<=P31<=1,0<=P32<=1,0<=P41<=1,0<=P42<=1,0<=P51<=1,0<=P52<=1,0<=P61<=1,0<=P62<=1,0<=P71<=1,0<=P72<=1,0<=P81<=1,0<=P82<=1' --resultfile dpm_out_split_all.txt
 Current working directory: /home/lheck/git/bigsteptest/dpmtest
 
 Time for model input parsing: 0.002s.
 
-Time for model construction: 0.046s.
+Time for model construction: 0.045s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -36,5 +36,5 @@ Choice Labels: 	none
 
 Analyzing parameter region 0<=P11<=1,2/5<=startsend<=3/5,0<=P12<=1,7/10<=contsend<=9/10,0<=P21<=1,0<=P22<=1,0<=P31<=1,0<=P32<=1,0<=P41<=1,0<=P42<=1,0<=P51<=1,0<=P52<=1,0<=P61<=1,0<=P62<=1,0<=P71<=1,0<=P72<=1,0<=P81<=1,0<=P82<=1; using Robust Parameter Lifting and splitting heuristic Default with iterative refinement until 100% is covered.
 
-Model checking property "1": R>=19 [F "finished"] ...
+Model checking property "1": R>=1862914837/100000000 [F "finished"] ...
  WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.

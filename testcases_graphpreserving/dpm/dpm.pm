@@ -33,9 +33,22 @@ const double P42;
 // hole double T1 in {0.0,0.1,0.2,0.3,0.4};
 // hole double T2 in {0.5};
 // hole double T3 in {0.6,0.7,0.8};
-const double T1 = 0.25;
-const double T2 = 0.5;
-const double T3 = 0.75;
+
+const double T1 = 2.5;
+const double T2 = 5;
+const double T3 = 7.5;
+
+// const double T1;
+// const double T2;
+// const double T3;
+
+// const double empty = 0.01;
+// const double startsend = 0.5;
+// const double contsend = 0.8;
+
+const double empty;
+const double startsend;
+const double contsend;
 
 // queue size
 // hole int QMAX in {1,2,3,4,5,6,7,8,9,10};
@@ -95,8 +108,8 @@ endmodule
 
 module SR
     sr : [0..1] init 0; // 0 - idle, 1 - active
-    [tick1] sr=0 -> 0.5: true + 0.5: (sr' = 1);
-    [tick1] sr=1 -> 0.8: true + 0.2: (sr' = 0);
+    [tick1] sr=0 -> startsend: true + 1-startsend: (sr' = 1);
+    [tick1] sr=1 -> contsend: true + 1-contsend: (sr' = 0);
 endmodule
 
 
@@ -120,7 +133,7 @@ endmodule
 module BAT
     bat : [0..1] init 1; // 0 empty, 1 - operational
     [tick1] bat=0 ->true;
-    [tick1] bat=1 -> 0.01 : (bat'=0) + 0.99 : true;
+    [tick1] bat=1 -> empty : (bat'=0) + 1-empty : true;
 endmodule
 
 // ----- rewards ----------------------------------------------------------------
@@ -143,9 +156,9 @@ endrewards
 //     [tick1] q > 0 & sp=2 : 1;
 // endrewards
 
-// // rewards "lost"
-// //    [tick0] q=QMAX & sr=1 : 1;
-// // endrewards
+// rewards "lost"
+//    [tick0] q=QMAX & sr=1 : 1;
+// endrewards
 
 // rewards "lost"
 //     [tick1] lost=1 : 1;

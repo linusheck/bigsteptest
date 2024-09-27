@@ -40,7 +40,7 @@ parser.add_argument(
     "--ignore", help="fields to ignore", type=str, default=None
 )
 parser.add_argument(
-    "--filter", help="key/values to only include e.g. a:x;b:y", type=str, default=None
+    "--filter", help="key/values to only include e.g. a:x,y;b:z", type=str, default=None
 )
 parser.add_argument(
     "--one-vs-all", help="creates a one-vs-all plot", type=bool, default=False

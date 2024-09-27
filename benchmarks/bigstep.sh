@@ -11,7 +11,6 @@ set result_file $folder/results.csv
 
 python process_output.py $folder/output/* --results $result_file
 
-
 function plot --description "plot <format> <separate-legend> <dpi> <title>"
     for epsilon in 0.1 0.01 0.0001 1e-05
         for region_bound in 0 0.1 1e-06 "0,0.8" "0.2,1"

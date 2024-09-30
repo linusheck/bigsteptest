@@ -37,7 +37,7 @@ Fraction of unsatisfied area: 0%
                       AllSat: 128
 
 
-Time for model checking: 1.802s.
+Time for model checking: 1.741s.
 
 Write to file dpm_out.txt.
 Fixed regions: 38/128 = 0.296875

@@ -2,30 +2,30 @@
     {
         "big_step": [true, false],
         "use_robust_pla": true,
-        "epsilon": [0.1, 0.01, 0.0001, 0.00001],
+        "epsilon": [0.1, 0.01, 0.0001, 0.00001, 0.000001],
         "estimate_method": "delta",
         "splitting_strategy": "estimate",
-        "splitting_threshold": 8,
+        "splitting_threshold": 4,
         "simple": true,
         "region_bound": 0.1
     },
     {
         "big_step": [true, false],
         "use_robust_pla": true,
-        "epsilon": [0.1, 0.01, 0.0001, 0.00001],
+        "epsilon": [0.1, 0.01, 0.0001, 0.00001, 0.000001],
         "estimate_method": "delta",
         "splitting_strategy": "estimate",
-        "splitting_threshold": 8,
+        "splitting_threshold": 4,
         "simple": true,
         "region_bound": 1e-6
     },
     {
         "big_step": [true, false],
         "use_robust_pla": true,
-        "epsilon": [0.1, 0.01, 0.0001, 0.00001],
+        "epsilon": [0.1, 0.01, 0.0001, 0.00001, 0.000001],
         "estimate_method": "delta",
         "splitting_strategy": "estimate",
-        "splitting_threshold": 8,
+        "splitting_threshold": 4,
         "simple": true,
         "region_bound": 0,
         "additional_storm_args": "--not-graph-preserving"
@@ -33,10 +33,10 @@
     {
         "big_step": [true, false],
         "use_robust_pla": true,
-        "epsilon": [0.1, 0.01, 0.0001, 0.00001],
+        "epsilon": [0.1, 0.01, 0.0001, 0.00001, 0.000001],
         "estimate_method": "delta",
         "splitting_strategy": "estimate",
-        "splitting_threshold": 8,
+        "splitting_threshold": 4,
         "simple": true,
         "region_interval": ["0,0.8", "0.2,1"],
         "additional_storm_args": "--not-graph-preserving"

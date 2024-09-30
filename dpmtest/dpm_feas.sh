@@ -1,1 +1,0 @@
-../../storm/build_release/bin/storm-pars --prism dpm.pm -prop "R<18.6 [F \"finished\"]"  --mode feasibility --feasibility:method gd -bisim --not-graph-preserving --region "0.4<=startsend<=0.6,0.7<=contsend<=0.9,0<=P11<=1,0<=P12<=1,0<=P21<=1,0<=P22<=1,0<=P31<=1,0<=P32<=1,0<=P41<=1,0<=P42<=1,0<=P51<=1,0<=P52<=1,0<=P61<=1,0<=P62<=1,0<=P71<=1,0<=P72<=1,0<=P81<=1,0<=P82<=1"

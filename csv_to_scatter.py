@@ -95,8 +95,8 @@ with open(args.input) as csvfile:
         if args.filter != None:
             for keyvalue in args.filter.split(";"):
                 key = keyvalue.split(":")[0]
-                value = keyvalue.split(":")[1]
-                if row[key] != value:
+                values = keyvalue.split(":")[1].split("!")
+                if row[key] not in values:
                     skip = True
                     break
         if skip:
@@ -188,8 +188,16 @@ marker_cycle = []
 # if args.one_vs_all:
 #     marker_cycle = ["o"] * 1000
 hatch_cycle = [None] * len(color_cycle)
-for letter in (list(string.ascii_lowercase)) * 10:
-    marker_cycle.append("$" + letter + "$")
+# for letter in (list(string.ascii_lowercase)) * 10:
+#     marker_cycle.append("$" + letter + "$")
+
+marker_table = {
+    "nrp": "P",
+    "nand" : "X",
+    "herman": "*",
+    "refuel": "s"
+}
+
 
 i = 0
 
@@ -218,7 +226,10 @@ for benchmark_id in benchmark_map:
     for compy_benchmark in compy_benchmarks:
         if marker_discriminator(compy_benchmark) not in color_map:
             color_map[marker_discriminator(compy_benchmark)] = color_cycle[i]
-            marker_map[marker_discriminator(compy_benchmark)] = marker_cycle[i]
+            if compy_benchmark["Model"] in marker_table:
+                marker_map[marker_discriminator(compy_benchmark)] = marker_table[compy_benchmark["Model"]]
+            else:
+                marker_map[marker_discriminator(compy_benchmark)] = "o"
             hatch_map[marker_discriminator(compy_benchmark)] = hatch_cycle[i]
             i += 1
     # output_table.append(["pdtmc", benchmark_id, model, color_map[model], compx_benchmark["Time"], compy_benchmark["Time"]])
@@ -291,7 +302,7 @@ for i in range(len(x)):
         [y[i]],
         c=[colors[i]],
         marker=markers[i],
-        s=[400],
+        s=[100],
         zorder=1000,
         alpha=0.7,
         hatch=hatches[i],
@@ -331,7 +342,7 @@ if args.title:
 plt.savefig(args.output_pdf, bbox_inches="tight")
 
 if args.separate_legend:
-    figlegend = plt.figure(figsize=(3, args.figsize))
+    figlegend = plt.figure(figsize=(3, args.figsize + 4))
     leg = figlegend.legend(custom_legend_plots, custom_legend_labels)
     figlegend.tight_layout()
     figlegend.savefig(args.output_pdf.replace(".", "-legend."))

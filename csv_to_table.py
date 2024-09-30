@@ -15,16 +15,20 @@ parser = argparse.ArgumentParser(
 )
 parser.add_argument("input", type=str, help="location of input csv file")
 parser.add_argument(
-    "--methods", type=str, help="methods to compare (separated by commas)"
+    "--comp-field", type=str
+)
+parser.add_argument(
+    "--comp-values", type=str
 )
 
 args = parser.parse_args()
 
-methods = args.methods.split(",")
-output_table_headers = ["Model", "Const", "Prop", "|S| (pMC)", "|V| (pMC)"]
+methods = args.comp_values.split(",")
+output_table_headers = ["Model", "Const", "$\\vardelta$", "$\\varepsilon", "Prop"]
 for method in methods:
     output_table_headers.append(method[0].upper() + "Time")
-    output_table_headers.append(method[0].upper() + "Found")
+for method in methods:
+    output_table_headers.append(method[0].upper() + "Regions")
 
 output_table = []
 
@@ -33,9 +37,11 @@ model_map = {}
 with open(args.input) as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        # if row["Model"].startswith("network2"):
-        #     row["Model"] = "network2"
-        benchmark_id = "-".join([row["Model"], row["Const"], row["Mem"], row["Prop"]])
+        if row["Model"].startswith("herman_random_pass"):
+            row["Model"] = "hermanspeed"
+        elif row["Model"].startswith("herman"):
+            row["Model"] = "herman"
+        benchmark_id = "-".join([row["Model"], row["Const"], row["Mem"], row["Prop"], row["Region Bound"], row["Epsilon"]])
         if benchmark_id not in benchmark_map:
             benchmark_map[benchmark_id] = []
         benchmark_map[benchmark_id].append(row)
@@ -43,46 +49,61 @@ with open(args.input) as csvfile:
 
 for key in benchmark_map:
     benchmarks = benchmark_map[key]
-    for benchmark in benchmarks:
-        if benchmark["#States (min)"] != "?":
-            first_benchmark = benchmark
-            break
-    propsplit = first_benchmark["Prop"].split("_")
+    assert len(benchmarks) == 2
+
+    benchmark = benchmarks[0]
+    propsplit = benchmark["Prop"].split("_")
     prop = ""
     if propsplit[1] == "probability":
         prop += "P"
     elif propsplit[1] == "reward":
         prop += "R"
-    if propsplit[3] == "max":
-        prop += ">="
-    elif propsplit[3] == "min":
-        prop += "<="
-    prop += propsplit[0]
+    if propsplit[2] == "max":
+        prop += "\geq"
+    elif propsplit[2] == "min":
+        prop += "\leq"
+    prop += str(round(float(propsplit[0]), 2))
 
-    print(first_benchmark)
+    def shorten_constants(constants):
+        if constants == "N/A":
+            return ""
+        pairs = [x.split("=") for x in constants.split(" ")]
+        return " ".join([x[0][0] + "=" + x[1] for x in pairs if len(x) == 2])
 
     line = [
-        first_benchmark["Model"],
-        first_benchmark["Const"] + " m=" + first_benchmark["Mem"],
-        prop,
-        first_benchmark["#States (min)"],
-        first_benchmark["#Params (min)"],
+        benchmark["Model"],
+        shorten_constants(benchmark["Const"]),
+        benchmark["Region Bound"],
+        benchmark["Epsilon"],
+        prop
     ]
     for benchmark in benchmarks:
-        for method in methods:
-            if method == benchmark["Method"]:
-                if benchmark["Time"] == "N/A":
+        for val in methods:
+            if benchmark[args.comp_field] == val:
+                if benchmark["Time (wall)"] == "TO":
                     line.append("TO")
-                elif benchmark["Time"] == "ERR":
-                    line.append("ERR")
+                elif benchmark["Time (wall)"] == "ERR":
+                    line.append("TO")
                 else:
-                    line.append(int(float(benchmark["Time"])))
-                if benchmark["Found"] in ["ERR", "N/A"]:
-                    line.append(benchmark["Found"])
+                    line.append(int(float(benchmark["Time (wall)"])))
+    for benchmark in benchmarks:
+        for val in methods:
+            if benchmark[args.comp_field] == val:
+                if benchmark["Regions"] in ["ERR", "TO"]:
+                    line.append("TO")
                 else:
-                    line.append(float(benchmark["Found"]))
+                    line.append(int(benchmark["Regions"]))
                 break
     output_table.append(line)
 
+output_table = sorted(output_table, key=lambda x: (x[0], x[1], x[2], -float(x[3])))
 
-print(tabulate.tabulate(output_table, headers=output_table_headers, tablefmt="latex"))
+header = """
+\\toprule
+ Model & Const & $\\delta$ & $\\varepsilon$ & Prop & \\multicolumn{2}{c}{Time (s)} & \\multicolumn{2}{c}{Regions} \\\\
+\\cmidrule(ll){6-7} \\cmidrule(ll){8-9}
+ & & & & & nobig & big & nobig & big \\\\
+\\midrule
+"""
+
+print(tabulate.tabulate(output_table, tablefmt="latex_booktabs").replace("\\toprule", header).replace("tabular", "longtable"))

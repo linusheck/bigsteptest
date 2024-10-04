@@ -2,18 +2,8 @@
     {
         "big_step": false,
         "use_robust_pla": false,
-        "epsilon": [0.1, 1e-5],
-        "region_bound": 0.1,
-        "splitting_strategy": "estimate",
-        "estimate_method": "delta",
-        "simple": true,
-        "splitting_threshold": 4
-    },
-    {
-        "big_step": false,
-        "use_robust_pla": true,
-        "epsilon": [0.1, 1e-5],
-        "region_bound": 0.1,
+        "epsilon": [0.1, 0.01, 0.0001, 0.00001, 0.000001],
+        "region_bound": [0.1, 1e-6],
         "splitting_strategy": "estimate",
         "estimate_method": "delta",
         "simple": true,

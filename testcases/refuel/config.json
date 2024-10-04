@@ -5,7 +5,9 @@
 		"constants": [
 			{
 				"N": 3
-			},
+			}
+		],
+		"these_constants_are_infeasible_and_thus_omitted": [
 			{
 				"N": 5
 			},

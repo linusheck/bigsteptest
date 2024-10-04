@@ -392,7 +392,7 @@ def main():
                     '( echo "'
                     + echo_str
                     + '"'
-                    + f" && ulimit -v 128000000 && time timeout {args.timeout} "
+                    + f" && ulimit -v 16000000 && time timeout {args.timeout} "
                     + command
                     + "  ) > "
                     + str(args.output / "output"

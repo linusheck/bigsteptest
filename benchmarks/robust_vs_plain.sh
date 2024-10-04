@@ -6,7 +6,7 @@ mkdir $folder
 
 echo $folder
 
-python3 generate_commands.py --folder testcases --global-override benchmarks/robust_vs_plain.json --storm-location ../storm/build_release/bin/ --output $folder --jobs 16 --timeout 600
+python3 generate_commands.py --folder testcases --global-override benchmarks/robust_vs_plain.json --storm-location ../storm/build_release/bin/ --output $folder --jobs 16 --timeout 6000
 ./$folder/parallel.sh
 
 set result_file $folder/results.csv
@@ -24,3 +24,5 @@ python3 csv_to_scatter.py $result_file "delta" "minmaxdelta" "State-value-delta 
 
 python3 csv_to_scatter.py $result_file "delta" "deltaweighted" "Delta" "Delta (Weighted)" --compare-by "Time (MC)" --comp-field Estimate --filter "SplitStrat:estimate" --ignore RobustPLA,BigStep
 python3 csv_to_scatter.py $result_file "delta" "deltaweighted" "Delta" "Delta (Weighted)" --compare-by "# Regions" --min 0 --max 6 --comp-field Estimate --filter "SplitStrat:estimate" --ignore RobustPLA,BigStep
+
+python csv_to_table.py $result_file --comp-field RobustPLA --comp-values "true,false" --avg-slowdown > $folder/slowdown.txt

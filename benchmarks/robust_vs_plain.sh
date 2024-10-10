@@ -15,7 +15,7 @@ python3 process_output.py $folder/output/* --results $result_file
 
 # slowdown without enabling bigstep
 python csv_to_table.py $result_file --comp-field RobustPLA --comp-values "true,false" --filter "BigStep:false" --avg-slowdown > $folder/slowdown.txt
-python csv_to_table.py $result_file --comp-field RobustPLA --comp-values "true,false" --filter "BigStep:false" > $folder/table.tex
+python csv_to_table.py $result_file --comp-field RobustPLA --comp-values "false,true" --filter "BigStep:false" > $folder/table-slowdown.tex
 
 for format in pdf pgf
     # slowdown without enabling bigstep

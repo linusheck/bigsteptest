@@ -137,7 +137,6 @@ for epsilon in sorted(list(epsilons), key=lambda x: float(x)):
 
     if args.avg_slowdown:
         for row in output_table:
-            print(row)
             time_a = row[6]
             time_b = row[7]
             # We deal with this manually

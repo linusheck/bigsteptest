@@ -96,6 +96,7 @@ with open(args.input) as csvfile:
             for keyvalue in args.filter.split(";"):
                 key = keyvalue.split(":")[0]
                 values = keyvalue.split(":")[1].split("!")
+                values = [row[value[1:]] if value.startswith("%") else value for value in values]
                 if row[key] not in values:
                     skip = True
                     break
@@ -314,6 +315,10 @@ ax.set_yscale("log")
 ax.set_xscale("log")
 ax.set_xlim([ACTUAL_MIN_VALUE, TO_VALUE + TO_VALUE])
 ax.set_ylim([ACTUAL_MIN_VALUE, TO_VALUE + TO_VALUE])
+    
+plt.text(ACTUAL_MIN_VALUE * 2, GEQ_VALUE / 2, f"Better for {args.labelx}", fontstyle="italic", alpha=0.5, fontsize=10)
+plt.text(GEQ_VALUE / 2, ACTUAL_MIN_VALUE * 2, f"Better for {args.labely}", fontstyle="italic", alpha=0.5, horizontalalignment="right", fontsize=10)
+
 
 if not args.separate_legend:
     leg = ax.legend(custom_legend_plots, custom_legend_labels, bbox_to_anchor=(1.04, 1), borderaxespad=0)

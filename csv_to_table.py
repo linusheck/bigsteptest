@@ -22,115 +22,151 @@ parser.add_argument(
     "--comp-values", type=str
 )
 parser.add_argument(
+    "--filter", type=str
+)
+parser.add_argument(
     "--avg-slowdown", action="store_true"
 )
 
 args = parser.parse_args()
 
 methods = args.comp_values.split(",")
-output_table_headers = ["Model", "Const", "$\\vardelta$", "$\\varepsilon", "Prop"]
+output_table_headers = ["Model", "Const", "$|V|$", "$\\vardelta$", "$\\varepsilon$", "Prop"]
 for method in methods:
     output_table_headers.append(method[0].upper() + "Time")
 for method in methods:
     output_table_headers.append(method[0].upper() + "Regions")
 
-output_table = []
-
 benchmark_map = {}
 model_map = {}
+
+epsilons = set()
 with open(args.input) as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
+        # hermans are different files for prism reasons, fix that
         if row["Model"].startswith("herman_random_pass"):
+            row["Const"] = "H=" + row["Model"][-1]
             row["Model"] = "hermanspeed"
         elif row["Model"].startswith("herman"):
+            row["Const"] = "H=" + row["Model"].split("_")[0][-1]
             row["Model"] = "herman"
+        skip = False
+        if args.filter != None:
+            for keyvalue in args.filter.split(";"):
+                key = keyvalue.split(":")[0]
+                values = keyvalue.split(":")[1].split("!")
+                values = [row[value[1:]] if value.startswith("%") else value for value in values]
+                if row[key] not in values:
+                    skip = True
+                    break
+        if skip:
+            continue
         benchmark_id = "-".join([row["Model"], row["Const"], row["Mem"], row["Prop"], row["Region Bound"], row["Epsilon"]])
         if benchmark_id not in benchmark_map:
             benchmark_map[benchmark_id] = []
         benchmark_map[benchmark_id].append(row)
         model_map[row["Model"]] = 1
-print(benchmark_map)
-for key in benchmark_map:
-    benchmarks = benchmark_map[key]
-    print(benchmarks)
-    assert len(benchmarks) == 2
+        epsilons.add(row["Epsilon"])
 
-    benchmark = benchmarks[0]
-    propsplit = benchmark["Prop"].split("_")
-    prop = ""
-    if propsplit[1] == "probability":
-        prop += "P"
-    elif propsplit[1] == "reward":
-        prop += "R"
-    if propsplit[2] == "max":
-        prop += "$\geq$"
-    elif propsplit[2] == "min":
-        prop += "$\leq$"
-    prop += str(round(float(propsplit[0]), 2))
+slowdowns = []
+slowdowns_with_names = []
 
-    def shorten_constants(constants):
-        if constants == "N/A":
-            return ""
-        pairs = [x.split("=") for x in constants.split(" ")]
-        return " ".join([x[0][0] + "=" + x[1] for x in pairs if len(x) == 2])
+for epsilon in sorted(list(epsilons), key=lambda x: float(x)):
+    output_table = []
+    for key in benchmark_map:
+        benchmarks = benchmark_map[key]
+        assert len(benchmarks) == 2
 
-    line = [
-        benchmark["Model"],
-        shorten_constants(benchmark["Const"]),
-        benchmark["Region Bound"],
-        benchmark["Epsilon"],
-        prop
-    ]
-    for val in methods:
-        for benchmark in benchmarks:
-            if benchmark[args.comp_field] == val:
-                if benchmark["Time (wall)"] == "TO":
-                    line.append("TO")
-                elif benchmark["Time (wall)"] == "ERR":
-                    line.append("TO")
-                else:
-                    line.append(float(benchmark["Time (wall)"]))
-    for val in methods:
-        for benchmark in benchmarks:
-            if benchmark[args.comp_field] == val:
-                if benchmark["Regions"] in ["ERR", "TO"]:
-                    line.append("TO")
-                else:
-                    line.append(int(benchmark["Regions"]))
-                break
-    output_table.append(line)
+        benchmark = benchmarks[0]
+        if benchmark["Epsilon"] != epsilon:
+            continue
+        propsplit = benchmark["Prop"].split("_")
+        prop = ""
+        if propsplit[1] == "probability":
+            prop += "P"
+        elif propsplit[1] == "reward":
+            prop += "R"
+        if propsplit[2] == "max":
+            prop += "$\geq$"
+        elif propsplit[2] == "min":
+            prop += "$\leq$"
+        prop += str(round(float(propsplit[0]), 2))
 
-output_table = sorted(output_table, key=lambda x: (x[0], x[1], x[2], -float(x[3])))
+        def shorten_constants(constants):
+            if constants == "N/A":
+                return ""
+            pairs = [x.split("=") for x in constants.split(" ") if len(x.split("=")) == 2]
+            # N=x K=y style
+            # return " ".join([x[0][0] + "=" + x[1] for x in pairs if len(x) == 2])
+            # pair style
+            if len(pairs) == 1:
+                return int(pairs[0][1])
+            else:
+                return tuple([int(x[1]) for x in pairs])
 
+        line = [
+            benchmark["Model"],
+            shorten_constants(benchmark["Const"]),
+            benchmark["#States (after)"],
+            len(benchmark["Region"].split(",")),
+            benchmark["Region Bound"],
+            prop
+        ]
+        for val in methods:
+            benchmark = [b for b in benchmarks if b[args.comp_field] == val]
+            assert len(benchmark) == 1
+            benchmark = benchmark[0]
+            if benchmark["Time (wall)"] == "TO":
+                line.append("TO")
+            elif benchmark["Time (wall)"] == "ERR":
+                line.append("TO")
+            else:
+                line.append(round(float(benchmark["Time (wall)"]), 3))
+        for val in methods:
+            benchmark = [b for b in benchmarks if b[args.comp_field] == val]
+            assert len(benchmark) == 1
+            benchmark = benchmark[0]
+            if benchmark["Regions"] in ["ERR", "TO"]:
+                line.append("TO")
+            else:
+                line.append(int(benchmark["Regions"]))
+        output_table.append(line)
+
+    output_table = sorted(output_table, key=lambda x: (x[0], x[1], int(x[3]), x[4]))
+
+    if args.avg_slowdown:
+        for row in output_table:
+            print(row)
+            time_a = row[6]
+            time_b = row[7]
+            # We deal with this manually
+            if time_a == "TO" or time_b == "TO":
+                if time_a != time_b:
+                    print("TO mismatch", row)
+            else:
+                if time_a >= 1 or time_b >= 1:
+                    slowdown = time_a / time_b
+                    slowdowns.append(slowdown)
+                    slowdowns_with_names.append((slowdown, row[0], time_a, time_b))
+    else:
+        preamble = r"\small Table for \(\varepsilon=" + epsilon + r"\)" + "\n"
+        header = """
+        \\toprule
+        Model & Const & $|S|$ & $|V|$ & $\\delta$ & Prop & \\multicolumn{2}{c}{Time (s)} & \\multicolumn{2}{c}{Regions} \\\\
+        \\cmidrule(ll){7-8} \\cmidrule(ll){9-10}
+        & & & & & & nobig & big & nobig & big \\\\
+        \\midrule
+        """
+
+        tabulate.LATEX_BOOKTABS_ESCAPE_RULES = {}
+        print(preamble + tabulate.tabulate(output_table, tablefmt="latex_booktabs").replace("\\toprule", header).replace("tabular", "longtable").replace("\\$", "$").replace("\\textbackslash{}", "\\").replace("llrlllllll", "llrrllrrrr"))
 
 if args.avg_slowdown:
-    slowdowns = []
-    slowdowns_with_names = []
-    for row in output_table:
-        time_a = row[5]
-        time_b = row[6]
-        # We deal with this manually
-        if time_a == "TO" or time_b == "TO":
-            if time_a != time_b:
-                print("TO mismatch", row)
-        else:
-            slowdown = time_a / time_b
-            slowdowns.append(slowdown)
-            slowdowns_with_names.append((slowdown, row[0], time_a, time_b))
+    print(slowdowns)
     print("Average slowdown:", sum(slowdowns) / len(slowdowns))
+    print("Median slowdown:", np.median(slowdowns))
     print("Standard deviation:", np.std(slowdowns))
     slowdowns_with_names = sorted(slowdowns_with_names, key=lambda x: x[0])
     print(f"Slowest on {slowdowns_with_names[-1][1]}: {slowdowns_with_names[-1][0]}x slower ({slowdowns_with_names[-1][2]} vs {slowdowns_with_names[-1][3]})")
     print(f"Fastest on {slowdowns_with_names[0][1]}: {1 / slowdowns_with_names[0][0]}x faster ({slowdowns_with_names[0][2]} vs {slowdowns_with_names[0][3]})")
-else:
-    header = """
-    \\toprule
-    Model & Const & $\\delta$ & $\\varepsilon$ & Prop & \\multicolumn{2}{c}{Time (s)} & \\multicolumn{2}{c}{Regions} \\\\
-    \\cmidrule(ll){6-7} \\cmidrule(ll){8-9}
-    & & & & & nobig & big & nobig & big \\\\
-    \\midrule
-    """
-
-    tabulate.LATEX_BOOKTABS_ESCAPE_RULES = {}
-    print(tabulate.tabulate(output_table, tablefmt="latex_booktabs").replace("\\toprule", header).replace("tabular", "longtable").replace("\\$", "$").replace("\\textbackslash{}", "\\"))

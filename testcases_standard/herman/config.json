@@ -1,0 +1,17 @@
+[
+	{
+		"constants": {},
+		"region_bound": 0,
+		"prism": [
+			"herman5_pla.pm",
+			"herman7_pla.pm",
+			"herman9_pla.pm",
+			"herman11_pla.pm"
+		],
+		"prop": {
+			"type": "reward",
+			"dir": "max",
+			"label": "stable"
+		}
+	}
+]

@@ -1,0 +1,700 @@
+i=32
+
+MDP
+Storm-pars 1.8.1
+
+Date: Mon Oct  7 11:35:03 2024
+Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode partitioning --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/32,1e-6<=p2<=1/32,1e-6<=p3<=1/32,1e-6<=p4<=1/32,1e-6<=p5<=1/32,1e-6<=p6<=1/32,1e-6<=p7<=1/32,1e-6<=p8<=1/32,1e-6<=p9<=1/32,1e-6<=p10<=1/32,1e-6<=p11<=1/32,1e-6<=p12<=1/32,1e-6<=p13<=1/32,1e-6<=p14<=1/32,1e-6<=p15<=1/32,1e-6<=p16<=1/32,1e-6<=p17<=1/32,1e-6<=p18<=1/32,1e-6<=p19<=1/32,1e-6<=p20<=1/32,1e-6<=p21<=1/32,1e-6<=p22<=1/32,1e-6<=p23<=1/32,1e-6<=p24<=1/32,1e-6<=p25<=1/32,1e-6<=p26<=1/32,1e-6<=p27<=1/32,1e-6<=p28<=1/32,1e-6<=p29<=1/32,1e-6<=p30<=1/32,1e-6<=p31<=1/32,1e-6<=p32<=1/32' -v
+Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.010s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	35
+Transitions: 	97
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (model-handling.h:581): Performing bisimulation minimization...
+ INFO (storm-pars.cpp:337): 
+Time for model preprocessing: 0.000s.
+
+
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	34
+Transitions: 	96
+Reward Models:  none
+State Labels: 	2 labels
+   * target -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (storm-pars.cpp:529): Partition mode started.
+ INFO (storm-pars.cpp:388): 
+
+
+ INFO (storm-pars.cpp:389): Analyzing parameter region 1/1000000<=p1<=1/32,1/1000000<=p2<=1/32,1/1000000<=p3<=1/32,1/1000000<=p4<=1/32,1/1000000<=p5<=1/32,1/1000000<=p6<=1/32,1/1000000<=p7<=1/32,1/1000000<=p8<=1/32,1/1000000<=p9<=1/32,1/1000000<=p10<=1/32,1/1000000<=p11<=1/32,1/1000000<=p12<=1/32,1/1000000<=p13<=1/32,1/1000000<=p14<=1/32,1/1000000<=p15<=1/32,1/1000000<=p16<=1/32,1/1000000<=p17<=1/32,1/1000000<=p18<=1/32,1/1000000<=p19<=1/32,1/1000000<=p20<=1/32,1/1000000<=p21<=1/32,1/1000000<=p22<=1/32,1/1000000<=p23<=1/32,1/1000000<=p24<=1/32,1/1000000<=p25<=1/32,1/1000000<=p26<=1/32,1/1000000<=p27<=1/32,1/1000000<=p28<=1/32,1/1000000<=p29<=1/32,1/1000000<=p30<=1/32,1/1000000<=p31<=1/32,1/1000000<=p32<=1/32;
+Analyzing parameter region 1/1000000<=p1<=1/32,1/1000000<=p2<=1/32,1/1000000<=p3<=1/32,1/1000000<=p4<=1/32,1/1000000<=p5<=1/32,1/1000000<=p6<=1/32,1/1000000<=p7<=1/32,1/1000000<=p8<=1/32,1/1000000<=p9<=1/32,1/1000000<=p10<=1/32,1/1000000<=p11<=1/32,1/1000000<=p12<=1/32,1/1000000<=p13<=1/32,1/1000000<=p14<=1/32,1/1000000<=p15<=1/32,1/1000000<=p16<=1/32,1/1000000<=p17<=1/32,1/1000000<=p18<=1/32,1/1000000<=p19<=1/32,1/1000000<=p20<=1/32,1/1000000<=p21<=1/32,1/1000000<=p22<=1/32,1/1000000<=p23<=1/32,1/1000000<=p24<=1/32,1/1000000<=p25<=1/32,1/1000000<=p26<=1/32,1/1000000<=p27<=1/32,1/1000000<=p28<=1/32,1/1000000<=p29<=1/32,1/1000000<=p30<=1/32,1/1000000<=p31<=1/32,1/1000000<=p32<=1/32; INFO (storm-pars.cpp:392):  using Parameter Lifting
+ using Parameter Lifting INFO (storm-pars.cpp:407):  and splitting heuristic Default
+ and splitting heuristic Default INFO (storm-pars.cpp:412):  with iterative refinement until 100% is covered.
+
+ with iterative refinement until 100% is covered.
+
+Model checking property "1": P>=1/100 [F "target"] ...
+ERROR (storm-pars.cpp:593): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
+
+iMC
+Storm-pars 1.8.1
+
+Date: Mon Oct  7 11:35:03 2024
+Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode partitioning --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/32,1e-6<=p2<=1/32,1e-6<=p3<=1/32,1e-6<=p4<=1/32,1e-6<=p5<=1/32,1e-6<=p6<=1/32,1e-6<=p7<=1/32,1e-6<=p8<=1/32,1e-6<=p9<=1/32,1e-6<=p10<=1/32,1e-6<=p11<=1/32,1e-6<=p12<=1/32,1e-6<=p13<=1/32,1e-6<=p14<=1/32,1e-6<=p15<=1/32,1e-6<=p16<=1/32,1e-6<=p17<=1/32,1e-6<=p18<=1/32,1e-6<=p19<=1/32,1e-6<=p20<=1/32,1e-6<=p21<=1/32,1e-6<=p22<=1/32,1e-6<=p23<=1/32,1e-6<=p24<=1/32,1e-6<=p25<=1/32,1e-6<=p26<=1/32,1e-6<=p27<=1/32,1e-6<=p28<=1/32,1e-6<=p29<=1/32,1e-6<=p30<=1/32,1e-6<=p31<=1/32,1e-6<=p32<=1/32' -v
+Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.010s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	35
+Transitions: 	97
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (model-handling.h:581): Performing bisimulation minimization...
+ INFO (storm-pars.cpp:337): 
+Time for model preprocessing: 0.000s.
+
+
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	34
+Transitions: 	96
+Reward Models:  none
+State Labels: 	2 labels
+   * target -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (storm-pars.cpp:529): Partition mode started.
+ INFO (storm-pars.cpp:388): 
+
+
+ INFO (storm-pars.cpp:389): Analyzing parameter region 1/1000000<=p1<=1/32,1/1000000<=p2<=1/32,1/1000000<=p3<=1/32,1/1000000<=p4<=1/32,1/1000000<=p5<=1/32,1/1000000<=p6<=1/32,1/1000000<=p7<=1/32,1/1000000<=p8<=1/32,1/1000000<=p9<=1/32,1/1000000<=p10<=1/32,1/1000000<=p11<=1/32,1/1000000<=p12<=1/32,1/1000000<=p13<=1/32,1/1000000<=p14<=1/32,1/1000000<=p15<=1/32,1/1000000<=p16<=1/32,1/1000000<=p17<=1/32,1/1000000<=p18<=1/32,1/1000000<=p19<=1/32,1/1000000<=p20<=1/32,1/1000000<=p21<=1/32,1/1000000<=p22<=1/32,1/1000000<=p23<=1/32,1/1000000<=p24<=1/32,1/1000000<=p25<=1/32,1/1000000<=p26<=1/32,1/1000000<=p27<=1/32,1/1000000<=p28<=1/32,1/1000000<=p29<=1/32,1/1000000<=p30<=1/32,1/1000000<=p31<=1/32,1/1000000<=p32<=1/32;
+Analyzing parameter region 1/1000000<=p1<=1/32,1/1000000<=p2<=1/32,1/1000000<=p3<=1/32,1/1000000<=p4<=1/32,1/1000000<=p5<=1/32,1/1000000<=p6<=1/32,1/1000000<=p7<=1/32,1/1000000<=p8<=1/32,1/1000000<=p9<=1/32,1/1000000<=p10<=1/32,1/1000000<=p11<=1/32,1/1000000<=p12<=1/32,1/1000000<=p13<=1/32,1/1000000<=p14<=1/32,1/1000000<=p15<=1/32,1/1000000<=p16<=1/32,1/1000000<=p17<=1/32,1/1000000<=p18<=1/32,1/1000000<=p19<=1/32,1/1000000<=p20<=1/32,1/1000000<=p21<=1/32,1/1000000<=p22<=1/32,1/1000000<=p23<=1/32,1/1000000<=p24<=1/32,1/1000000<=p25<=1/32,1/1000000<=p26<=1/32,1/1000000<=p27<=1/32,1/1000000<=p28<=1/32,1/1000000<=p29<=1/32,1/1000000<=p30<=1/32,1/1000000<=p31<=1/32,1/1000000<=p32<=1/32; INFO (storm-pars.cpp:392):  using Robust Parameter Lifting
+ using Robust Parameter Lifting INFO (storm-pars.cpp:407):  and splitting heuristic Default
+ and splitting heuristic Default INFO (storm-pars.cpp:412):  with iterative refinement until 100% is covered.
+
+ with iterative refinement until 100% is covered.
+
+Model checking property "1": P>=1/100 [F "target"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ INFO (RegionRefinementChecker.cpp:120): Applying Region Partitioning on region: 1e-06<=p1<=0.03125,1e-06<=p2<=0.03125,1e-06<=p3<=0.03125,1e-06<=p4<=0.03125,1e-06<=p5<=0.03125,1e-06<=p6<=0.03125,1e-06<=p7<=0.03125,1e-06<=p8<=0.03125,1e-06<=p9<=0.03125,1e-06<=p10<=0.03125,1e-06<=p11<=0.03125,1e-06<=p12<=0.03125,1e-06<=p13<=0.03125,1e-06<=p14<=0.03125,1e-06<=p15<=0.03125,1e-06<=p16<=0.03125,1e-06<=p17<=0.03125,1e-06<=p18<=0.03125,1e-06<=p19<=0.03125,1e-06<=p20<=0.03125,1e-06<=p21<=0.03125,1e-06<=p22<=0.03125,1e-06<=p23<=0.03125,1e-06<=p24<=0.03125,1e-06<=p25<=0.03125,1e-06<=p26<=0.03125,1e-06<=p27<=0.03125,1e-06<=p28<=0.03125,1e-06<=p29<=0.03125,1e-06<=p30<=0.03125,1e-06<=p31<=0.03125,1e-06<=p32<=0.03125; .
+ERROR (SparseDtmcParameterLiftingModelChecker.cpp:580): Cannot compute state-value-delta split estimates in robust mode if there are states with multiple parameters.
+ INFO (SparseDtmcParameterLiftingModelChecker.cpp:533): minimize 1/1000000<=p1<=1/32,1/1000000<=p2<=1/32,1/1000000<=p3<=1/32,1/1000000<=p4<=1/32,1/1000000<=p5<=1/32,1/1000000<=p6<=1/32,1/1000000<=p7<=1/32,1/1000000<=p8<=1/32,1/1000000<=p9<=1/32,1/1000000<=p10<=1/32,1/1000000<=p11<=1/32,1/1000000<=p12<=1/32,1/1000000<=p13<=1/32,1/1000000<=p14<=1/32,1/1000000<=p15<=1/32,1/1000000<=p16<=1/32,1/1000000<=p17<=1/32,1/1000000<=p18<=1/32,1/1000000<=p19<=1/32,1/1000000<=p20<=1/32,1/1000000<=p21<=1/32,1/1000000<=p22<=1/32,1/1000000<=p23<=1/32,1/1000000<=p24<=1/32,1/1000000<=p25<=1/32,1/1000000<=p26<=1/32,1/1000000<=p27<=1/32,1/1000000<=p28<=1/32,1/1000000<=p29<=1/32,1/1000000<=p30<=1/32,1/1000000<=p31<=1/32,1/1000000<=p32<=1/32;: 0.126828
+
+ERROR (SparseDtmcParameterLiftingModelChecker.cpp:580): Cannot compute state-value-delta split estimates in robust mode if there are states with multiple parameters.
+ INFO (SparseDtmcParameterLiftingModelChecker.cpp:533): maximize 1/1000000<=p1<=1/32,1/1000000<=p2<=1/32,1/1000000<=p3<=1/32,1/1000000<=p4<=1/32,1/1000000<=p5<=1/32,1/1000000<=p6<=1/32,1/1000000<=p7<=1/32,1/1000000<=p8<=1/32,1/1000000<=p9<=1/32,1/1000000<=p10<=1/32,1/1000000<=p11<=1/32,1/1000000<=p12<=1/32,1/1000000<=p13<=1/32,1/1000000<=p14<=1/32,1/1000000<=p15<=1/32,1/1000000<=p16<=1/32,1/1000000<=p17<=1/32,1/1000000<=p18<=1/32,1/1000000<=p19<=1/32,1/1000000<=p20<=1/32,1/1000000<=p21<=1/32,1/1000000<=p22<=1/32,1/1000000<=p23<=1/32,1/1000000<=p24<=1/32,1/1000000<=p25<=1/32,1/1000000<=p26<=1/32,1/1000000<=p27<=1/32,1/1000000<=p28<=1/32,1/1000000<=p29<=1/32,1/1000000<=p30<=1/32,1/1000000<=p31<=1/32,1/1000000<=p32<=1/32;: 0.126828
+
+ INFO (RegionRefinementChecker.cpp:191): Region partitioning terminated after analyzing 1 regions.
+	0 regions known through monotonicity.
+	Maximum refinement depth: 0.
+	0% of the parameter space are not covered.
+ INFO (print.cpp:13): Result (initial states)
+Result (initial states) INFO (print.cpp:28): : 
+:  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+ INFO (print.cpp:47):   Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+ INFO (print.cpp:52): Time for model checking: 0.001s.
+
+
+Time for model checking: 0.001s.
+
+
+iMC (full)
+Storm-pars 1.8.1
+
+Date: Mon Oct  7 11:35:03 2024
+Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode partitioning --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/32,0<=p2<=1/32,0<=p3<=1/32,0<=p4<=1/32,0<=p5<=1/32,0<=p6<=1/32,0<=p7<=1/32,0<=p8<=1/32,0<=p9<=1/32,0<=p10<=1/32,0<=p11<=1/32,0<=p12<=1/32,0<=p13<=1/32,0<=p14<=1/32,0<=p15<=1/32,0<=p16<=1/32,0<=p17<=1/32,0<=p18<=1/32,0<=p19<=1/32,0<=p20<=1/32,0<=p21<=1/32,0<=p22<=1/32,0<=p23<=1/32,0<=p24<=1/32,0<=p25<=1/32,0<=p26<=1/32,0<=p27<=1/32,0<=p28<=1/32,0<=p29<=1/32,0<=p30<=1/32,0<=p31<=1/32,0<=p32<=1/32' --not-graph-preserving -v
+Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.010s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	35
+Transitions: 	97
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (model-handling.h:581): Performing bisimulation minimization...
+ INFO (storm-pars.cpp:337): 
+Time for model preprocessing: 0.000s.
+
+
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	35
+Transitions: 	97
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * target -> 1 item(s)
+   * deadlock -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (storm-pars.cpp:529): Partition mode started.
+ INFO (storm-pars.cpp:388): 
+
+
+ INFO (storm-pars.cpp:389): Analyzing parameter region 0<=p1<=1/32,0<=p2<=1/32,0<=p3<=1/32,0<=p4<=1/32,0<=p5<=1/32,0<=p6<=1/32,0<=p7<=1/32,0<=p8<=1/32,0<=p9<=1/32,0<=p10<=1/32,0<=p11<=1/32,0<=p12<=1/32,0<=p13<=1/32,0<=p14<=1/32,0<=p15<=1/32,0<=p16<=1/32,0<=p17<=1/32,0<=p18<=1/32,0<=p19<=1/32,0<=p20<=1/32,0<=p21<=1/32,0<=p22<=1/32,0<=p23<=1/32,0<=p24<=1/32,0<=p25<=1/32,0<=p26<=1/32,0<=p27<=1/32,0<=p28<=1/32,0<=p29<=1/32,0<=p30<=1/32,0<=p31<=1/32,0<=p32<=1/32;
+Analyzing parameter region 0<=p1<=1/32,0<=p2<=1/32,0<=p3<=1/32,0<=p4<=1/32,0<=p5<=1/32,0<=p6<=1/32,0<=p7<=1/32,0<=p8<=1/32,0<=p9<=1/32,0<=p10<=1/32,0<=p11<=1/32,0<=p12<=1/32,0<=p13<=1/32,0<=p14<=1/32,0<=p15<=1/32,0<=p16<=1/32,0<=p17<=1/32,0<=p18<=1/32,0<=p19<=1/32,0<=p20<=1/32,0<=p21<=1/32,0<=p22<=1/32,0<=p23<=1/32,0<=p24<=1/32,0<=p25<=1/32,0<=p26<=1/32,0<=p27<=1/32,0<=p28<=1/32,0<=p29<=1/32,0<=p30<=1/32,0<=p31<=1/32,0<=p32<=1/32; INFO (storm-pars.cpp:392):  using Robust Parameter Lifting
+ using Robust Parameter Lifting INFO (storm-pars.cpp:407):  and splitting heuristic Default
+ and splitting heuristic Default INFO (storm-pars.cpp:412):  with iterative refinement until 100% is covered.
+
+ with iterative refinement until 100% is covered.
+
+Model checking property "1": P>=1/100 [F "target"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ INFO (RegionRefinementChecker.cpp:120): Applying Region Partitioning on region: 0<=p1<=0.03125,0<=p2<=0.03125,0<=p3<=0.03125,0<=p4<=0.03125,0<=p5<=0.03125,0<=p6<=0.03125,0<=p7<=0.03125,0<=p8<=0.03125,0<=p9<=0.03125,0<=p10<=0.03125,0<=p11<=0.03125,0<=p12<=0.03125,0<=p13<=0.03125,0<=p14<=0.03125,0<=p15<=0.03125,0<=p16<=0.03125,0<=p17<=0.03125,0<=p18<=0.03125,0<=p19<=0.03125,0<=p20<=0.03125,0<=p21<=0.03125,0<=p22<=0.03125,0<=p23<=0.03125,0<=p24<=0.03125,0<=p25<=0.03125,0<=p26<=0.03125,0<=p27<=0.03125,0<=p28<=0.03125,0<=p29<=0.03125,0<=p30<=0.03125,0<=p31<=0.03125,0<=p32<=0.03125; .
+ERROR (SparseDtmcParameterLiftingModelChecker.cpp:580): Cannot compute state-value-delta split estimates in robust mode if there are states with multiple parameters.
+ INFO (SparseDtmcParameterLiftingModelChecker.cpp:533): minimize 0<=p1<=1/32,0<=p2<=1/32,0<=p3<=1/32,0<=p4<=1/32,0<=p5<=1/32,0<=p6<=1/32,0<=p7<=1/32,0<=p8<=1/32,0<=p9<=1/32,0<=p10<=1/32,0<=p11<=1/32,0<=p12<=1/32,0<=p13<=1/32,0<=p14<=1/32,0<=p15<=1/32,0<=p16<=1/32,0<=p17<=1/32,0<=p18<=1/32,0<=p19<=1/32,0<=p20<=1/32,0<=p21<=1/32,0<=p22<=1/32,0<=p23<=1/32,0<=p24<=1/32,0<=p25<=1/32,0<=p26<=1/32,0<=p27<=1/32,0<=p28<=1/32,0<=p29<=1/32,0<=p30<=1/32,0<=p31<=1/32,0<=p32<=1/32;: 0.126828
+
+ERROR (SparseDtmcParameterLiftingModelChecker.cpp:580): Cannot compute state-value-delta split estimates in robust mode if there are states with multiple parameters.
+ INFO (SparseDtmcParameterLiftingModelChecker.cpp:533): maximize 0<=p1<=1/32,0<=p2<=1/32,0<=p3<=1/32,0<=p4<=1/32,0<=p5<=1/32,0<=p6<=1/32,0<=p7<=1/32,0<=p8<=1/32,0<=p9<=1/32,0<=p10<=1/32,0<=p11<=1/32,0<=p12<=1/32,0<=p13<=1/32,0<=p14<=1/32,0<=p15<=1/32,0<=p16<=1/32,0<=p17<=1/32,0<=p18<=1/32,0<=p19<=1/32,0<=p20<=1/32,0<=p21<=1/32,0<=p22<=1/32,0<=p23<=1/32,0<=p24<=1/32,0<=p25<=1/32,0<=p26<=1/32,0<=p27<=1/32,0<=p28<=1/32,0<=p29<=1/32,0<=p30<=1/32,0<=p31<=1/32,0<=p32<=1/32;: 0.126828
+
+ INFO (RegionRefinementChecker.cpp:191): Region partitioning terminated after analyzing 1 regions.
+	0 regions known through monotonicity.
+	Maximum refinement depth: 0.
+	0% of the parameter space are not covered.
+ INFO (print.cpp:13): Result (initial states)
+Result (initial states) INFO (print.cpp:28): : 
+:  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+ INFO (print.cpp:47):   Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+ INFO (print.cpp:52): Time for model checking: 0.001s.
+
+
+Time for model checking: 0.001s.
+
+i=64
+
+MDP
+Storm-pars 1.8.1
+
+Date: Mon Oct  7 11:35:03 2024
+Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode partitioning --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/64,1e-6<=p2<=1/64,1e-6<=p3<=1/64,1e-6<=p4<=1/64,1e-6<=p5<=1/64,1e-6<=p6<=1/64,1e-6<=p7<=1/64,1e-6<=p8<=1/64,1e-6<=p9<=1/64,1e-6<=p10<=1/64,1e-6<=p11<=1/64,1e-6<=p12<=1/64,1e-6<=p13<=1/64,1e-6<=p14<=1/64,1e-6<=p15<=1/64,1e-6<=p16<=1/64,1e-6<=p17<=1/64,1e-6<=p18<=1/64,1e-6<=p19<=1/64,1e-6<=p20<=1/64,1e-6<=p21<=1/64,1e-6<=p22<=1/64,1e-6<=p23<=1/64,1e-6<=p24<=1/64,1e-6<=p25<=1/64,1e-6<=p26<=1/64,1e-6<=p27<=1/64,1e-6<=p28<=1/64,1e-6<=p29<=1/64,1e-6<=p30<=1/64,1e-6<=p31<=1/64,1e-6<=p32<=1/64,1e-6<=p33<=1/64,1e-6<=p34<=1/64,1e-6<=p35<=1/64,1e-6<=p36<=1/64,1e-6<=p37<=1/64,1e-6<=p38<=1/64,1e-6<=p39<=1/64,1e-6<=p40<=1/64,1e-6<=p41<=1/64,1e-6<=p42<=1/64,1e-6<=p43<=1/64,1e-6<=p44<=1/64,1e-6<=p45<=1/64,1e-6<=p46<=1/64,1e-6<=p47<=1/64,1e-6<=p48<=1/64,1e-6<=p49<=1/64,1e-6<=p50<=1/64,1e-6<=p51<=1/64,1e-6<=p52<=1/64,1e-6<=p53<=1/64,1e-6<=p54<=1/64,1e-6<=p55<=1/64,1e-6<=p56<=1/64,1e-6<=p57<=1/64,1e-6<=p58<=1/64,1e-6<=p59<=1/64,1e-6<=p60<=1/64,1e-6<=p61<=1/64,1e-6<=p62<=1/64,1e-6<=p63<=1/64,1e-6<=p64<=1/64' -v
+Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.019s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	67
+Transitions: 	193
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (model-handling.h:581): Performing bisimulation minimization...
+ INFO (storm-pars.cpp:337): 
+Time for model preprocessing: 0.000s.
+
+
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	66
+Transitions: 	192
+Reward Models:  none
+State Labels: 	2 labels
+   * target -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (storm-pars.cpp:529): Partition mode started.
+ INFO (storm-pars.cpp:388): 
+
+
+ INFO (storm-pars.cpp:389): Analyzing parameter region 1/1000000<=p1<=1/64,1/1000000<=p2<=1/64,1/1000000<=p3<=1/64,1/1000000<=p4<=1/64,1/1000000<=p5<=1/64,1/1000000<=p6<=1/64,1/1000000<=p7<=1/64,1/1000000<=p8<=1/64,1/1000000<=p9<=1/64,1/1000000<=p10<=1/64,1/1000000<=p11<=1/64,1/1000000<=p12<=1/64,1/1000000<=p13<=1/64,1/1000000<=p14<=1/64,1/1000000<=p15<=1/64,1/1000000<=p16<=1/64,1/1000000<=p17<=1/64,1/1000000<=p18<=1/64,1/1000000<=p19<=1/64,1/1000000<=p20<=1/64,1/1000000<=p21<=1/64,1/1000000<=p22<=1/64,1/1000000<=p23<=1/64,1/1000000<=p24<=1/64,1/1000000<=p25<=1/64,1/1000000<=p26<=1/64,1/1000000<=p27<=1/64,1/1000000<=p28<=1/64,1/1000000<=p29<=1/64,1/1000000<=p30<=1/64,1/1000000<=p31<=1/64,1/1000000<=p32<=1/64,1/1000000<=p33<=1/64,1/1000000<=p34<=1/64,1/1000000<=p35<=1/64,1/1000000<=p36<=1/64,1/1000000<=p37<=1/64,1/1000000<=p38<=1/64,1/1000000<=p39<=1/64,1/1000000<=p40<=1/64,1/1000000<=p41<=1/64,1/1000000<=p42<=1/64,1/1000000<=p43<=1/64,1/1000000<=p44<=1/64,1/1000000<=p45<=1/64,1/1000000<=p46<=1/64,1/1000000<=p47<=1/64,1/1000000<=p48<=1/64,1/1000000<=p49<=1/64,1/1000000<=p50<=1/64,1/1000000<=p51<=1/64,1/1000000<=p52<=1/64,1/1000000<=p53<=1/64,1/1000000<=p54<=1/64,1/1000000<=p55<=1/64,1/1000000<=p56<=1/64,1/1000000<=p57<=1/64,1/1000000<=p58<=1/64,1/1000000<=p59<=1/64,1/1000000<=p60<=1/64,1/1000000<=p61<=1/64,1/1000000<=p62<=1/64,1/1000000<=p63<=1/64,1/1000000<=p64<=1/64;
+Analyzing parameter region 1/1000000<=p1<=1/64,1/1000000<=p2<=1/64,1/1000000<=p3<=1/64,1/1000000<=p4<=1/64,1/1000000<=p5<=1/64,1/1000000<=p6<=1/64,1/1000000<=p7<=1/64,1/1000000<=p8<=1/64,1/1000000<=p9<=1/64,1/1000000<=p10<=1/64,1/1000000<=p11<=1/64,1/1000000<=p12<=1/64,1/1000000<=p13<=1/64,1/1000000<=p14<=1/64,1/1000000<=p15<=1/64,1/1000000<=p16<=1/64,1/1000000<=p17<=1/64,1/1000000<=p18<=1/64,1/1000000<=p19<=1/64,1/1000000<=p20<=1/64,1/1000000<=p21<=1/64,1/1000000<=p22<=1/64,1/1000000<=p23<=1/64,1/1000000<=p24<=1/64,1/1000000<=p25<=1/64,1/1000000<=p26<=1/64,1/1000000<=p27<=1/64,1/1000000<=p28<=1/64,1/1000000<=p29<=1/64,1/1000000<=p30<=1/64,1/1000000<=p31<=1/64,1/1000000<=p32<=1/64,1/1000000<=p33<=1/64,1/1000000<=p34<=1/64,1/1000000<=p35<=1/64,1/1000000<=p36<=1/64,1/1000000<=p37<=1/64,1/1000000<=p38<=1/64,1/1000000<=p39<=1/64,1/1000000<=p40<=1/64,1/1000000<=p41<=1/64,1/1000000<=p42<=1/64,1/1000000<=p43<=1/64,1/1000000<=p44<=1/64,1/1000000<=p45<=1/64,1/1000000<=p46<=1/64,1/1000000<=p47<=1/64,1/1000000<=p48<=1/64,1/1000000<=p49<=1/64,1/1000000<=p50<=1/64,1/1000000<=p51<=1/64,1/1000000<=p52<=1/64,1/1000000<=p53<=1/64,1/1000000<=p54<=1/64,1/1000000<=p55<=1/64,1/1000000<=p56<=1/64,1/1000000<=p57<=1/64,1/1000000<=p58<=1/64,1/1000000<=p59<=1/64,1/1000000<=p60<=1/64,1/1000000<=p61<=1/64,1/1000000<=p62<=1/64,1/1000000<=p63<=1/64,1/1000000<=p64<=1/64; INFO (storm-pars.cpp:392):  using Parameter Lifting
+ using Parameter Lifting INFO (storm-pars.cpp:407):  and splitting heuristic Default
+ and splitting heuristic Default INFO (storm-pars.cpp:412):  with iterative refinement until 100% is covered.
+
+ with iterative refinement until 100% is covered.
+
+Model checking property "1": P>=1/100 [F "target"] ...
+ INFO (RegionRefinementChecker.cpp:120): Applying Region Partitioning on region: 1e-06<=p1<=0.015625,1e-06<=p2<=0.015625,1e-06<=p3<=0.015625,1e-06<=p4<=0.015625,1e-06<=p5<=0.015625,1e-06<=p6<=0.015625,1e-06<=p7<=0.015625,1e-06<=p8<=0.015625,1e-06<=p9<=0.015625,1e-06<=p10<=0.015625,1e-06<=p11<=0.015625,1e-06<=p12<=0.015625,1e-06<=p13<=0.015625,1e-06<=p14<=0.015625,1e-06<=p15<=0.015625,1e-06<=p16<=0.015625,1e-06<=p17<=0.015625,1e-06<=p18<=0.015625,1e-06<=p19<=0.015625,1e-06<=p20<=0.015625,1e-06<=p21<=0.015625,1e-06<=p22<=0.015625,1e-06<=p23<=0.015625,1e-06<=p24<=0.015625,1e-06<=p25<=0.015625,1e-06<=p26<=0.015625,1e-06<=p27<=0.015625,1e-06<=p28<=0.015625,1e-06<=p29<=0.015625,1e-06<=p30<=0.015625,1e-06<=p31<=0.015625,1e-06<=p32<=0.015625,1e-06<=p33<=0.015625,1e-06<=p34<=0.015625,1e-06<=p35<=0.015625,1e-06<=p36<=0.015625,1e-06<=p37<=0.015625,1e-06<=p38<=0.015625,1e-06<=p39<=0.015625,1e-06<=p40<=0.015625,1e-06<=p41<=0.015625,1e-06<=p42<=0.015625,1e-06<=p43<=0.015625,1e-06<=p44<=0.015625,1e-06<=p45<=0.015625,1e-06<=p46<=0.015625,1e-06<=p47<=0.015625,1e-06<=p48<=0.015625,1e-06<=p49<=0.015625,1e-06<=p50<=0.015625,1e-06<=p51<=0.015625,1e-06<=p52<=0.015625,1e-06<=p53<=0.015625,1e-06<=p54<=0.015625,1e-06<=p55<=0.015625,1e-06<=p56<=0.015625,1e-06<=p57<=0.015625,1e-06<=p58<=0.015625,1e-06<=p59<=0.015625,1e-06<=p60<=0.015625,1e-06<=p61<=0.015625,1e-06<=p62<=0.015625,1e-06<=p63<=0.015625,1e-06<=p64<=0.015625; .
+ERROR: The program received signal 11 and will be aborted in 3s.
+Received signal 11
+
+iMC
+Storm-pars 1.8.1
+
+Date: Mon Oct  7 11:35:03 2024
+Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode partitioning --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/64,1e-6<=p2<=1/64,1e-6<=p3<=1/64,1e-6<=p4<=1/64,1e-6<=p5<=1/64,1e-6<=p6<=1/64,1e-6<=p7<=1/64,1e-6<=p8<=1/64,1e-6<=p9<=1/64,1e-6<=p10<=1/64,1e-6<=p11<=1/64,1e-6<=p12<=1/64,1e-6<=p13<=1/64,1e-6<=p14<=1/64,1e-6<=p15<=1/64,1e-6<=p16<=1/64,1e-6<=p17<=1/64,1e-6<=p18<=1/64,1e-6<=p19<=1/64,1e-6<=p20<=1/64,1e-6<=p21<=1/64,1e-6<=p22<=1/64,1e-6<=p23<=1/64,1e-6<=p24<=1/64,1e-6<=p25<=1/64,1e-6<=p26<=1/64,1e-6<=p27<=1/64,1e-6<=p28<=1/64,1e-6<=p29<=1/64,1e-6<=p30<=1/64,1e-6<=p31<=1/64,1e-6<=p32<=1/64,1e-6<=p33<=1/64,1e-6<=p34<=1/64,1e-6<=p35<=1/64,1e-6<=p36<=1/64,1e-6<=p37<=1/64,1e-6<=p38<=1/64,1e-6<=p39<=1/64,1e-6<=p40<=1/64,1e-6<=p41<=1/64,1e-6<=p42<=1/64,1e-6<=p43<=1/64,1e-6<=p44<=1/64,1e-6<=p45<=1/64,1e-6<=p46<=1/64,1e-6<=p47<=1/64,1e-6<=p48<=1/64,1e-6<=p49<=1/64,1e-6<=p50<=1/64,1e-6<=p51<=1/64,1e-6<=p52<=1/64,1e-6<=p53<=1/64,1e-6<=p54<=1/64,1e-6<=p55<=1/64,1e-6<=p56<=1/64,1e-6<=p57<=1/64,1e-6<=p58<=1/64,1e-6<=p59<=1/64,1e-6<=p60<=1/64,1e-6<=p61<=1/64,1e-6<=p62<=1/64,1e-6<=p63<=1/64,1e-6<=p64<=1/64' -v
+Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 0.011s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	67
+Transitions: 	193
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (model-handling.h:581): Performing bisimulation minimization...
+ INFO (storm-pars.cpp:337): 
+Time for model preprocessing: 0.000s.
+
+
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	66
+Transitions: 	192
+Reward Models:  none
+State Labels: 	2 labels
+   * target -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (storm-pars.cpp:529): Partition mode started.
+ INFO (storm-pars.cpp:388): 
+
+
+ INFO (storm-pars.cpp:389): Analyzing parameter region 1/1000000<=p1<=1/64,1/1000000<=p2<=1/64,1/1000000<=p3<=1/64,1/1000000<=p4<=1/64,1/1000000<=p5<=1/64,1/1000000<=p6<=1/64,1/1000000<=p7<=1/64,1/1000000<=p8<=1/64,1/1000000<=p9<=1/64,1/1000000<=p10<=1/64,1/1000000<=p11<=1/64,1/1000000<=p12<=1/64,1/1000000<=p13<=1/64,1/1000000<=p14<=1/64,1/1000000<=p15<=1/64,1/1000000<=p16<=1/64,1/1000000<=p17<=1/64,1/1000000<=p18<=1/64,1/1000000<=p19<=1/64,1/1000000<=p20<=1/64,1/1000000<=p21<=1/64,1/1000000<=p22<=1/64,1/1000000<=p23<=1/64,1/1000000<=p24<=1/64,1/1000000<=p25<=1/64,1/1000000<=p26<=1/64,1/1000000<=p27<=1/64,1/1000000<=p28<=1/64,1/1000000<=p29<=1/64,1/1000000<=p30<=1/64,1/1000000<=p31<=1/64,1/1000000<=p32<=1/64,1/1000000<=p33<=1/64,1/1000000<=p34<=1/64,1/1000000<=p35<=1/64,1/1000000<=p36<=1/64,1/1000000<=p37<=1/64,1/1000000<=p38<=1/64,1/1000000<=p39<=1/64,1/1000000<=p40<=1/64,1/1000000<=p41<=1/64,1/1000000<=p42<=1/64,1/1000000<=p43<=1/64,1/1000000<=p44<=1/64,1/1000000<=p45<=1/64,1/1000000<=p46<=1/64,1/1000000<=p47<=1/64,1/1000000<=p48<=1/64,1/1000000<=p49<=1/64,1/1000000<=p50<=1/64,1/1000000<=p51<=1/64,1/1000000<=p52<=1/64,1/1000000<=p53<=1/64,1/1000000<=p54<=1/64,1/1000000<=p55<=1/64,1/1000000<=p56<=1/64,1/1000000<=p57<=1/64,1/1000000<=p58<=1/64,1/1000000<=p59<=1/64,1/1000000<=p60<=1/64,1/1000000<=p61<=1/64,1/1000000<=p62<=1/64,1/1000000<=p63<=1/64,1/1000000<=p64<=1/64;
+Analyzing parameter region 1/1000000<=p1<=1/64,1/1000000<=p2<=1/64,1/1000000<=p3<=1/64,1/1000000<=p4<=1/64,1/1000000<=p5<=1/64,1/1000000<=p6<=1/64,1/1000000<=p7<=1/64,1/1000000<=p8<=1/64,1/1000000<=p9<=1/64,1/1000000<=p10<=1/64,1/1000000<=p11<=1/64,1/1000000<=p12<=1/64,1/1000000<=p13<=1/64,1/1000000<=p14<=1/64,1/1000000<=p15<=1/64,1/1000000<=p16<=1/64,1/1000000<=p17<=1/64,1/1000000<=p18<=1/64,1/1000000<=p19<=1/64,1/1000000<=p20<=1/64,1/1000000<=p21<=1/64,1/1000000<=p22<=1/64,1/1000000<=p23<=1/64,1/1000000<=p24<=1/64,1/1000000<=p25<=1/64,1/1000000<=p26<=1/64,1/1000000<=p27<=1/64,1/1000000<=p28<=1/64,1/1000000<=p29<=1/64,1/1000000<=p30<=1/64,1/1000000<=p31<=1/64,1/1000000<=p32<=1/64,1/1000000<=p33<=1/64,1/1000000<=p34<=1/64,1/1000000<=p35<=1/64,1/1000000<=p36<=1/64,1/1000000<=p37<=1/64,1/1000000<=p38<=1/64,1/1000000<=p39<=1/64,1/1000000<=p40<=1/64,1/1000000<=p41<=1/64,1/1000000<=p42<=1/64,1/1000000<=p43<=1/64,1/1000000<=p44<=1/64,1/1000000<=p45<=1/64,1/1000000<=p46<=1/64,1/1000000<=p47<=1/64,1/1000000<=p48<=1/64,1/1000000<=p49<=1/64,1/1000000<=p50<=1/64,1/1000000<=p51<=1/64,1/1000000<=p52<=1/64,1/1000000<=p53<=1/64,1/1000000<=p54<=1/64,1/1000000<=p55<=1/64,1/1000000<=p56<=1/64,1/1000000<=p57<=1/64,1/1000000<=p58<=1/64,1/1000000<=p59<=1/64,1/1000000<=p60<=1/64,1/1000000<=p61<=1/64,1/1000000<=p62<=1/64,1/1000000<=p63<=1/64,1/1000000<=p64<=1/64; INFO (storm-pars.cpp:392):  using Robust Parameter Lifting
+ using Robust Parameter Lifting INFO (storm-pars.cpp:407):  and splitting heuristic Default
+ and splitting heuristic Default INFO (storm-pars.cpp:412):  with iterative refinement until 100% is covered.
+
+ with iterative refinement until 100% is covered.
+
+Model checking property "1": P>=1/100 [F "target"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ INFO (RegionRefinementChecker.cpp:120): Applying Region Partitioning on region: 1e-06<=p1<=0.015625,1e-06<=p2<=0.015625,1e-06<=p3<=0.015625,1e-06<=p4<=0.015625,1e-06<=p5<=0.015625,1e-06<=p6<=0.015625,1e-06<=p7<=0.015625,1e-06<=p8<=0.015625,1e-06<=p9<=0.015625,1e-06<=p10<=0.015625,1e-06<=p11<=0.015625,1e-06<=p12<=0.015625,1e-06<=p13<=0.015625,1e-06<=p14<=0.015625,1e-06<=p15<=0.015625,1e-06<=p16<=0.015625,1e-06<=p17<=0.015625,1e-06<=p18<=0.015625,1e-06<=p19<=0.015625,1e-06<=p20<=0.015625,1e-06<=p21<=0.015625,1e-06<=p22<=0.015625,1e-06<=p23<=0.015625,1e-06<=p24<=0.015625,1e-06<=p25<=0.015625,1e-06<=p26<=0.015625,1e-06<=p27<=0.015625,1e-06<=p28<=0.015625,1e-06<=p29<=0.015625,1e-06<=p30<=0.015625,1e-06<=p31<=0.015625,1e-06<=p32<=0.015625,1e-06<=p33<=0.015625,1e-06<=p34<=0.015625,1e-06<=p35<=0.015625,1e-06<=p36<=0.015625,1e-06<=p37<=0.015625,1e-06<=p38<=0.015625,1e-06<=p39<=0.015625,1e-06<=p40<=0.015625,1e-06<=p41<=0.015625,1e-06<=p42<=0.015625,1e-06<=p43<=0.015625,1e-06<=p44<=0.015625,1e-06<=p45<=0.015625,1e-06<=p46<=0.015625,1e-06<=p47<=0.015625,1e-06<=p48<=0.015625,1e-06<=p49<=0.015625,1e-06<=p50<=0.015625,1e-06<=p51<=0.015625,1e-06<=p52<=0.015625,1e-06<=p53<=0.015625,1e-06<=p54<=0.015625,1e-06<=p55<=0.015625,1e-06<=p56<=0.015625,1e-06<=p57<=0.015625,1e-06<=p58<=0.015625,1e-06<=p59<=0.015625,1e-06<=p60<=0.015625,1e-06<=p61<=0.015625,1e-06<=p62<=0.015625,1e-06<=p63<=0.015625,1e-06<=p64<=0.015625; .
+ERROR (SparseDtmcParameterLiftingModelChecker.cpp:580): Cannot compute state-value-delta split estimates in robust mode if there are states with multiple parameters.
+ INFO (SparseDtmcParameterLiftingModelChecker.cpp:533): minimize 1/1000000<=p1<=1/64,1/1000000<=p2<=1/64,1/1000000<=p3<=1/64,1/1000000<=p4<=1/64,1/1000000<=p5<=1/64,1/1000000<=p6<=1/64,1/1000000<=p7<=1/64,1/1000000<=p8<=1/64,1/1000000<=p9<=1/64,1/1000000<=p10<=1/64,1/1000000<=p11<=1/64,1/1000000<=p12<=1/64,1/1000000<=p13<=1/64,1/1000000<=p14<=1/64,1/1000000<=p15<=1/64,1/1000000<=p16<=1/64,1/1000000<=p17<=1/64,1/1000000<=p18<=1/64,1/1000000<=p19<=1/64,1/1000000<=p20<=1/64,1/1000000<=p21<=1/64,1/1000000<=p22<=1/64,1/1000000<=p23<=1/64,1/1000000<=p24<=1/64,1/1000000<=p25<=1/64,1/1000000<=p26<=1/64,1/1000000<=p27<=1/64,1/1000000<=p28<=1/64,1/1000000<=p29<=1/64,1/1000000<=p30<=1/64,1/1000000<=p31<=1/64,1/1000000<=p32<=1/64,1/1000000<=p33<=1/64,1/1000000<=p34<=1/64,1/1000000<=p35<=1/64,1/1000000<=p36<=1/64,1/1000000<=p37<=1/64,1/1000000<=p38<=1/64,1/1000000<=p39<=1/64,1/1000000<=p40<=1/64,1/1000000<=p41<=1/64,1/1000000<=p42<=1/64,1/1000000<=p43<=1/64,1/1000000<=p44<=1/64,1/1000000<=p45<=1/64,1/1000000<=p46<=1/64,1/1000000<=p47<=1/64,1/1000000<=p48<=1/64,1/1000000<=p49<=1/64,1/1000000<=p50<=1/64,1/1000000<=p51<=1/64,1/1000000<=p52<=1/64,1/1000000<=p53<=1/64,1/1000000<=p54<=1/64,1/1000000<=p55<=1/64,1/1000000<=p56<=1/64,1/1000000<=p57<=1/64,1/1000000<=p58<=1/64,1/1000000<=p59<=1/64,1/1000000<=p60<=1/64,1/1000000<=p61<=1/64,1/1000000<=p62<=1/64,1/1000000<=p63<=1/64,1/1000000<=p64<=1/64;: 0.0741233
+
+ERROR (SparseDtmcParameterLiftingModelChecker.cpp:580): Cannot compute state-value-delta split estimates in robust mode if there are states with multiple parameters.
+ INFO (SparseDtmcParameterLiftingModelChecker.cpp:533): maximize 1/1000000<=p1<=1/64,1/1000000<=p2<=1/64,1/1000000<=p3<=1/64,1/1000000<=p4<=1/64,1/1000000<=p5<=1/64,1/1000000<=p6<=1/64,1/1000000<=p7<=1/64,1/1000000<=p8<=1/64,1/1000000<=p9<=1/64,1/1000000<=p10<=1/64,1/1000000<=p11<=1/64,1/1000000<=p12<=1/64,1/1000000<=p13<=1/64,1/1000000<=p14<=1/64,1/1000000<=p15<=1/64,1/1000000<=p16<=1/64,1/1000000<=p17<=1/64,1/1000000<=p18<=1/64,1/1000000<=p19<=1/64,1/1000000<=p20<=1/64,1/1000000<=p21<=1/64,1/1000000<=p22<=1/64,1/1000000<=p23<=1/64,1/1000000<=p24<=1/64,1/1000000<=p25<=1/64,1/1000000<=p26<=1/64,1/1000000<=p27<=1/64,1/1000000<=p28<=1/64,1/1000000<=p29<=1/64,1/1000000<=p30<=1/64,1/1000000<=p31<=1/64,1/1000000<=p32<=1/64,1/1000000<=p33<=1/64,1/1000000<=p34<=1/64,1/1000000<=p35<=1/64,1/1000000<=p36<=1/64,1/1000000<=p37<=1/64,1/1000000<=p38<=1/64,1/1000000<=p39<=1/64,1/1000000<=p40<=1/64,1/1000000<=p41<=1/64,1/1000000<=p42<=1/64,1/1000000<=p43<=1/64,1/1000000<=p44<=1/64,1/1000000<=p45<=1/64,1/1000000<=p46<=1/64,1/1000000<=p47<=1/64,1/1000000<=p48<=1/64,1/1000000<=p49<=1/64,1/1000000<=p50<=1/64,1/1000000<=p51<=1/64,1/1000000<=p52<=1/64,1/1000000<=p53<=1/64,1/1000000<=p54<=1/64,1/1000000<=p55<=1/64,1/1000000<=p56<=1/64,1/1000000<=p57<=1/64,1/1000000<=p58<=1/64,1/1000000<=p59<=1/64,1/1000000<=p60<=1/64,1/1000000<=p61<=1/64,1/1000000<=p62<=1/64,1/1000000<=p63<=1/64,1/1000000<=p64<=1/64;: 0.0741233
+
+ INFO (RegionRefinementChecker.cpp:191): Region partitioning terminated after analyzing 1 regions.
+	0 regions known through monotonicity.
+	Maximum refinement depth: 0.
+	0% of the parameter space are not covered.
+ INFO (print.cpp:13): Result (initial states)
+Result (initial states) INFO (print.cpp:28): : 
+:  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+ INFO (print.cpp:47):   Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+ INFO (print.cpp:52): Time for model checking: 0.003s.
+
+
+Time for model checking: 0.003s.
+
+
+iMC (full)
+Storm-pars 1.8.1
+
+Date: Mon Oct  7 11:35:03 2024
+Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode partitioning --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/64,0<=p2<=1/64,0<=p3<=1/64,0<=p4<=1/64,0<=p5<=1/64,0<=p6<=1/64,0<=p7<=1/64,0<=p8<=1/64,0<=p9<=1/64,0<=p10<=1/64,0<=p11<=1/64,0<=p12<=1/64,0<=p13<=1/64,0<=p14<=1/64,0<=p15<=1/64,0<=p16<=1/64,0<=p17<=1/64,0<=p18<=1/64,0<=p19<=1/64,0<=p20<=1/64,0<=p21<=1/64,0<=p22<=1/64,0<=p23<=1/64,0<=p24<=1/64,0<=p25<=1/64,0<=p26<=1/64,0<=p27<=1/64,0<=p28<=1/64,0<=p29<=1/64,0<=p30<=1/64,0<=p31<=1/64,0<=p32<=1/64,0<=p33<=1/64,0<=p34<=1/64,0<=p35<=1/64,0<=p36<=1/64,0<=p37<=1/64,0<=p38<=1/64,0<=p39<=1/64,0<=p40<=1/64,0<=p41<=1/64,0<=p42<=1/64,0<=p43<=1/64,0<=p44<=1/64,0<=p45<=1/64,0<=p46<=1/64,0<=p47<=1/64,0<=p48<=1/64,0<=p49<=1/64,0<=p50<=1/64,0<=p51<=1/64,0<=p52<=1/64,0<=p53<=1/64,0<=p54<=1/64,0<=p55<=1/64,0<=p56<=1/64,0<=p57<=1/64,0<=p58<=1/64,0<=p59<=1/64,0<=p60<=1/64,0<=p61<=1/64,0<=p62<=1/64,0<=p63<=1/64,0<=p64<=1/64' --not-graph-preserving -v
+Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 0.011s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	67
+Transitions: 	193
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (model-handling.h:581): Performing bisimulation minimization...
+ INFO (storm-pars.cpp:337): 
+Time for model preprocessing: 0.000s.
+
+
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	67
+Transitions: 	193
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * target -> 1 item(s)
+   * deadlock -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (storm-pars.cpp:529): Partition mode started.
+ INFO (storm-pars.cpp:388): 
+
+
+ INFO (storm-pars.cpp:389): Analyzing parameter region 0<=p1<=1/64,0<=p2<=1/64,0<=p3<=1/64,0<=p4<=1/64,0<=p5<=1/64,0<=p6<=1/64,0<=p7<=1/64,0<=p8<=1/64,0<=p9<=1/64,0<=p10<=1/64,0<=p11<=1/64,0<=p12<=1/64,0<=p13<=1/64,0<=p14<=1/64,0<=p15<=1/64,0<=p16<=1/64,0<=p17<=1/64,0<=p18<=1/64,0<=p19<=1/64,0<=p20<=1/64,0<=p21<=1/64,0<=p22<=1/64,0<=p23<=1/64,0<=p24<=1/64,0<=p25<=1/64,0<=p26<=1/64,0<=p27<=1/64,0<=p28<=1/64,0<=p29<=1/64,0<=p30<=1/64,0<=p31<=1/64,0<=p32<=1/64,0<=p33<=1/64,0<=p34<=1/64,0<=p35<=1/64,0<=p36<=1/64,0<=p37<=1/64,0<=p38<=1/64,0<=p39<=1/64,0<=p40<=1/64,0<=p41<=1/64,0<=p42<=1/64,0<=p43<=1/64,0<=p44<=1/64,0<=p45<=1/64,0<=p46<=1/64,0<=p47<=1/64,0<=p48<=1/64,0<=p49<=1/64,0<=p50<=1/64,0<=p51<=1/64,0<=p52<=1/64,0<=p53<=1/64,0<=p54<=1/64,0<=p55<=1/64,0<=p56<=1/64,0<=p57<=1/64,0<=p58<=1/64,0<=p59<=1/64,0<=p60<=1/64,0<=p61<=1/64,0<=p62<=1/64,0<=p63<=1/64,0<=p64<=1/64;
+Analyzing parameter region 0<=p1<=1/64,0<=p2<=1/64,0<=p3<=1/64,0<=p4<=1/64,0<=p5<=1/64,0<=p6<=1/64,0<=p7<=1/64,0<=p8<=1/64,0<=p9<=1/64,0<=p10<=1/64,0<=p11<=1/64,0<=p12<=1/64,0<=p13<=1/64,0<=p14<=1/64,0<=p15<=1/64,0<=p16<=1/64,0<=p17<=1/64,0<=p18<=1/64,0<=p19<=1/64,0<=p20<=1/64,0<=p21<=1/64,0<=p22<=1/64,0<=p23<=1/64,0<=p24<=1/64,0<=p25<=1/64,0<=p26<=1/64,0<=p27<=1/64,0<=p28<=1/64,0<=p29<=1/64,0<=p30<=1/64,0<=p31<=1/64,0<=p32<=1/64,0<=p33<=1/64,0<=p34<=1/64,0<=p35<=1/64,0<=p36<=1/64,0<=p37<=1/64,0<=p38<=1/64,0<=p39<=1/64,0<=p40<=1/64,0<=p41<=1/64,0<=p42<=1/64,0<=p43<=1/64,0<=p44<=1/64,0<=p45<=1/64,0<=p46<=1/64,0<=p47<=1/64,0<=p48<=1/64,0<=p49<=1/64,0<=p50<=1/64,0<=p51<=1/64,0<=p52<=1/64,0<=p53<=1/64,0<=p54<=1/64,0<=p55<=1/64,0<=p56<=1/64,0<=p57<=1/64,0<=p58<=1/64,0<=p59<=1/64,0<=p60<=1/64,0<=p61<=1/64,0<=p62<=1/64,0<=p63<=1/64,0<=p64<=1/64; INFO (storm-pars.cpp:392):  using Robust Parameter Lifting
+ using Robust Parameter Lifting INFO (storm-pars.cpp:407):  and splitting heuristic Default
+ and splitting heuristic Default INFO (storm-pars.cpp:412):  with iterative refinement until 100% is covered.
+
+ with iterative refinement until 100% is covered.
+
+Model checking property "1": P>=1/100 [F "target"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ INFO (RegionRefinementChecker.cpp:120): Applying Region Partitioning on region: 0<=p1<=0.015625,0<=p2<=0.015625,0<=p3<=0.015625,0<=p4<=0.015625,0<=p5<=0.015625,0<=p6<=0.015625,0<=p7<=0.015625,0<=p8<=0.015625,0<=p9<=0.015625,0<=p10<=0.015625,0<=p11<=0.015625,0<=p12<=0.015625,0<=p13<=0.015625,0<=p14<=0.015625,0<=p15<=0.015625,0<=p16<=0.015625,0<=p17<=0.015625,0<=p18<=0.015625,0<=p19<=0.015625,0<=p20<=0.015625,0<=p21<=0.015625,0<=p22<=0.015625,0<=p23<=0.015625,0<=p24<=0.015625,0<=p25<=0.015625,0<=p26<=0.015625,0<=p27<=0.015625,0<=p28<=0.015625,0<=p29<=0.015625,0<=p30<=0.015625,0<=p31<=0.015625,0<=p32<=0.015625,0<=p33<=0.015625,0<=p34<=0.015625,0<=p35<=0.015625,0<=p36<=0.015625,0<=p37<=0.015625,0<=p38<=0.015625,0<=p39<=0.015625,0<=p40<=0.015625,0<=p41<=0.015625,0<=p42<=0.015625,0<=p43<=0.015625,0<=p44<=0.015625,0<=p45<=0.015625,0<=p46<=0.015625,0<=p47<=0.015625,0<=p48<=0.015625,0<=p49<=0.015625,0<=p50<=0.015625,0<=p51<=0.015625,0<=p52<=0.015625,0<=p53<=0.015625,0<=p54<=0.015625,0<=p55<=0.015625,0<=p56<=0.015625,0<=p57<=0.015625,0<=p58<=0.015625,0<=p59<=0.015625,0<=p60<=0.015625,0<=p61<=0.015625,0<=p62<=0.015625,0<=p63<=0.015625,0<=p64<=0.015625; .
+ERROR (SparseDtmcParameterLiftingModelChecker.cpp:580): Cannot compute state-value-delta split estimates in robust mode if there are states with multiple parameters.
+ INFO (SparseDtmcParameterLiftingModelChecker.cpp:533): minimize 0<=p1<=1/64,0<=p2<=1/64,0<=p3<=1/64,0<=p4<=1/64,0<=p5<=1/64,0<=p6<=1/64,0<=p7<=1/64,0<=p8<=1/64,0<=p9<=1/64,0<=p10<=1/64,0<=p11<=1/64,0<=p12<=1/64,0<=p13<=1/64,0<=p14<=1/64,0<=p15<=1/64,0<=p16<=1/64,0<=p17<=1/64,0<=p18<=1/64,0<=p19<=1/64,0<=p20<=1/64,0<=p21<=1/64,0<=p22<=1/64,0<=p23<=1/64,0<=p24<=1/64,0<=p25<=1/64,0<=p26<=1/64,0<=p27<=1/64,0<=p28<=1/64,0<=p29<=1/64,0<=p30<=1/64,0<=p31<=1/64,0<=p32<=1/64,0<=p33<=1/64,0<=p34<=1/64,0<=p35<=1/64,0<=p36<=1/64,0<=p37<=1/64,0<=p38<=1/64,0<=p39<=1/64,0<=p40<=1/64,0<=p41<=1/64,0<=p42<=1/64,0<=p43<=1/64,0<=p44<=1/64,0<=p45<=1/64,0<=p46<=1/64,0<=p47<=1/64,0<=p48<=1/64,0<=p49<=1/64,0<=p50<=1/64,0<=p51<=1/64,0<=p52<=1/64,0<=p53<=1/64,0<=p54<=1/64,0<=p55<=1/64,0<=p56<=1/64,0<=p57<=1/64,0<=p58<=1/64,0<=p59<=1/64,0<=p60<=1/64,0<=p61<=1/64,0<=p62<=1/64,0<=p63<=1/64,0<=p64<=1/64;: 0.0741233
+
+ERROR (SparseDtmcParameterLiftingModelChecker.cpp:580): Cannot compute state-value-delta split estimates in robust mode if there are states with multiple parameters.
+ INFO (SparseDtmcParameterLiftingModelChecker.cpp:533): maximize 0<=p1<=1/64,0<=p2<=1/64,0<=p3<=1/64,0<=p4<=1/64,0<=p5<=1/64,0<=p6<=1/64,0<=p7<=1/64,0<=p8<=1/64,0<=p9<=1/64,0<=p10<=1/64,0<=p11<=1/64,0<=p12<=1/64,0<=p13<=1/64,0<=p14<=1/64,0<=p15<=1/64,0<=p16<=1/64,0<=p17<=1/64,0<=p18<=1/64,0<=p19<=1/64,0<=p20<=1/64,0<=p21<=1/64,0<=p22<=1/64,0<=p23<=1/64,0<=p24<=1/64,0<=p25<=1/64,0<=p26<=1/64,0<=p27<=1/64,0<=p28<=1/64,0<=p29<=1/64,0<=p30<=1/64,0<=p31<=1/64,0<=p32<=1/64,0<=p33<=1/64,0<=p34<=1/64,0<=p35<=1/64,0<=p36<=1/64,0<=p37<=1/64,0<=p38<=1/64,0<=p39<=1/64,0<=p40<=1/64,0<=p41<=1/64,0<=p42<=1/64,0<=p43<=1/64,0<=p44<=1/64,0<=p45<=1/64,0<=p46<=1/64,0<=p47<=1/64,0<=p48<=1/64,0<=p49<=1/64,0<=p50<=1/64,0<=p51<=1/64,0<=p52<=1/64,0<=p53<=1/64,0<=p54<=1/64,0<=p55<=1/64,0<=p56<=1/64,0<=p57<=1/64,0<=p58<=1/64,0<=p59<=1/64,0<=p60<=1/64,0<=p61<=1/64,0<=p62<=1/64,0<=p63<=1/64,0<=p64<=1/64;: 0.0741233
+
+ INFO (RegionRefinementChecker.cpp:191): Region partitioning terminated after analyzing 1 regions.
+	0 regions known through monotonicity.
+	Maximum refinement depth: 0.
+	0% of the parameter space are not covered.
+ INFO (print.cpp:13): Result (initial states)
+Result (initial states) INFO (print.cpp:28): : 
+:  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+ INFO (print.cpp:47):   Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+ INFO (print.cpp:52): Time for model checking: 0.002s.
+
+
+Time for model checking: 0.002s.
+
+i=128
+
+MDP
+Storm-pars 1.8.1
+
+Date: Mon Oct  7 11:35:03 2024
+Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode partitioning --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/128,1e-6<=p2<=1/128,1e-6<=p3<=1/128,1e-6<=p4<=1/128,1e-6<=p5<=1/128,1e-6<=p6<=1/128,1e-6<=p7<=1/128,1e-6<=p8<=1/128,1e-6<=p9<=1/128,1e-6<=p10<=1/128,1e-6<=p11<=1/128,1e-6<=p12<=1/128,1e-6<=p13<=1/128,1e-6<=p14<=1/128,1e-6<=p15<=1/128,1e-6<=p16<=1/128,1e-6<=p17<=1/128,1e-6<=p18<=1/128,1e-6<=p19<=1/128,1e-6<=p20<=1/128,1e-6<=p21<=1/128,1e-6<=p22<=1/128,1e-6<=p23<=1/128,1e-6<=p24<=1/128,1e-6<=p25<=1/128,1e-6<=p26<=1/128,1e-6<=p27<=1/128,1e-6<=p28<=1/128,1e-6<=p29<=1/128,1e-6<=p30<=1/128,1e-6<=p31<=1/128,1e-6<=p32<=1/128,1e-6<=p33<=1/128,1e-6<=p34<=1/128,1e-6<=p35<=1/128,1e-6<=p36<=1/128,1e-6<=p37<=1/128,1e-6<=p38<=1/128,1e-6<=p39<=1/128,1e-6<=p40<=1/128,1e-6<=p41<=1/128,1e-6<=p42<=1/128,1e-6<=p43<=1/128,1e-6<=p44<=1/128,1e-6<=p45<=1/128,1e-6<=p46<=1/128,1e-6<=p47<=1/128,1e-6<=p48<=1/128,1e-6<=p49<=1/128,1e-6<=p50<=1/128,1e-6<=p51<=1/128,1e-6<=p52<=1/128,1e-6<=p53<=1/128,1e-6<=p54<=1/128,1e-6<=p55<=1/128,1e-6<=p56<=1/128,1e-6<=p57<=1/128,1e-6<=p58<=1/128,1e-6<=p59<=1/128,1e-6<=p60<=1/128,1e-6<=p61<=1/128,1e-6<=p62<=1/128,1e-6<=p63<=1/128,1e-6<=p64<=1/128,1e-6<=p65<=1/128,1e-6<=p66<=1/128,1e-6<=p67<=1/128,1e-6<=p68<=1/128,1e-6<=p69<=1/128,1e-6<=p70<=1/128,1e-6<=p71<=1/128,1e-6<=p72<=1/128,1e-6<=p73<=1/128,1e-6<=p74<=1/128,1e-6<=p75<=1/128,1e-6<=p76<=1/128,1e-6<=p77<=1/128,1e-6<=p78<=1/128,1e-6<=p79<=1/128,1e-6<=p80<=1/128,1e-6<=p81<=1/128,1e-6<=p82<=1/128,1e-6<=p83<=1/128,1e-6<=p84<=1/128,1e-6<=p85<=1/128,1e-6<=p86<=1/128,1e-6<=p87<=1/128,1e-6<=p88<=1/128,1e-6<=p89<=1/128,1e-6<=p90<=1/128,1e-6<=p91<=1/128,1e-6<=p92<=1/128,1e-6<=p93<=1/128,1e-6<=p94<=1/128,1e-6<=p95<=1/128,1e-6<=p96<=1/128,1e-6<=p97<=1/128,1e-6<=p98<=1/128,1e-6<=p99<=1/128,1e-6<=p100<=1/128,1e-6<=p101<=1/128,1e-6<=p102<=1/128,1e-6<=p103<=1/128,1e-6<=p104<=1/128,1e-6<=p105<=1/128,1e-6<=p106<=1/128,1e-6<=p107<=1/128,1e-6<=p108<=1/128,1e-6<=p109<=1/128,1e-6<=p110<=1/128,1e-6<=p111<=1/128,1e-6<=p112<=1/128,1e-6<=p113<=1/128,1e-6<=p114<=1/128,1e-6<=p115<=1/128,1e-6<=p116<=1/128,1e-6<=p117<=1/128,1e-6<=p118<=1/128,1e-6<=p119<=1/128,1e-6<=p120<=1/128,1e-6<=p121<=1/128,1e-6<=p122<=1/128,1e-6<=p123<=1/128,1e-6<=p124<=1/128,1e-6<=p125<=1/128,1e-6<=p126<=1/128,1e-6<=p127<=1/128,1e-6<=p128<=1/128' -v
+Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
+
+Time for model input parsing: 0.007s.
+
+Time for model construction: 0.014s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	131
+Transitions: 	385
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (model-handling.h:581): Performing bisimulation minimization...
+ INFO (storm-pars.cpp:337): 
+Time for model preprocessing: 0.000s.
+
+
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	130
+Transitions: 	384
+Reward Models:  none
+State Labels: 	2 labels
+   * target -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (storm-pars.cpp:529): Partition mode started.
+ INFO (storm-pars.cpp:388): 
+
+
+ INFO (storm-pars.cpp:389): Analyzing parameter region 1/1000000<=p1<=1/128,1/1000000<=p2<=1/128,1/1000000<=p3<=1/128,1/1000000<=p4<=1/128,1/1000000<=p5<=1/128,1/1000000<=p6<=1/128,1/1000000<=p7<=1/128,1/1000000<=p8<=1/128,1/1000000<=p9<=1/128,1/1000000<=p10<=1/128,1/1000000<=p11<=1/128,1/1000000<=p12<=1/128,1/1000000<=p13<=1/128,1/1000000<=p14<=1/128,1/1000000<=p15<=1/128,1/1000000<=p16<=1/128,1/1000000<=p17<=1/128,1/1000000<=p18<=1/128,1/1000000<=p19<=1/128,1/1000000<=p20<=1/128,1/1000000<=p21<=1/128,1/1000000<=p22<=1/128,1/1000000<=p23<=1/128,1/1000000<=p24<=1/128,1/1000000<=p25<=1/128,1/1000000<=p26<=1/128,1/1000000<=p27<=1/128,1/1000000<=p28<=1/128,1/1000000<=p29<=1/128,1/1000000<=p30<=1/128,1/1000000<=p31<=1/128,1/1000000<=p32<=1/128,1/1000000<=p33<=1/128,1/1000000<=p34<=1/128,1/1000000<=p35<=1/128,1/1000000<=p36<=1/128,1/1000000<=p37<=1/128,1/1000000<=p38<=1/128,1/1000000<=p39<=1/128,1/1000000<=p40<=1/128,1/1000000<=p41<=1/128,1/1000000<=p42<=1/128,1/1000000<=p43<=1/128,1/1000000<=p44<=1/128,1/1000000<=p45<=1/128,1/1000000<=p46<=1/128,1/1000000<=p47<=1/128,1/1000000<=p48<=1/128,1/1000000<=p49<=1/128,1/1000000<=p50<=1/128,1/1000000<=p51<=1/128,1/1000000<=p52<=1/128,1/1000000<=p53<=1/128,1/1000000<=p54<=1/128,1/1000000<=p55<=1/128,1/1000000<=p56<=1/128,1/1000000<=p57<=1/128,1/1000000<=p58<=1/128,1/1000000<=p59<=1/128,1/1000000<=p60<=1/128,1/1000000<=p61<=1/128,1/1000000<=p62<=1/128,1/1000000<=p63<=1/128,1/1000000<=p64<=1/128,1/1000000<=p65<=1/128,1/1000000<=p66<=1/128,1/1000000<=p67<=1/128,1/1000000<=p68<=1/128,1/1000000<=p69<=1/128,1/1000000<=p70<=1/128,1/1000000<=p71<=1/128,1/1000000<=p72<=1/128,1/1000000<=p73<=1/128,1/1000000<=p74<=1/128,1/1000000<=p75<=1/128,1/1000000<=p76<=1/128,1/1000000<=p77<=1/128,1/1000000<=p78<=1/128,1/1000000<=p79<=1/128,1/1000000<=p80<=1/128,1/1000000<=p81<=1/128,1/1000000<=p82<=1/128,1/1000000<=p83<=1/128,1/1000000<=p84<=1/128,1/1000000<=p85<=1/128,1/1000000<=p86<=1/128,1/1000000<=p87<=1/128,1/1000000<=p88<=1/128,1/1000000<=p89<=1/128,1/1000000<=p90<=1/128,1/1000000<=p91<=1/128,1/1000000<=p92<=1/128,1/1000000<=p93<=1/128,1/1000000<=p94<=1/128,1/1000000<=p95<=1/128,1/1000000<=p96<=1/128,1/1000000<=p97<=1/128,1/1000000<=p98<=1/128,1/1000000<=p99<=1/128,1/1000000<=p100<=1/128,1/1000000<=p101<=1/128,1/1000000<=p102<=1/128,1/1000000<=p103<=1/128,1/1000000<=p104<=1/128,1/1000000<=p105<=1/128,1/1000000<=p106<=1/128,1/1000000<=p107<=1/128,1/1000000<=p108<=1/128,1/1000000<=p109<=1/128,1/1000000<=p110<=1/128,1/1000000<=p111<=1/128,1/1000000<=p112<=1/128,1/1000000<=p113<=1/128,1/1000000<=p114<=1/128,1/1000000<=p115<=1/128,1/1000000<=p116<=1/128,1/1000000<=p117<=1/128,1/1000000<=p118<=1/128,1/1000000<=p119<=1/128,1/1000000<=p120<=1/128,1/1000000<=p121<=1/128,1/1000000<=p122<=1/128,1/1000000<=p123<=1/128,1/1000000<=p124<=1/128,1/1000000<=p125<=1/128,1/1000000<=p126<=1/128,1/1000000<=p127<=1/128,1/1000000<=p128<=1/128;
+Analyzing parameter region 1/1000000<=p1<=1/128,1/1000000<=p2<=1/128,1/1000000<=p3<=1/128,1/1000000<=p4<=1/128,1/1000000<=p5<=1/128,1/1000000<=p6<=1/128,1/1000000<=p7<=1/128,1/1000000<=p8<=1/128,1/1000000<=p9<=1/128,1/1000000<=p10<=1/128,1/1000000<=p11<=1/128,1/1000000<=p12<=1/128,1/1000000<=p13<=1/128,1/1000000<=p14<=1/128,1/1000000<=p15<=1/128,1/1000000<=p16<=1/128,1/1000000<=p17<=1/128,1/1000000<=p18<=1/128,1/1000000<=p19<=1/128,1/1000000<=p20<=1/128,1/1000000<=p21<=1/128,1/1000000<=p22<=1/128,1/1000000<=p23<=1/128,1/1000000<=p24<=1/128,1/1000000<=p25<=1/128,1/1000000<=p26<=1/128,1/1000000<=p27<=1/128,1/1000000<=p28<=1/128,1/1000000<=p29<=1/128,1/1000000<=p30<=1/128,1/1000000<=p31<=1/128,1/1000000<=p32<=1/128,1/1000000<=p33<=1/128,1/1000000<=p34<=1/128,1/1000000<=p35<=1/128,1/1000000<=p36<=1/128,1/1000000<=p37<=1/128,1/1000000<=p38<=1/128,1/1000000<=p39<=1/128,1/1000000<=p40<=1/128,1/1000000<=p41<=1/128,1/1000000<=p42<=1/128,1/1000000<=p43<=1/128,1/1000000<=p44<=1/128,1/1000000<=p45<=1/128,1/1000000<=p46<=1/128,1/1000000<=p47<=1/128,1/1000000<=p48<=1/128,1/1000000<=p49<=1/128,1/1000000<=p50<=1/128,1/1000000<=p51<=1/128,1/1000000<=p52<=1/128,1/1000000<=p53<=1/128,1/1000000<=p54<=1/128,1/1000000<=p55<=1/128,1/1000000<=p56<=1/128,1/1000000<=p57<=1/128,1/1000000<=p58<=1/128,1/1000000<=p59<=1/128,1/1000000<=p60<=1/128,1/1000000<=p61<=1/128,1/1000000<=p62<=1/128,1/1000000<=p63<=1/128,1/1000000<=p64<=1/128,1/1000000<=p65<=1/128,1/1000000<=p66<=1/128,1/1000000<=p67<=1/128,1/1000000<=p68<=1/128,1/1000000<=p69<=1/128,1/1000000<=p70<=1/128,1/1000000<=p71<=1/128,1/1000000<=p72<=1/128,1/1000000<=p73<=1/128,1/1000000<=p74<=1/128,1/1000000<=p75<=1/128,1/1000000<=p76<=1/128,1/1000000<=p77<=1/128,1/1000000<=p78<=1/128,1/1000000<=p79<=1/128,1/1000000<=p80<=1/128,1/1000000<=p81<=1/128,1/1000000<=p82<=1/128,1/1000000<=p83<=1/128,1/1000000<=p84<=1/128,1/1000000<=p85<=1/128,1/1000000<=p86<=1/128,1/1000000<=p87<=1/128,1/1000000<=p88<=1/128,1/1000000<=p89<=1/128,1/1000000<=p90<=1/128,1/1000000<=p91<=1/128,1/1000000<=p92<=1/128,1/1000000<=p93<=1/128,1/1000000<=p94<=1/128,1/1000000<=p95<=1/128,1/1000000<=p96<=1/128,1/1000000<=p97<=1/128,1/1000000<=p98<=1/128,1/1000000<=p99<=1/128,1/1000000<=p100<=1/128,1/1000000<=p101<=1/128,1/1000000<=p102<=1/128,1/1000000<=p103<=1/128,1/1000000<=p104<=1/128,1/1000000<=p105<=1/128,1/1000000<=p106<=1/128,1/1000000<=p107<=1/128,1/1000000<=p108<=1/128,1/1000000<=p109<=1/128,1/1000000<=p110<=1/128,1/1000000<=p111<=1/128,1/1000000<=p112<=1/128,1/1000000<=p113<=1/128,1/1000000<=p114<=1/128,1/1000000<=p115<=1/128,1/1000000<=p116<=1/128,1/1000000<=p117<=1/128,1/1000000<=p118<=1/128,1/1000000<=p119<=1/128,1/1000000<=p120<=1/128,1/1000000<=p121<=1/128,1/1000000<=p122<=1/128,1/1000000<=p123<=1/128,1/1000000<=p124<=1/128,1/1000000<=p125<=1/128,1/1000000<=p126<=1/128,1/1000000<=p127<=1/128,1/1000000<=p128<=1/128; INFO (storm-pars.cpp:392):  using Parameter Lifting
+ using Parameter Lifting INFO (storm-pars.cpp:407):  and splitting heuristic Default
+ and splitting heuristic Default INFO (storm-pars.cpp:412):  with iterative refinement until 100% is covered.
+
+ with iterative refinement until 100% is covered.
+
+Model checking property "1": P>=1/100 [F "target"] ...
+ INFO (RegionRefinementChecker.cpp:120): Applying Region Partitioning on region: 1e-06<=p1<=0.0078125,1e-06<=p2<=0.0078125,1e-06<=p3<=0.0078125,1e-06<=p4<=0.0078125,1e-06<=p5<=0.0078125,1e-06<=p6<=0.0078125,1e-06<=p7<=0.0078125,1e-06<=p8<=0.0078125,1e-06<=p9<=0.0078125,1e-06<=p10<=0.0078125,1e-06<=p11<=0.0078125,1e-06<=p12<=0.0078125,1e-06<=p13<=0.0078125,1e-06<=p14<=0.0078125,1e-06<=p15<=0.0078125,1e-06<=p16<=0.0078125,1e-06<=p17<=0.0078125,1e-06<=p18<=0.0078125,1e-06<=p19<=0.0078125,1e-06<=p20<=0.0078125,1e-06<=p21<=0.0078125,1e-06<=p22<=0.0078125,1e-06<=p23<=0.0078125,1e-06<=p24<=0.0078125,1e-06<=p25<=0.0078125,1e-06<=p26<=0.0078125,1e-06<=p27<=0.0078125,1e-06<=p28<=0.0078125,1e-06<=p29<=0.0078125,1e-06<=p30<=0.0078125,1e-06<=p31<=0.0078125,1e-06<=p32<=0.0078125,1e-06<=p33<=0.0078125,1e-06<=p34<=0.0078125,1e-06<=p35<=0.0078125,1e-06<=p36<=0.0078125,1e-06<=p37<=0.0078125,1e-06<=p38<=0.0078125,1e-06<=p39<=0.0078125,1e-06<=p40<=0.0078125,1e-06<=p41<=0.0078125,1e-06<=p42<=0.0078125,1e-06<=p43<=0.0078125,1e-06<=p44<=0.0078125,1e-06<=p45<=0.0078125,1e-06<=p46<=0.0078125,1e-06<=p47<=0.0078125,1e-06<=p48<=0.0078125,1e-06<=p49<=0.0078125,1e-06<=p50<=0.0078125,1e-06<=p51<=0.0078125,1e-06<=p52<=0.0078125,1e-06<=p53<=0.0078125,1e-06<=p54<=0.0078125,1e-06<=p55<=0.0078125,1e-06<=p56<=0.0078125,1e-06<=p57<=0.0078125,1e-06<=p58<=0.0078125,1e-06<=p59<=0.0078125,1e-06<=p60<=0.0078125,1e-06<=p61<=0.0078125,1e-06<=p62<=0.0078125,1e-06<=p63<=0.0078125,1e-06<=p64<=0.0078125,1e-06<=p65<=0.0078125,1e-06<=p66<=0.0078125,1e-06<=p67<=0.0078125,1e-06<=p68<=0.0078125,1e-06<=p69<=0.0078125,1e-06<=p70<=0.0078125,1e-06<=p71<=0.0078125,1e-06<=p72<=0.0078125,1e-06<=p73<=0.0078125,1e-06<=p74<=0.0078125,1e-06<=p75<=0.0078125,1e-06<=p76<=0.0078125,1e-06<=p77<=0.0078125,1e-06<=p78<=0.0078125,1e-06<=p79<=0.0078125,1e-06<=p80<=0.0078125,1e-06<=p81<=0.0078125,1e-06<=p82<=0.0078125,1e-06<=p83<=0.0078125,1e-06<=p84<=0.0078125,1e-06<=p85<=0.0078125,1e-06<=p86<=0.0078125,1e-06<=p87<=0.0078125,1e-06<=p88<=0.0078125,1e-06<=p89<=0.0078125,1e-06<=p90<=0.0078125,1e-06<=p91<=0.0078125,1e-06<=p92<=0.0078125,1e-06<=p93<=0.0078125,1e-06<=p94<=0.0078125,1e-06<=p95<=0.0078125,1e-06<=p96<=0.0078125,1e-06<=p97<=0.0078125,1e-06<=p98<=0.0078125,1e-06<=p99<=0.0078125,1e-06<=p100<=0.0078125,1e-06<=p101<=0.0078125,1e-06<=p102<=0.0078125,1e-06<=p103<=0.0078125,1e-06<=p104<=0.0078125,1e-06<=p105<=0.0078125,1e-06<=p106<=0.0078125,1e-06<=p107<=0.0078125,1e-06<=p108<=0.0078125,1e-06<=p109<=0.0078125,1e-06<=p110<=0.0078125,1e-06<=p111<=0.0078125,1e-06<=p112<=0.0078125,1e-06<=p113<=0.0078125,1e-06<=p114<=0.0078125,1e-06<=p115<=0.0078125,1e-06<=p116<=0.0078125,1e-06<=p117<=0.0078125,1e-06<=p118<=0.0078125,1e-06<=p119<=0.0078125,1e-06<=p120<=0.0078125,1e-06<=p121<=0.0078125,1e-06<=p122<=0.0078125,1e-06<=p123<=0.0078125,1e-06<=p124<=0.0078125,1e-06<=p125<=0.0078125,1e-06<=p126<=0.0078125,1e-06<=p127<=0.0078125,1e-06<=p128<=0.0078125; .
+ERROR: The program received signal 11 and will be aborted in 3s.
+Received signal 11
+
+iMC
+Storm-pars 1.8.1
+
+Date: Mon Oct  7 11:35:03 2024
+Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode partitioning --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/128,1e-6<=p2<=1/128,1e-6<=p3<=1/128,1e-6<=p4<=1/128,1e-6<=p5<=1/128,1e-6<=p6<=1/128,1e-6<=p7<=1/128,1e-6<=p8<=1/128,1e-6<=p9<=1/128,1e-6<=p10<=1/128,1e-6<=p11<=1/128,1e-6<=p12<=1/128,1e-6<=p13<=1/128,1e-6<=p14<=1/128,1e-6<=p15<=1/128,1e-6<=p16<=1/128,1e-6<=p17<=1/128,1e-6<=p18<=1/128,1e-6<=p19<=1/128,1e-6<=p20<=1/128,1e-6<=p21<=1/128,1e-6<=p22<=1/128,1e-6<=p23<=1/128,1e-6<=p24<=1/128,1e-6<=p25<=1/128,1e-6<=p26<=1/128,1e-6<=p27<=1/128,1e-6<=p28<=1/128,1e-6<=p29<=1/128,1e-6<=p30<=1/128,1e-6<=p31<=1/128,1e-6<=p32<=1/128,1e-6<=p33<=1/128,1e-6<=p34<=1/128,1e-6<=p35<=1/128,1e-6<=p36<=1/128,1e-6<=p37<=1/128,1e-6<=p38<=1/128,1e-6<=p39<=1/128,1e-6<=p40<=1/128,1e-6<=p41<=1/128,1e-6<=p42<=1/128,1e-6<=p43<=1/128,1e-6<=p44<=1/128,1e-6<=p45<=1/128,1e-6<=p46<=1/128,1e-6<=p47<=1/128,1e-6<=p48<=1/128,1e-6<=p49<=1/128,1e-6<=p50<=1/128,1e-6<=p51<=1/128,1e-6<=p52<=1/128,1e-6<=p53<=1/128,1e-6<=p54<=1/128,1e-6<=p55<=1/128,1e-6<=p56<=1/128,1e-6<=p57<=1/128,1e-6<=p58<=1/128,1e-6<=p59<=1/128,1e-6<=p60<=1/128,1e-6<=p61<=1/128,1e-6<=p62<=1/128,1e-6<=p63<=1/128,1e-6<=p64<=1/128,1e-6<=p65<=1/128,1e-6<=p66<=1/128,1e-6<=p67<=1/128,1e-6<=p68<=1/128,1e-6<=p69<=1/128,1e-6<=p70<=1/128,1e-6<=p71<=1/128,1e-6<=p72<=1/128,1e-6<=p73<=1/128,1e-6<=p74<=1/128,1e-6<=p75<=1/128,1e-6<=p76<=1/128,1e-6<=p77<=1/128,1e-6<=p78<=1/128,1e-6<=p79<=1/128,1e-6<=p80<=1/128,1e-6<=p81<=1/128,1e-6<=p82<=1/128,1e-6<=p83<=1/128,1e-6<=p84<=1/128,1e-6<=p85<=1/128,1e-6<=p86<=1/128,1e-6<=p87<=1/128,1e-6<=p88<=1/128,1e-6<=p89<=1/128,1e-6<=p90<=1/128,1e-6<=p91<=1/128,1e-6<=p92<=1/128,1e-6<=p93<=1/128,1e-6<=p94<=1/128,1e-6<=p95<=1/128,1e-6<=p96<=1/128,1e-6<=p97<=1/128,1e-6<=p98<=1/128,1e-6<=p99<=1/128,1e-6<=p100<=1/128,1e-6<=p101<=1/128,1e-6<=p102<=1/128,1e-6<=p103<=1/128,1e-6<=p104<=1/128,1e-6<=p105<=1/128,1e-6<=p106<=1/128,1e-6<=p107<=1/128,1e-6<=p108<=1/128,1e-6<=p109<=1/128,1e-6<=p110<=1/128,1e-6<=p111<=1/128,1e-6<=p112<=1/128,1e-6<=p113<=1/128,1e-6<=p114<=1/128,1e-6<=p115<=1/128,1e-6<=p116<=1/128,1e-6<=p117<=1/128,1e-6<=p118<=1/128,1e-6<=p119<=1/128,1e-6<=p120<=1/128,1e-6<=p121<=1/128,1e-6<=p122<=1/128,1e-6<=p123<=1/128,1e-6<=p124<=1/128,1e-6<=p125<=1/128,1e-6<=p126<=1/128,1e-6<=p127<=1/128,1e-6<=p128<=1/128' -v
+Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
+
+Time for model input parsing: 0.007s.
+
+Time for model construction: 0.013s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	131
+Transitions: 	385
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (model-handling.h:581): Performing bisimulation minimization...
+ INFO (storm-pars.cpp:337): 
+Time for model preprocessing: 0.000s.
+
+
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	130
+Transitions: 	384
+Reward Models:  none
+State Labels: 	2 labels
+   * target -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (storm-pars.cpp:529): Partition mode started.
+ INFO (storm-pars.cpp:388): 
+
+
+ INFO (storm-pars.cpp:389): Analyzing parameter region 1/1000000<=p1<=1/128,1/1000000<=p2<=1/128,1/1000000<=p3<=1/128,1/1000000<=p4<=1/128,1/1000000<=p5<=1/128,1/1000000<=p6<=1/128,1/1000000<=p7<=1/128,1/1000000<=p8<=1/128,1/1000000<=p9<=1/128,1/1000000<=p10<=1/128,1/1000000<=p11<=1/128,1/1000000<=p12<=1/128,1/1000000<=p13<=1/128,1/1000000<=p14<=1/128,1/1000000<=p15<=1/128,1/1000000<=p16<=1/128,1/1000000<=p17<=1/128,1/1000000<=p18<=1/128,1/1000000<=p19<=1/128,1/1000000<=p20<=1/128,1/1000000<=p21<=1/128,1/1000000<=p22<=1/128,1/1000000<=p23<=1/128,1/1000000<=p24<=1/128,1/1000000<=p25<=1/128,1/1000000<=p26<=1/128,1/1000000<=p27<=1/128,1/1000000<=p28<=1/128,1/1000000<=p29<=1/128,1/1000000<=p30<=1/128,1/1000000<=p31<=1/128,1/1000000<=p32<=1/128,1/1000000<=p33<=1/128,1/1000000<=p34<=1/128,1/1000000<=p35<=1/128,1/1000000<=p36<=1/128,1/1000000<=p37<=1/128,1/1000000<=p38<=1/128,1/1000000<=p39<=1/128,1/1000000<=p40<=1/128,1/1000000<=p41<=1/128,1/1000000<=p42<=1/128,1/1000000<=p43<=1/128,1/1000000<=p44<=1/128,1/1000000<=p45<=1/128,1/1000000<=p46<=1/128,1/1000000<=p47<=1/128,1/1000000<=p48<=1/128,1/1000000<=p49<=1/128,1/1000000<=p50<=1/128,1/1000000<=p51<=1/128,1/1000000<=p52<=1/128,1/1000000<=p53<=1/128,1/1000000<=p54<=1/128,1/1000000<=p55<=1/128,1/1000000<=p56<=1/128,1/1000000<=p57<=1/128,1/1000000<=p58<=1/128,1/1000000<=p59<=1/128,1/1000000<=p60<=1/128,1/1000000<=p61<=1/128,1/1000000<=p62<=1/128,1/1000000<=p63<=1/128,1/1000000<=p64<=1/128,1/1000000<=p65<=1/128,1/1000000<=p66<=1/128,1/1000000<=p67<=1/128,1/1000000<=p68<=1/128,1/1000000<=p69<=1/128,1/1000000<=p70<=1/128,1/1000000<=p71<=1/128,1/1000000<=p72<=1/128,1/1000000<=p73<=1/128,1/1000000<=p74<=1/128,1/1000000<=p75<=1/128,1/1000000<=p76<=1/128,1/1000000<=p77<=1/128,1/1000000<=p78<=1/128,1/1000000<=p79<=1/128,1/1000000<=p80<=1/128,1/1000000<=p81<=1/128,1/1000000<=p82<=1/128,1/1000000<=p83<=1/128,1/1000000<=p84<=1/128,1/1000000<=p85<=1/128,1/1000000<=p86<=1/128,1/1000000<=p87<=1/128,1/1000000<=p88<=1/128,1/1000000<=p89<=1/128,1/1000000<=p90<=1/128,1/1000000<=p91<=1/128,1/1000000<=p92<=1/128,1/1000000<=p93<=1/128,1/1000000<=p94<=1/128,1/1000000<=p95<=1/128,1/1000000<=p96<=1/128,1/1000000<=p97<=1/128,1/1000000<=p98<=1/128,1/1000000<=p99<=1/128,1/1000000<=p100<=1/128,1/1000000<=p101<=1/128,1/1000000<=p102<=1/128,1/1000000<=p103<=1/128,1/1000000<=p104<=1/128,1/1000000<=p105<=1/128,1/1000000<=p106<=1/128,1/1000000<=p107<=1/128,1/1000000<=p108<=1/128,1/1000000<=p109<=1/128,1/1000000<=p110<=1/128,1/1000000<=p111<=1/128,1/1000000<=p112<=1/128,1/1000000<=p113<=1/128,1/1000000<=p114<=1/128,1/1000000<=p115<=1/128,1/1000000<=p116<=1/128,1/1000000<=p117<=1/128,1/1000000<=p118<=1/128,1/1000000<=p119<=1/128,1/1000000<=p120<=1/128,1/1000000<=p121<=1/128,1/1000000<=p122<=1/128,1/1000000<=p123<=1/128,1/1000000<=p124<=1/128,1/1000000<=p125<=1/128,1/1000000<=p126<=1/128,1/1000000<=p127<=1/128,1/1000000<=p128<=1/128;
+Analyzing parameter region 1/1000000<=p1<=1/128,1/1000000<=p2<=1/128,1/1000000<=p3<=1/128,1/1000000<=p4<=1/128,1/1000000<=p5<=1/128,1/1000000<=p6<=1/128,1/1000000<=p7<=1/128,1/1000000<=p8<=1/128,1/1000000<=p9<=1/128,1/1000000<=p10<=1/128,1/1000000<=p11<=1/128,1/1000000<=p12<=1/128,1/1000000<=p13<=1/128,1/1000000<=p14<=1/128,1/1000000<=p15<=1/128,1/1000000<=p16<=1/128,1/1000000<=p17<=1/128,1/1000000<=p18<=1/128,1/1000000<=p19<=1/128,1/1000000<=p20<=1/128,1/1000000<=p21<=1/128,1/1000000<=p22<=1/128,1/1000000<=p23<=1/128,1/1000000<=p24<=1/128,1/1000000<=p25<=1/128,1/1000000<=p26<=1/128,1/1000000<=p27<=1/128,1/1000000<=p28<=1/128,1/1000000<=p29<=1/128,1/1000000<=p30<=1/128,1/1000000<=p31<=1/128,1/1000000<=p32<=1/128,1/1000000<=p33<=1/128,1/1000000<=p34<=1/128,1/1000000<=p35<=1/128,1/1000000<=p36<=1/128,1/1000000<=p37<=1/128,1/1000000<=p38<=1/128,1/1000000<=p39<=1/128,1/1000000<=p40<=1/128,1/1000000<=p41<=1/128,1/1000000<=p42<=1/128,1/1000000<=p43<=1/128,1/1000000<=p44<=1/128,1/1000000<=p45<=1/128,1/1000000<=p46<=1/128,1/1000000<=p47<=1/128,1/1000000<=p48<=1/128,1/1000000<=p49<=1/128,1/1000000<=p50<=1/128,1/1000000<=p51<=1/128,1/1000000<=p52<=1/128,1/1000000<=p53<=1/128,1/1000000<=p54<=1/128,1/1000000<=p55<=1/128,1/1000000<=p56<=1/128,1/1000000<=p57<=1/128,1/1000000<=p58<=1/128,1/1000000<=p59<=1/128,1/1000000<=p60<=1/128,1/1000000<=p61<=1/128,1/1000000<=p62<=1/128,1/1000000<=p63<=1/128,1/1000000<=p64<=1/128,1/1000000<=p65<=1/128,1/1000000<=p66<=1/128,1/1000000<=p67<=1/128,1/1000000<=p68<=1/128,1/1000000<=p69<=1/128,1/1000000<=p70<=1/128,1/1000000<=p71<=1/128,1/1000000<=p72<=1/128,1/1000000<=p73<=1/128,1/1000000<=p74<=1/128,1/1000000<=p75<=1/128,1/1000000<=p76<=1/128,1/1000000<=p77<=1/128,1/1000000<=p78<=1/128,1/1000000<=p79<=1/128,1/1000000<=p80<=1/128,1/1000000<=p81<=1/128,1/1000000<=p82<=1/128,1/1000000<=p83<=1/128,1/1000000<=p84<=1/128,1/1000000<=p85<=1/128,1/1000000<=p86<=1/128,1/1000000<=p87<=1/128,1/1000000<=p88<=1/128,1/1000000<=p89<=1/128,1/1000000<=p90<=1/128,1/1000000<=p91<=1/128,1/1000000<=p92<=1/128,1/1000000<=p93<=1/128,1/1000000<=p94<=1/128,1/1000000<=p95<=1/128,1/1000000<=p96<=1/128,1/1000000<=p97<=1/128,1/1000000<=p98<=1/128,1/1000000<=p99<=1/128,1/1000000<=p100<=1/128,1/1000000<=p101<=1/128,1/1000000<=p102<=1/128,1/1000000<=p103<=1/128,1/1000000<=p104<=1/128,1/1000000<=p105<=1/128,1/1000000<=p106<=1/128,1/1000000<=p107<=1/128,1/1000000<=p108<=1/128,1/1000000<=p109<=1/128,1/1000000<=p110<=1/128,1/1000000<=p111<=1/128,1/1000000<=p112<=1/128,1/1000000<=p113<=1/128,1/1000000<=p114<=1/128,1/1000000<=p115<=1/128,1/1000000<=p116<=1/128,1/1000000<=p117<=1/128,1/1000000<=p118<=1/128,1/1000000<=p119<=1/128,1/1000000<=p120<=1/128,1/1000000<=p121<=1/128,1/1000000<=p122<=1/128,1/1000000<=p123<=1/128,1/1000000<=p124<=1/128,1/1000000<=p125<=1/128,1/1000000<=p126<=1/128,1/1000000<=p127<=1/128,1/1000000<=p128<=1/128; INFO (storm-pars.cpp:392):  using Robust Parameter Lifting
+ using Robust Parameter Lifting INFO (storm-pars.cpp:407):  and splitting heuristic Default
+ and splitting heuristic Default INFO (storm-pars.cpp:412):  with iterative refinement until 100% is covered.
+
+ with iterative refinement until 100% is covered.
+
+Model checking property "1": P>=1/100 [F "target"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ INFO (RegionRefinementChecker.cpp:120): Applying Region Partitioning on region: 1e-06<=p1<=0.0078125,1e-06<=p2<=0.0078125,1e-06<=p3<=0.0078125,1e-06<=p4<=0.0078125,1e-06<=p5<=0.0078125,1e-06<=p6<=0.0078125,1e-06<=p7<=0.0078125,1e-06<=p8<=0.0078125,1e-06<=p9<=0.0078125,1e-06<=p10<=0.0078125,1e-06<=p11<=0.0078125,1e-06<=p12<=0.0078125,1e-06<=p13<=0.0078125,1e-06<=p14<=0.0078125,1e-06<=p15<=0.0078125,1e-06<=p16<=0.0078125,1e-06<=p17<=0.0078125,1e-06<=p18<=0.0078125,1e-06<=p19<=0.0078125,1e-06<=p20<=0.0078125,1e-06<=p21<=0.0078125,1e-06<=p22<=0.0078125,1e-06<=p23<=0.0078125,1e-06<=p24<=0.0078125,1e-06<=p25<=0.0078125,1e-06<=p26<=0.0078125,1e-06<=p27<=0.0078125,1e-06<=p28<=0.0078125,1e-06<=p29<=0.0078125,1e-06<=p30<=0.0078125,1e-06<=p31<=0.0078125,1e-06<=p32<=0.0078125,1e-06<=p33<=0.0078125,1e-06<=p34<=0.0078125,1e-06<=p35<=0.0078125,1e-06<=p36<=0.0078125,1e-06<=p37<=0.0078125,1e-06<=p38<=0.0078125,1e-06<=p39<=0.0078125,1e-06<=p40<=0.0078125,1e-06<=p41<=0.0078125,1e-06<=p42<=0.0078125,1e-06<=p43<=0.0078125,1e-06<=p44<=0.0078125,1e-06<=p45<=0.0078125,1e-06<=p46<=0.0078125,1e-06<=p47<=0.0078125,1e-06<=p48<=0.0078125,1e-06<=p49<=0.0078125,1e-06<=p50<=0.0078125,1e-06<=p51<=0.0078125,1e-06<=p52<=0.0078125,1e-06<=p53<=0.0078125,1e-06<=p54<=0.0078125,1e-06<=p55<=0.0078125,1e-06<=p56<=0.0078125,1e-06<=p57<=0.0078125,1e-06<=p58<=0.0078125,1e-06<=p59<=0.0078125,1e-06<=p60<=0.0078125,1e-06<=p61<=0.0078125,1e-06<=p62<=0.0078125,1e-06<=p63<=0.0078125,1e-06<=p64<=0.0078125,1e-06<=p65<=0.0078125,1e-06<=p66<=0.0078125,1e-06<=p67<=0.0078125,1e-06<=p68<=0.0078125,1e-06<=p69<=0.0078125,1e-06<=p70<=0.0078125,1e-06<=p71<=0.0078125,1e-06<=p72<=0.0078125,1e-06<=p73<=0.0078125,1e-06<=p74<=0.0078125,1e-06<=p75<=0.0078125,1e-06<=p76<=0.0078125,1e-06<=p77<=0.0078125,1e-06<=p78<=0.0078125,1e-06<=p79<=0.0078125,1e-06<=p80<=0.0078125,1e-06<=p81<=0.0078125,1e-06<=p82<=0.0078125,1e-06<=p83<=0.0078125,1e-06<=p84<=0.0078125,1e-06<=p85<=0.0078125,1e-06<=p86<=0.0078125,1e-06<=p87<=0.0078125,1e-06<=p88<=0.0078125,1e-06<=p89<=0.0078125,1e-06<=p90<=0.0078125,1e-06<=p91<=0.0078125,1e-06<=p92<=0.0078125,1e-06<=p93<=0.0078125,1e-06<=p94<=0.0078125,1e-06<=p95<=0.0078125,1e-06<=p96<=0.0078125,1e-06<=p97<=0.0078125,1e-06<=p98<=0.0078125,1e-06<=p99<=0.0078125,1e-06<=p100<=0.0078125,1e-06<=p101<=0.0078125,1e-06<=p102<=0.0078125,1e-06<=p103<=0.0078125,1e-06<=p104<=0.0078125,1e-06<=p105<=0.0078125,1e-06<=p106<=0.0078125,1e-06<=p107<=0.0078125,1e-06<=p108<=0.0078125,1e-06<=p109<=0.0078125,1e-06<=p110<=0.0078125,1e-06<=p111<=0.0078125,1e-06<=p112<=0.0078125,1e-06<=p113<=0.0078125,1e-06<=p114<=0.0078125,1e-06<=p115<=0.0078125,1e-06<=p116<=0.0078125,1e-06<=p117<=0.0078125,1e-06<=p118<=0.0078125,1e-06<=p119<=0.0078125,1e-06<=p120<=0.0078125,1e-06<=p121<=0.0078125,1e-06<=p122<=0.0078125,1e-06<=p123<=0.0078125,1e-06<=p124<=0.0078125,1e-06<=p125<=0.0078125,1e-06<=p126<=0.0078125,1e-06<=p127<=0.0078125,1e-06<=p128<=0.0078125; .
+ERROR (SparseDtmcParameterLiftingModelChecker.cpp:580): Cannot compute state-value-delta split estimates in robust mode if there are states with multiple parameters.
+ INFO (SparseDtmcParameterLiftingModelChecker.cpp:533): minimize 1/1000000<=p1<=1/128,1/1000000<=p2<=1/128,1/1000000<=p3<=1/128,1/1000000<=p4<=1/128,1/1000000<=p5<=1/128,1/1000000<=p6<=1/128,1/1000000<=p7<=1/128,1/1000000<=p8<=1/128,1/1000000<=p9<=1/128,1/1000000<=p10<=1/128,1/1000000<=p11<=1/128,1/1000000<=p12<=1/128,1/1000000<=p13<=1/128,1/1000000<=p14<=1/128,1/1000000<=p15<=1/128,1/1000000<=p16<=1/128,1/1000000<=p17<=1/128,1/1000000<=p18<=1/128,1/1000000<=p19<=1/128,1/1000000<=p20<=1/128,1/1000000<=p21<=1/128,1/1000000<=p22<=1/128,1/1000000<=p23<=1/128,1/1000000<=p24<=1/128,1/1000000<=p25<=1/128,1/1000000<=p26<=1/128,1/1000000<=p27<=1/128,1/1000000<=p28<=1/128,1/1000000<=p29<=1/128,1/1000000<=p30<=1/128,1/1000000<=p31<=1/128,1/1000000<=p32<=1/128,1/1000000<=p33<=1/128,1/1000000<=p34<=1/128,1/1000000<=p35<=1/128,1/1000000<=p36<=1/128,1/1000000<=p37<=1/128,1/1000000<=p38<=1/128,1/1000000<=p39<=1/128,1/1000000<=p40<=1/128,1/1000000<=p41<=1/128,1/1000000<=p42<=1/128,1/1000000<=p43<=1/128,1/1000000<=p44<=1/128,1/1000000<=p45<=1/128,1/1000000<=p46<=1/128,1/1000000<=p47<=1/128,1/1000000<=p48<=1/128,1/1000000<=p49<=1/128,1/1000000<=p50<=1/128,1/1000000<=p51<=1/128,1/1000000<=p52<=1/128,1/1000000<=p53<=1/128,1/1000000<=p54<=1/128,1/1000000<=p55<=1/128,1/1000000<=p56<=1/128,1/1000000<=p57<=1/128,1/1000000<=p58<=1/128,1/1000000<=p59<=1/128,1/1000000<=p60<=1/128,1/1000000<=p61<=1/128,1/1000000<=p62<=1/128,1/1000000<=p63<=1/128,1/1000000<=p64<=1/128,1/1000000<=p65<=1/128,1/1000000<=p66<=1/128,1/1000000<=p67<=1/128,1/1000000<=p68<=1/128,1/1000000<=p69<=1/128,1/1000000<=p70<=1/128,1/1000000<=p71<=1/128,1/1000000<=p72<=1/128,1/1000000<=p73<=1/128,1/1000000<=p74<=1/128,1/1000000<=p75<=1/128,1/1000000<=p76<=1/128,1/1000000<=p77<=1/128,1/1000000<=p78<=1/128,1/1000000<=p79<=1/128,1/1000000<=p80<=1/128,1/1000000<=p81<=1/128,1/1000000<=p82<=1/128,1/1000000<=p83<=1/128,1/1000000<=p84<=1/128,1/1000000<=p85<=1/128,1/1000000<=p86<=1/128,1/1000000<=p87<=1/128,1/1000000<=p88<=1/128,1/1000000<=p89<=1/128,1/1000000<=p90<=1/128,1/1000000<=p91<=1/128,1/1000000<=p92<=1/128,1/1000000<=p93<=1/128,1/1000000<=p94<=1/128,1/1000000<=p95<=1/128,1/1000000<=p96<=1/128,1/1000000<=p97<=1/128,1/1000000<=p98<=1/128,1/1000000<=p99<=1/128,1/1000000<=p100<=1/128,1/1000000<=p101<=1/128,1/1000000<=p102<=1/128,1/1000000<=p103<=1/128,1/1000000<=p104<=1/128,1/1000000<=p105<=1/128,1/1000000<=p106<=1/128,1/1000000<=p107<=1/128,1/1000000<=p108<=1/128,1/1000000<=p109<=1/128,1/1000000<=p110<=1/128,1/1000000<=p111<=1/128,1/1000000<=p112<=1/128,1/1000000<=p113<=1/128,1/1000000<=p114<=1/128,1/1000000<=p115<=1/128,1/1000000<=p116<=1/128,1/1000000<=p117<=1/128,1/1000000<=p118<=1/128,1/1000000<=p119<=1/128,1/1000000<=p120<=1/128,1/1000000<=p121<=1/128,1/1000000<=p122<=1/128,1/1000000<=p123<=1/128,1/1000000<=p124<=1/128,1/1000000<=p125<=1/128,1/1000000<=p126<=1/128,1/1000000<=p127<=1/128,1/1000000<=p128<=1/128;: 0.0424465
+
+ERROR (SparseDtmcParameterLiftingModelChecker.cpp:580): Cannot compute state-value-delta split estimates in robust mode if there are states with multiple parameters.
+ INFO (SparseDtmcParameterLiftingModelChecker.cpp:533): maximize 1/1000000<=p1<=1/128,1/1000000<=p2<=1/128,1/1000000<=p3<=1/128,1/1000000<=p4<=1/128,1/1000000<=p5<=1/128,1/1000000<=p6<=1/128,1/1000000<=p7<=1/128,1/1000000<=p8<=1/128,1/1000000<=p9<=1/128,1/1000000<=p10<=1/128,1/1000000<=p11<=1/128,1/1000000<=p12<=1/128,1/1000000<=p13<=1/128,1/1000000<=p14<=1/128,1/1000000<=p15<=1/128,1/1000000<=p16<=1/128,1/1000000<=p17<=1/128,1/1000000<=p18<=1/128,1/1000000<=p19<=1/128,1/1000000<=p20<=1/128,1/1000000<=p21<=1/128,1/1000000<=p22<=1/128,1/1000000<=p23<=1/128,1/1000000<=p24<=1/128,1/1000000<=p25<=1/128,1/1000000<=p26<=1/128,1/1000000<=p27<=1/128,1/1000000<=p28<=1/128,1/1000000<=p29<=1/128,1/1000000<=p30<=1/128,1/1000000<=p31<=1/128,1/1000000<=p32<=1/128,1/1000000<=p33<=1/128,1/1000000<=p34<=1/128,1/1000000<=p35<=1/128,1/1000000<=p36<=1/128,1/1000000<=p37<=1/128,1/1000000<=p38<=1/128,1/1000000<=p39<=1/128,1/1000000<=p40<=1/128,1/1000000<=p41<=1/128,1/1000000<=p42<=1/128,1/1000000<=p43<=1/128,1/1000000<=p44<=1/128,1/1000000<=p45<=1/128,1/1000000<=p46<=1/128,1/1000000<=p47<=1/128,1/1000000<=p48<=1/128,1/1000000<=p49<=1/128,1/1000000<=p50<=1/128,1/1000000<=p51<=1/128,1/1000000<=p52<=1/128,1/1000000<=p53<=1/128,1/1000000<=p54<=1/128,1/1000000<=p55<=1/128,1/1000000<=p56<=1/128,1/1000000<=p57<=1/128,1/1000000<=p58<=1/128,1/1000000<=p59<=1/128,1/1000000<=p60<=1/128,1/1000000<=p61<=1/128,1/1000000<=p62<=1/128,1/1000000<=p63<=1/128,1/1000000<=p64<=1/128,1/1000000<=p65<=1/128,1/1000000<=p66<=1/128,1/1000000<=p67<=1/128,1/1000000<=p68<=1/128,1/1000000<=p69<=1/128,1/1000000<=p70<=1/128,1/1000000<=p71<=1/128,1/1000000<=p72<=1/128,1/1000000<=p73<=1/128,1/1000000<=p74<=1/128,1/1000000<=p75<=1/128,1/1000000<=p76<=1/128,1/1000000<=p77<=1/128,1/1000000<=p78<=1/128,1/1000000<=p79<=1/128,1/1000000<=p80<=1/128,1/1000000<=p81<=1/128,1/1000000<=p82<=1/128,1/1000000<=p83<=1/128,1/1000000<=p84<=1/128,1/1000000<=p85<=1/128,1/1000000<=p86<=1/128,1/1000000<=p87<=1/128,1/1000000<=p88<=1/128,1/1000000<=p89<=1/128,1/1000000<=p90<=1/128,1/1000000<=p91<=1/128,1/1000000<=p92<=1/128,1/1000000<=p93<=1/128,1/1000000<=p94<=1/128,1/1000000<=p95<=1/128,1/1000000<=p96<=1/128,1/1000000<=p97<=1/128,1/1000000<=p98<=1/128,1/1000000<=p99<=1/128,1/1000000<=p100<=1/128,1/1000000<=p101<=1/128,1/1000000<=p102<=1/128,1/1000000<=p103<=1/128,1/1000000<=p104<=1/128,1/1000000<=p105<=1/128,1/1000000<=p106<=1/128,1/1000000<=p107<=1/128,1/1000000<=p108<=1/128,1/1000000<=p109<=1/128,1/1000000<=p110<=1/128,1/1000000<=p111<=1/128,1/1000000<=p112<=1/128,1/1000000<=p113<=1/128,1/1000000<=p114<=1/128,1/1000000<=p115<=1/128,1/1000000<=p116<=1/128,1/1000000<=p117<=1/128,1/1000000<=p118<=1/128,1/1000000<=p119<=1/128,1/1000000<=p120<=1/128,1/1000000<=p121<=1/128,1/1000000<=p122<=1/128,1/1000000<=p123<=1/128,1/1000000<=p124<=1/128,1/1000000<=p125<=1/128,1/1000000<=p126<=1/128,1/1000000<=p127<=1/128,1/1000000<=p128<=1/128;: 0.0424465
+
+ INFO (RegionRefinementChecker.cpp:191): Region partitioning terminated after analyzing 1 regions.
+	0 regions known through monotonicity.
+	Maximum refinement depth: 0.
+	0% of the parameter space are not covered.
+ INFO (print.cpp:13): Result (initial states)
+Result (initial states) INFO (print.cpp:28): : 
+:  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+ INFO (print.cpp:47):   Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+ INFO (print.cpp:52): Time for model checking: 0.009s.
+
+
+Time for model checking: 0.009s.
+
+
+iMC (full)
+Storm-pars 1.8.1
+
+Date: Mon Oct  7 11:35:03 2024
+Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode partitioning --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/128,0<=p2<=1/128,0<=p3<=1/128,0<=p4<=1/128,0<=p5<=1/128,0<=p6<=1/128,0<=p7<=1/128,0<=p8<=1/128,0<=p9<=1/128,0<=p10<=1/128,0<=p11<=1/128,0<=p12<=1/128,0<=p13<=1/128,0<=p14<=1/128,0<=p15<=1/128,0<=p16<=1/128,0<=p17<=1/128,0<=p18<=1/128,0<=p19<=1/128,0<=p20<=1/128,0<=p21<=1/128,0<=p22<=1/128,0<=p23<=1/128,0<=p24<=1/128,0<=p25<=1/128,0<=p26<=1/128,0<=p27<=1/128,0<=p28<=1/128,0<=p29<=1/128,0<=p30<=1/128,0<=p31<=1/128,0<=p32<=1/128,0<=p33<=1/128,0<=p34<=1/128,0<=p35<=1/128,0<=p36<=1/128,0<=p37<=1/128,0<=p38<=1/128,0<=p39<=1/128,0<=p40<=1/128,0<=p41<=1/128,0<=p42<=1/128,0<=p43<=1/128,0<=p44<=1/128,0<=p45<=1/128,0<=p46<=1/128,0<=p47<=1/128,0<=p48<=1/128,0<=p49<=1/128,0<=p50<=1/128,0<=p51<=1/128,0<=p52<=1/128,0<=p53<=1/128,0<=p54<=1/128,0<=p55<=1/128,0<=p56<=1/128,0<=p57<=1/128,0<=p58<=1/128,0<=p59<=1/128,0<=p60<=1/128,0<=p61<=1/128,0<=p62<=1/128,0<=p63<=1/128,0<=p64<=1/128,0<=p65<=1/128,0<=p66<=1/128,0<=p67<=1/128,0<=p68<=1/128,0<=p69<=1/128,0<=p70<=1/128,0<=p71<=1/128,0<=p72<=1/128,0<=p73<=1/128,0<=p74<=1/128,0<=p75<=1/128,0<=p76<=1/128,0<=p77<=1/128,0<=p78<=1/128,0<=p79<=1/128,0<=p80<=1/128,0<=p81<=1/128,0<=p82<=1/128,0<=p83<=1/128,0<=p84<=1/128,0<=p85<=1/128,0<=p86<=1/128,0<=p87<=1/128,0<=p88<=1/128,0<=p89<=1/128,0<=p90<=1/128,0<=p91<=1/128,0<=p92<=1/128,0<=p93<=1/128,0<=p94<=1/128,0<=p95<=1/128,0<=p96<=1/128,0<=p97<=1/128,0<=p98<=1/128,0<=p99<=1/128,0<=p100<=1/128,0<=p101<=1/128,0<=p102<=1/128,0<=p103<=1/128,0<=p104<=1/128,0<=p105<=1/128,0<=p106<=1/128,0<=p107<=1/128,0<=p108<=1/128,0<=p109<=1/128,0<=p110<=1/128,0<=p111<=1/128,0<=p112<=1/128,0<=p113<=1/128,0<=p114<=1/128,0<=p115<=1/128,0<=p116<=1/128,0<=p117<=1/128,0<=p118<=1/128,0<=p119<=1/128,0<=p120<=1/128,0<=p121<=1/128,0<=p122<=1/128,0<=p123<=1/128,0<=p124<=1/128,0<=p125<=1/128,0<=p126<=1/128,0<=p127<=1/128,0<=p128<=1/128' --not-graph-preserving -v
+Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
+
+Time for model input parsing: 0.007s.
+
+Time for model construction: 0.014s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	131
+Transitions: 	385
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (model-handling.h:581): Performing bisimulation minimization...
+ INFO (storm-pars.cpp:337): 
+Time for model preprocessing: 0.000s.
+
+
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	131
+Transitions: 	385
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * target -> 1 item(s)
+   * deadlock -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ INFO (storm-pars.cpp:529): Partition mode started.
+ INFO (storm-pars.cpp:388): 
+
+
+ INFO (storm-pars.cpp:389): Analyzing parameter region 0<=p1<=1/128,0<=p2<=1/128,0<=p3<=1/128,0<=p4<=1/128,0<=p5<=1/128,0<=p6<=1/128,0<=p7<=1/128,0<=p8<=1/128,0<=p9<=1/128,0<=p10<=1/128,0<=p11<=1/128,0<=p12<=1/128,0<=p13<=1/128,0<=p14<=1/128,0<=p15<=1/128,0<=p16<=1/128,0<=p17<=1/128,0<=p18<=1/128,0<=p19<=1/128,0<=p20<=1/128,0<=p21<=1/128,0<=p22<=1/128,0<=p23<=1/128,0<=p24<=1/128,0<=p25<=1/128,0<=p26<=1/128,0<=p27<=1/128,0<=p28<=1/128,0<=p29<=1/128,0<=p30<=1/128,0<=p31<=1/128,0<=p32<=1/128,0<=p33<=1/128,0<=p34<=1/128,0<=p35<=1/128,0<=p36<=1/128,0<=p37<=1/128,0<=p38<=1/128,0<=p39<=1/128,0<=p40<=1/128,0<=p41<=1/128,0<=p42<=1/128,0<=p43<=1/128,0<=p44<=1/128,0<=p45<=1/128,0<=p46<=1/128,0<=p47<=1/128,0<=p48<=1/128,0<=p49<=1/128,0<=p50<=1/128,0<=p51<=1/128,0<=p52<=1/128,0<=p53<=1/128,0<=p54<=1/128,0<=p55<=1/128,0<=p56<=1/128,0<=p57<=1/128,0<=p58<=1/128,0<=p59<=1/128,0<=p60<=1/128,0<=p61<=1/128,0<=p62<=1/128,0<=p63<=1/128,0<=p64<=1/128,0<=p65<=1/128,0<=p66<=1/128,0<=p67<=1/128,0<=p68<=1/128,0<=p69<=1/128,0<=p70<=1/128,0<=p71<=1/128,0<=p72<=1/128,0<=p73<=1/128,0<=p74<=1/128,0<=p75<=1/128,0<=p76<=1/128,0<=p77<=1/128,0<=p78<=1/128,0<=p79<=1/128,0<=p80<=1/128,0<=p81<=1/128,0<=p82<=1/128,0<=p83<=1/128,0<=p84<=1/128,0<=p85<=1/128,0<=p86<=1/128,0<=p87<=1/128,0<=p88<=1/128,0<=p89<=1/128,0<=p90<=1/128,0<=p91<=1/128,0<=p92<=1/128,0<=p93<=1/128,0<=p94<=1/128,0<=p95<=1/128,0<=p96<=1/128,0<=p97<=1/128,0<=p98<=1/128,0<=p99<=1/128,0<=p100<=1/128,0<=p101<=1/128,0<=p102<=1/128,0<=p103<=1/128,0<=p104<=1/128,0<=p105<=1/128,0<=p106<=1/128,0<=p107<=1/128,0<=p108<=1/128,0<=p109<=1/128,0<=p110<=1/128,0<=p111<=1/128,0<=p112<=1/128,0<=p113<=1/128,0<=p114<=1/128,0<=p115<=1/128,0<=p116<=1/128,0<=p117<=1/128,0<=p118<=1/128,0<=p119<=1/128,0<=p120<=1/128,0<=p121<=1/128,0<=p122<=1/128,0<=p123<=1/128,0<=p124<=1/128,0<=p125<=1/128,0<=p126<=1/128,0<=p127<=1/128,0<=p128<=1/128;
+Analyzing parameter region 0<=p1<=1/128,0<=p2<=1/128,0<=p3<=1/128,0<=p4<=1/128,0<=p5<=1/128,0<=p6<=1/128,0<=p7<=1/128,0<=p8<=1/128,0<=p9<=1/128,0<=p10<=1/128,0<=p11<=1/128,0<=p12<=1/128,0<=p13<=1/128,0<=p14<=1/128,0<=p15<=1/128,0<=p16<=1/128,0<=p17<=1/128,0<=p18<=1/128,0<=p19<=1/128,0<=p20<=1/128,0<=p21<=1/128,0<=p22<=1/128,0<=p23<=1/128,0<=p24<=1/128,0<=p25<=1/128,0<=p26<=1/128,0<=p27<=1/128,0<=p28<=1/128,0<=p29<=1/128,0<=p30<=1/128,0<=p31<=1/128,0<=p32<=1/128,0<=p33<=1/128,0<=p34<=1/128,0<=p35<=1/128,0<=p36<=1/128,0<=p37<=1/128,0<=p38<=1/128,0<=p39<=1/128,0<=p40<=1/128,0<=p41<=1/128,0<=p42<=1/128,0<=p43<=1/128,0<=p44<=1/128,0<=p45<=1/128,0<=p46<=1/128,0<=p47<=1/128,0<=p48<=1/128,0<=p49<=1/128,0<=p50<=1/128,0<=p51<=1/128,0<=p52<=1/128,0<=p53<=1/128,0<=p54<=1/128,0<=p55<=1/128,0<=p56<=1/128,0<=p57<=1/128,0<=p58<=1/128,0<=p59<=1/128,0<=p60<=1/128,0<=p61<=1/128,0<=p62<=1/128,0<=p63<=1/128,0<=p64<=1/128,0<=p65<=1/128,0<=p66<=1/128,0<=p67<=1/128,0<=p68<=1/128,0<=p69<=1/128,0<=p70<=1/128,0<=p71<=1/128,0<=p72<=1/128,0<=p73<=1/128,0<=p74<=1/128,0<=p75<=1/128,0<=p76<=1/128,0<=p77<=1/128,0<=p78<=1/128,0<=p79<=1/128,0<=p80<=1/128,0<=p81<=1/128,0<=p82<=1/128,0<=p83<=1/128,0<=p84<=1/128,0<=p85<=1/128,0<=p86<=1/128,0<=p87<=1/128,0<=p88<=1/128,0<=p89<=1/128,0<=p90<=1/128,0<=p91<=1/128,0<=p92<=1/128,0<=p93<=1/128,0<=p94<=1/128,0<=p95<=1/128,0<=p96<=1/128,0<=p97<=1/128,0<=p98<=1/128,0<=p99<=1/128,0<=p100<=1/128,0<=p101<=1/128,0<=p102<=1/128,0<=p103<=1/128,0<=p104<=1/128,0<=p105<=1/128,0<=p106<=1/128,0<=p107<=1/128,0<=p108<=1/128,0<=p109<=1/128,0<=p110<=1/128,0<=p111<=1/128,0<=p112<=1/128,0<=p113<=1/128,0<=p114<=1/128,0<=p115<=1/128,0<=p116<=1/128,0<=p117<=1/128,0<=p118<=1/128,0<=p119<=1/128,0<=p120<=1/128,0<=p121<=1/128,0<=p122<=1/128,0<=p123<=1/128,0<=p124<=1/128,0<=p125<=1/128,0<=p126<=1/128,0<=p127<=1/128,0<=p128<=1/128; INFO (storm-pars.cpp:392):  using Robust Parameter Lifting
+ using Robust Parameter Lifting INFO (storm-pars.cpp:407):  and splitting heuristic Default
+ and splitting heuristic Default INFO (storm-pars.cpp:412):  with iterative refinement until 100% is covered.
+
+ with iterative refinement until 100% is covered.
+
+Model checking property "1": P>=1/100 [F "target"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ INFO (RegionRefinementChecker.cpp:120): Applying Region Partitioning on region: 0<=p1<=0.0078125,0<=p2<=0.0078125,0<=p3<=0.0078125,0<=p4<=0.0078125,0<=p5<=0.0078125,0<=p6<=0.0078125,0<=p7<=0.0078125,0<=p8<=0.0078125,0<=p9<=0.0078125,0<=p10<=0.0078125,0<=p11<=0.0078125,0<=p12<=0.0078125,0<=p13<=0.0078125,0<=p14<=0.0078125,0<=p15<=0.0078125,0<=p16<=0.0078125,0<=p17<=0.0078125,0<=p18<=0.0078125,0<=p19<=0.0078125,0<=p20<=0.0078125,0<=p21<=0.0078125,0<=p22<=0.0078125,0<=p23<=0.0078125,0<=p24<=0.0078125,0<=p25<=0.0078125,0<=p26<=0.0078125,0<=p27<=0.0078125,0<=p28<=0.0078125,0<=p29<=0.0078125,0<=p30<=0.0078125,0<=p31<=0.0078125,0<=p32<=0.0078125,0<=p33<=0.0078125,0<=p34<=0.0078125,0<=p35<=0.0078125,0<=p36<=0.0078125,0<=p37<=0.0078125,0<=p38<=0.0078125,0<=p39<=0.0078125,0<=p40<=0.0078125,0<=p41<=0.0078125,0<=p42<=0.0078125,0<=p43<=0.0078125,0<=p44<=0.0078125,0<=p45<=0.0078125,0<=p46<=0.0078125,0<=p47<=0.0078125,0<=p48<=0.0078125,0<=p49<=0.0078125,0<=p50<=0.0078125,0<=p51<=0.0078125,0<=p52<=0.0078125,0<=p53<=0.0078125,0<=p54<=0.0078125,0<=p55<=0.0078125,0<=p56<=0.0078125,0<=p57<=0.0078125,0<=p58<=0.0078125,0<=p59<=0.0078125,0<=p60<=0.0078125,0<=p61<=0.0078125,0<=p62<=0.0078125,0<=p63<=0.0078125,0<=p64<=0.0078125,0<=p65<=0.0078125,0<=p66<=0.0078125,0<=p67<=0.0078125,0<=p68<=0.0078125,0<=p69<=0.0078125,0<=p70<=0.0078125,0<=p71<=0.0078125,0<=p72<=0.0078125,0<=p73<=0.0078125,0<=p74<=0.0078125,0<=p75<=0.0078125,0<=p76<=0.0078125,0<=p77<=0.0078125,0<=p78<=0.0078125,0<=p79<=0.0078125,0<=p80<=0.0078125,0<=p81<=0.0078125,0<=p82<=0.0078125,0<=p83<=0.0078125,0<=p84<=0.0078125,0<=p85<=0.0078125,0<=p86<=0.0078125,0<=p87<=0.0078125,0<=p88<=0.0078125,0<=p89<=0.0078125,0<=p90<=0.0078125,0<=p91<=0.0078125,0<=p92<=0.0078125,0<=p93<=0.0078125,0<=p94<=0.0078125,0<=p95<=0.0078125,0<=p96<=0.0078125,0<=p97<=0.0078125,0<=p98<=0.0078125,0<=p99<=0.0078125,0<=p100<=0.0078125,0<=p101<=0.0078125,0<=p102<=0.0078125,0<=p103<=0.0078125,0<=p104<=0.0078125,0<=p105<=0.0078125,0<=p106<=0.0078125,0<=p107<=0.0078125,0<=p108<=0.0078125,0<=p109<=0.0078125,0<=p110<=0.0078125,0<=p111<=0.0078125,0<=p112<=0.0078125,0<=p113<=0.0078125,0<=p114<=0.0078125,0<=p115<=0.0078125,0<=p116<=0.0078125,0<=p117<=0.0078125,0<=p118<=0.0078125,0<=p119<=0.0078125,0<=p120<=0.0078125,0<=p121<=0.0078125,0<=p122<=0.0078125,0<=p123<=0.0078125,0<=p124<=0.0078125,0<=p125<=0.0078125,0<=p126<=0.0078125,0<=p127<=0.0078125,0<=p128<=0.0078125; .
+ERROR (SparseDtmcParameterLiftingModelChecker.cpp:580): Cannot compute state-value-delta split estimates in robust mode if there are states with multiple parameters.
+ INFO (SparseDtmcParameterLiftingModelChecker.cpp:533): minimize 0<=p1<=1/128,0<=p2<=1/128,0<=p3<=1/128,0<=p4<=1/128,0<=p5<=1/128,0<=p6<=1/128,0<=p7<=1/128,0<=p8<=1/128,0<=p9<=1/128,0<=p10<=1/128,0<=p11<=1/128,0<=p12<=1/128,0<=p13<=1/128,0<=p14<=1/128,0<=p15<=1/128,0<=p16<=1/128,0<=p17<=1/128,0<=p18<=1/128,0<=p19<=1/128,0<=p20<=1/128,0<=p21<=1/128,0<=p22<=1/128,0<=p23<=1/128,0<=p24<=1/128,0<=p25<=1/128,0<=p26<=1/128,0<=p27<=1/128,0<=p28<=1/128,0<=p29<=1/128,0<=p30<=1/128,0<=p31<=1/128,0<=p32<=1/128,0<=p33<=1/128,0<=p34<=1/128,0<=p35<=1/128,0<=p36<=1/128,0<=p37<=1/128,0<=p38<=1/128,0<=p39<=1/128,0<=p40<=1/128,0<=p41<=1/128,0<=p42<=1/128,0<=p43<=1/128,0<=p44<=1/128,0<=p45<=1/128,0<=p46<=1/128,0<=p47<=1/128,0<=p48<=1/128,0<=p49<=1/128,0<=p50<=1/128,0<=p51<=1/128,0<=p52<=1/128,0<=p53<=1/128,0<=p54<=1/128,0<=p55<=1/128,0<=p56<=1/128,0<=p57<=1/128,0<=p58<=1/128,0<=p59<=1/128,0<=p60<=1/128,0<=p61<=1/128,0<=p62<=1/128,0<=p63<=1/128,0<=p64<=1/128,0<=p65<=1/128,0<=p66<=1/128,0<=p67<=1/128,0<=p68<=1/128,0<=p69<=1/128,0<=p70<=1/128,0<=p71<=1/128,0<=p72<=1/128,0<=p73<=1/128,0<=p74<=1/128,0<=p75<=1/128,0<=p76<=1/128,0<=p77<=1/128,0<=p78<=1/128,0<=p79<=1/128,0<=p80<=1/128,0<=p81<=1/128,0<=p82<=1/128,0<=p83<=1/128,0<=p84<=1/128,0<=p85<=1/128,0<=p86<=1/128,0<=p87<=1/128,0<=p88<=1/128,0<=p89<=1/128,0<=p90<=1/128,0<=p91<=1/128,0<=p92<=1/128,0<=p93<=1/128,0<=p94<=1/128,0<=p95<=1/128,0<=p96<=1/128,0<=p97<=1/128,0<=p98<=1/128,0<=p99<=1/128,0<=p100<=1/128,0<=p101<=1/128,0<=p102<=1/128,0<=p103<=1/128,0<=p104<=1/128,0<=p105<=1/128,0<=p106<=1/128,0<=p107<=1/128,0<=p108<=1/128,0<=p109<=1/128,0<=p110<=1/128,0<=p111<=1/128,0<=p112<=1/128,0<=p113<=1/128,0<=p114<=1/128,0<=p115<=1/128,0<=p116<=1/128,0<=p117<=1/128,0<=p118<=1/128,0<=p119<=1/128,0<=p120<=1/128,0<=p121<=1/128,0<=p122<=1/128,0<=p123<=1/128,0<=p124<=1/128,0<=p125<=1/128,0<=p126<=1/128,0<=p127<=1/128,0<=p128<=1/128;: 0.0424465
+
+ERROR (SparseDtmcParameterLiftingModelChecker.cpp:580): Cannot compute state-value-delta split estimates in robust mode if there are states with multiple parameters.
+ INFO (SparseDtmcParameterLiftingModelChecker.cpp:533): maximize 0<=p1<=1/128,0<=p2<=1/128,0<=p3<=1/128,0<=p4<=1/128,0<=p5<=1/128,0<=p6<=1/128,0<=p7<=1/128,0<=p8<=1/128,0<=p9<=1/128,0<=p10<=1/128,0<=p11<=1/128,0<=p12<=1/128,0<=p13<=1/128,0<=p14<=1/128,0<=p15<=1/128,0<=p16<=1/128,0<=p17<=1/128,0<=p18<=1/128,0<=p19<=1/128,0<=p20<=1/128,0<=p21<=1/128,0<=p22<=1/128,0<=p23<=1/128,0<=p24<=1/128,0<=p25<=1/128,0<=p26<=1/128,0<=p27<=1/128,0<=p28<=1/128,0<=p29<=1/128,0<=p30<=1/128,0<=p31<=1/128,0<=p32<=1/128,0<=p33<=1/128,0<=p34<=1/128,0<=p35<=1/128,0<=p36<=1/128,0<=p37<=1/128,0<=p38<=1/128,0<=p39<=1/128,0<=p40<=1/128,0<=p41<=1/128,0<=p42<=1/128,0<=p43<=1/128,0<=p44<=1/128,0<=p45<=1/128,0<=p46<=1/128,0<=p47<=1/128,0<=p48<=1/128,0<=p49<=1/128,0<=p50<=1/128,0<=p51<=1/128,0<=p52<=1/128,0<=p53<=1/128,0<=p54<=1/128,0<=p55<=1/128,0<=p56<=1/128,0<=p57<=1/128,0<=p58<=1/128,0<=p59<=1/128,0<=p60<=1/128,0<=p61<=1/128,0<=p62<=1/128,0<=p63<=1/128,0<=p64<=1/128,0<=p65<=1/128,0<=p66<=1/128,0<=p67<=1/128,0<=p68<=1/128,0<=p69<=1/128,0<=p70<=1/128,0<=p71<=1/128,0<=p72<=1/128,0<=p73<=1/128,0<=p74<=1/128,0<=p75<=1/128,0<=p76<=1/128,0<=p77<=1/128,0<=p78<=1/128,0<=p79<=1/128,0<=p80<=1/128,0<=p81<=1/128,0<=p82<=1/128,0<=p83<=1/128,0<=p84<=1/128,0<=p85<=1/128,0<=p86<=1/128,0<=p87<=1/128,0<=p88<=1/128,0<=p89<=1/128,0<=p90<=1/128,0<=p91<=1/128,0<=p92<=1/128,0<=p93<=1/128,0<=p94<=1/128,0<=p95<=1/128,0<=p96<=1/128,0<=p97<=1/128,0<=p98<=1/128,0<=p99<=1/128,0<=p100<=1/128,0<=p101<=1/128,0<=p102<=1/128,0<=p103<=1/128,0<=p104<=1/128,0<=p105<=1/128,0<=p106<=1/128,0<=p107<=1/128,0<=p108<=1/128,0<=p109<=1/128,0<=p110<=1/128,0<=p111<=1/128,0<=p112<=1/128,0<=p113<=1/128,0<=p114<=1/128,0<=p115<=1/128,0<=p116<=1/128,0<=p117<=1/128,0<=p118<=1/128,0<=p119<=1/128,0<=p120<=1/128,0<=p121<=1/128,0<=p122<=1/128,0<=p123<=1/128,0<=p124<=1/128,0<=p125<=1/128,0<=p126<=1/128,0<=p127<=1/128,0<=p128<=1/128;: 0.0424465
+
+ INFO (RegionRefinementChecker.cpp:191): Region partitioning terminated after analyzing 1 regions.
+	0 regions known through monotonicity.
+	Maximum refinement depth: 0.
+	0% of the parameter space are not covered.
+ INFO (print.cpp:13): Result (initial states)
+Result (initial states) INFO (print.cpp:28): : 
+:  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+ INFO (print.cpp:47):   Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+ INFO (print.cpp:52): Time for model checking: 0.006s.
+
+
+Time for model checking: 0.006s.
+

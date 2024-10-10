@@ -1,0 +1,12 @@
+[
+	{
+		"constants": {},
+		"jani": "alarm.jani",
+		"prop": {
+			"type": "probability",
+			"dir": "max",
+			"label": "VENTTUBE=0"
+		},
+		"region_bound": 0
+	}
+]

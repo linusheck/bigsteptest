@@ -1,0 +1,41 @@
+{"memory_bound": 1, "region_bound": 0.1, "constants": {"K": 100}, "pomdp": "nrp.prism", "prop": {"type": "probability", "dir": "min", "label": "unfair", "bound": 0.011000000000000001}, "big_step": false, "use_robust_pla": false, "epsilon": 0.1, "splitting_strategy": "estimate", "estimate_method": "delta", "simple": true, "splitting_threshold": 4}
+Storm-pars 1.8.1
+
+Date: Wed Oct  9 22:07:45 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases_standard/nrp/nrp_probability_min_unfair______K=100__7a2f1fdb1607683b03b4e06864e90f3cd79a482d40affed47acc3f2e219b9623_1.drn -prop 'Pmin<=0.011000000000000001 [F "unfair"]' --mode partitioning --regionbound 0.1 --terminationCondition 0 '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.078s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	15351
+Transitions: 	20500
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 100 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.013s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	10103
+Transitions: 	15252
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 1/10<=p2_0<=9/10,1/10<=p7_0<=9/10,1/10<=p12_0<=9/10,1/10<=p17_0<=9/10,1/10<=p22_0<=9/10,1/10<=p27_0<=9/10,1/10<=p32_0<=9/10,1/10<=p37_0<=9/10,1/10<=p42_0<=9/10,1/10<=p47_0<=9/10,1/10<=p52_0<=9/10,1/10<=p57_0<=9/10,1/10<=p62_0<=9/10,1/10<=p67_0<=9/10,1/10<=p72_0<=9/10,1/10<=p77_0<=9/10,1/10<=p82_0<=9/10,1/10<=p87_0<=9/10,1/10<=p92_0<=9/10,1/10<=p97_0<=9/10,1/10<=p102_0<=9/10,1/10<=p107_0<=9/10,1/10<=p112_0<=9/10,1/10<=p117_0<=9/10,1/10<=p122_0<=9/10,1/10<=p127_0<=9/10,1/10<=p132_0<=9/10,1/10<=p137_0<=9/10,1/10<=p142_0<=9/10,1/10<=p147_0<=9/10,1/10<=p152_0<=9/10,1/10<=p157_0<=9/10,1/10<=p162_0<=9/10,1/10<=p167_0<=9/10,1/10<=p172_0<=9/10,1/10<=p177_0<=9/10,1/10<=p182_0<=9/10,1/10<=p187_0<=9/10,1/10<=p192_0<=9/10,1/10<=p197_0<=9/10,1/10<=p202_0<=9/10,1/10<=p207_0<=9/10,1/10<=p212_0<=9/10,1/10<=p217_0<=9/10,1/10<=p222_0<=9/10,1/10<=p227_0<=9/10,1/10<=p232_0<=9/10,1/10<=p237_0<=9/10,1/10<=p242_0<=9/10,1/10<=p247_0<=9/10,1/10<=p252_0<=9/10,1/10<=p257_0<=9/10,1/10<=p262_0<=9/10,1/10<=p267_0<=9/10,1/10<=p272_0<=9/10,1/10<=p277_0<=9/10,1/10<=p282_0<=9/10,1/10<=p287_0<=9/10,1/10<=p292_0<=9/10,1/10<=p297_0<=9/10,1/10<=p302_0<=9/10,1/10<=p307_0<=9/10,1/10<=p312_0<=9/10,1/10<=p317_0<=9/10,1/10<=p322_0<=9/10,1/10<=p327_0<=9/10,1/10<=p332_0<=9/10,1/10<=p337_0<=9/10,1/10<=p342_0<=9/10,1/10<=p347_0<=9/10,1/10<=p352_0<=9/10,1/10<=p357_0<=9/10,1/10<=p362_0<=9/10,1/10<=p367_0<=9/10,1/10<=p372_0<=9/10,1/10<=p377_0<=9/10,1/10<=p382_0<=9/10,1/10<=p387_0<=9/10,1/10<=p392_0<=9/10,1/10<=p397_0<=9/10,1/10<=p402_0<=9/10,1/10<=p407_0<=9/10,1/10<=p412_0<=9/10,1/10<=p417_0<=9/10,1/10<=p422_0<=9/10,1/10<=p427_0<=9/10,1/10<=p432_0<=9/10,1/10<=p437_0<=9/10,1/10<=p442_0<=9/10,1/10<=p447_0<=9/10,1/10<=p452_0<=9/10,1/10<=p457_0<=9/10,1/10<=p462_0<=9/10,1/10<=p467_0<=9/10,1/10<=p472_0<=9/10,1/10<=p477_0<=9/10,1/10<=p482_0<=9/10,1/10<=p487_0<=9/10,1/10<=p492_0<=9/10,1/10<=p497_0<=9/10; using Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Pmin<=11000000000000001/1000000000000000000 [F "unfair"] ...
+ERROR (storm-pars.cpp:593): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
+
+real	12m5.214s
+user	11m51.669s
+sys	0m13.520s

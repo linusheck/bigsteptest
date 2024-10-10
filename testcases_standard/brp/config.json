@@ -1,0 +1,28 @@
+[
+	{
+		"constants": [
+			{
+				"N": 16,
+                "MAX": 2
+			},
+			{
+				"N": 32,
+                "MAX": 4
+			},
+			{
+				"N": 64,
+                "MAX": 8
+			}
+		],
+		"prism": "brp.pm",
+		"prop": 
+		[
+			{
+				"type": "probability",
+				"dir": "min",
+				"label": "uncertain"
+			}
+		],
+		"region_bound": 0
+	}
+]

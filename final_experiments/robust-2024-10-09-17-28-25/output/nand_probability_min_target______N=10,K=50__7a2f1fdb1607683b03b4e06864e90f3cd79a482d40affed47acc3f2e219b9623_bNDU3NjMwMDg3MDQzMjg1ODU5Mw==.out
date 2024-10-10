@@ -1,0 +1,27 @@
+{"constants": {"N": 10, "K": 50}, "region_bound": 0.1, "prism": "nand.pm", "prop": {"type": "probability", "dir": "min", "label": "target", "bound": 0.31060964264}, "big_step": true, "use_robust_pla": true, "epsilon": 0.1, "splitting_strategy": "estimate", "estimate_method": "delta", "simple": true, "splitting_threshold": 4}
+Storm-pars 1.8.1
+
+Date: Wed Oct  9 21:51:21 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases_standard/nand/nand.pm -const 'N=10,K=50' -prop 'Pmin<=0.31060964264 [F "target"]' --big-step --mode partitioning --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.001s.
+
+Time for model construction: 1.342s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	346962
+Transitions: 	518847
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ERROR (storm-pars.cpp:593): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
+
+real	3m34.251s
+user	3m21.662s
+sys	0m12.584s

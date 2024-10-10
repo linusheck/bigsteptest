@@ -308,11 +308,16 @@ def main():
                     if len(values) > 0:
                         found_bound = values[-1]
                         print(f"Found GD bound {found_bound}")
+
+                        first_best_value_index = next((i for i, v in enumerate(values) if v == found_bound), None)
+                        print(f"Best value {first_best_value_index}/{len(values)}")
+
                         makedirs(gd_result_file.parent, exist_ok=True)
                         gd_result_file.write_text(str(found_bound))
                         break
                     timeout = 2 * timeout
                     print(f"Increasing timeout to {timeout}")
+
 
             invocation["prop"]["bound"] = found_bound * ((1 + invocation["epsilon"]) if invocation["prop"]["dir"] == "min" else (1 - invocation["epsilon"]))
             
@@ -392,7 +397,7 @@ def main():
                     '( echo "'
                     + echo_str
                     + '"'
-                    + f" && ulimit -v 16000000 && time timeout {args.timeout} "
+                    + f" && ulimit -v 32000000 && time timeout {args.timeout} "
                     + command
                     + "  ) > "
                     + str(args.output / "output"

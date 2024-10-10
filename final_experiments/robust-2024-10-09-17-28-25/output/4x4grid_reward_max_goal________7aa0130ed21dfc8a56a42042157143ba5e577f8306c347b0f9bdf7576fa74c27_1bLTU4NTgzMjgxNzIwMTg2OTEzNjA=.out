@@ -1,0 +1,51 @@
+{"memory_bound": 1, "region_bound": 1e-06, "constants": {}, "pomdp": "4x4grid.prism", "prop": {"type": "reward", "dir": "max", "label": "goal", "bound": 5.041627221223621}, "big_step": true, "use_robust_pla": true, "epsilon": 1e-05, "splitting_strategy": "estimate", "estimate_method": "delta", "simple": true, "splitting_threshold": 4}
+Storm-pars 1.8.1
+
+Date: Wed Oct  9 20:56:39 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases_standard/grids/4x4grid_reward_max_goal________7aa0130ed21dfc8a56a42042157143ba5e577f8306c347b0f9bdf7576fa74c27_1.drn -prop 'Rmax>=5.041627221223621 [F "goal"]' --big-step --mode partitioning --regionbound 1e-06 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	47
+Transitions: 	106
+Reward Models:  (default)
+State Labels: 	2 labels
+   * goal -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	49
+Transitions: 	123
+Reward Models:  (default)
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 1/1000000<=p1_0<=999999/1000000,1/1000000<=p3_0<=999999/1000000,1/1000000<=p4_0<=999999/1000000; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Rmax>=5041627221223621/1000000000000000 [F "goal"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+Result (initial states):  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 3130
+                      AllSat: 3130
+
+
+Time for model checking: 0.318s.
+
+
+real	0m0.339s
+user	0m0.319s
+sys	0m0.020s

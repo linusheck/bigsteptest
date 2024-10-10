@@ -6,23 +6,23 @@ mkdir $folder
 
 echo $folder
 
-python3 generate_commands.py --folder testcases --global-override benchmarks/robust_vs_plain.json --storm-location ../storm/build_release/bin/ --output $folder --jobs 16 --timeout 6000
+python3 generate_commands.py --folder testcases_standard --global-override benchmarks/robust_vs_plain.json --storm-location ../storm/build_release/bin/ --output $folder --jobs 16 --timeout 6000
 ./$folder/parallel.sh
 
 set result_file $folder/results.csv
 
 python3 process_output.py $folder/output/* --results $result_file
 
-python3 csv_to_scatter.py $result_file true false "Robust PLA" "Standard PLA" --compare-by "Time (wall)" --comp-field RobustPLA --filter "Estimate:delta" --output-pdf $folder/"time_robust_plain.pdf"
-python3 csv_to_scatter.py $result_file true false "Robust PLA" "Standard PLA" --compare-by "# Regions" --min 0 --max 6 --comp-field RobustPLA --filter "Estimate:delta" --output-pdf $folder/"regions_robust_plain.pdf"
+# slowdown without enabling bigstep
+python csv_to_table.py $result_file --comp-field RobustPLA --comp-values "true,false" --filter "BigStep:false" --avg-slowdown > $folder/slowdown.txt
+python csv_to_table.py $result_file --comp-field RobustPLA --comp-values "true,false" --filter "BigStep:false" > $folder/table.tex
 
-python3 csv_to_scatter.py $result_file "estimate" "roundrobin" "State-value-delta estimate" "Round-robin" --compare-by "Time (MC)" --comp-field SplitStrat --filter "Estimate:delta"
-python3 csv_to_scatter.py $result_file "estimate" "roundrobin" "State-value-delta estimate" "Round-robin" --compare-by "# Regions" --min 0 --max 6 --comp-field SplitStrat --filter "Estimate:delta"
+for format in pdf pgf
+    # slowdown without enabling bigstep
+    python csv_to_scatter.py $result_file true false "lifted" "standard" --compare-by "Time (wall)" --comp-field "RobustPLA" --filter "BigStep:false;Epsilon:1e-05" --output-pdf $folder/"time-slowdown.$format" --separate-legend 1
+    python csv_to_scatter.py $result_file true false "lifted" "standard" --compare-by "Regions" --comp-field "RobustPLA" --filter "BigStep:false;Epsilon:1e-05" --output-pdf $folder/"regions-slowdown.$format" --separate-legend 1
 
-python3 csv_to_scatter.py $result_file "delta" "minmaxdelta" "State-value-delta estimate (classic)" "Min-max delta (robust)" --compare-by "Time (MC)" --comp-field Estimate --filter "SplitStrat:estimate" --ignore RobustPLA,BigStep
-python3 csv_to_scatter.py $result_file "delta" "minmaxdelta" "State-value-delta estimate (classic)" "Min-max delta (robust)" --compare-by "# Regions" --min 0 --max 6 --comp-field Estimate --filter "SplitStrat:estimate" --ignore RobustPLA,BigStep
-
-python3 csv_to_scatter.py $result_file "delta" "deltaweighted" "Delta" "Delta (Weighted)" --compare-by "Time (MC)" --comp-field Estimate --filter "SplitStrat:estimate" --ignore RobustPLA,BigStep
-python3 csv_to_scatter.py $result_file "delta" "deltaweighted" "Delta" "Delta (Weighted)" --compare-by "# Regions" --min 0 --max 6 --comp-field Estimate --filter "SplitStrat:estimate" --ignore RobustPLA,BigStep
-
-python csv_to_table.py $result_file --comp-field RobustPLA --comp-values "true,false" --avg-slowdown > $folder/slowdown.txt
+    # robustpl+bigstep vs standard
+    python csv_to_scatter.py $result_file true false "lifted+bigstep" "standard" --compare-by "Time (wall)" --comp-field "RobustPLA" --ignore "BigStep" --filter "BigStep:%RobustPLA;Epsilon:1e-05" --output-pdf $folder/"time-st-big.$format" --separate-legend 1
+    python csv_to_scatter.py $result_file true false "lifted+bigstep" "standard" --compare-by "Regions" --comp-field "RobustPLA" --ignore "BigStep" --filter "BigStep:%RobustPLA;Epsilon:1e-05"  --min 0 --max 5 --output-pdf $folder/"regions-st-big.$format" --separate-legend 1
+end

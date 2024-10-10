@@ -1,0 +1,23 @@
+[
+      {
+        "region_bound": 0,
+        "memory_bound": 1,
+        "constants": [
+            {
+                "N": 4,
+                "RADIUS": 1
+            }
+        ],
+        "pomdp": [
+            "avoid.prism"
+        ],
+        "prop": [
+            {
+                "type": "probability",
+                "dir": "min",
+                "label": "\"notbad\" U \"goal\""
+            }
+        ]
+    }
+]
+  

@@ -1,0 +1,82 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {}, "pomdp": "4x4grid-avoid.prism", "prop": {"type": "probability", "dir": "min", "label": "notbad U goal", "bound": 0.9023314952300001}, "big_step": false, "use_robust_pla": true, "epsilon": 0.1, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0,0.8"}
+Storm-pars 1.8.1
+
+Date: Thu Oct 10 15:31:39 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases/grids/4x4grid-avoid_probability_min_notbad_U_goal________afeb1e19b91f55c416c3616f61b61df069ee707067e01ee6f79bcef91972ef65_1.drn -prop 'Pmin<=0.9023314952300001 ["notbad" U "goal"]' --mode partitioning --region '0<=p1_0<=0.8,0<=p4_0<=0.8,0<=p5_0<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.004s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	45
+Transitions: 	100
+Reward Models:  (default)
+State Labels: 	4 labels
+   * goal -> 1 item(s)
+   * bad -> 1 item(s)
+   * notbad -> 44 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	45
+Transitions: 	100
+Reward Models:  none
+State Labels: 	4 labels
+   * goal -> 1 item(s)
+   * notbad -> 44 item(s)
+   * init -> 1 item(s)
+   * bad -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 0<=p1_0<=4/5,0<=p4_0<=4/5,0<=p5_0<=4/5; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Pmin<=9023314952300001/10000000000000000 ["notbad" U "goal"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+ WARN (SparseMatrix.cpp:233): Unordered insertion into matrix builder caused duplicate entries.
+Result (initial states):  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 78
+                      AllSat: 78
+
+
+Time for model checking: 0.029s.
+
+
+real	0m0.047s
+user	0m0.039s
+sys	0m0.008s

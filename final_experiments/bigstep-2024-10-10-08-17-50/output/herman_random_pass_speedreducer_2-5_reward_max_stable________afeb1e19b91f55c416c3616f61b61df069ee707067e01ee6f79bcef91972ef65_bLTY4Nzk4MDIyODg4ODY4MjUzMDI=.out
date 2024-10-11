@@ -1,0 +1,431 @@
+{"constants": {}, "region_bound": 0, "prism": "herman_random_pass_speedreducer_2-5.pm", "prop": {"type": "reward", "dir": "max", "label": "stable", "bound": 2.5026961933512}, "big_step": false, "use_robust_pla": true, "epsilon": 0.0001, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0,0.8"}
+Storm-pars 1.8.1
+
+Date: Thu Oct 10 09:14:59 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/herman/herman_random_pass_speedreducer_2-5.pm -prop 'Rmax>=2.5026961933512 [F "stable"]' --mode partitioning --region '0<=r<=0.8,0<=p<=0.8,0<=q<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.376s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	9155
+Transitions: 	41942
+Reward Models:  steps
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * stable -> 320 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.073s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	673
+Transitions: 	2921
+Reward Models:  steps
+State Labels: 	3 labels
+   * stable -> 1 item(s)
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 0<=q<=4/5,0<=r<=4/5,0<=p<=4/5; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Rmax>=3128370241689/1250000000000 [F "stable"] ...
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '((q)^2)/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:179): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ERROR: The program received signal ERROR: The program received signal 15 and will be aborted in 3s.
+15 and will be aborted in 3s.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:118): Topological solver aborted after analyzing 1/6 SCCs.
+Received signal 14
+
+real	60m3.053s
+user	60m2.384s
+sys	0m0.548s

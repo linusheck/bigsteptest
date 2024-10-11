@@ -1,0 +1,53 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {}, "pomdp": "maze2.prism", "prop": {"type": "reward", "dir": "max", "label": "goal", "bound": 17.68031586}, "big_step": false, "use_robust_pla": true, "epsilon": 0.1, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0.2,1"}
+Storm-pars 1.8.1
+
+Date: Thu Oct 10 18:03:59 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases/maze/maze2_reward_max_goal________bc84d137e0e4865bde8a6e1c1b8d1b2de270980c6e8b3b56bfd1ee93f94fcb11_1.drn -prop 'Rmax>=17.68031586 [F "goal"]' --mode partitioning --region '0.2<=p1_0<=1,0.2<=p2_0<=1,0.2<=p3_0<=1,0.2<=p4_0<=1,0.2<=p5_0<=1,0.2<=p6_0<=1,0.2<=p8_0<=1,0.2<=p9_0<=1,0.2<=p10_0<=1,0.2<=p12_0<=1,0.2<=p13_0<=1,0.2<=p14_0<=1,0.2<=p15_0<=1,0.2<=p17_0<=1,0.2<=p19_0<=1' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.003s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41
+Transitions: 	82
+Reward Models:  (default)
+State Labels: 	3 labels
+   * goal -> 1 item(s)
+   * notbad -> 35 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41
+Transitions: 	82
+Reward Models:  (default)
+State Labels: 	3 labels
+   * notbad -> 35 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 1/5<=p1_0<=1,1/5<=p2_0<=1,1/5<=p3_0<=1,1/5<=p4_0<=1,1/5<=p5_0<=1,1/5<=p6_0<=1,1/5<=p8_0<=1,1/5<=p9_0<=1,1/5<=p10_0<=1,1/5<=p12_0<=1,1/5<=p13_0<=1,1/5<=p14_0<=1,1/5<=p15_0<=1,1/5<=p17_0<=1,1/5<=p19_0<=1; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Rmax>=884015793/50000000 [F "goal"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+Result (initial states):  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 2701
+                      AllSat: 2701
+
+
+Time for model checking: 0.512s.
+
+
+real	0m0.542s
+user	0m0.515s
+sys	0m0.028s

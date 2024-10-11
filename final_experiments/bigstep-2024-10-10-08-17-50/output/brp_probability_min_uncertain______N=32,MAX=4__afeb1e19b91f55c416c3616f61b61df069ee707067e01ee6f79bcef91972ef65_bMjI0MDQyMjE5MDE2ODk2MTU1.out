@@ -1,0 +1,52 @@
+{"constants": {"N": 32, "MAX": 4}, "prism": "brp.pm", "prop": {"type": "probability", "dir": "min", "label": "uncertain", "bound": 0.01168033971718}, "region_bound": 0, "big_step": true, "use_robust_pla": true, "epsilon": 0.0001, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0,0.8"}
+Storm-pars 1.8.1
+
+Date: Thu Oct 10 12:09:25 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/brp/brp.pm -const 'N=32,MAX=4' -prop 'Pmin<=0.01168033971718 [F "uncertain"]' --big-step --mode partitioning --region '0<=pL<=0.8,0<=pK<=0.8,0<=TOMsg<=0.8,0<=TOAck<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.002s.
+
+ WARN (FormulaParserGrammar.cpp:325): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+Time for model construction: 0.023s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	2179
+Transitions: 	2879
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 67 item(s)
+   * init -> 1 item(s)
+   * uncertain -> 2 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.006s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	551
+Transitions: 	1191
+Reward Models:  none
+State Labels: 	3 labels
+   * uncertain -> 1 item(s)
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (ParameterRegionParser.cpp:47): Could not find parameter TOMsg in the set of considered variables. Ignoring this parameter.
+ WARN (ParameterRegionParser.cpp:47): Could not find parameter TOAck in the set of considered variables. Ignoring this parameter.
+
+Analyzing parameter region 0<=pK<=4/5,0<=pL<=4/5; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Pmin<=584016985859/50000000000000 [F "uncertain"] ...
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '(-1 * (pK^5+(-5)*pK^4+10*pK^3+(-10)*pK^2+5*pK+(-1)))/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:179): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ERROR: The program received signal 15 and will be aborted in 3s.
+Received signal 15
+
+real	60m0.414s
+user	59m55.309s
+sys	0m4.956s

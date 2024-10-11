@@ -1,0 +1,55 @@
+{"region_bound": 1e-06, "memory_bound": 1, "constants": {"N": 3}, "pomdp": "refuel.prism", "prop": {"type": "probability", "dir": "min", "label": "notbad U goal", "bound": 0.086478825087807}, "big_step": false, "use_robust_pla": true, "epsilon": 0.0001, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true}
+Storm-pars 1.8.1
+
+Date: Thu Oct 10 19:25:16 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases/refuel/refuel_probability_min_notbad_U_goal______N=3__7aa0130ed21dfc8a56a42042157143ba5e577f8306c347b0f9bdf7576fa74c27_1.drn -prop 'Pmin<=0.086478825087807 ["notbad" U "goal"]' --mode partitioning --regionbound 1e-06 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.005s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	72
+Transitions: 	127
+Reward Models:  costs, refuels, steps
+State Labels: 	5 labels
+   * goal -> 1 item(s)
+   * traps -> 6 item(s)
+   * stationvisit -> 17 item(s)
+   * notbad -> 53 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	34
+Transitions: 	64
+Reward Models:  none
+State Labels: 	3 labels
+   * notbad -> 32 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 1/1000000<=p1_0<=999999/1000000,1/1000000<=p2_0<=999999/1000000,1/1000000<=p3_0<=999999/1000000,1/1000000<=p12_0<=999999/1000000,1/1000000<=p14_0<=999999/1000000,1/1000000<=p15_0<=999999/1000000,1/1000000<=p16_0<=999999/1000000,1/1000000<=p23_0<=999999/1000000,1/1000000<=p25_0<=999999/1000000,1/1000000<=p26_0<=999999/1000000,1/1000000<=p27_0<=999999/1000000,1/1000000<=p31_0<=999999/1000000,1/1000000<=p33_0<=999999/1000000,1/1000000<=p35_0<=999999/1000000; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Pmin<=86478825087807/1000000000000000 ["notbad" U "goal"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+Result (initial states):  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 159241
+                      AllSat: 159241
+
+
+Time for model checking: 26.292s.
+
+
+real	0m27.714s
+user	0m26.942s
+sys	0m0.772s

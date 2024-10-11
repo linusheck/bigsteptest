@@ -1,0 +1,57 @@
+{"constants": {}, "region_bound": 0, "prism": "herman_random_pass_speedreducer_2-3.pm", "prop": {"type": "reward", "dir": "max", "label": "stable", "bound": 0.52503841494}, "big_step": false, "use_robust_pla": true, "epsilon": 0.1, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0.2,1"}
+Storm-pars 1.8.1
+
+Date: Thu Oct 10 09:05:47 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/herman/herman_random_pass_speedreducer_2-3.pm -prop 'Rmax>=0.52503841494 [F "stable"]' --mode partitioning --region '0.2<=r<=1,0.2<=p<=1,0.2<=q<=1' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.001s.
+
+Time for model construction: 0.014s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	231
+Transitions: 	598
+Reward Models:  steps
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * stable -> 48 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	22
+Transitions: 	42
+Reward Models:  steps
+State Labels: 	3 labels
+   * stable -> 1 item(s)
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 1/5<=q<=1,1/5<=r<=1,1/5<=p<=1; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Rmax>=26251920747/50000000000 [F "stable"] ...
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '(-3 * ((r) * (r+(-1))))/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:179): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+Result (initial states):  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+Time for model checking: 0.000s.
+
+
+real	0m0.034s
+user	0m0.017s
+sys	0m0.016s

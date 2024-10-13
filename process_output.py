@@ -122,7 +122,7 @@ for file in args.files:
         return int(real_time.split("m")[0]) * 60 + float(real_time.split("m")[1][:-1])
 
 
-    # If benchmark has not terminated, this will be the case:
+    # If benchmark has terminated, this will be the case:
     if mc_time.startswith("Time for model checking"):
         current_line.append(parse_time(real_time.split()[-1]))
 
@@ -136,19 +136,18 @@ for file in args.files:
         value = num_regions.split(" ")[-1]
         current_line.append(value)
     else:
-        if "Received signal 14" in content:
+        if parse_time(real_time.split()[-1]) > 60*60:
             current_line.append("TO")
             current_line.append("TO")
             current_line.append("TO")
         else:
-            current_line.append("ERR")
-            current_line.append("ERR")
-            current_line.append("ERR")
+            # all other stuff is usually MO, that can come in different shapes
+            current_line.append("MO")
+            current_line.append("MO")
+            current_line.append("MO")
     table.append(current_line)
 
 with open(args.results, "w") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerows(table)
-
-print(tabulate.tabulate(table))
 

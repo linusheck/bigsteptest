@@ -149,7 +149,7 @@ for benchmark_id in benchmark_map:
             times.append(benchmark[args.compare_by])
             founds.append(benchmark["Regions"])
         
-        if "N/A" in times or "ERR" in times or "TO" in times:
+        if "N/A" in times or "ERR" in times or "TO" in times or "MO" in times:
             if len(set(times)) > 1:
                 print(
                     "In this benchmark, some timed out, but some didn't:",
@@ -236,7 +236,7 @@ for benchmark_id in benchmark_map:
     # output_table.append(["pdtmc", benchmark_id, model, color_map[model], compx_benchmark["Time"], compy_benchmark["Time"]])
 
     def time_to_int(time):
-        if time == "N/A" or time == "ERR" or time == "TO":
+        if time == "N/A" or time == "ERR" or time == "TO" or time == "MO":
             return TO_VALUE
         if float(time) > MAX_VALUE:
             return GEQ_VALUE
@@ -334,7 +334,7 @@ numbers = [10**x for x in range(args.min, args.max)]
 locs = numbers + [GEQ_VALUE, TO_VALUE]
 
 number_labels = [f"$10^{{{x}}}$" for x in range(args.min, args.max)]
-labels = ["$\\leq$" + number_labels[0]] + number_labels[1:] + ["$\\geq$"f"$10^{{{args.max}}}$", "TO"]
+labels = ["$\\leq$" + number_labels[0]] + number_labels[1:] + ["$\\geq$"f"$10^{{{args.max}}}$", "NR"]
 
 plt.xticks(locs, labels, rotation=45, ha="right")
 plt.yticks(locs, labels)

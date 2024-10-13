@@ -88,9 +88,9 @@ for epsilon in sorted(list(epsilons), key=lambda x: float(x)):
         elif propsplit[1] == "reward":
             prop += "R"
         if propsplit[2] == "max":
-            prop += "$\geq$"
+            prop += "$\\geq$"
         elif propsplit[2] == "min":
-            prop += "$\leq$"
+            prop += "$\\leq$"
         prop += str(round(float(propsplit[0]), 2))
 
         def shorten_constants(constants):
@@ -119,16 +119,16 @@ for epsilon in sorted(list(epsilons), key=lambda x: float(x)):
             benchmark = benchmark[0]
             if benchmark["Time (wall)"] == "TO":
                 line.append("TO")
-            elif benchmark["Time (wall)"] == "ERR":
-                line.append("TO")
+            elif benchmark["Time (wall)"] == "MO":
+                line.append("MO")
             else:
                 line.append(round(float(benchmark["Time (wall)"]), 3))
         for val in methods:
             benchmark = [b for b in benchmarks if b[args.comp_field] == val]
             assert len(benchmark) == 1
             benchmark = benchmark[0]
-            if benchmark["Regions"] in ["ERR", "TO"]:
-                line.append("TO")
+            if benchmark["Regions"] in ["MO", "TO"]:
+                line.append(benchmark["Regions"])
             else:
                 line.append(int(benchmark["Regions"]))
         output_table.append(line)
@@ -140,7 +140,7 @@ for epsilon in sorted(list(epsilons), key=lambda x: float(x)):
             time_a = row[6]
             time_b = row[7]
             # We deal with this manually
-            if time_a == "TO" or time_b == "TO":
+            if time_a in ["TO", "MO"] or time_b in ["TO", "MO"]:
                 if time_a != time_b:
                     print("TO mismatch", row)
             else:

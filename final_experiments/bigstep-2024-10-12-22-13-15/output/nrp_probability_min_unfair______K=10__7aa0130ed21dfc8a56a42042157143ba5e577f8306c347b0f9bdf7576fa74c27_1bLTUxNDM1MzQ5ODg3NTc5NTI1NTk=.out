@@ -1,0 +1,42 @@
+{"memory_bound": 1, "region_bound": 1e-06, "constants": {"K": 10}, "pomdp": "nrp.prism", "prop": {"type": "probability", "dir": "min", "label": "unfair", "bound": 0.101}, "big_step": false, "use_robust_pla": true, "epsilon": 0.01, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true}
+Storm-pars 1.8.1
+
+Date: Sun Oct 13 07:28:25 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases/nrp/nrp_probability_min_unfair______K=10__7aa0130ed21dfc8a56a42042157143ba5e577f8306c347b0f9bdf7576fa74c27_1.drn -prop 'Pmin<=0.101 [F "unfair"]' --mode partitioning --regionbound 1e-06 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	186
+Transitions: 	250
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 10 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	113
+Transitions: 	177
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 1/1000000<=p2_0<=999999/1000000,1/1000000<=p7_0<=999999/1000000,1/1000000<=p12_0<=999999/1000000,1/1000000<=p17_0<=999999/1000000,1/1000000<=p22_0<=999999/1000000,1/1000000<=p27_0<=999999/1000000,1/1000000<=p32_0<=999999/1000000,1/1000000<=p37_0<=999999/1000000,1/1000000<=p42_0<=999999/1000000,1/1000000<=p47_0<=999999/1000000; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Pmin<=101/1000 [F "unfair"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ERROR (storm-pars.cpp:593): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
+
+real	3m16.517s
+user	3m3.353s
+sys	0m13.160s

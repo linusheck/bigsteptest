@@ -1,0 +1,42 @@
+{"memory_bound": 1, "region_bound": 0.1, "constants": {"K": 5}, "pomdp": "nrp.prism", "prop": {"type": "probability", "dir": "min", "label": "unfair", "bound": 0.20001247914799}, "big_step": false, "use_robust_pla": true, "epsilon": 0.0001, "splitting_strategy": "estimate", "estimate_method": "delta", "simple": true, "splitting_threshold": 4}
+Storm-pars 1.8.1
+
+Date: Sun Oct 13 15:13:49 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases_standard/nrp/nrp_probability_min_unfair______K=5__7a2f1fdb1607683b03b4e06864e90f3cd79a482d40affed47acc3f2e219b9623_1.drn -prop 'Pmin<=0.20001247914799 [F "unfair"]' --mode partitioning --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	56
+Transitions: 	75
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 5 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	33
+Transitions: 	52
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 1/10<=p2_0<=9/10,1/10<=p7_0<=9/10,1/10<=p12_0<=9/10,1/10<=p17_0<=9/10,1/10<=p22_0<=9/10; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Pmin<=20001247914799/100000000000000 [F "unfair"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ERROR (storm-pars.cpp:593): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
+
+real	2m46.749s
+user	2m33.013s
+sys	0m13.732s

@@ -1,0 +1,44 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {}, "pomdp": "maze2.prism", "prop": {"type": "reward", "dir": "max", "label": "goal", "bound": 16.1371352170341}, "big_step": false, "use_robust_pla": true, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0,0.8"}
+Storm-pars 1.8.1
+
+Date: Sun Oct 13 06:40:40 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases/maze/maze2_reward_max_goal________afeb1e19b91f55c416c3616f61b61df069ee707067e01ee6f79bcef91972ef65_1.drn -prop 'Rmax>=16.1371352170341 [F "goal"]' --mode partitioning --region '0<=p1_0<=0.8,0<=p2_0<=0.8,0<=p3_0<=0.8,0<=p4_0<=0.8,0<=p5_0<=0.8,0<=p6_0<=0.8,0<=p8_0<=0.8,0<=p9_0<=0.8,0<=p10_0<=0.8,0<=p12_0<=0.8,0<=p13_0<=0.8,0<=p14_0<=0.8,0<=p15_0<=0.8,0<=p17_0<=0.8,0<=p19_0<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.003s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41
+Transitions: 	82
+Reward Models:  (default)
+State Labels: 	3 labels
+   * goal -> 1 item(s)
+   * notbad -> 35 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41
+Transitions: 	82
+Reward Models:  (default)
+State Labels: 	3 labels
+   * notbad -> 35 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 0<=p1_0<=4/5,0<=p2_0<=4/5,0<=p3_0<=4/5,0<=p4_0<=4/5,0<=p5_0<=4/5,0<=p6_0<=4/5,0<=p8_0<=4/5,0<=p9_0<=4/5,0<=p10_0<=4/5,0<=p12_0<=4/5,0<=p13_0<=4/5,0<=p14_0<=4/5,0<=p15_0<=4/5,0<=p17_0<=4/5,0<=p19_0<=4/5; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Rmax>=161371352170341/10000000000000 [F "goal"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ERROR (storm-pars.cpp:593): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
+
+real	11m18.401s
+user	11m4.860s
+sys	0m13.524s

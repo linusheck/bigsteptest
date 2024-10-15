@@ -1,0 +1,47 @@
+{"constants": {"CrowdSize": 20, "TotalRuns": 4}, "prism": "crowds.pm", "prop": {"type": "probability", "dir": "min", "label": "observeIGreater1", "bound": 0.029443180613000004}, "region_bound": 0, "big_step": false, "use_robust_pla": true, "epsilon": 0.1, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving"}
+Storm-pars 1.8.1
+
+Date: Sun Oct 13 06:00:17 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/crowds/crowds.pm -const 'CrowdSize=20,TotalRuns=4' -prop 'Pmin<=0.029443180613000004 [F "observeIGreater1"]' --mode partitioning --regionbound 0 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 1.767s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	325488
+Transitions: 	1157088
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 10165 item(s)
+   * init -> 1 item(s)
+   * observeIGreater1 -> 460 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.522s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	96
+Transitions: 	144
+Reward Models:  none
+State Labels: 	3 labels
+   * observeIGreater1 -> 1 item(s)
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 0<=pL<=1,0<=pK<=1; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Pmin<=7360795153250001/250000000000000000 [F "observeIGreater1"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ERROR: The program received signal 15 and will be aborted in 3s.
+Received signal 15
+
+real	60m0.006s
+user	59m59.827s
+sys	0m0.128s

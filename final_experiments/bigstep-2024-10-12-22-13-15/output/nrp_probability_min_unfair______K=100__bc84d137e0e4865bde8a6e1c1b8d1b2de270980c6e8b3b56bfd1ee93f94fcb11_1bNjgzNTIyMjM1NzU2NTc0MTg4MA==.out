@@ -1,0 +1,51 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {"K": 100}, "pomdp": "nrp.prism", "prop": {"type": "probability", "dir": "min", "label": "unfair", "bound": 0.0101}, "big_step": true, "use_robust_pla": true, "epsilon": 0.01, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0.2,1"}
+Storm-pars 1.8.1
+
+Date: Sun Oct 13 07:55:45 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases/nrp/nrp_probability_min_unfair______K=100__bc84d137e0e4865bde8a6e1c1b8d1b2de270980c6e8b3b56bfd1ee93f94fcb11_1.drn -prop 'Pmin<=0.0101 [F "unfair"]' --big-step --mode partitioning --region '0.2<=p2_0<=1,0.2<=p7_0<=1,0.2<=p12_0<=1,0.2<=p17_0<=1,0.2<=p22_0<=1,0.2<=p27_0<=1,0.2<=p32_0<=1,0.2<=p37_0<=1,0.2<=p42_0<=1,0.2<=p47_0<=1,0.2<=p52_0<=1,0.2<=p57_0<=1,0.2<=p62_0<=1,0.2<=p67_0<=1,0.2<=p72_0<=1,0.2<=p77_0<=1,0.2<=p82_0<=1,0.2<=p87_0<=1,0.2<=p92_0<=1,0.2<=p97_0<=1,0.2<=p102_0<=1,0.2<=p107_0<=1,0.2<=p112_0<=1,0.2<=p117_0<=1,0.2<=p122_0<=1,0.2<=p127_0<=1,0.2<=p132_0<=1,0.2<=p137_0<=1,0.2<=p142_0<=1,0.2<=p147_0<=1,0.2<=p152_0<=1,0.2<=p157_0<=1,0.2<=p162_0<=1,0.2<=p167_0<=1,0.2<=p172_0<=1,0.2<=p177_0<=1,0.2<=p182_0<=1,0.2<=p187_0<=1,0.2<=p192_0<=1,0.2<=p197_0<=1,0.2<=p202_0<=1,0.2<=p207_0<=1,0.2<=p212_0<=1,0.2<=p217_0<=1,0.2<=p222_0<=1,0.2<=p227_0<=1,0.2<=p232_0<=1,0.2<=p237_0<=1,0.2<=p242_0<=1,0.2<=p247_0<=1,0.2<=p252_0<=1,0.2<=p257_0<=1,0.2<=p262_0<=1,0.2<=p267_0<=1,0.2<=p272_0<=1,0.2<=p277_0<=1,0.2<=p282_0<=1,0.2<=p287_0<=1,0.2<=p292_0<=1,0.2<=p297_0<=1,0.2<=p302_0<=1,0.2<=p307_0<=1,0.2<=p312_0<=1,0.2<=p317_0<=1,0.2<=p322_0<=1,0.2<=p327_0<=1,0.2<=p332_0<=1,0.2<=p337_0<=1,0.2<=p342_0<=1,0.2<=p347_0<=1,0.2<=p352_0<=1,0.2<=p357_0<=1,0.2<=p362_0<=1,0.2<=p367_0<=1,0.2<=p372_0<=1,0.2<=p377_0<=1,0.2<=p382_0<=1,0.2<=p387_0<=1,0.2<=p392_0<=1,0.2<=p397_0<=1,0.2<=p402_0<=1,0.2<=p407_0<=1,0.2<=p412_0<=1,0.2<=p417_0<=1,0.2<=p422_0<=1,0.2<=p427_0<=1,0.2<=p432_0<=1,0.2<=p437_0<=1,0.2<=p442_0<=1,0.2<=p447_0<=1,0.2<=p452_0<=1,0.2<=p457_0<=1,0.2<=p462_0<=1,0.2<=p467_0<=1,0.2<=p472_0<=1,0.2<=p477_0<=1,0.2<=p482_0<=1,0.2<=p487_0<=1,0.2<=p492_0<=1,0.2<=p497_0<=1' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.076s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	15351
+Transitions: 	20500
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 100 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.780s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	202
+Transitions: 	500
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 1/5<=p2_0<=1,1/5<=p7_0<=1,1/5<=p12_0<=1,1/5<=p17_0<=1,1/5<=p22_0<=1,1/5<=p27_0<=1,1/5<=p32_0<=1,1/5<=p37_0<=1,1/5<=p42_0<=1,1/5<=p47_0<=1,1/5<=p52_0<=1,1/5<=p57_0<=1,1/5<=p62_0<=1,1/5<=p67_0<=1,1/5<=p72_0<=1,1/5<=p77_0<=1,1/5<=p82_0<=1,1/5<=p87_0<=1,1/5<=p92_0<=1,1/5<=p97_0<=1,1/5<=p102_0<=1,1/5<=p107_0<=1,1/5<=p112_0<=1,1/5<=p117_0<=1,1/5<=p122_0<=1,1/5<=p127_0<=1,1/5<=p132_0<=1,1/5<=p137_0<=1,1/5<=p142_0<=1,1/5<=p147_0<=1,1/5<=p152_0<=1,1/5<=p157_0<=1,1/5<=p162_0<=1,1/5<=p167_0<=1,1/5<=p172_0<=1,1/5<=p177_0<=1,1/5<=p182_0<=1,1/5<=p187_0<=1,1/5<=p192_0<=1,1/5<=p197_0<=1,1/5<=p202_0<=1,1/5<=p207_0<=1,1/5<=p212_0<=1,1/5<=p217_0<=1,1/5<=p222_0<=1,1/5<=p227_0<=1,1/5<=p232_0<=1,1/5<=p237_0<=1,1/5<=p242_0<=1,1/5<=p247_0<=1,1/5<=p252_0<=1,1/5<=p257_0<=1,1/5<=p262_0<=1,1/5<=p267_0<=1,1/5<=p272_0<=1,1/5<=p277_0<=1,1/5<=p282_0<=1,1/5<=p287_0<=1,1/5<=p292_0<=1,1/5<=p297_0<=1,1/5<=p302_0<=1,1/5<=p307_0<=1,1/5<=p312_0<=1,1/5<=p317_0<=1,1/5<=p322_0<=1,1/5<=p327_0<=1,1/5<=p332_0<=1,1/5<=p337_0<=1,1/5<=p342_0<=1,1/5<=p347_0<=1,1/5<=p352_0<=1,1/5<=p357_0<=1,1/5<=p362_0<=1,1/5<=p367_0<=1,1/5<=p372_0<=1,1/5<=p377_0<=1,1/5<=p382_0<=1,1/5<=p387_0<=1,1/5<=p392_0<=1,1/5<=p397_0<=1,1/5<=p402_0<=1,1/5<=p407_0<=1,1/5<=p412_0<=1,1/5<=p417_0<=1,1/5<=p422_0<=1,1/5<=p427_0<=1,1/5<=p432_0<=1,1/5<=p437_0<=1,1/5<=p442_0<=1,1/5<=p447_0<=1,1/5<=p452_0<=1,1/5<=p457_0<=1,1/5<=p462_0<=1,1/5<=p467_0<=1,1/5<=p472_0<=1,1/5<=p477_0<=1,1/5<=p482_0<=1,1/5<=p487_0<=1,1/5<=p492_0<=1,1/5<=p497_0<=1; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Pmin<=101/10000 [F "unfair"] ...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+Result (initial states):  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+Time for model checking: 0.002s.
+
+
+real	0m0.880s
+user	0m0.848s
+sys	0m0.032s

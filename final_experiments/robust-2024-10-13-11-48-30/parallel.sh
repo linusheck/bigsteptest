@@ -1,0 +1,1 @@
+cat experiments/robust-2024-10-13-11-48-30/manual_commands.sh | parallel --progress -j16 bash -c {}

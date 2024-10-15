@@ -1,0 +1,49 @@
+{"constants": {"N": 64, "MAX": 8}, "prism": "brp.pm", "prop": {"type": "probability", "dir": "min", "label": "uncertain", "bound": 0.0057937858276507}, "region_bound": 1e-06, "big_step": true, "use_robust_pla": true, "epsilon": 0.0001, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true}
+Storm-pars 1.8.1
+
+Date: Sun Oct 13 00:14:03 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/brp/brp.pm -const 'N=64,MAX=8' -prop 'Pmin<=0.0057937858276507 [F "uncertain"]' --big-step --mode partitioning --regionbound 1e-06 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.002s.
+
+ WARN (FormulaParserGrammar.cpp:325): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+Time for model construction: 0.057s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	7687
+Transitions: 	10367
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 135 item(s)
+   * init -> 1 item(s)
+   * uncertain -> 2 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.035s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1857
+Transitions: 	5313
+Reward Models:  none
+State Labels: 	2 labels
+   * uncertain -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 1/1000000<=pK<=999999/1000000,1/1000000<=pL<=999999/1000000; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Pmin<=57937858276507/10000000000000000 [F "uncertain"] ...
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '(-1 * (pK^9+(-9)*pK^8+36*pK^7+(-84)*pK^6+126*pK^5+(-126)*pK^4+84*pK^3+(-36)*pK^2+9*pK+(-1)))/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:179): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+ERROR: The program received signal 15 and will be aborted in 3s.
+Received signal 15
+
+real	60m0.174s
+user	59m58.230s
+sys	0m1.816s

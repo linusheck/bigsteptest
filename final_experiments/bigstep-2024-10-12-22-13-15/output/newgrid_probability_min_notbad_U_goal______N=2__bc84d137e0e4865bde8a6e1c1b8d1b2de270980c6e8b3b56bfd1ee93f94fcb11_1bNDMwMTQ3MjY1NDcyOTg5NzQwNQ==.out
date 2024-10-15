@@ -1,0 +1,55 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {"N": 2}, "pomdp": "newgrid.prism", "prop": {"type": "probability", "dir": "min", "label": "notbad U goal", "bound": 0.9881051190523811}, "big_step": true, "use_robust_pla": true, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0.2,1"}
+Storm-pars 1.8.1
+
+Date: Sun Oct 13 04:26:35 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases/grids/newgrid_probability_min_notbad_U_goal______N=2__bc84d137e0e4865bde8a6e1c1b8d1b2de270980c6e8b3b56bfd1ee93f94fcb11_1.drn -prop 'Pmin<=0.9881051190523811 ["notbad" U "goal"]' --big-step --mode partitioning --region '0.2<=p1_0<=1,0.2<=p4_0<=1,0.2<=p5_0<=1' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.003s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	39
+Transitions: 	71
+Reward Models:  (default)
+State Labels: 	3 labels
+   * goal -> 1 item(s)
+   * notbad -> 38 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	47
+Transitions: 	105
+Reward Models:  none
+State Labels: 	3 labels
+   * notbad -> 46 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Analyzing parameter region 1/5<=p1_0<=1,1/5<=p4_0<=1,1/5<=p5_0<=1; using Robust Parameter Lifting and splitting heuristic Estimate-Based with iterative refinement until 100% is covered.
+
+Model checking property "1": Pmin<=9881051190523811/10000000000000000 ["notbad" U "goal"] ...
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '(-1/4 * (p1_0^2+(-1)*p1_0))/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:179): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:53): Cannot use graph monotonicity in robust mode.
+Result (initial states):  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
+  Fraction of satisfied area: 100%
+Fraction of unsatisfied area: 0%
+            Unknown fraction: 0%
+     Total number of regions: 1
+                      AllSat: 1
+
+
+Time for model checking: 0.000s.
+
+
+real	0m0.018s
+user	0m0.013s
+sys	0m0.005s

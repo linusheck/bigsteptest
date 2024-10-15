@@ -149,7 +149,7 @@ for epsilon in sorted(list(epsilons), key=lambda x: float(x)):
                     slowdowns.append(slowdown)
                     slowdowns_with_names.append((slowdown, row[0], time_a, time_b))
     else:
-        preamble = r"\small Table for \(\varepsilon=" + epsilon + r"\)" + "\n"
+        preamble = r"\subsubsection{Table for \(\varepsilon=" + epsilon + r"\)" + "}\n"
         header = """
         \\toprule
         Model & Const & $|S|$ & $|V|$ & $\\delta$ & Prop & \\multicolumn{2}{c}{Time (s)} & \\multicolumn{2}{c}{Regions} \\\\

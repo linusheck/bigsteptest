@@ -1,5 +1,7 @@
 #!/usr/bin/env fish
 
+python --version
+
 mkdir -p experiments
 set folder experiments/lpl-standard-$(date '+%Y-%m-%d-%H-%M-%S')
 mkdir $folder

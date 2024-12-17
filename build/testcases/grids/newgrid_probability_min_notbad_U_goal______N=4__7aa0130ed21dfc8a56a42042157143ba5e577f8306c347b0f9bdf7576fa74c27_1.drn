@@ -1,0 +1,320 @@
+// Exported by storm
+// Original model type: DTMC
+@type: DTMC
+@parameters
+p1_0 p4_0 p5_0 
+@reward_models
+ 
+@nr_states
+78
+@nr_choices
+78
+@model
+state 0 [0] init notbad
+	action 0 [0]
+		1 : 1/4
+		2 : 1/4
+		3 : 1/4
+		4 : 1/4
+state 1 [0] notbad
+	action 0 [0]
+		28 : (p1_0)/(1)
+		29 : (-1 * (p1_0+(-1)))/(1)
+state 2 [0] notbad
+	action 0 [0]
+		30 : (p1_0)/(1)
+		31 : (-1 * (p1_0+(-1)))/(1)
+state 3 [0] notbad
+	action 0 [0]
+		32 : (p1_0)/(1)
+		33 : (-1 * (p1_0+(-1)))/(1)
+state 4 [0] notbad
+	action 0 [0]
+		34 : (p1_0)/(1)
+		35 : (-1 * (p1_0+(-1)))/(1)
+state 5 [0] notbad
+	action 0 [0]
+		36 : (p1_0)/(1)
+		37 : (-1 * (p1_0+(-1)))/(1)
+state 6 [0] notbad
+	action 0 [0]
+		38 : (p1_0)/(1)
+		39 : (-1 * (p1_0+(-1)))/(1)
+state 7 [0] notbad
+	action 0 [0]
+		40 : (p1_0)/(1)
+		41 : (-1 * (p1_0+(-1)))/(1)
+state 8 [0] notbad
+	action 0 [0]
+		42 : (p1_0)/(1)
+		43 : (-1 * (p1_0+(-1)))/(1)
+state 9 [0] notbad
+	action 0 [0]
+		44 : (p1_0)/(1)
+		45 : (-1 * (p1_0+(-1)))/(1)
+state 10 [0]
+	action 0 [0]
+		10 : 1
+state 11 [0] notbad
+	action 0 [0]
+		46 : (p1_0)/(1)
+		47 : (-1 * (p1_0+(-1)))/(1)
+state 12 [0] notbad
+	action 0 [0]
+		48 : (p1_0)/(1)
+		49 : (-1 * (p1_0+(-1)))/(1)
+state 13 [0] notbad
+	action 0 [0]
+		50 : (p1_0)/(1)
+		51 : (-1 * (p1_0+(-1)))/(1)
+state 14 [0] notbad
+	action 0 [0]
+		52 : (p1_0)/(1)
+		53 : (-1 * (p1_0+(-1)))/(1)
+state 15 [0] notbad
+	action 0 [0]
+		54 : (p1_0)/(1)
+		55 : (-1 * (p1_0+(-1)))/(1)
+state 16 [0] notbad
+	action 0 [0]
+		56 : (p1_0)/(1)
+		57 : (-1 * (p1_0+(-1)))/(1)
+state 17 [0] goal notbad
+	action 0 [0]
+		17 : 1
+state 18 [0] notbad
+	action 0 [0]
+		58 : (p1_0)/(1)
+		59 : (-1 * (p1_0+(-1)))/(1)
+state 19 [0] notbad
+	action 0 [0]
+		60 : (p1_0)/(1)
+		61 : (-1 * (p1_0+(-1)))/(1)
+state 20 [0] notbad
+	action 0 [0]
+		62 : (p1_0)/(1)
+		63 : (-1 * (p1_0+(-1)))/(1)
+state 21 [0] notbad
+	action 0 [0]
+		64 : (p1_0)/(1)
+		65 : (-1 * (p1_0+(-1)))/(1)
+state 22 [0] notbad
+	action 0 [0]
+		66 : (p1_0)/(1)
+		67 : (-1 * (p1_0+(-1)))/(1)
+state 23 [0] notbad
+	action 0 [0]
+		68 : (p1_0)/(1)
+		69 : (-1 * (p1_0+(-1)))/(1)
+state 24 [0] notbad
+	action 0 [0]
+		70 : (p1_0)/(1)
+		71 : (-1 * (p1_0+(-1)))/(1)
+state 25 [0] notbad
+	action 0 [0]
+		72 : (p1_0)/(1)
+		73 : (-1 * (p1_0+(-1)))/(1)
+state 26 [0] notbad
+	action 0 [0]
+		74 : (p1_0)/(1)
+		75 : (-1 * (p1_0+(-1)))/(1)
+state 27 [0] notbad
+	action 0 [0]
+		76 : (p1_0)/(1)
+		77 : (-1 * (p1_0+(-1)))/(1)
+state 28 [1] notbad
+	action 0 [0]
+		1 : (-1 * (p4_0+(-1)))/(1)
+		5 : (p4_0)/(1)
+state 29 [1] notbad
+	action 0 [0]
+		1 : (-1 * (p5_0+(-1)))/(1)
+		2 : (p5_0)/(1)
+state 30 [1] notbad
+	action 0 [0]
+		2 : (-1 * (p4_0+(-1)))/(1)
+		6 : (p4_0)/(1)
+state 31 [1] notbad
+	action 0 [0]
+		1 : (-1 * (p5_0+(-1)))/(1)
+		3 : (p5_0)/(1)
+state 32 [1] notbad
+	action 0 [0]
+		3 : (-1 * (p4_0+(-1)))/(1)
+		7 : (p4_0)/(1)
+state 33 [1] notbad
+	action 0 [0]
+		2 : (-1 * (p5_0+(-1)))/(1)
+		4 : (p5_0)/(1)
+state 34 [1] notbad
+	action 0 [0]
+		4 : (-1 * (p4_0+(-1)))/(1)
+		8 : (p4_0)/(1)
+state 35 [1] notbad
+	action 0 [0]
+		3 : (-1 * (p5_0+(-1)))/(1)
+		9 : (p5_0)/(1)
+state 36 [1] notbad
+	action 0 [0]
+		10 : 1
+state 37 [1] notbad
+	action 0 [0]
+		10 : 1
+state 38 [1] notbad
+	action 0 [0]
+		2 : (-1 * (p4_0+(-1)))/(1)
+		11 : (p4_0)/(1)
+state 39 [1] notbad
+	action 0 [0]
+		5 : (-1 * (p5_0+(-1)))/(1)
+		7 : (p5_0)/(1)
+state 40 [1] notbad
+	action 0 [0]
+		3 : (-1 * (p4_0+(-1)))/(1)
+		12 : (p4_0)/(1)
+state 41 [1] notbad
+	action 0 [0]
+		6 : (-1 * (p5_0+(-1)))/(1)
+		8 : (p5_0)/(1)
+state 42 [1] notbad
+	action 0 [0]
+		4 : (-1 * (p4_0+(-1)))/(1)
+		13 : (p4_0)/(1)
+state 43 [1] notbad
+	action 0 [0]
+		7 : (-1 * (p5_0+(-1)))/(1)
+		14 : (p5_0)/(1)
+state 44 [1] notbad
+	action 0 [0]
+		9 : (-1 * (p4_0+(-1)))/(1)
+		14 : (p4_0)/(1)
+state 45 [1] notbad
+	action 0 [0]
+		4 : (-1 * (p5_0+(-1)))/(1)
+		9 : (p5_0)/(1)
+state 46 [1] notbad
+	action 0 [0]
+		6 : (-1 * (p4_0+(-1)))/(1)
+		15 : (p4_0)/(1)
+state 47 [1] notbad
+	action 0 [0]
+		12 : (p5_0)/(1)
+		16 : (-1 * (p5_0+(-1)))/(1)
+state 48 [1] notbad
+	action 0 [0]
+		17 : 1
+state 49 [1] notbad
+	action 0 [0]
+		17 : 1
+state 50 [1] notbad
+	action 0 [0]
+		8 : (-1 * (p4_0+(-1)))/(1)
+		18 : (p4_0)/(1)
+state 51 [1] notbad
+	action 0 [0]
+		12 : (-1 * (p5_0+(-1)))/(1)
+		19 : (p5_0)/(1)
+state 52 [1] notbad
+	action 0 [0]
+		9 : (-1 * (p4_0+(-1)))/(1)
+		19 : (p4_0)/(1)
+state 53 [1] notbad
+	action 0 [0]
+		8 : (-1 * (p5_0+(-1)))/(1)
+		14 : (p5_0)/(1)
+state 54 [1] notbad
+	action 0 [0]
+		11 : (-1 * (p4_0+(-1)))/(1)
+		20 : (p4_0)/(1)
+state 55 [1] notbad
+	action 0 [0]
+		21 : (p5_0)/(1)
+		22 : (-1 * (p5_0+(-1)))/(1)
+state 56 [1] notbad
+	action 0 [0]
+		5 : (-1 * (p4_0+(-1)))/(1)
+		22 : (p4_0)/(1)
+state 57 [1] notbad
+	action 0 [0]
+		11 : (p5_0)/(1)
+		16 : (-1 * (p5_0+(-1)))/(1)
+state 58 [1] notbad
+	action 0 [0]
+		13 : (-1 * (p4_0+(-1)))/(1)
+		23 : (p4_0)/(1)
+state 59 [1] notbad
+	action 0 [0]
+		21 : (-1 * (p5_0+(-1)))/(1)
+		24 : (p5_0)/(1)
+state 60 [1] notbad
+	action 0 [0]
+		14 : (-1 * (p4_0+(-1)))/(1)
+		24 : (p4_0)/(1)
+state 61 [1] notbad
+	action 0 [0]
+		13 : (-1 * (p5_0+(-1)))/(1)
+		19 : (p5_0)/(1)
+state 62 [1] notbad
+	action 0 [0]
+		15 : (-1 * (p4_0+(-1)))/(1)
+		20 : (p4_0)/(1)
+state 63 [1] notbad
+	action 0 [0]
+		25 : (p5_0)/(1)
+		26 : (-1 * (p5_0+(-1)))/(1)
+state 64 [1] notbad
+	action 0 [0]
+		12 : (-1 * (p4_0+(-1)))/(1)
+		25 : (p4_0)/(1)
+state 65 [1] notbad
+	action 0 [0]
+		15 : (-1 * (p5_0+(-1)))/(1)
+		18 : (p5_0)/(1)
+state 66 [1] notbad
+	action 0 [0]
+		16 : (-1 * (p4_0+(-1)))/(1)
+		26 : (p4_0)/(1)
+state 67 [1] notbad
+	action 0 [0]
+		15 : (p5_0)/(1)
+		22 : (-1 * (p5_0+(-1)))/(1)
+state 68 [1] notbad
+	action 0 [0]
+		18 : (-1 * (p4_0+(-1)))/(1)
+		23 : (p4_0)/(1)
+state 69 [1] notbad
+	action 0 [0]
+		25 : (-1 * (p5_0+(-1)))/(1)
+		27 : (p5_0)/(1)
+state 70 [1] notbad
+	action 0 [0]
+		19 : (-1 * (p4_0+(-1)))/(1)
+		27 : (p4_0)/(1)
+state 71 [1] notbad
+	action 0 [0]
+		18 : (-1 * (p5_0+(-1)))/(1)
+		24 : (p5_0)/(1)
+state 72 [1] notbad
+	action 0 [0]
+		21 : (-1 * (p4_0+(-1)))/(1)
+		25 : (p4_0)/(1)
+state 73 [1] notbad
+	action 0 [0]
+		20 : (-1 * (p5_0+(-1)))/(1)
+		23 : (p5_0)/(1)
+state 74 [1] notbad
+	action 0 [0]
+		22 : (-1 * (p4_0+(-1)))/(1)
+		26 : (p4_0)/(1)
+state 75 [1] notbad
+	action 0 [0]
+		20 : (p5_0)/(1)
+		26 : (-1 * (p5_0+(-1)))/(1)
+state 76 [1] notbad
+	action 0 [0]
+		24 : (-1 * (p4_0+(-1)))/(1)
+		27 : (p4_0)/(1)
+state 77 [1] notbad
+	action 0 [0]
+		23 : (-1 * (p5_0+(-1)))/(1)
+		27 : (p5_0)/(1)

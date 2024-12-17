@@ -5,14 +5,14 @@ for i in (seq 2 32)
     echo "New benchmark i=$i"
     echo
     echo "------------------------------"
-    echo "MDP $i"
+    echo "Running on MDP with i=$i"
     ./test_mdp.sh
     echo
     echo "------------------------------"
-    echo "iMC $i"
+    echo "Running on iMC with i=$i"
     ./test_imc.sh
     echo
     echo "------------------------------"
-    echo "iMC (full) $i"
+    echo "Running on iMC (not-graph-preserving) with i=$i"
     ./test_imc_fullregion.sh
 end

@@ -9,6 +9,8 @@ from pathlib import Path
 import base64
 import hashlib
 import re
+import time
+from concurrent.futures import ThreadPoolExecutor
 
 # Preprocess json config by unwrapping all arrays in x into multiple objects of x
 def unwrap_config(config: dict, global_override: dict) -> dict:
@@ -159,7 +161,6 @@ def main():
         default="~/git/storm/build/bin/",
         help="location of the storm binaries (in particular, storm-pars and storm-pomdp)",
     )
-    parser.add_argument("--times", type=int, default=1, help="run stuff n times")
     parser.add_argument("--dry-run", type=bool, default=False, help="dry run")
     parser.add_argument(
         "--folder", type=Path, default="testcases", help="testcases folder"
@@ -192,159 +193,92 @@ def main():
     if args.global_override:
         global_override = json.loads(args.global_override.read_text())
 
-    for config_file_name in glob.glob(str(args.folder) + "/**/config.json"):
-        config_file = Path(config_file_name)
-        folder = config_file.parent
-        config = unwrap_config(
-            json.loads(config_file.read_text(encoding="utf-8")), global_override
+    def process_config_file(folder_and_invocation):
+        folder = folder_and_invocation[0]
+        invocation = folder_and_invocation[1]
+        # run storm-pomdp on the prism file to make a pmc
+        constant_strings = []
+        for key in invocation["constants"]:
+            constant_strings.append(key + "=" + str(invocation["constants"][key]))
+        constant_string = ",".join(constant_strings)
+
+        prop = create_prop_from_dict(invocation["prop"])
+        gd_prop = create_prop_from_dict(invocation["prop"], gd_prop=True)
+
+        drn_file = None
+        prism_file = None
+        jani_file = None
+
+        if "pomdp" in invocation:
+            drn_file = (
+                Path(getcwd())
+                / "build"
+                / folder
+                / (create_file_name(invocation, constant_string, invocation["simple"]) + ".drn")
+            )
+            storm_pomdp_command = (
+                "{binary} --parametric-drn {drn_file} --prism {pomdp} -prop \"{prop}\" -const '{constant_string}' "
+                + "--buildfull {simple} --exact --io:no-drn-placeholders --memorybound {memory_bound}"
+            )
+            storm_pomdp_command = storm_pomdp_command.format(
+                binary=args.storm_location / "storm-pomdp",
+                drn_file=drn_file,
+                constant_string=constant_string,
+                prop=prop,
+                pomdp=folder / invocation["pomdp"],
+                memory_bound=invocation["memory_bound"] if "memory_bound" in invocation else 1,
+                simple="--transformsimple --selfloopreduction" if invocation["simple"] else "",
+            )
+            makedirs(drn_file.parent, exist_ok=True)
+            if path.exists(drn_file):
+                pass
+            elif args.dry_run:
+                print(storm_pomdp_command)
+            else:
+                output = subprocess.getoutput(storm_pomdp_command)
+                print(output)
+            print(drn_file)
+        elif "prism" in invocation:
+            prism_file = getcwd() / folder / invocation["prism"]
+            print(prism_file)
+        elif "drn" in invocation:
+            drn_file = getcwd() / folder / invocation["drn"]
+        elif "jani" in invocation:
+            jani_file = getcwd() / folder / invocation["jani"]
+        else:
+            print(invocation)
+            print("neither a prism nor a drn file specified!")
+            sys.exit(1)
+
+        gd_result_file = (
+            Path(getcwd())
+            / "build"
+            / folder
+            # GD should search the simple model, even if PLA model is the nonsimple variant
+            / (create_file_name(invocation, constant_string, True) + ".gdresult")
         )
 
-        for invocation in config:
-            # run storm-pomdp on the prism file to make a pmc
-            constant_strings = []
-            for key in invocation["constants"]:
-                constant_strings.append(key + "=" + str(invocation["constants"][key]))
-            constant_string = ",".join(constant_strings)
+        print(invocation)
 
-            prop = create_prop_from_dict(invocation["prop"])
-            gd_prop = create_prop_from_dict(invocation["prop"], gd_prop=True)
-
-            drn_file = None
-            prism_file = None
-            jani_file = None
-
-            if "pomdp" in invocation:
-                drn_file = (
-                    Path(getcwd())
-                    / ".build"
-                    / folder
-                    / (create_file_name(invocation, constant_string, invocation["simple"]) + ".drn")
-                )
-                storm_pomdp_command = (
-                    "{binary} --parametric-drn {drn_file} --prism {pomdp} -prop \"{prop}\" -const '{constant_string}' "
-                    + "--buildfull {simple} --exact --io:no-drn-placeholders --memorybound {memory_bound}"
-                )
-                storm_pomdp_command = storm_pomdp_command.format(
-                    binary=args.storm_location / "storm-pomdp",
-                    drn_file=drn_file,
-                    constant_string=constant_string,
-                    prop=prop,
-                    pomdp=folder / invocation["pomdp"],
-                    memory_bound=invocation["memory_bound"] if "memory_bound" in invocation else 1,
-                    simple="--transformsimple --selfloopreduction" if invocation["simple"] else "",
-                )
-                makedirs(drn_file.parent, exist_ok=True)
-                if path.exists(drn_file):
-                    pass
-                elif args.dry_run:
-                    print(storm_pomdp_command)
-                else:
-                    output = subprocess.getoutput(storm_pomdp_command)
-                    print(output)
-                print(drn_file)
-            elif "prism" in invocation:
-                prism_file = getcwd() / folder / invocation["prism"]
-                print(prism_file)
-            elif "drn" in invocation:
-                drn_file = getcwd() / folder / invocation["drn"]
-            elif "jani" in invocation:
-                jani_file = getcwd() / folder / invocation["jani"]
-            else:
-                print(invocation)
-                print("neither a prism nor a drn file specified!")
-                sys.exit(1)
-
-            gd_result_file = (
-                Path(getcwd())
-                / ".build"
-                / folder
+        if "override_bound" in invocation["prop"]:
+            # override GD with manually found bound (we never do this)
+            print(f"Overriding bound of {gd_result_file} with {invocation['prop']['bound']}")
+            found_bound = invocation["prop"]["override_bound"]
+        elif gd_result_file.exists():
+            # time.sleep(0.1)
+            # cached GD
+            found_bound = float(gd_result_file.read_text().split()[0])
+        else:
+            # find a good bound with GD
+            timeout = 60
+            while True:
                 # GD should search the simple model, even if PLA model is the nonsimple variant
-                / (create_file_name(invocation, constant_string, True) + ".gdresult")
-            )
-
-            print(invocation)
-
-            if "override_bound" in invocation["prop"]:
-                # override GD with manually found bound (we never do this)
-                print(f"Overriding bound of {gd_result_file} with {invocation['prop']['bound']}")
-                found_bound = invocation["prop"]["override_bound"]
-            elif gd_result_file.exists():
-                # cached GD
-                found_bound = float(gd_result_file.read_text())
-            else:
-                # find a good bound with GD
-                timeout = 30
-                while True:
-                    # GD should search the simple model, even if PLA model is the nonsimple variant
-                    file = ("--explicit-drn " + str(drn_file).replace("nonsimple", "")
-                        if drn_file
-                        else "--prism " + str(prism_file)
-                        if prism_file
-                        else "--jani " + str(jani_file))
-                    gd_command = '{binary} {file} {constants} -prop "{property}" --mode feasibility --feasibility:method gd {region} -bisim --timeout {timeout} --learning-rate 0.001 {additional_storm_args}'.format(
-                        binary=(
-                            Path(invocation["storm_location"]) / "storm-pars"
-                            if "storm_location" in invocation
-                            else args.storm_location / "storm-pars"
-                        ),
-                        file=file,
-                        constants=(
-                            ""
-                            if (drn_file or not constant_string)
-                            else "-const " + constant_string
-                        ),
-                        property=gd_prop,
-                        timeout=timeout,
-                        region=get_region(invocation, params_file=file.split(" ")[1]),
-                        additional_storm_args=(
-                            invocation["additional_storm_args"]
-                            if "additional_storm_args" in invocation
-                            else ""
-                        ),
-                    )
-                    print(gd_command)
-                    output_gd = subprocess.getoutput(gd_command)
-                    values = [float(l.split(" ")[-1]) for l in output_gd.split("\n") if "Best found value so far" in l]
-                    if len(values) > 0:
-                        found_bound = values[-1]
-                        print(f"Found GD bound {found_bound}")
-
-                        first_best_value_index = next((i for i, v in enumerate(values) if v == found_bound), None)
-                        print(f"Best value {first_best_value_index}/{len(values)}")
-
-                        makedirs(gd_result_file.parent, exist_ok=True)
-                        gd_result_file.write_text(str(found_bound))
-                        break
-                    timeout = 2 * timeout
-                    print(f"Increasing timeout to {timeout}")
-
-
-            invocation["prop"]["bound"] = found_bound * ((1 + invocation["epsilon"]) if invocation["prop"]["dir"] == "min" else (1 - invocation["epsilon"]))
-            
-            if invocation["prop"]["type"] == "probability":
-                if invocation["prop"]["dir"] == "min" and invocation["prop"]["bound"] >= 0.9999:
-                    print("Probability bound is bigger than 0.9999, skipping")
-                    continue
-            if invocation["prop"]["dir"] == "max" and invocation["prop"]["bound"] <= 0.0001:
-                print("Probability/reward bound is smaller than 0.0001, skipping")
-                continue
-
-            prop = create_prop_from_dict(invocation["prop"])
-            print(prop)
-
-            # run everything n times
-            for i in range(args.times):
-                use_robust_pla = (
-                    "use_robust_pla" in invocation and invocation["use_robust_pla"]
-                )
-
-                file = ("--explicit-drn " + str(drn_file)
+                file = ("--explicit-drn " + str(drn_file).replace("nonsimple", "")
                     if drn_file
                     else "--prism " + str(prism_file)
                     if prism_file
                     else "--jani " + str(jani_file))
-
-                command = '{binary} {file} {constants} -prop "{property}" {method} --mode partitioning {region} --terminationCondition 0 {robust_pla} -bisim {additional_storm_args} {splitting_strategy} {splitting_estimate} {splitting_threshold}'.format(
+                gd_command = '{binary} {file} {constants} -prop "{property}" --mode feasibility --feasibility:method gd {region} -bisim --timeout {timeout} --learning-rate 0.001 {additional_storm_args}'.format(
                     binary=(
                         Path(invocation["storm_location"]) / "storm-pars"
                         if "storm_location" in invocation
@@ -356,58 +290,132 @@ def main():
                         if (drn_file or not constant_string)
                         else "-const " + constant_string
                     ),
-                    property=prop,
-                    method=(
-                        "--big-step"
-                        if "big_step" in invocation and invocation["big_step"]
-                        else ""
-                    ),
-                    robust_pla=(
-                        "--regionverif:engine robustpl --minmax:method vi"
-                        if use_robust_pla
-                        else "--minmax:method vi"  # TODO assuming VI
-                    ),
+                    property=gd_prop,
+                    timeout=timeout,
+                    region=get_region(invocation, params_file=file.split(" ")[1]),
                     additional_storm_args=(
                         invocation["additional_storm_args"]
                         if "additional_storm_args" in invocation
                         else ""
                     ),
-                    splitting_strategy=(
-                        f"--splitting-heuristic {invocation['splitting_strategy']}"
-                        if "splitting_strategy" in invocation
-                        else ""
-                    ),
-                    splitting_estimate=(
-                        f"--estimate-method {invocation['estimate_method']}"
-                        if "estimate_method" in invocation
-                        else ""
-                    ),
-                    splitting_threshold=(
-                        f"--splitting-threshold {invocation['splitting_threshold']}"
-                        if "splitting_threshold" in invocation
-                        else ""
-                    ),
-                    region=get_region(invocation, params_file=file.split(" ")[1]),
                 )
+                output_gd = subprocess.getoutput(gd_command)
+                values = [float(l.split(" ")[-1]) for l in output_gd.split("\n") if "Best found value so far" in l]
+                # need to find 10 values before i think its ok
+                if len(values) > 10:
+                    found_bound = values[-1]
+                    print(f"Found GD bound {found_bound}")
 
-                json_str = json.dumps(invocation)
-                echo_str = json_str.replace('\\"', "").replace('"', '\\"')
+                    first_best_value_index = next((i for i, v in enumerate(values) if v == found_bound), None)
+                    print(f"Best value {first_best_value_index}/{len(values)}")
 
-                manual_script += (
-                    '( echo "'
-                    + echo_str
-                    + '"'
-                    + f" && ulimit -v 32000000 && time timeout {args.timeout} "
-                    + command
-                    + "  ) > "
-                    + str(args.output / "output"
-                    / (create_file_name(invocation, constant_string, invocation["simple"])
-                    + str(base64.b64encode(str(hash(json_str)).encode()))
-                    + ".out")) +  " 2>&1"
-                    + "\n"
-                )
+                    makedirs(gd_result_file.parent, exist_ok=True)
+                    print("Write to " + str(gd_result_file))
+                    gd_result_file.write_text(str(found_bound))
+                    break
+                timeout = 2 * timeout
+                print(f"Increasing timeout to {timeout}")
 
-                number_of_task += 1
+
+        invocation["prop"]["bound"] = found_bound * ((1 + invocation["epsilon"]) if invocation["prop"]["dir"] == "min" else (1 - invocation["epsilon"]))
+        
+        if invocation["prop"]["type"] == "probability":
+            if invocation["prop"]["dir"] == "min" and invocation["prop"]["bound"] >= 0.9999:
+                print("Probability bound is bigger than 0.9999, skipping")
+                return ""
+        if invocation["prop"]["dir"] == "max" and invocation["prop"]["bound"] <= 0.0001:
+            print("Probability/reward bound is smaller than 0.0001, skipping")
+            return ""
+
+        prop = create_prop_from_dict(invocation["prop"])
+        print(prop)
+
+        use_robust_pla = (
+            "use_robust_pla" in invocation and invocation["use_robust_pla"]
+        )
+
+        file = ("--explicit-drn " + str(drn_file)
+            if drn_file
+            else "--prism " + str(prism_file)
+            if prism_file
+            else "--jani " + str(jani_file))
+
+        command = '{binary} {file} {constants} -prop "{property}" {method} --mode verification {region} --terminationCondition 0 {robust_pla} -bisim {additional_storm_args} {splitting_strategy} {splitting_estimate} {splitting_threshold}'.format(
+            binary=(
+                Path(invocation["storm_location"]) / "storm-pars"
+                if "storm_location" in invocation
+                else args.storm_location / "storm-pars"
+            ),
+            file=file,
+            constants=(
+                ""
+                if (drn_file or not constant_string)
+                else "-const " + constant_string
+            ),
+            property=prop,
+            method=(
+                "--big-step"
+                if "big_step" in invocation and invocation["big_step"]
+                else ""
+            ),
+            robust_pla=(
+                "--regionverif:engine robustpl --minmax:method vi"
+                if use_robust_pla
+                else "--minmax:method vi"  # TODO assuming VI
+            ),
+            additional_storm_args=(
+                invocation["additional_storm_args"]
+                if "additional_storm_args" in invocation
+                else ""
+            ),
+            splitting_strategy=(
+                f"--splitting-heuristic {invocation['splitting_strategy']}"
+                if "splitting_strategy" in invocation
+                else ""
+            ),
+            splitting_estimate=(
+                f"--estimate-method {invocation['estimate_method']}"
+                if "estimate_method" in invocation
+                else ""
+            ),
+            splitting_threshold=(
+                f"--splitting-threshold {invocation['splitting_threshold']}"
+                if "splitting_threshold" in invocation
+                else ""
+            ),
+            region=get_region(invocation, params_file=file.split(" ")[1]),
+        )
+
+        json_str = json.dumps(invocation)
+        echo_str = json_str.replace('\\"', "").replace('"', '\\"')
+        return ( '( echo "'
+            + echo_str
+            + '"'
+            + f" && ulimit -v 32000000 && time timeout {args.timeout} "
+            + command
+            + "  ) > "
+            + str(args.output / "output"
+            / (create_file_name(invocation, constant_string, invocation["simple"])
+            + str(base64.b64encode(str(hash(json_str)).encode()))
+            + ".out")) +  " 2>&1"
+            + "\n" )
+
+    config_files = list(glob.glob(str(args.folder) + "/**/config.json"))
+
+    invocations = []
+
+    for config_file_name in config_files:
+        config_file = Path(config_file_name)
+        folder = config_file.parent
+        config = unwrap_config(
+            json.loads(config_file.read_text(encoding="utf-8")), global_override
+        )
+        invocations += [(folder, invocation) for invocation in config]
+
+    print(invocations)
+
+    with ThreadPoolExecutor(max_workers=1) as executor:
+        manual_script = "\n".join(list(executor.map(process_config_file, invocations)))
 
     (args.output / "output").mkdir()
 

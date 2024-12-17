@@ -2,7 +2,7 @@
 Storm-pars 1.8.1
 
 Date: Sun Oct 13 04:26:39 2024
-Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases/grids/newgrid_probability_min_notbad_U_goal______N=2__bc84d137e0e4865bde8a6e1c1b8d1b2de270980c6e8b3b56bfd1ee93f94fcb11_1.drn -prop 'Pmin<=0.98819404762381 ["notbad" U "goal"]' --mode partitioning --region '0.2<=p1_0<=1,0.2<=p4_0<=1,0.2<=p5_0<=1' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/grids/newgrid_probability_min_notbad_U_goal______N=2__bc84d137e0e4865bde8a6e1c1b8d1b2de270980c6e8b3b56bfd1ee93f94fcb11_1.drn -prop 'Pmin<=0.98819404762381 ["notbad" U "goal"]' --mode partitioning --region '0.2<=p1_0<=1,0.2<=p4_0<=1,0.2<=p5_0<=1' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
 Current working directory: /home/lheck/git/bigsteptest
 
 Time for model construction: 0.003s.

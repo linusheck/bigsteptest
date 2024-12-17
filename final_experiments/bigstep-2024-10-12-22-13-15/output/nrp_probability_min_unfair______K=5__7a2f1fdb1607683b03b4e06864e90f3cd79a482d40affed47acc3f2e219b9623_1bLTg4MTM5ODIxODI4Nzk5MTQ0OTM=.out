@@ -2,7 +2,7 @@
 Storm-pars 1.8.1
 
 Date: Sun Oct 13 07:06:46 2024
-Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases/nrp/nrp_probability_min_unfair______K=5__7a2f1fdb1607683b03b4e06864e90f3cd79a482d40affed47acc3f2e219b9623_1.drn -prop 'Pmin<=0.20001247914799 [F "unfair"]' --mode partitioning --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/nrp/nrp_probability_min_unfair______K=5__7a2f1fdb1607683b03b4e06864e90f3cd79a482d40affed47acc3f2e219b9623_1.drn -prop 'Pmin<=0.20001247914799 [F "unfair"]' --mode partitioning --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
 Current working directory: /home/lheck/git/bigsteptest
 
 Time for model construction: 0.001s.

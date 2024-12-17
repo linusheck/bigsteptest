@@ -112,8 +112,6 @@ for file in args.files:
     else:
         current_line.append(states_lines[-1].split(" ")[-1])
 
-    # The "finished in x" line:
-    mc_time = lines[-7]
 
     # Real time
     real_time = lines[-4]
@@ -121,20 +119,24 @@ for file in args.files:
     def parse_time(real_time):
         return int(real_time.split("m")[0]) * 60 + float(real_time.split("m")[1][:-1])
 
-
     # If benchmark has terminated, this will be the case:
-    if mc_time.startswith("Time for model checking"):
+    if lines[-7] == "Formula is satisfied by all parameter instantiations.":
         current_line.append(parse_time(real_time.split()[-1]))
 
         # unknown fraction
-        unknown_fraction = [l for l in lines if "Unknown fraction" in l][0]
-        value = unknown_fraction.split()[-1][:-1]
+        unknown_fraction = [l for l in lines if "parameter space are not covered" in l][0]
+        value = unknown_fraction.split()[0][:-1]
         current_line.append(round(100.0 - float(value), 4))
 
         # Total number of regions
-        num_regions = [l for l in lines if "Total number of regions" in l][0]
-        value = num_regions.split(" ")[-1]
+        num_regions = [l for l in lines if "after analyzing" in l][0]
+        value = num_regions.split(" ")[-2]
         current_line.append(value)
+    elif lines[-7] == "Formula is not satisfied by all parameter instantiations.":
+        print("Formula is not satisfied by all parameter instantiations.", file)
+        current_line.append("ERR")
+        current_line.append("ERR")
+        current_line.append("ERR")
     else:
         if parse_time(real_time.split()[-1]) > 60*60:
             current_line.append("TO")

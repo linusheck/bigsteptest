@@ -2,7 +2,7 @@
 Storm-pars 1.8.1
 
 Date: Sun Oct 13 07:51:31 2024
-Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases/nrp/nrp_probability_min_unfair______K=10__afeb1e19b91f55c416c3616f61b61df069ee707067e01ee6f79bcef91972ef65_1.drn -prop 'Pmin<=0.10000993681368199 [F "unfair"]' --big-step --mode partitioning --region '0<=p2_0<=0.8,0<=p7_0<=0.8,0<=p12_0<=0.8,0<=p17_0<=0.8,0<=p22_0<=0.8,0<=p27_0<=0.8,0<=p32_0<=0.8,0<=p37_0<=0.8,0<=p42_0<=0.8,0<=p47_0<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/nrp/nrp_probability_min_unfair______K=10__afeb1e19b91f55c416c3616f61b61df069ee707067e01ee6f79bcef91972ef65_1.drn -prop 'Pmin<=0.10000993681368199 [F "unfair"]' --big-step --mode partitioning --region '0<=p2_0<=0.8,0<=p7_0<=0.8,0<=p12_0<=0.8,0<=p17_0<=0.8,0<=p22_0<=0.8,0<=p27_0<=0.8,0<=p32_0<=0.8,0<=p37_0<=0.8,0<=p42_0<=0.8,0<=p47_0<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
 Current working directory: /home/lheck/git/bigsteptest
 
 Time for model construction: 0.001s.

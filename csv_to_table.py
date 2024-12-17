@@ -76,7 +76,7 @@ for epsilon in sorted(list(epsilons), key=lambda x: float(x)):
     output_table = []
     for key in benchmark_map:
         benchmarks = benchmark_map[key]
-        assert len(benchmarks) == 2
+        assert len(benchmarks) == 2, benchmarks
 
         benchmark = benchmarks[0]
         if benchmark["Epsilon"] != epsilon:
@@ -121,13 +121,15 @@ for epsilon in sorted(list(epsilons), key=lambda x: float(x)):
                 line.append("TO")
             elif benchmark["Time (wall)"] == "MO":
                 line.append("MO")
+            elif benchmark["Time (wall)"] == "ERR":
+                line.append("ERR")
             else:
                 line.append(round(float(benchmark["Time (wall)"]), 3))
         for val in methods:
             benchmark = [b for b in benchmarks if b[args.comp_field] == val]
             assert len(benchmark) == 1
             benchmark = benchmark[0]
-            if benchmark["Regions"] in ["MO", "TO"]:
+            if benchmark["Regions"] in ["MO", "TO", "ERR"]:
                 line.append(benchmark["Regions"])
             else:
                 line.append(int(benchmark["Regions"]))

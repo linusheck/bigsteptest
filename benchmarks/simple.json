@@ -1,9 +1,0 @@
-{
-    "use_robust_pla": true,
-    "epsilon": [0.1, 1e-5],
-    "splitting_strategy": "roundrobin",
-    "splitting_threshold": 4,
-    "simple": [true, false],
-    "big_step": false,
-    "region_bound": 0.1
-}

@@ -2,7 +2,7 @@
 Storm-pars 1.8.1
 
 Date: Sun Oct 13 04:26:21 2024
-Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/.build/testcases/grids/4x4grid_reward_max_goal________afeb1e19b91f55c416c3616f61b61df069ee707067e01ee6f79bcef91972ef65_1.drn -prop 'Rmax>=6.6204212273100005 [F "goal"]' --big-step --mode partitioning --region '0<=p1_0<=0.8,0<=p3_0<=0.8,0<=p4_0<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/grids/4x4grid_reward_max_goal________afeb1e19b91f55c416c3616f61b61df069ee707067e01ee6f79bcef91972ef65_1.drn -prop 'Rmax>=6.6204212273100005 [F "goal"]' --big-step --mode partitioning --region '0<=p1_0<=0.8,0<=p3_0<=0.8,0<=p4_0<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
 Current working directory: /home/lheck/git/bigsteptest
 
 Time for model construction: 0.001s.

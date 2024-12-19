@@ -258,8 +258,6 @@ def main():
             / (create_file_name(invocation, constant_string, True) + ".gdresult")
         )
 
-        print(invocation)
-
         if "override_bound" in invocation["prop"]:
             # override GD with manually found bound (we never do this)
             print(f"Overriding bound of {gd_result_file} with {invocation['prop']['bound']}")
@@ -412,15 +410,12 @@ def main():
         )
         invocations += [(folder, invocation) for invocation in config]
 
-    print(invocations)
-
-    with ThreadPoolExecutor(max_workers=args.jobs) as executor:
+    with ThreadPoolExecutor(max_workers=1) as executor:
         manual_script = "\n".join(list(executor.map(process_config_file, invocations)))
 
     (args.output / "output").mkdir()
 
     if args.dry_run:
-        print(manual_script)
         sys.exit(0)
 
     manual_command_file_name = (

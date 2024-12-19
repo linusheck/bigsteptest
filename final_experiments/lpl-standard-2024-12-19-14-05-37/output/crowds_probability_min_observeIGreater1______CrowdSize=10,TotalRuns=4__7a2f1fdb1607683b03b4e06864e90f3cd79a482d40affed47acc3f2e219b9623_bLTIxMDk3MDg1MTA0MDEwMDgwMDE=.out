@@ -1,0 +1,45 @@
+{"constants": {"CrowdSize": 10, "TotalRuns": 4}, "prism": "crowds.pm", "prop": {"type": "probability", "dir": "min", "label": "observeIGreater1", "bound": 0.030443114081100002}, "region_bound": 0.1, "big_step": false, "use_robust_pla": true, "epsilon": 0.01, "splitting_strategy": "estimate", "estimate_method": "delta", "simple": true, "splitting_threshold": 4}
+Storm-pars 1.9.0
+
+Date: Thu Dec 19 15:10:20 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases_standard/crowds/crowds.pm -const 'CrowdSize=10,TotalRuns=4' -prop 'Pmin<=0.030443114081100002 [F "observeIGreater1"]' --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.149s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	27883
+Transitions: 	65283
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 870 item(s)
+   * init -> 1 item(s)
+   * observeIGreater1 -> 130 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.013s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	84
+Transitions: 	130
+Reward Models:  none
+State Labels: 	2 labels
+   * observeIGreater1 -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 369 regions.
+	0% of the parameter space are not covered.
+Extremal value: 8642001466781579/288230376151711744
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.027s.
+
+real	0m0.213s
+user	0m0.193s
+sys	0m0.020s

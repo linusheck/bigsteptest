@@ -1,0 +1,47 @@
+{"constants": {}, "jani": "alarm.jani", "prop": {"type": "probability", "dir": "max", "label": "VENTTUBE=0", "bound": 0.0367772722136001}, "region_bound": 1e-06, "big_step": true, "use_robust_pla": true, "epsilon": 1e-05, "splitting_strategy": "estimate", "estimate_method": "delta", "simple": true, "splitting_threshold": 4}
+Storm-pars 1.9.0
+
+Date: Thu Dec 19 15:08:48 2024
+Command line arguments: --jani /home/lheck/git/bigsteptest/testcases_standard/alarm/alarm.jani -prop 'Pmax>=0.0367772722136001 [F VENTTUBE=0]' --big-step --mode verification --regionbound 1e-06 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.011s.
+
+Time for model construction: 0.028s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	888
+Transitions: 	2387
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 3 item(s)
+   * (VENTTUBE = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	15
+Transitions: 	34
+Reward Models:  none
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * (VENTTUBE = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '(1/2514375 * (315385*y^2+(-797819)*y+500326))/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:180): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 5 regions.
+	0% of the parameter space are not covered.
+Extremal value: 4516911162870893/9007199254740992
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.001s.
+
+real	0m0.062s
+user	0m0.050s
+sys	0m0.012s

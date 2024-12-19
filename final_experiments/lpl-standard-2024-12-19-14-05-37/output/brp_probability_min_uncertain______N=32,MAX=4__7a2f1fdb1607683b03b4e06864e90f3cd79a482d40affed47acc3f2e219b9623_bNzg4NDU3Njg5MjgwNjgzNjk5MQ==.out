@@ -1,0 +1,45 @@
+{"constants": {"N": 32, "MAX": 4}, "prism": "brp.pm", "prop": {"type": "probability", "dir": "min", "label": "uncertain", "bound": 0.0116793193320254}, "region_bound": 0.1, "big_step": true, "use_robust_pla": true, "epsilon": 1e-05, "splitting_strategy": "estimate", "estimate_method": "delta", "simple": true, "splitting_threshold": 4}
+Storm-pars 1.9.0
+
+Date: Thu Dec 19 14:25:54 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases_standard/brp/brp.pm -const 'N=32,MAX=4' -prop 'Pmin<=0.0116793193320254 [F "uncertain"]' --big-step --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.002s.
+
+ WARN (FormulaParserGrammar.cpp:325): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+Time for model construction: 0.024s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	2179
+Transitions: 	2879
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 67 item(s)
+   * init -> 1 item(s)
+   * uncertain -> 2 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.006s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	545
+Transitions: 	1185
+Reward Models:  none
+State Labels: 	2 labels
+   * uncertain -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '(-1 * (pK^5+(-5)*pK^4+10*pK^3+(-10)*pK^2+5*pK+(-1)))/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:180): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+ERROR: The program received signal 15 and will be aborted in 3s.
+Received signal 15
+
+real	60m1.129s
+user	59m49.120s
+sys	0m11.908s

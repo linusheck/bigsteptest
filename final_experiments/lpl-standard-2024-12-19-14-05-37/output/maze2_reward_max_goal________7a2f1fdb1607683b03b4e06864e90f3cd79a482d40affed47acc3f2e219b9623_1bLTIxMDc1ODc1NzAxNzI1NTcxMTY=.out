@@ -1,0 +1,43 @@
+{"memory_bound": 1, "region_bound": 0.1, "constants": {}, "pomdp": "maze2.prism", "prop": {"type": "reward", "dir": "max", "label": "goal", "bound": 15.768069660000002}, "big_step": false, "use_robust_pla": true, "epsilon": 0.1, "splitting_strategy": "estimate", "estimate_method": "delta", "simple": true, "splitting_threshold": 4}
+Storm-pars 1.9.0
+
+Date: Thu Dec 19 15:15:28 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases_standard/maze/maze2_reward_max_goal________7a2f1fdb1607683b03b4e06864e90f3cd79a482d40affed47acc3f2e219b9623_1.drn -prop 'Rmax>=15.768069660000002 [F "goal"]' --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.003s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41
+Transitions: 	82
+Reward Models:  (default)
+State Labels: 	3 labels
+   * goal -> 1 item(s)
+   * notbad -> 35 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41
+Transitions: 	82
+Reward Models:  (default)
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 1537 regions.
+	0% of the parameter space are not covered.
+Extremal value: 7393226337484307/70368744177664
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.167s.
+
+real	0m0.189s
+user	0m0.181s
+sys	0m0.008s

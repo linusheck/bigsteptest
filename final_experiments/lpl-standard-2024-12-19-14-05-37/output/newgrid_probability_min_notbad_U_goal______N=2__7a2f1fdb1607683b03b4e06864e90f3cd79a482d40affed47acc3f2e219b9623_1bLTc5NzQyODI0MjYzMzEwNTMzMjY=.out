@@ -1,0 +1,44 @@
+{"memory_bound": 1, "region_bound": 0.1, "constants": {"N": 2}, "pomdp": "newgrid.prism", "prop": {"type": "probability", "dir": "min", "label": "notbad U goal", "bound": 0.8941507868184541}, "big_step": false, "use_robust_pla": true, "epsilon": 1e-05, "splitting_strategy": "estimate", "estimate_method": "delta", "simple": true, "splitting_threshold": 4}
+Storm-pars 1.9.0
+
+Date: Thu Dec 19 15:09:39 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases_standard/grids/newgrid_probability_min_notbad_U_goal______N=2__7a2f1fdb1607683b03b4e06864e90f3cd79a482d40affed47acc3f2e219b9623_1.drn -prop 'Pmin<=0.8941507868184541 ["notbad" U "goal"]' --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.003s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	39
+Transitions: 	71
+Reward Models:  (default)
+State Labels: 	3 labels
+   * goal -> 1 item(s)
+   * notbad -> 38 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	32
+Transitions: 	62
+Reward Models:  none
+State Labels: 	3 labels
+   * notbad -> 32 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 56585 regions.
+	0% of the parameter space are not covered.
+Extremal value: 1006700474880811/1125899906842624
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 3.016s.
+
+real	0m3.082s
+user	0m3.022s
+sys	0m0.060s

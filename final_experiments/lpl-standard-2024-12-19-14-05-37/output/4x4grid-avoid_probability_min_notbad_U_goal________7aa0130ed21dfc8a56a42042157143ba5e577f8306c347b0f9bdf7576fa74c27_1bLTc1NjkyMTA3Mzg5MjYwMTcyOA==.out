@@ -1,0 +1,44 @@
+{"memory_bound": 1, "region_bound": 1e-06, "constants": {}, "pomdp": "4x4grid-avoid.prism", "prop": {"type": "probability", "dir": "min", "label": "notbad U goal", "bound": 0.928580463311776}, "big_step": false, "use_robust_pla": false, "epsilon": 1e-05, "splitting_strategy": "estimate", "estimate_method": "delta", "simple": true, "splitting_threshold": 4}
+Storm-pars 1.9.0
+
+Date: Thu Dec 19 15:08:58 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases_standard/grids/4x4grid-avoid_probability_min_notbad_U_goal________7aa0130ed21dfc8a56a42042157143ba5e577f8306c347b0f9bdf7576fa74c27_1.drn -prop 'Pmin<=0.928580463311776 ["notbad" U "goal"]' --mode verification --regionbound 1e-06 --terminationCondition 0 '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.004s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	45
+Transitions: 	100
+Reward Models:  (default)
+State Labels: 	4 labels
+   * goal -> 1 item(s)
+   * bad -> 1 item(s)
+   * notbad -> 44 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	45
+Transitions: 	100
+Reward Models:  none
+State Labels: 	3 labels
+   * notbad -> 44 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Region partitioning for extremal value terminated after analyzing 48889 regions.
+	0% of the parameter space are not covered.
+Extremal value: 8362798040753427/9007199254740992
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 10.371s.
+
+real	0m10.435s
+user	0m10.375s
+sys	0m0.060s

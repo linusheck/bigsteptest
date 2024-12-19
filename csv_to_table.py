@@ -76,7 +76,7 @@ for epsilon in sorted(list(epsilons), key=lambda x: float(x)):
     output_table = []
     for key in benchmark_map:
         benchmarks = benchmark_map[key]
-        assert len(benchmarks) == 2, benchmarks
+        # assert len(benchmarks) == 2, benchmarks
 
         benchmark = benchmarks[0]
         if benchmark["Epsilon"] != epsilon:

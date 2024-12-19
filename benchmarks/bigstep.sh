@@ -36,6 +36,7 @@ function plot --description "plot <format> <separate-legend> <dpi> <title>"
 end
 
 plot pdf 0 7 1
-plot pgf 1 6 0
+# comment in for latex generation (requires texlive)
+# plot pgf 1 6 0
 
 python csv_to_table.py $result_file --comp-field BigStep --comp-values "false,true" > $folder/table.tex

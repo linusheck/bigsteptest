@@ -1,0 +1,42 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {"K": 5}, "pomdp": "nrp.prism", "prop": {"type": "probability", "dir": "min", "label": "unfair", "bound": 0.202}, "big_step": true, "use_robust_pla": true, "epsilon": 0.01, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0.2,1"}
+Storm-pars 1.9.0
+
+Date: Tue Dec 17 15:36:43 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/nrp/nrp_probability_min_unfair______K=5__bc84d137e0e4865bde8a6e1c1b8d1b2de270980c6e8b3b56bfd1ee93f94fcb11_1.drn -prop 'Pmin<=0.202 [F "unfair"]' --big-step --mode verification --region '0.2<=p2_0<=1,0.2<=p7_0<=1,0.2<=p12_0<=1,0.2<=p17_0<=1,0.2<=p22_0<=1' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	56
+Transitions: 	75
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 5 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	12
+Transitions: 	25
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 1 regions.
+	0% of the parameter space are not covered.
+Extremal value: 7131972427497955/36028797018963968
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.000s.
+
+real	0m0.017s
+user	0m0.013s
+sys	0m0.004s

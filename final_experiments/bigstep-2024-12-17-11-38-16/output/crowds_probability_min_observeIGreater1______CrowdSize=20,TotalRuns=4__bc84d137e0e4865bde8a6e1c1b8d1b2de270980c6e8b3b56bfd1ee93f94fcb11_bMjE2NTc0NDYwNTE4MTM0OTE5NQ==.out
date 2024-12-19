@@ -1,0 +1,46 @@
+{"constants": {"CrowdSize": 20, "TotalRuns": 4}, "prism": "crowds.pm", "prop": {"type": "probability", "dir": "min", "label": "observeIGreater1", "bound": 0.018176211910301502}, "region_bound": 0, "big_step": false, "use_robust_pla": true, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0.2,1"}
+Storm-pars 1.9.0
+
+Date: Tue Dec 17 14:50:03 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/crowds/crowds.pm -const 'CrowdSize=20,TotalRuns=4' -prop 'Pmin<=0.018176211910301502 [F "observeIGreater1"]' --mode verification --region '0.2<=pK<=1,0.2<=pL<=1' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.007s.
+
+Time for model construction: 3.360s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	325488
+Transitions: 	1157088
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 10165 item(s)
+   * init -> 1 item(s)
+   * observeIGreater1 -> 460 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.939s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	96
+Transitions: 	144
+Reward Models:  none
+State Labels: 	3 labels
+   * observeIGreater1 -> 1 item(s)
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 241 regions.
+	0% of the parameter space are not covered.
+Extremal value: 2619343125664371/144115188075855872
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.067s.
+
+real	0m4.426s
+user	0m4.309s
+sys	0m0.116s

@@ -414,7 +414,7 @@ def main():
 
     print(invocations)
 
-    with ThreadPoolExecutor(max_workers=1) as executor:
+    with ThreadPoolExecutor(max_workers=args.jobs) as executor:
         manual_script = "\n".join(list(executor.map(process_config_file, invocations)))
 
     (args.output / "output").mkdir()

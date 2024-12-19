@@ -1,0 +1,47 @@
+{"constants": {}, "jani": "alarm.jani", "prop": {"type": "probability", "dir": "max", "label": "VENTTUBE=0", "bound": 0.233485397442}, "region_bound": 0.1, "big_step": true, "use_robust_pla": true, "epsilon": 0.01, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true}
+Storm-pars 1.9.0
+
+Date: Tue Dec 17 14:11:43 2024
+Command line arguments: --jani /home/lheck/git/bigsteptest/testcases/alarm/alarm.jani -prop 'Pmax>=0.233485397442 [F VENTTUBE=0]' --big-step --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.011s.
+
+Time for model construction: 0.028s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	888
+Transitions: 	2387
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 3 item(s)
+   * (VENTTUBE = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	15
+Transitions: 	34
+Reward Models:  none
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * (VENTTUBE = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '(1/2514375 * (315385*y^2+(-797819)*y+500326))/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:180): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 41 regions.
+	0% of the parameter space are not covered.
+Extremal value: 2389017142084663/9007199254740992
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.003s.
+
+real	0m0.064s
+user	0m0.041s
+sys	0m0.024s

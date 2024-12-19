@@ -1,0 +1,46 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {}, "pomdp": "4x4grid-avoid.prism", "prop": {"type": "probability", "dir": "min", "label": "notbad U goal", "bound": 0.9393}, "big_step": false, "use_robust_pla": true, "epsilon": 0.01, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0.2,1"}
+Storm-pars 1.9.0
+
+Date: Tue Dec 17 14:12:54 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/grids/4x4grid-avoid_probability_min_notbad_U_goal________bc84d137e0e4865bde8a6e1c1b8d1b2de270980c6e8b3b56bfd1ee93f94fcb11_1.drn -prop 'Pmin<=0.9393 ["notbad" U "goal"]' --mode verification --region '0.2<=p1_0<=1,0.2<=p4_0<=1,0.2<=p5_0<=1' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.007s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	45
+Transitions: 	100
+Reward Models:  (default)
+State Labels: 	4 labels
+   * goal -> 1 item(s)
+   * bad -> 1 item(s)
+   * notbad -> 44 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	45
+Transitions: 	100
+Reward Models:  none
+State Labels: 	4 labels
+   * goal -> 1 item(s)
+   * notbad -> 44 item(s)
+   * init -> 1 item(s)
+   * bad -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 65 regions.
+	0% of the parameter space are not covered.
+Extremal value: 920952712983453/1125899906842624
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.044s.
+
+real	0m0.070s
+user	0m0.066s
+sys	0m0.004s

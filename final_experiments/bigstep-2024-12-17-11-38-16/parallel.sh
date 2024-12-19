@@ -1,0 +1,1 @@
+cat experiments/bigstep-2024-12-17-11-38-16/manual_commands.sh | parallel --progress -j32 bash -c {}

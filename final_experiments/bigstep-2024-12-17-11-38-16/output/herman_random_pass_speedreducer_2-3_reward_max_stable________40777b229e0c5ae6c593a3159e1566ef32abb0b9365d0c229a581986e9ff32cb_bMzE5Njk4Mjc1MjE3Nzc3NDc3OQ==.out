@@ -1,0 +1,44 @@
+{"constants": {}, "region_bound": 0, "prism": "herman_random_pass_speedreducer_2-3.pm", "prop": {"type": "reward", "dir": "max", "label": "stable", "bound": 0.58327827013962}, "big_step": true, "use_robust_pla": true, "epsilon": 0.0001, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving"}
+Storm-pars 1.9.0
+
+Date: Tue Dec 17 11:43:36 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/herman/herman_random_pass_speedreducer_2-3.pm -prop 'Rmax>=0.58327827013962 [F "stable"]' --big-step --mode verification --regionbound 0 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.001s.
+
+Time for model construction: 0.015s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	231
+Transitions: 	598
+Reward Models:  steps
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * stable -> 48 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	22
+Transitions: 	42
+Reward Models:  steps
+State Labels: 	3 labels
+   * stable -> 1 item(s)
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '(-3 * ((r) * (r+(-1))))/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:180): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
+
+real	21m37.277s
+user	21m15.317s
+sys	0m21.923s

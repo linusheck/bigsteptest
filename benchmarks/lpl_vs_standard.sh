@@ -24,7 +24,7 @@ end
 
 echo $folder
 
-python3 generate_commands.py --folder testcases_standard --global-override benchmarks/robust_vs_plain.json --storm-location ../storm/build_release/bin/ --output $folder --jobs $jobs --timeout $timeout
+python3 generate_commands.py --folder testcases_standard --global-override benchmarks/lpl_vs_standard.json --storm-location ../storm/build_release/bin/ --output $folder --jobs $jobs --timeout $timeout
 ./$folder/parallel.sh
 
 set result_file $folder/results.csv

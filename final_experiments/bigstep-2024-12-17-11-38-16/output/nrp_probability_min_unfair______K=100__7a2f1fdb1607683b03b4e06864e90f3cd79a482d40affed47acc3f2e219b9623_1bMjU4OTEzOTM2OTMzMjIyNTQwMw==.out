@@ -1,0 +1,38 @@
+{"memory_bound": 1, "region_bound": 0.1, "constants": {"K": 100}, "pomdp": "nrp.prism", "prop": {"type": "probability", "dir": "min", "label": "unfair", "bound": 0.010001}, "big_step": false, "use_robust_pla": true, "epsilon": 0.0001, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true}
+Storm-pars 1.9.0
+
+Date: Tue Dec 17 15:23:23 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/nrp/nrp_probability_min_unfair______K=100__7a2f1fdb1607683b03b4e06864e90f3cd79a482d40affed47acc3f2e219b9623_1.drn -prop 'Pmin<=0.010001 [F "unfair"]' --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.081s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	15351
+Transitions: 	20500
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 100 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.014s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	10103
+Transitions: 	15252
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
+
+real	14m30.217s
+user	14m16.787s
+sys	0m13.408s

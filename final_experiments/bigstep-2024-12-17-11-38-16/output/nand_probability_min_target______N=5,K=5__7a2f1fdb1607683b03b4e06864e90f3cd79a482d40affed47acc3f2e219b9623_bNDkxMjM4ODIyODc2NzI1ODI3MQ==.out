@@ -1,0 +1,45 @@
+{"constants": {"N": 5, "K": 5}, "region_bound": 0.1, "prism": "nand.pm", "prop": {"type": "probability", "dir": "min", "label": "target", "bound": 0.495790111651538}, "big_step": false, "use_robust_pla": true, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true}
+Storm-pars 1.9.0
+
+Date: Tue Dec 17 15:08:43 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/nand/nand.pm -const 'N=5,K=5' -prop 'Pmin<=0.495790111651538 [F "target"]' --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.001s.
+
+Time for model construction: 0.028s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	4122
+Transitions: 	5907
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.002s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	2687
+Transitions: 	3654
+Reward Models:  none
+State Labels: 	2 labels
+   * target -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 20501 regions.
+	0% of the parameter space are not covered.
+Extremal value: 4464796259021865/9007199254740992
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 14.020s.
+
+real	0m14.070s
+user	0m14.050s
+sys	0m0.020s

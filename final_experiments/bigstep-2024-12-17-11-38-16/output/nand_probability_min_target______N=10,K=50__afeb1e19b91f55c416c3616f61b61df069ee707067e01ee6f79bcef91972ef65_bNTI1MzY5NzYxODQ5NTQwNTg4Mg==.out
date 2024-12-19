@@ -1,0 +1,46 @@
+{"constants": {"N": 10, "K": 50}, "region_bound": 0, "prism": "nand.pm", "prop": {"type": "probability", "dir": "min", "label": "target", "bound": 0.90537630047719}, "big_step": false, "use_robust_pla": true, "epsilon": 0.0001, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0,0.8"}
+Storm-pars 1.9.0
+
+Date: Tue Dec 17 15:16:05 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/nand/nand.pm -const 'N=10,K=50' -prop 'Pmin<=0.90537630047719 [F "target"]' --mode verification --region '0<=perr<=0.8,0<=prob1<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.001s.
+
+Time for model construction: 1.441s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	346962
+Transitions: 	518847
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.973s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	250403
+Transitions: 	360793
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * target -> 1 item(s)
+   * deadlock -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 205 regions.
+	0% of the parameter space are not covered.
+Extremal value: 8147885569614169/9007199254740992
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 86.639s.
+
+real	1m29.099s
+user	1m28.984s
+sys	0m0.113s

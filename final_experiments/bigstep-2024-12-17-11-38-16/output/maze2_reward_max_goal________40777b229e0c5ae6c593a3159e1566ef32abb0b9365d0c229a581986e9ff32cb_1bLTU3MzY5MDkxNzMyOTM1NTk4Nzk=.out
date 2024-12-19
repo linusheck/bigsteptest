@@ -1,0 +1,44 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {}, "pomdp": "maze2.prism", "prop": {"type": "reward", "dir": "max", "label": "goal", "bound": 12.88445967}, "big_step": false, "use_robust_pla": true, "epsilon": 0.1, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving"}
+Storm-pars 1.9.0
+
+Date: Tue Dec 17 14:58:00 2024
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/maze/maze2_reward_max_goal________40777b229e0c5ae6c593a3159e1566ef32abb0b9365d0c229a581986e9ff32cb_1.drn -prop 'Rmax>=12.88445967 [F "goal"]' --mode verification --regionbound 0 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.006s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41
+Transitions: 	82
+Reward Models:  (default)
+State Labels: 	3 labels
+   * goal -> 1 item(s)
+   * notbad -> 35 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41
+Transitions: 	82
+Reward Models:  (default)
+State Labels: 	3 labels
+   * notbad -> 35 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 1825 regions.
+	0% of the parameter space are not covered.
+Extremal value: 6526373859236567/70368744177664
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.403s.
+
+real	0m0.433s
+user	0m0.417s
+sys	0m0.016s

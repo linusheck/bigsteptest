@@ -16,7 +16,7 @@ for filename in filenames.splitlines():
             model = "herman"
         if model.startswith("newgrid") or model.startswith("4x4"):
             model = "grids"
-        gdresult = f"build/testcases/{model}/{filename}.gdresult"
+        gdresult = f"build/testcases_standard/{model}/{filename}.gdresult"
         if not os.path.exists(gdresult):
             continue
         extremal_value = float(Fraction(extremal_value))

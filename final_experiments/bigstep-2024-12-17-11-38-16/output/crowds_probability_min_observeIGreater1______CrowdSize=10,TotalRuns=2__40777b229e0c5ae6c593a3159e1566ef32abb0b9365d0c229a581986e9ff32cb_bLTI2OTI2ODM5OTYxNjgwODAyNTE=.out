@@ -1,0 +1,44 @@
+{"constants": {"CrowdSize": 10, "TotalRuns": 2}, "prism": "crowds.pm", "prop": {"type": "probability", "dir": "min", "label": "observeIGreater1", "bound": 0.02200022}, "region_bound": 0, "big_step": true, "use_robust_pla": true, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving"}
+Storm-pars 1.9.0
+
+Date: Tue Dec 17 14:19:39 2024
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/crowds/crowds.pm -const 'CrowdSize=10,TotalRuns=2' -prop 'Pmin<=0.02200022 [F "observeIGreater1"]' --big-step --mode verification --regionbound 0 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.006s.
+
+Time for model construction: 0.026s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1037
+Transitions: 	2357
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 64 item(s)
+   * init -> 1 item(s)
+   * observeIGreater1 -> 2 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	19
+Transitions: 	33
+Reward Models:  none
+State Labels: 	3 labels
+   * observeIGreater1 -> 1 item(s)
+   * init -> 1 item(s)
+   * deadlock -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '(pL^2)/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:180): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: Out of virtual memory.
+
+real	30m15.298s
+user	29m55.498s
+sys	0m19.751s

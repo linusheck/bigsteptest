@@ -142,7 +142,7 @@ for epsilon in sorted(list(epsilons), key=lambda x: float(x)):
             time_a = row[6]
             time_b = row[7]
             # We deal with this manually
-            if time_a in ["TO", "MO"] or time_b in ["TO", "MO"]:
+            if time_a in ["TO", "MO", "ERR"] or time_b in ["TO", "MO", "ERR"]:
                 if time_a != time_b:
                     print("TO mismatch", row)
             else:

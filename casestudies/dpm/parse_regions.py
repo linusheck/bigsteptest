@@ -71,4 +71,4 @@ if __name__ == "__main__":
     plt.xticks(range(19))
     plt.tight_layout(pad=0.5)  # Compact layout
     plt.savefig("fixed_area_distribution.pdf", bbox_inches='tight', pad_inches=0.01)
-    plt.savefig("fixed_area_distribution.pgf", bbox_inches='tight', pad_inches=0.01)
+    # plt.savefig("fixed_area_distribution.pgf", bbox_inches='tight', pad_inches=0.01)

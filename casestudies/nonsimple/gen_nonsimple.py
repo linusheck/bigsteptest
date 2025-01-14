@@ -32,5 +32,7 @@ if __name__ == "__main__":
         f.write(generate_dtmc(n))
     with open("region.txt", "w") as f:
         f.write(generate_region("1e-6", f"1/{n}", n))
-    with open("fullregion.txt", "w") as f:
+    with open("region_not_gp.txt", "w") as f:
         f.write(generate_region("0", f"1/{n}", n))
+    with open("region_not_gp_not_wd.txt", "w") as f:
+        f.write(generate_region("0", f"2/{n}", n))

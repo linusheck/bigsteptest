@@ -11,7 +11,7 @@ State Labels: 	3 labels
 Choice Labels: 	none
 -------------------------------------------------------------- 
 
-Time for model preprocessing: 0.010s.
+Time for model preprocessing: 0.005s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -37,7 +37,7 @@ Fraction of unsatisfied area: 0%
                       AllSat: 128
 
 
-Time for model checking: 1.347s.
+Time for model checking: 0.628s.
 
 Write to file dpm_out.txt.
 Fixed regions: 38/128 = 0.296875
@@ -56,7 +56,7 @@ State Labels: 	3 labels
 Choice Labels: 	none
 -------------------------------------------------------------- 
 
-Time for model preprocessing: 0.010s.
+Time for model preprocessing: 0.005s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -82,7 +82,7 @@ Fraction of unsatisfied area: 0%
                       AllSat: 262186
 
 
-Time for model checking: 1371.961s.
+Time for model checking: 698.511s.
 
 Write to file dpm_out_split_all.txt.
 Fixed regions: 262186/262186 = 1.0

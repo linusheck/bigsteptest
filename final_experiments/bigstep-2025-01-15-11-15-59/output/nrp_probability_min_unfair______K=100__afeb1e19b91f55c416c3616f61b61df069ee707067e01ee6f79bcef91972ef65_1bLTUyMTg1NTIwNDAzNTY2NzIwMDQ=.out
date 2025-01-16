@@ -1,0 +1,38 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {"K": 100}, "pomdp": "nrp.prism", "prop": {"type": "probability", "dir": "min", "label": "unfair", "bound": 0.010001}, "big_step": false, "use_robust_pla": true, "epsilon": 0.0001, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0,0.8"}
+Storm-pars 1.9.0
+
+Date: Wed Jan 15 15:38:44 2025
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/nrp/nrp_probability_min_unfair______K=100__afeb1e19b91f55c416c3616f61b61df069ee707067e01ee6f79bcef91972ef65_1.drn -prop 'Pmin<=0.010001 [F "unfair"]' --mode verification --region '0<=p2_0<=0.8,0<=p7_0<=0.8,0<=p12_0<=0.8,0<=p17_0<=0.8,0<=p22_0<=0.8,0<=p27_0<=0.8,0<=p32_0<=0.8,0<=p37_0<=0.8,0<=p42_0<=0.8,0<=p47_0<=0.8,0<=p52_0<=0.8,0<=p57_0<=0.8,0<=p62_0<=0.8,0<=p67_0<=0.8,0<=p72_0<=0.8,0<=p77_0<=0.8,0<=p82_0<=0.8,0<=p87_0<=0.8,0<=p92_0<=0.8,0<=p97_0<=0.8,0<=p102_0<=0.8,0<=p107_0<=0.8,0<=p112_0<=0.8,0<=p117_0<=0.8,0<=p122_0<=0.8,0<=p127_0<=0.8,0<=p132_0<=0.8,0<=p137_0<=0.8,0<=p142_0<=0.8,0<=p147_0<=0.8,0<=p152_0<=0.8,0<=p157_0<=0.8,0<=p162_0<=0.8,0<=p167_0<=0.8,0<=p172_0<=0.8,0<=p177_0<=0.8,0<=p182_0<=0.8,0<=p187_0<=0.8,0<=p192_0<=0.8,0<=p197_0<=0.8,0<=p202_0<=0.8,0<=p207_0<=0.8,0<=p212_0<=0.8,0<=p217_0<=0.8,0<=p222_0<=0.8,0<=p227_0<=0.8,0<=p232_0<=0.8,0<=p237_0<=0.8,0<=p242_0<=0.8,0<=p247_0<=0.8,0<=p252_0<=0.8,0<=p257_0<=0.8,0<=p262_0<=0.8,0<=p267_0<=0.8,0<=p272_0<=0.8,0<=p277_0<=0.8,0<=p282_0<=0.8,0<=p287_0<=0.8,0<=p292_0<=0.8,0<=p297_0<=0.8,0<=p302_0<=0.8,0<=p307_0<=0.8,0<=p312_0<=0.8,0<=p317_0<=0.8,0<=p322_0<=0.8,0<=p327_0<=0.8,0<=p332_0<=0.8,0<=p337_0<=0.8,0<=p342_0<=0.8,0<=p347_0<=0.8,0<=p352_0<=0.8,0<=p357_0<=0.8,0<=p362_0<=0.8,0<=p367_0<=0.8,0<=p372_0<=0.8,0<=p377_0<=0.8,0<=p382_0<=0.8,0<=p387_0<=0.8,0<=p392_0<=0.8,0<=p397_0<=0.8,0<=p402_0<=0.8,0<=p407_0<=0.8,0<=p412_0<=0.8,0<=p417_0<=0.8,0<=p422_0<=0.8,0<=p427_0<=0.8,0<=p432_0<=0.8,0<=p437_0<=0.8,0<=p442_0<=0.8,0<=p447_0<=0.8,0<=p452_0<=0.8,0<=p457_0<=0.8,0<=p462_0<=0.8,0<=p467_0<=0.8,0<=p472_0<=0.8,0<=p477_0<=0.8,0<=p482_0<=0.8,0<=p487_0<=0.8,0<=p492_0<=0.8,0<=p497_0<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.078s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	15351
+Transitions: 	20500
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 100 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.014s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	10104
+Transitions: 	15253
+Reward Models:  none
+State Labels: 	2 labels
+   * unfair -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
+
+real	16m20.664s
+user	16m7.753s
+sys	0m12.880s

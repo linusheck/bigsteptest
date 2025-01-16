@@ -1,0 +1,47 @@
+{"constants": {}, "region_bound": 0.1, "prism": "herman7_pla.pm", "prop": {"type": "reward", "dir": "max", "label": "stable", "bound": 4.44839041647}, "big_step": true, "use_robust_pla": true, "epsilon": 0.01, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true}
+Storm-pars 1.9.0
+
+Date: Wed Jan 15 11:15:59 2025
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/herman/herman7_pla.pm -prop 'Rmax>=4.44839041647 [F "stable"]' --big-step --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.063s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	9066
+Transitions: 	12736
+Reward Models:  steps
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * stable -> 28 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.040s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	680
+Transitions: 	2720
+Reward Models:  steps
+State Labels: 	2 labels
+   * stable -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '(-1/64 * (2*p^6+(-6)*p^5+(-7)*p^4+24*p^3+3*p^2+(-16)*p))/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:180): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 51 regions.
+	0% of the parameter space are not covered.
+Extremal value: 5059035873966707/1125899906842624
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.137s.
+
+real	0m0.261s
+user	0m0.218s
+sys	0m0.044s

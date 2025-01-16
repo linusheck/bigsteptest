@@ -1,0 +1,40 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {}, "pomdp": "maze2.prism", "prop": {"type": "reward", "dir": "max", "label": "goal", "bound": 14.315923139337}, "big_step": false, "use_robust_pla": true, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving"}
+Storm-pars 1.9.0
+
+Date: Wed Jan 15 14:53:36 2025
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/maze/maze2_reward_max_goal________40777b229e0c5ae6c593a3159e1566ef32abb0b9365d0c229a581986e9ff32cb_1.drn -prop 'Rmax>=14.315923139337 [F "goal"]' --mode verification --regionbound 0 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.003s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41
+Transitions: 	82
+Reward Models:  (default)
+State Labels: 	3 labels
+   * goal -> 1 item(s)
+   * notbad -> 35 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41
+Transitions: 	82
+Reward Models:  (default)
+State Labels: 	3 labels
+   * notbad -> 35 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
+
+real	4m48.592s
+user	4m34.335s
+sys	0m14.247s

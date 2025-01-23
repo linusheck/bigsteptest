@@ -1,12 +1,12 @@
-Storm-pars 1.9.0
+Storm-pars 1.9.1 (dev)
 
-Date: Thu Jan 16 15:54:20 2025
+Date: Thu Jan 23 10:49:43 2025
 Command line arguments: --prism dpm.pm -prop 'R>=18.62914837 [F "finished"]' --mode partitioning --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --discrete-variables 'P11,P12,P21,P22,P31,P32,P41,P42,P51,P52,P61,P62,P71,P72,P81,P82' --region '0.4<=startsend<=0.6,0.7<=contsend<=0.9,0<=P11<=1,0<=P12<=1,0<=P21<=1,0<=P22<=1,0<=P31<=1,0<=P32<=1,0<=P41<=1,0<=P42<=1,0<=P51<=1,0<=P52<=1,0<=P61<=1,0<=P62<=1,0<=P71<=1,0<=P72<=1,0<=P81<=1,0<=P82<=1' --resultfile dpm_out_split_all.txt
-Current working directory: /home/lheck/git/bigsteptest/casestudies/dpm
+Current working directory: /Users/linusheck/git/bigsteptest/casestudies/dpm
 
-Time for model input parsing: 0.002s.
+Time for model input parsing: 0.001s.
 
-Time for model construction: 0.046s.
+Time for model construction: 0.052s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -38,14 +38,301 @@ Analyzing parameter region 0<=P11<=1,2/5<=startsend<=3/5,0<=P12<=1,7/10<=contsen
 
 Model checking property "1": R>=1862914837/100000000 [F "finished"] ...
  WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
-Result (initial states):  WARN (RegionRefinementCheckResult.cpp:117): Writing illustration of region check result to a stream is only implemented for two parameters.
-  Fraction of satisfied area: 100%
-Fraction of unsatisfied area: 0%
-            Unknown fraction: 0%
-     Total number of regions: 262186
-                      AllSat: 262186
-
-
-Time for model checking: 698.511s.
-
-Write to file dpm_out_split_all.txt.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 766 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/569 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/570 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/540 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/541 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/569 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/570 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/576 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/577 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/592 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/593 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/576 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/577 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/592 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/593 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/531 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/532 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/724 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/725 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/531 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/532 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/724 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/725 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/625 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/626 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/724 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/725 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/625 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/626 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/724 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/725 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/531 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/532 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/724 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/725 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/531 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/532 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/724 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/725 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/625 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/626 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/724 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/725 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/625 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/626 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/724 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/725 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/628 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/629 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/561 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/562 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/628 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/629 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/561 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/562 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/587 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/588 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/559 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/560 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/587 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/588 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/559 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/560 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/628 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/629 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/561 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/562 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/628 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/629 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/561 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/562 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/587 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/588 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/559 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/560 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/587 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/588 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/559 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/560 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/495 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/496 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/633 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/634 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/495 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/496 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/633 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/634 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/496 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/497 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/633 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/634 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/496 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/497 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/633 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/634 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/495 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/496 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/633 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/634 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/495 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/496 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/633 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/634 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/496 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/497 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/633 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/634 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/496 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/497 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/633 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/634 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/594 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/595 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/617 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/618 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/594 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/595 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/617 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/618 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/656 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/657 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/634 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/635 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/656 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/657 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/634 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/635 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/594 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/595 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/617 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/618 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/594 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/595 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/617 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/618 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/656 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/657 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/634 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/635 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/656 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/657 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/634 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/635 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/491 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/492 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/659 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/660 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/491 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/492 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/659 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/660 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/635 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/636 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/659 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/660 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/635 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/636 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.
+ERROR (GmmxxLinearEquationSolver.cpp:76): Gmm++ (externally) aborted after 0 iterations.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/659 SCCs.
+ WARN (TopologicalLinearEquationSolver.cpp:133): Topological solver aborted after analyzing 1/660 SCCs.
+ WARN (AbstractEquationSolver.cpp:329): Iterative solver was aborted after 1 iterations.

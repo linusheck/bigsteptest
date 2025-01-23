@@ -1,9 +1,9 @@
 Running on MDP with i=2
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:30 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/2' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -56,11 +56,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   30.81 millis    fish           external
+   usr time   17.17 millis    0.00 micros   17.17 millis
+   sys time   13.63 millis  131.00 micros   13.50 millis
+
+
+==new run==
 Running on iMC with i=2
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:30 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/2' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -114,11 +120,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   38.19 millis    fish           external
+   usr time   20.87 millis    0.00 micros   20.87 millis
+   sys time   17.14 millis  172.00 micros   16.96 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=2
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:30 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/2' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -173,11 +185,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.00 millis    fish           external
+   usr time   13.81 millis    0.00 micros   13.81 millis
+   sys time   19.28 millis  106.00 micros   19.18 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=2
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:30 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/2' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -231,12 +249,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   32.72 millis    fish           external
+   usr time   19.77 millis    0.00 micros   19.77 millis
+   sys time   12.97 millis  102.00 micros   12.87 millis
+
 Running on MDP with i=3
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:30 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/3,1e-6<=p2<=1/3' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -289,11 +313,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   35.33 millis    fish           external
+   usr time   20.47 millis    0.00 micros   20.47 millis
+   sys time   14.94 millis  172.00 micros   14.77 millis
+
+
+==new run==
 Running on iMC with i=3
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:30 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/3,1e-6<=p2<=1/3' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -349,11 +379,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   32.75 millis    fish           external
+   usr time   12.54 millis    0.00 micros   12.54 millis
+   sys time   20.34 millis  170.00 micros   20.17 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=3
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:30 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/3,0<=p2<=1/3' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -410,11 +446,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   32.91 millis    fish           external
+   usr time   17.34 millis    0.00 micros   17.34 millis
+   sys time   15.78 millis  216.00 micros   15.56 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=3
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:30 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/3,0<=p2<=2/3' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -470,12 +512,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   31.51 millis    fish           external
+   usr time   20.51 millis    0.00 micros   20.51 millis
+   sys time   11.16 millis  102.00 micros   11.06 millis
+
 Running on MDP with i=4
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:30 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/4,1e-6<=p2<=1/4,1e-6<=p3<=1/4' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -528,11 +576,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.08 millis    fish           external
+   usr time   15.70 millis    0.00 micros   15.70 millis
+   sys time   17.53 millis  160.00 micros   17.37 millis
+
+
+==new run==
 Running on iMC with i=4
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/4,1e-6<=p2<=1/4,1e-6<=p3<=1/4' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -588,11 +642,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   32.40 millis    fish           external
+   usr time   17.42 millis    0.00 micros   17.42 millis
+   sys time   15.14 millis  139.00 micros   15.00 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=4
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/4,0<=p2<=1/4,0<=p3<=1/4' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -649,11 +709,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   31.84 millis    fish           external
+   usr time   17.23 millis    0.00 micros   17.23 millis
+   sys time   14.76 millis  106.00 micros   14.65 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=4
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/4,0<=p2<=2/4,0<=p3<=2/4' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -709,12 +775,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   33.86 millis    fish           external
+   usr time    7.76 millis    0.00 micros    7.76 millis
+   sys time   26.00 millis  104.00 micros   25.90 millis
+
 Running on MDP with i=5
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/5,1e-6<=p2<=1/5,1e-6<=p3<=1/5,1e-6<=p4<=1/5' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -767,11 +839,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.69 millis    fish           external
+   usr time   11.81 millis    0.00 micros   11.81 millis
+   sys time   21.93 millis  168.00 micros   21.76 millis
+
+
+==new run==
 Running on iMC with i=5
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/5,1e-6<=p2<=1/5,1e-6<=p3<=1/5,1e-6<=p4<=1/5' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -827,11 +905,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   34.41 millis    fish           external
+   usr time   26.66 millis    0.00 micros   26.66 millis
+   sys time    7.85 millis  170.00 micros    7.68 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=5
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/5,0<=p2<=1/5,0<=p3<=1/5,0<=p4<=1/5' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -888,11 +972,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   34.50 millis    fish           external
+   usr time   17.08 millis    0.00 micros   17.08 millis
+   sys time   17.43 millis  113.00 micros   17.32 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=5
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/5,0<=p2<=2/5,0<=p3<=2/5,0<=p4<=2/5' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -948,12 +1038,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   34.35 millis    fish           external
+   usr time   15.64 millis    0.00 micros   15.64 millis
+   sys time   18.80 millis  111.00 micros   18.69 millis
+
 Running on MDP with i=6
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/6,1e-6<=p2<=1/6,1e-6<=p3<=1/6,1e-6<=p4<=1/6,1e-6<=p5<=1/6' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -1006,11 +1102,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.88 millis    fish           external
+   usr time   16.36 millis    0.00 micros   16.36 millis
+   sys time   17.71 millis  162.00 micros   17.55 millis
+
+
+==new run==
 Running on iMC with i=6
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/6,1e-6<=p2<=1/6,1e-6<=p3<=1/6,1e-6<=p4<=1/6,1e-6<=p5<=1/6' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -1066,11 +1168,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   31.74 millis    fish           external
+   usr time   17.64 millis  160.00 micros   17.48 millis
+   sys time   14.30 millis    0.00 micros   14.30 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=6
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/6,0<=p2<=1/6,0<=p3<=1/6,0<=p4<=1/6,0<=p5<=1/6' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -1127,11 +1235,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   31.78 millis    fish           external
+   usr time   13.49 millis  108.00 micros   13.38 millis
+   sys time   18.39 millis    0.00 micros   18.39 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=6
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/6,0<=p2<=2/6,0<=p3<=2/6,0<=p4<=2/6,0<=p5<=2/6' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -1187,12 +1301,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   31.83 millis    fish           external
+   usr time   15.89 millis  112.00 micros   15.78 millis
+   sys time   16.05 millis    0.00 micros   16.05 millis
+
 Running on MDP with i=7
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/7,1e-6<=p2<=1/7,1e-6<=p3<=1/7,1e-6<=p4<=1/7,1e-6<=p5<=1/7,1e-6<=p6<=1/7' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -1245,11 +1365,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   34.31 millis    fish           external
+   usr time   15.49 millis   28.00 micros   15.46 millis
+   sys time   18.98 millis  141.00 micros   18.84 millis
+
+
+==new run==
 Running on iMC with i=7
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/7,1e-6<=p2<=1/7,1e-6<=p3<=1/7,1e-6<=p4<=1/7,1e-6<=p5<=1/7,1e-6<=p6<=1/7' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -1305,11 +1431,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   35.56 millis    fish           external
+   usr time   13.46 millis   29.00 micros   13.43 millis
+   sys time   22.25 millis  143.00 micros   22.11 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=7
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/7,0<=p2<=1/7,0<=p3<=1/7,0<=p4<=1/7,0<=p5<=1/7,0<=p6<=1/7' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -1366,11 +1498,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   32.27 millis    fish           external
+   usr time   16.15 millis   29.00 micros   16.12 millis
+   sys time   16.26 millis  142.00 micros   16.12 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=7
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/7,0<=p2<=2/7,0<=p3<=2/7,0<=p4<=2/7,0<=p5<=2/7,0<=p6<=2/7' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -1426,16 +1564,22 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   33.17 millis    fish           external
+   usr time   15.69 millis   16.00 micros   15.68 millis
+   sys time   17.63 millis   80.00 micros   17.55 millis
+
 Running on MDP with i=8
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/8,1e-6<=p2<=1/8,1e-6<=p3<=1/8,1e-6<=p4<=1/8,1e-6<=p5<=1/8,1e-6<=p6<=1/8,1e-6<=p7<=1/8' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.001s.
+Time for model input parsing: 0.000s.
 
 Time for model construction: 0.010s.
 
@@ -1484,15 +1628,21 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   36.90 millis    fish           external
+   usr time   21.63 millis   29.00 micros   21.60 millis
+   sys time   15.30 millis  144.00 micros   15.16 millis
+
+
+==new run==
 Running on iMC with i=8
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/8,1e-6<=p2<=1/8,1e-6<=p3<=1/8,1e-6<=p4<=1/8,1e-6<=p5<=1/8,1e-6<=p6<=1/8,1e-6<=p7<=1/8' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.001s.
+Time for model input parsing: 0.000s.
 
 Time for model construction: 0.010s.
 
@@ -1544,15 +1694,21 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   32.59 millis    fish           external
+   usr time   17.54 millis   29.00 micros   17.51 millis
+   sys time   15.15 millis  144.00 micros   15.01 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=8
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/8,0<=p2<=1/8,0<=p3<=1/8,0<=p4<=1/8,0<=p5<=1/8,0<=p6<=1/8,0<=p7<=1/8' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.001s.
+Time for model input parsing: 0.000s.
 
 Time for model construction: 0.010s.
 
@@ -1605,15 +1761,21 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   34.50 millis    fish           external
+   usr time   16.01 millis   17.00 micros   16.00 millis
+   sys time   18.62 millis   85.00 micros   18.53 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=8
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/8,0<=p2<=2/8,0<=p3<=2/8,0<=p4<=2/8,0<=p5<=2/8,0<=p6<=2/8,0<=p7<=2/8' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.000s.
+Time for model input parsing: 0.001s.
 
 Time for model construction: 0.010s.
 
@@ -1665,18 +1827,24 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   33.14 millis    fish           external
+   usr time   20.50 millis   12.00 micros   20.49 millis
+   sys time   12.81 millis   57.00 micros   12.75 millis
+
 Running on MDP with i=9
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/9,1e-6<=p2<=1/9,1e-6<=p3<=1/9,1e-6<=p4<=1/9,1e-6<=p5<=1/9,1e-6<=p6<=1/9,1e-6<=p7<=1/9,1e-6<=p8<=1/9' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.000s.
+Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -1723,17 +1891,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.002s.
 
-------------------------------
+________________________________________________________
+Executed in   38.02 millis    fish           external
+   usr time   23.18 millis   28.00 micros   23.15 millis
+   sys time   15.02 millis  137.00 micros   14.88 millis
+
+
+==new run==
 Running on iMC with i=9
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/9,1e-6<=p2<=1/9,1e-6<=p3<=1/9,1e-6<=p4<=1/9,1e-6<=p5<=1/9,1e-6<=p6<=1/9,1e-6<=p7<=1/9,1e-6<=p8<=1/9' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.000s.
+Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -1783,17 +1957,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.40 millis    fish           external
+   usr time   16.91 millis  179.00 micros   16.73 millis
+   sys time   16.62 millis    0.00 micros   16.62 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=9
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/9,0<=p2<=1/9,0<=p3<=1/9,0<=p4<=1/9,0<=p5<=1/9,0<=p6<=1/9,0<=p7<=1/9,0<=p8<=1/9' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.000s.
+Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -1844,15 +2024,21 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.52 millis    fish           external
+   usr time   21.80 millis  107.00 micros   21.69 millis
+   sys time   11.84 millis    0.00 micros   11.84 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=9
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/9,0<=p2<=2/9,0<=p3<=2/9,0<=p4<=2/9,0<=p5<=2/9,0<=p6<=2/9,0<=p7<=2/9,0<=p8<=2/9' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.000s.
+Time for model input parsing: 0.001s.
 
 Time for model construction: 0.010s.
 
@@ -1904,12 +2090,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   36.24 millis    fish           external
+   usr time   24.91 millis  118.00 micros   24.79 millis
+   sys time   11.34 millis    0.00 micros   11.34 millis
+
 Running on MDP with i=10
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/10,1e-6<=p2<=1/10,1e-6<=p3<=1/10,1e-6<=p4<=1/10,1e-6<=p5<=1/10,1e-6<=p6<=1/10,1e-6<=p7<=1/10,1e-6<=p8<=1/10,1e-6<=p9<=1/10' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -1962,11 +2154,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.005s.
 
-------------------------------
+________________________________________________________
+Executed in   41.29 millis    fish           external
+   usr time   25.95 millis  153.00 micros   25.80 millis
+   sys time   15.50 millis    0.00 micros   15.50 millis
+
+
+==new run==
 Running on iMC with i=10
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/10,1e-6<=p2<=1/10,1e-6<=p3<=1/10,1e-6<=p4<=1/10,1e-6<=p5<=1/10,1e-6<=p6<=1/10,1e-6<=p7<=1/10,1e-6<=p8<=1/10,1e-6<=p9<=1/10' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2022,11 +2220,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.24 millis    fish           external
+   usr time   17.63 millis  165.00 micros   17.46 millis
+   sys time   15.78 millis    0.00 micros   15.78 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=10
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/10,0<=p2<=1/10,0<=p3<=1/10,0<=p4<=1/10,0<=p5<=1/10,0<=p6<=1/10,0<=p7<=1/10,0<=p8<=1/10,0<=p9<=1/10' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2083,17 +2287,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.78 millis    fish           external
+   usr time   12.10 millis  100.00 micros   11.99 millis
+   sys time   21.81 millis    0.00 micros   21.81 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=10
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:31 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/10,0<=p2<=2/10,0<=p3<=2/10,0<=p4<=2/10,0<=p5<=2/10,0<=p6<=2/10,0<=p7<=2/10,0<=p8<=2/10,0<=p9<=2/10' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -2143,12 +2353,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   34.27 millis    fish           external
+   usr time   14.91 millis  101.00 micros   14.81 millis
+   sys time   19.43 millis    0.00 micros   19.43 millis
+
 Running on MDP with i=11
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/11,1e-6<=p2<=1/11,1e-6<=p3<=1/11,1e-6<=p4<=1/11,1e-6<=p5<=1/11,1e-6<=p6<=1/11,1e-6<=p7<=1/11,1e-6<=p8<=1/11,1e-6<=p9<=1/11,1e-6<=p10<=1/11' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2201,11 +2417,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.011s.
 
-------------------------------
+________________________________________________________
+Executed in   45.43 millis    fish           external
+   usr time   29.90 millis  172.00 micros   29.73 millis
+   sys time   15.58 millis    0.00 micros   15.58 millis
+
+
+==new run==
 Running on iMC with i=11
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/11,1e-6<=p2<=1/11,1e-6<=p3<=1/11,1e-6<=p4<=1/11,1e-6<=p5<=1/11,1e-6<=p6<=1/11,1e-6<=p7<=1/11,1e-6<=p8<=1/11,1e-6<=p9<=1/11,1e-6<=p10<=1/11' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2261,11 +2483,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   35.33 millis    fish           external
+   usr time   12.26 millis  159.00 micros   12.10 millis
+   sys time   23.27 millis    0.00 micros   23.27 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=11
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/11,0<=p2<=1/11,0<=p3<=1/11,0<=p4<=1/11,0<=p5<=1/11,0<=p6<=1/11,0<=p7<=1/11,0<=p8<=1/11,0<=p9<=1/11,0<=p10<=1/11' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2322,11 +2550,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   32.55 millis    fish           external
+   usr time   12.67 millis  106.00 micros   12.56 millis
+   sys time   19.98 millis    0.00 micros   19.98 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=11
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/11,0<=p2<=2/11,0<=p3<=2/11,0<=p4<=2/11,0<=p5<=2/11,0<=p6<=2/11,0<=p7<=2/11,0<=p8<=2/11,0<=p9<=2/11,0<=p10<=2/11' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2382,12 +2616,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   32.12 millis    fish           external
+   usr time   23.08 millis    0.00 micros   23.08 millis
+   sys time    9.18 millis   95.00 micros    9.09 millis
+
 Running on MDP with i=12
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/12,1e-6<=p2<=1/12,1e-6<=p3<=1/12,1e-6<=p4<=1/12,1e-6<=p5<=1/12,1e-6<=p6<=1/12,1e-6<=p7<=1/12,1e-6<=p8<=1/12,1e-6<=p9<=1/12,1e-6<=p10<=1/12,1e-6<=p11<=1/12' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2440,17 +2680,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.025s.
 
-------------------------------
+________________________________________________________
+Executed in   58.77 millis    fish           external
+   usr time   40.65 millis    0.00 micros   40.65 millis
+   sys time   18.30 millis  163.00 micros   18.14 millis
+
+
+==new run==
 Running on iMC with i=12
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/12,1e-6<=p2<=1/12,1e-6<=p3<=1/12,1e-6<=p4<=1/12,1e-6<=p5<=1/12,1e-6<=p6<=1/12,1e-6<=p7<=1/12,1e-6<=p8<=1/12,1e-6<=p9<=1/12,1e-6<=p10<=1/12,1e-6<=p11<=1/12' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -2500,17 +2746,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   35.40 millis    fish           external
+   usr time   17.75 millis    0.00 micros   17.75 millis
+   sys time   17.96 millis  166.00 micros   17.79 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=12
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/12,0<=p2<=1/12,0<=p3<=1/12,0<=p4<=1/12,0<=p5<=1/12,0<=p6<=1/12,0<=p7<=1/12,0<=p8<=1/12,0<=p9<=1/12,0<=p10<=1/12,0<=p11<=1/12' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -2561,11 +2813,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.53 millis    fish           external
+   usr time   16.81 millis   36.00 micros   16.77 millis
+   sys time   16.89 millis   72.00 micros   16.82 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=12
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/12,0<=p2<=2/12,0<=p3<=2/12,0<=p4<=2/12,0<=p5<=2/12,0<=p6<=2/12,0<=p7<=2/12,0<=p8<=2/12,0<=p9<=2/12,0<=p10<=2/12,0<=p11<=2/12' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2621,12 +2879,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   33.02 millis    fish           external
+   usr time   20.01 millis    0.00 micros   20.01 millis
+   sys time   13.16 millis   95.00 micros   13.07 millis
+
 Running on MDP with i=13
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:43 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/13,1e-6<=p2<=1/13,1e-6<=p3<=1/13,1e-6<=p4<=1/13,1e-6<=p5<=1/13,1e-6<=p6<=1/13,1e-6<=p7<=1/13,1e-6<=p8<=1/13,1e-6<=p9<=1/13,1e-6<=p10<=1/13,1e-6<=p11<=1/13,1e-6<=p12<=1/13' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2679,11 +2943,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.055s.
 
-------------------------------
+________________________________________________________
+Executed in   89.06 millis    fish           external
+   usr time   73.22 millis    0.00 micros   73.22 millis
+   sys time   15.96 millis  171.00 micros   15.79 millis
+
+
+==new run==
 Running on iMC with i=13
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/13,1e-6<=p2<=1/13,1e-6<=p3<=1/13,1e-6<=p4<=1/13,1e-6<=p5<=1/13,1e-6<=p6<=1/13,1e-6<=p7<=1/13,1e-6<=p8<=1/13,1e-6<=p9<=1/13,1e-6<=p10<=1/13,1e-6<=p11<=1/13,1e-6<=p12<=1/13' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2739,11 +3009,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   34.28 millis    fish           external
+   usr time   30.38 millis    0.00 micros   30.38 millis
+   sys time    4.08 millis  171.00 micros    3.91 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=13
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/13,0<=p2<=1/13,0<=p3<=1/13,0<=p4<=1/13,0<=p5<=1/13,0<=p6<=1/13,0<=p7<=1/13,0<=p8<=1/13,0<=p9<=1/13,0<=p10<=1/13,0<=p11<=1/13,0<=p12<=1/13' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2800,11 +3076,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   34.41 millis    fish           external
+   usr time   16.28 millis    0.00 micros   16.28 millis
+   sys time   18.27 millis  103.00 micros   18.16 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=13
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/13,0<=p2<=2/13,0<=p3<=2/13,0<=p4<=2/13,0<=p5<=2/13,0<=p6<=2/13,0<=p7<=2/13,0<=p8<=2/13,0<=p9<=2/13,0<=p10<=2/13,0<=p11<=2/13,0<=p12<=2/13' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2860,12 +3142,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   31.79 millis    fish           external
+   usr time   17.70 millis    0.00 micros   17.70 millis
+   sys time   14.15 millis   93.00 micros   14.06 millis
+
 Running on MDP with i=14
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/14,1e-6<=p2<=1/14,1e-6<=p3<=1/14,1e-6<=p4<=1/14,1e-6<=p5<=1/14,1e-6<=p6<=1/14,1e-6<=p7<=1/14,1e-6<=p8<=1/14,1e-6<=p9<=1/14,1e-6<=p10<=1/14,1e-6<=p11<=1/14,1e-6<=p12<=1/14,1e-6<=p13<=1/14' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2914,15 +3202,21 @@ Extremal value: 5470707563297743/36028797018963968
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 0.122s.
+ INFO (storm-pars.cpp:387): Time for model checking: 0.123s.
 
-Time for model checking: 0.122s.
+Time for model checking: 0.123s.
 
-------------------------------
+________________________________________________________
+Executed in  157.97 millis    fish           external
+   usr time  125.29 millis    0.00 micros  125.29 millis
+   sys time   32.65 millis  173.00 micros   32.48 millis
+
+
+==new run==
 Running on iMC with i=14
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/14,1e-6<=p2<=1/14,1e-6<=p3<=1/14,1e-6<=p4<=1/14,1e-6<=p5<=1/14,1e-6<=p6<=1/14,1e-6<=p7<=1/14,1e-6<=p8<=1/14,1e-6<=p9<=1/14,1e-6<=p10<=1/14,1e-6<=p11<=1/14,1e-6<=p12<=1/14,1e-6<=p13<=1/14' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -2978,11 +3272,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   36.33 millis    fish           external
+   usr time   17.27 millis    0.00 micros   17.27 millis
+   sys time   19.20 millis  168.00 micros   19.04 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=14
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/14,0<=p2<=1/14,0<=p3<=1/14,0<=p4<=1/14,0<=p5<=1/14,0<=p6<=1/14,0<=p7<=1/14,0<=p8<=1/14,0<=p9<=1/14,0<=p10<=1/14,0<=p11<=1/14,0<=p12<=1/14,0<=p13<=1/14' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -3039,17 +3339,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.82 millis    fish           external
+   usr time   17.45 millis    0.00 micros   17.45 millis
+   sys time   16.52 millis  117.00 micros   16.40 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=14
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/14,0<=p2<=2/14,0<=p3<=2/14,0<=p4<=2/14,0<=p5<=2/14,0<=p6<=2/14,0<=p7<=2/14,0<=p8<=2/14,0<=p9<=2/14,0<=p10<=2/14,0<=p11<=2/14,0<=p12<=2/14,0<=p13<=2/14' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -3099,12 +3405,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   33.53 millis    fish           external
+   usr time   17.89 millis    0.00 micros   17.89 millis
+   sys time   15.74 millis  111.00 micros   15.63 millis
+
 Running on MDP with i=15
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:32 2025
+Date: Thu Jan 23 11:30:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/15,1e-6<=p2<=1/15,1e-6<=p3<=1/15,1e-6<=p4<=1/15,1e-6<=p5<=1/15,1e-6<=p6<=1/15,1e-6<=p7<=1/15,1e-6<=p8<=1/15,1e-6<=p9<=1/15,1e-6<=p10<=1/15,1e-6<=p11<=1/15,1e-6<=p12<=1/15,1e-6<=p13<=1/15,1e-6<=p14<=1/15' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -3153,15 +3465,21 @@ Extremal value: 5186061624116005/36028797018963968
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 0.277s.
+ INFO (storm-pars.cpp:387): Time for model checking: 0.274s.
 
-Time for model checking: 0.277s.
+Time for model checking: 0.274s.
 
-------------------------------
+________________________________________________________
+Executed in  312.22 millis    fish           external
+   usr time  247.23 millis    0.00 micros  247.23 millis
+   sys time   65.25 millis  175.00 micros   65.08 millis
+
+
+==new run==
 Running on iMC with i=15
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:33 2025
+Date: Thu Jan 23 11:30:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/15,1e-6<=p2<=1/15,1e-6<=p3<=1/15,1e-6<=p4<=1/15,1e-6<=p5<=1/15,1e-6<=p6<=1/15,1e-6<=p7<=1/15,1e-6<=p8<=1/15,1e-6<=p9<=1/15,1e-6<=p10<=1/15,1e-6<=p11<=1/15,1e-6<=p12<=1/15,1e-6<=p13<=1/15,1e-6<=p14<=1/15' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -3217,11 +3535,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.87 millis    fish           external
+   usr time   21.31 millis    0.00 micros   21.31 millis
+   sys time   12.75 millis  175.00 micros   12.57 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=15
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:33 2025
+Date: Thu Jan 23 11:30:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/15,0<=p2<=1/15,0<=p3<=1/15,0<=p4<=1/15,0<=p5<=1/15,0<=p6<=1/15,0<=p7<=1/15,0<=p8<=1/15,0<=p9<=1/15,0<=p10<=1/15,0<=p11<=1/15,0<=p12<=1/15,0<=p13<=1/15,0<=p14<=1/15' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -3278,11 +3602,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   31.78 millis    fish           external
+   usr time   13.04 millis    0.00 micros   13.04 millis
+   sys time   18.85 millis  102.00 micros   18.75 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=15
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:33 2025
+Date: Thu Jan 23 11:30:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/15,0<=p2<=2/15,0<=p3<=2/15,0<=p4<=2/15,0<=p5<=2/15,0<=p6<=2/15,0<=p7<=2/15,0<=p8<=2/15,0<=p9<=2/15,0<=p10<=2/15,0<=p11<=2/15,0<=p12<=2/15,0<=p13<=2/15,0<=p14<=2/15' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -3338,12 +3668,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   31.68 millis    fish           external
+   usr time   16.34 millis    0.00 micros   16.34 millis
+   sys time   15.47 millis  147.00 micros   15.32 millis
+
 Running on MDP with i=16
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:33 2025
+Date: Thu Jan 23 11:30:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/16,1e-6<=p2<=1/16,1e-6<=p3<=1/16,1e-6<=p4<=1/16,1e-6<=p5<=1/16,1e-6<=p6<=1/16,1e-6<=p7<=1/16,1e-6<=p8<=1/16,1e-6<=p9<=1/16,1e-6<=p10<=1/16,1e-6<=p11<=1/16,1e-6<=p12<=1/16,1e-6<=p13<=1/16,1e-6<=p14<=1/16,1e-6<=p15<=1/16' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -3392,15 +3728,21 @@ Extremal value: 4932305252780133/36028797018963968
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 0.606s.
+ INFO (storm-pars.cpp:387): Time for model checking: 0.605s.
 
-Time for model checking: 0.606s.
+Time for model checking: 0.605s.
 
-------------------------------
+________________________________________________________
+Executed in  644.29 millis    fish           external
+   usr time  571.40 millis    0.00 micros  571.40 millis
+   sys time   73.12 millis  149.00 micros   72.97 millis
+
+
+==new run==
 Running on iMC with i=16
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:33 2025
+Date: Thu Jan 23 11:30:45 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/16,1e-6<=p2<=1/16,1e-6<=p3<=1/16,1e-6<=p4<=1/16,1e-6<=p5<=1/16,1e-6<=p6<=1/16,1e-6<=p7<=1/16,1e-6<=p8<=1/16,1e-6<=p9<=1/16,1e-6<=p10<=1/16,1e-6<=p11<=1/16,1e-6<=p12<=1/16,1e-6<=p13<=1/16,1e-6<=p14<=1/16,1e-6<=p15<=1/16' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -3456,17 +3798,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   36.60 millis    fish           external
+   usr time   27.10 millis    0.00 micros   27.10 millis
+   sys time    9.67 millis  170.00 micros    9.50 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=16
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:33 2025
+Date: Thu Jan 23 11:30:45 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/16,0<=p2<=1/16,0<=p3<=1/16,0<=p4<=1/16,0<=p5<=1/16,0<=p6<=1/16,0<=p7<=1/16,0<=p8<=1/16,0<=p9<=1/16,0<=p10<=1/16,0<=p11<=1/16,0<=p12<=1/16,0<=p13<=1/16,0<=p14<=1/16,0<=p15<=1/16' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -3517,11 +3865,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   35.44 millis    fish           external
+   usr time    8.67 millis    0.00 micros    8.67 millis
+   sys time   26.87 millis   99.00 micros   26.77 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=16
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:33 2025
+Date: Thu Jan 23 11:30:45 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/16,0<=p2<=2/16,0<=p3<=2/16,0<=p4<=2/16,0<=p5<=2/16,0<=p6<=2/16,0<=p7<=2/16,0<=p8<=2/16,0<=p9<=2/16,0<=p10<=2/16,0<=p11<=2/16,0<=p12<=2/16,0<=p13<=2/16,0<=p14<=2/16,0<=p15<=2/16' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -3577,18 +3931,24 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   35.03 millis    fish           external
+   usr time   15.87 millis    0.00 micros   15.87 millis
+   sys time   19.25 millis  104.00 micros   19.14 millis
+
 Running on MDP with i=17
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:34 2025
+Date: Thu Jan 23 11:30:45 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/17,1e-6<=p2<=1/17,1e-6<=p3<=1/17,1e-6<=p4<=1/17,1e-6<=p5<=1/17,1e-6<=p6<=1/17,1e-6<=p7<=1/17,1e-6<=p8<=1/17,1e-6<=p9<=1/17,1e-6<=p10<=1/17,1e-6<=p11<=1/17,1e-6<=p12<=1/17,1e-6<=p13<=1/17,1e-6<=p14<=1/17,1e-6<=p15<=1/17,1e-6<=p16<=1/17' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -3631,21 +3991,27 @@ Extremal value: 2352253395495271/18014398509481984
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 1.320s.
+ INFO (storm-pars.cpp:387): Time for model checking: 1.326s.
 
-Time for model checking: 1.320s.
+Time for model checking: 1.326s.
 
-------------------------------
+________________________________________________________
+Executed in    1.38 secs    fish           external
+   usr time    1.28 secs    0.00 micros    1.28 secs
+   sys time    0.10 secs  174.00 micros    0.10 secs
+
+
+==new run==
 Running on iMC with i=17
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:35 2025
+Date: Thu Jan 23 11:30:47 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/17,1e-6<=p2<=1/17,1e-6<=p3<=1/17,1e-6<=p4<=1/17,1e-6<=p5<=1/17,1e-6<=p6<=1/17,1e-6<=p7<=1/17,1e-6<=p8<=1/17,1e-6<=p9<=1/17,1e-6<=p10<=1/17,1e-6<=p11<=1/17,1e-6<=p12<=1/17,1e-6<=p13<=1/17,1e-6<=p14<=1/17,1e-6<=p15<=1/17,1e-6<=p16<=1/17' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -3695,11 +4061,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   34.07 millis    fish           external
+   usr time   17.16 millis    0.00 micros   17.16 millis
+   sys time   17.08 millis  173.00 micros   16.91 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=17
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:35 2025
+Date: Thu Jan 23 11:30:47 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/17,0<=p2<=1/17,0<=p3<=1/17,0<=p4<=1/17,0<=p5<=1/17,0<=p6<=1/17,0<=p7<=1/17,0<=p8<=1/17,0<=p9<=1/17,0<=p10<=1/17,0<=p11<=1/17,0<=p12<=1/17,0<=p13<=1/17,0<=p14<=1/17,0<=p15<=1/17,0<=p16<=1/17' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -3756,11 +4128,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.21 millis    fish           external
+   usr time   21.53 millis    0.00 micros   21.53 millis
+   sys time   11.84 millis   96.00 micros   11.74 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=17
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:35 2025
+Date: Thu Jan 23 11:30:47 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/17,0<=p2<=2/17,0<=p3<=2/17,0<=p4<=2/17,0<=p5<=2/17,0<=p6<=2/17,0<=p7<=2/17,0<=p8<=2/17,0<=p9<=2/17,0<=p10<=2/17,0<=p11<=2/17,0<=p12<=2/17,0<=p13<=2/17,0<=p14<=2/17,0<=p15<=2/17,0<=p16<=2/17' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -3816,18 +4194,24 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   38.76 millis    fish           external
+   usr time   19.99 millis    0.00 micros   19.99 millis
+   sys time   18.87 millis   98.00 micros   18.78 millis
+
 Running on MDP with i=18
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:35 2025
+Date: Thu Jan 23 11:30:47 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/18,1e-6<=p2<=1/18,1e-6<=p3<=1/18,1e-6<=p4<=1/18,1e-6<=p5<=1/18,1e-6<=p6<=1/18,1e-6<=p7<=1/18,1e-6<=p8<=1/18,1e-6<=p9<=1/18,1e-6<=p10<=1/18,1e-6<=p11<=1/18,1e-6<=p12<=1/18,1e-6<=p13<=1/18,1e-6<=p14<=1/18,1e-6<=p15<=1/18,1e-6<=p16<=1/18,1e-6<=p17<=1/18' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -3874,17 +4258,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 2.926s.
 
-------------------------------
+________________________________________________________
+Executed in    2.99 secs    fish           external
+   usr time    2.79 secs    0.00 micros    2.79 secs
+   sys time    0.20 secs  187.00 micros    0.20 secs
+
+
+==new run==
 Running on iMC with i=18
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:38 2025
+Date: Thu Jan 23 11:30:50 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/18,1e-6<=p2<=1/18,1e-6<=p3<=1/18,1e-6<=p4<=1/18,1e-6<=p5<=1/18,1e-6<=p6<=1/18,1e-6<=p7<=1/18,1e-6<=p8<=1/18,1e-6<=p9<=1/18,1e-6<=p10<=1/18,1e-6<=p11<=1/18,1e-6<=p12<=1/18,1e-6<=p13<=1/18,1e-6<=p14<=1/18,1e-6<=p15<=1/18,1e-6<=p16<=1/18,1e-6<=p17<=1/18' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -3934,17 +4324,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   34.64 millis    fish           external
+   usr time   22.50 millis    0.00 micros   22.50 millis
+   sys time   12.31 millis  171.00 micros   12.14 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=18
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:38 2025
+Date: Thu Jan 23 11:30:50 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/18,0<=p2<=1/18,0<=p3<=1/18,0<=p4<=1/18,0<=p5<=1/18,0<=p6<=1/18,0<=p7<=1/18,0<=p8<=1/18,0<=p9<=1/18,0<=p10<=1/18,0<=p11<=1/18,0<=p12<=1/18,0<=p13<=1/18,0<=p14<=1/18,0<=p15<=1/18,0<=p16<=1/18,0<=p17<=1/18' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -3995,17 +4391,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   34.84 millis    fish           external
+   usr time   16.48 millis    0.00 micros   16.48 millis
+   sys time   18.42 millis  102.00 micros   18.32 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=18
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:38 2025
+Date: Thu Jan 23 11:30:50 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/18,0<=p2<=2/18,0<=p3<=2/18,0<=p4<=2/18,0<=p5<=2/18,0<=p6<=2/18,0<=p7<=2/18,0<=p8<=2/18,0<=p9<=2/18,0<=p10<=2/18,0<=p11<=2/18,0<=p12<=2/18,0<=p13<=2/18,0<=p14<=2/18,0<=p15<=2/18,0<=p16<=2/18,0<=p17<=2/18' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -4055,12 +4457,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   34.22 millis    fish           external
+   usr time   19.14 millis    0.00 micros   19.14 millis
+   sys time   15.18 millis  104.00 micros   15.08 millis
+
 Running on MDP with i=19
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:38 2025
+Date: Thu Jan 23 11:30:50 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/19,1e-6<=p2<=1/19,1e-6<=p3<=1/19,1e-6<=p4<=1/19,1e-6<=p5<=1/19,1e-6<=p6<=1/19,1e-6<=p7<=1/19,1e-6<=p8<=1/19,1e-6<=p9<=1/19,1e-6<=p10<=1/19,1e-6<=p11<=1/19,1e-6<=p12<=1/19,1e-6<=p13<=1/19,1e-6<=p14<=1/19,1e-6<=p15<=1/19,1e-6<=p16<=1/19,1e-6<=p17<=1/19,1e-6<=p18<=1/19' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -4109,15 +4517,21 @@ Extremal value: 8623754371064569/72057594037927936
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 6.231s.
+ INFO (storm-pars.cpp:387): Time for model checking: 6.252s.
 
-Time for model checking: 6.231s.
+Time for model checking: 6.252s.
 
-------------------------------
+________________________________________________________
+Executed in    6.35 secs    fish           external
+   usr time    5.99 secs    0.00 micros    5.99 secs
+   sys time    0.36 secs  193.00 micros    0.36 secs
+
+
+==new run==
 Running on iMC with i=19
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:44 2025
+Date: Thu Jan 23 11:30:56 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/19,1e-6<=p2<=1/19,1e-6<=p3<=1/19,1e-6<=p4<=1/19,1e-6<=p5<=1/19,1e-6<=p6<=1/19,1e-6<=p7<=1/19,1e-6<=p8<=1/19,1e-6<=p9<=1/19,1e-6<=p10<=1/19,1e-6<=p11<=1/19,1e-6<=p12<=1/19,1e-6<=p13<=1/19,1e-6<=p14<=1/19,1e-6<=p15<=1/19,1e-6<=p16<=1/19,1e-6<=p17<=1/19,1e-6<=p18<=1/19' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -4169,21 +4583,27 @@ Extremal value: 8623754371064569/72057594037927936
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
+ INFO (storm-pars.cpp:387): Time for model checking: 0.001s.
 
-Time for model checking: 0.000s.
+Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   37.39 millis    fish           external
+   usr time   17.25 millis    0.00 micros   17.25 millis
+   sys time   20.27 millis  188.00 micros   20.09 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=19
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:45 2025
+Date: Thu Jan 23 11:30:56 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/19,0<=p2<=1/19,0<=p3<=1/19,0<=p4<=1/19,0<=p5<=1/19,0<=p6<=1/19,0<=p7<=1/19,0<=p8<=1/19,0<=p9<=1/19,0<=p10<=1/19,0<=p11<=1/19,0<=p12<=1/19,0<=p13<=1/19,0<=p14<=1/19,0<=p15<=1/19,0<=p16<=1/19,0<=p17<=1/19,0<=p18<=1/19' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -4234,17 +4654,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   37.96 millis    fish           external
+   usr time   21.10 millis    0.00 micros   21.10 millis
+   sys time   16.94 millis   99.00 micros   16.84 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=19
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:45 2025
+Date: Thu Jan 23 11:30:56 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/19,0<=p2<=2/19,0<=p3<=2/19,0<=p4<=2/19,0<=p5<=2/19,0<=p6<=2/19,0<=p7<=2/19,0<=p8<=2/19,0<=p9<=2/19,0<=p10<=2/19,0<=p11<=2/19,0<=p12<=2/19,0<=p13<=2/19,0<=p14<=2/19,0<=p15<=2/19,0<=p16<=2/19,0<=p17<=2/19,0<=p18<=2/19' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -4294,12 +4720,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   37.11 millis    fish           external
+   usr time   21.54 millis    0.00 micros   21.54 millis
+   sys time   15.65 millis  103.00 micros   15.54 millis
+
 Running on MDP with i=20
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:45 2025
+Date: Thu Jan 23 11:30:56 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/20,1e-6<=p2<=1/20,1e-6<=p3<=1/20,1e-6<=p4<=1/20,1e-6<=p5<=1/20,1e-6<=p6<=1/20,1e-6<=p7<=1/20,1e-6<=p8<=1/20,1e-6<=p9<=1/20,1e-6<=p10<=1/20,1e-6<=p11<=1/20,1e-6<=p12<=1/20,1e-6<=p13<=1/20,1e-6<=p14<=1/20,1e-6<=p15<=1/20,1e-6<=p16<=1/20,1e-6<=p17<=1/20,1e-6<=p18<=1/20,1e-6<=p19<=1/20' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -4348,15 +4780,21 @@ Extremal value: 2070661259024587/18014398509481984
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 13.243s.
+ INFO (storm-pars.cpp:387): Time for model checking: 13.271s.
 
-Time for model checking: 13.243s.
+Time for model checking: 13.271s.
 
-------------------------------
+________________________________________________________
+Executed in   13.43 secs    fish           external
+   usr time   12.61 secs   37.00 micros   12.61 secs
+   sys time    0.82 secs  146.00 micros    0.82 secs
+
+
+==new run==
 Running on iMC with i=20
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:58 2025
+Date: Thu Jan 23 11:31:10 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/20,1e-6<=p2<=1/20,1e-6<=p3<=1/20,1e-6<=p4<=1/20,1e-6<=p5<=1/20,1e-6<=p6<=1/20,1e-6<=p7<=1/20,1e-6<=p8<=1/20,1e-6<=p9<=1/20,1e-6<=p10<=1/20,1e-6<=p11<=1/20,1e-6<=p12<=1/20,1e-6<=p13<=1/20,1e-6<=p14<=1/20,1e-6<=p15<=1/20,1e-6<=p16<=1/20,1e-6<=p17<=1/20,1e-6<=p18<=1/20,1e-6<=p19<=1/20' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -4412,11 +4850,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   35.88 millis    fish           external
+   usr time   16.62 millis    0.00 micros   16.62 millis
+   sys time   19.40 millis  173.00 micros   19.23 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=20
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:58 2025
+Date: Thu Jan 23 11:31:10 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/20,0<=p2<=1/20,0<=p3<=1/20,0<=p4<=1/20,0<=p5<=1/20,0<=p6<=1/20,0<=p7<=1/20,0<=p8<=1/20,0<=p9<=1/20,0<=p10<=1/20,0<=p11<=1/20,0<=p12<=1/20,0<=p13<=1/20,0<=p14<=1/20,0<=p15<=1/20,0<=p16<=1/20,0<=p17<=1/20,0<=p18<=1/20,0<=p19<=1/20' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -4473,11 +4917,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   35.84 millis    fish           external
+   usr time   28.33 millis    0.00 micros   28.33 millis
+   sys time    7.60 millis  100.00 micros    7.50 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=20
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:58 2025
+Date: Thu Jan 23 11:31:10 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/20,0<=p2<=2/20,0<=p3<=2/20,0<=p4<=2/20,0<=p5<=2/20,0<=p6<=2/20,0<=p7<=2/20,0<=p8<=2/20,0<=p9<=2/20,0<=p10<=2/20,0<=p11<=2/20,0<=p12<=2/20,0<=p13<=2/20,0<=p14<=2/20,0<=p15<=2/20,0<=p16<=2/20,0<=p17<=2/20,0<=p18<=2/20,0<=p19<=2/20' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -4533,12 +4983,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   32.74 millis    fish           external
+   usr time   17.36 millis    0.00 micros   17.36 millis
+   sys time   15.48 millis  104.00 micros   15.38 millis
+
 Running on MDP with i=21
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:54:58 2025
+Date: Thu Jan 23 11:31:10 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/21,1e-6<=p2<=1/21,1e-6<=p3<=1/21,1e-6<=p4<=1/21,1e-6<=p5<=1/21,1e-6<=p6<=1/21,1e-6<=p7<=1/21,1e-6<=p8<=1/21,1e-6<=p9<=1/21,1e-6<=p10<=1/21,1e-6<=p11<=1/21,1e-6<=p12<=1/21,1e-6<=p13<=1/21,1e-6<=p14<=1/21,1e-6<=p15<=1/21,1e-6<=p16<=1/21,1e-6<=p17<=1/21,1e-6<=p18<=1/21,1e-6<=p19<=1/21,1e-6<=p20<=1/21' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -4587,15 +5043,21 @@ Extremal value: 3984968746311949/36028797018963968
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 28.042s.
+ INFO (storm-pars.cpp:387): Time for model checking: 28.182s.
 
-Time for model checking: 28.042s.
+Time for model checking: 28.182s.
 
-------------------------------
+________________________________________________________
+Executed in   28.46 secs    fish           external
+   usr time   26.71 secs    0.00 micros   26.71 secs
+   sys time    1.75 secs  193.00 micros    1.75 secs
+
+
+==new run==
 Running on iMC with i=21
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:55:26 2025
+Date: Thu Jan 23 11:31:38 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/21,1e-6<=p2<=1/21,1e-6<=p3<=1/21,1e-6<=p4<=1/21,1e-6<=p5<=1/21,1e-6<=p6<=1/21,1e-6<=p7<=1/21,1e-6<=p8<=1/21,1e-6<=p9<=1/21,1e-6<=p10<=1/21,1e-6<=p11<=1/21,1e-6<=p12<=1/21,1e-6<=p13<=1/21,1e-6<=p14<=1/21,1e-6<=p15<=1/21,1e-6<=p16<=1/21,1e-6<=p17<=1/21,1e-6<=p18<=1/21,1e-6<=p19<=1/21,1e-6<=p20<=1/21' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -4651,17 +5113,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   35.33 millis    fish           external
+   usr time   17.96 millis  171.00 micros   17.79 millis
+   sys time   17.55 millis    0.00 micros   17.55 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=21
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:55:26 2025
+Date: Thu Jan 23 11:31:38 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/21,0<=p2<=1/21,0<=p3<=1/21,0<=p4<=1/21,0<=p5<=1/21,0<=p6<=1/21,0<=p7<=1/21,0<=p8<=1/21,0<=p9<=1/21,0<=p10<=1/21,0<=p11<=1/21,0<=p12<=1/21,0<=p13<=1/21,0<=p14<=1/21,0<=p15<=1/21,0<=p16<=1/21,0<=p17<=1/21,0<=p18<=1/21,0<=p19<=1/21,0<=p20<=1/21' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -4712,11 +5180,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   33.44 millis    fish           external
+   usr time   25.64 millis   22.00 micros   25.62 millis
+   sys time    7.96 millis   83.00 micros    7.87 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=21
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:55:26 2025
+Date: Thu Jan 23 11:31:38 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/21,0<=p2<=2/21,0<=p3<=2/21,0<=p4<=2/21,0<=p5<=2/21,0<=p6<=2/21,0<=p7<=2/21,0<=p8<=2/21,0<=p9<=2/21,0<=p10<=2/21,0<=p11<=2/21,0<=p12<=2/21,0<=p13<=2/21,0<=p14<=2/21,0<=p15<=2/21,0<=p16<=2/21,0<=p17<=2/21,0<=p18<=2/21,0<=p19<=2/21,0<=p20<=2/21' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -4772,18 +5246,24 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   33.24 millis    fish           external
+   usr time   11.76 millis   20.00 micros   11.74 millis
+   sys time   21.62 millis   77.00 micros   21.55 millis
+
 Running on MDP with i=22
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:55:27 2025
+Date: Thu Jan 23 11:31:38 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/22,1e-6<=p2<=1/22,1e-6<=p3<=1/22,1e-6<=p4<=1/22,1e-6<=p5<=1/22,1e-6<=p6<=1/22,1e-6<=p7<=1/22,1e-6<=p8<=1/22,1e-6<=p9<=1/22,1e-6<=p10<=1/22,1e-6<=p11<=1/22,1e-6<=p12<=1/22,1e-6<=p13<=1/22,1e-6<=p14<=1/22,1e-6<=p15<=1/22,1e-6<=p16<=1/22,1e-6<=p17<=1/22,1e-6<=p18<=1/22,1e-6<=p19<=1/22,1e-6<=p20<=1/22,1e-6<=p21<=1/22' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -4826,15 +5306,21 @@ Extremal value: 7682113239761903/72057594037927936
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 58.844s.
+ INFO (storm-pars.cpp:387): Time for model checking: 59.381s.
 
-Time for model checking: 58.844s.
+Time for model checking: 59.381s.
 
-------------------------------
+________________________________________________________
+Executed in   59.92 secs    fish           external
+   usr time   56.36 secs   39.00 micros   56.36 secs
+   sys time    3.55 secs  150.00 micros    3.55 secs
+
+
+==new run==
 Running on iMC with i=22
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:56:26 2025
+Date: Thu Jan 23 11:32:38 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/22,1e-6<=p2<=1/22,1e-6<=p3<=1/22,1e-6<=p4<=1/22,1e-6<=p5<=1/22,1e-6<=p6<=1/22,1e-6<=p7<=1/22,1e-6<=p8<=1/22,1e-6<=p9<=1/22,1e-6<=p10<=1/22,1e-6<=p11<=1/22,1e-6<=p12<=1/22,1e-6<=p13<=1/22,1e-6<=p14<=1/22,1e-6<=p15<=1/22,1e-6<=p16<=1/22,1e-6<=p17<=1/22,1e-6<=p18<=1/22,1e-6<=p19<=1/22,1e-6<=p20<=1/22,1e-6<=p21<=1/22' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -4890,11 +5376,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   38.20 millis    fish           external
+   usr time   32.65 millis   39.00 micros   32.61 millis
+   sys time    5.78 millis  147.00 micros    5.63 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=22
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:56:26 2025
+Date: Thu Jan 23 11:32:38 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/22,0<=p2<=1/22,0<=p3<=1/22,0<=p4<=1/22,0<=p5<=1/22,0<=p6<=1/22,0<=p7<=1/22,0<=p8<=1/22,0<=p9<=1/22,0<=p10<=1/22,0<=p11<=1/22,0<=p12<=1/22,0<=p13<=1/22,0<=p14<=1/22,0<=p15<=1/22,0<=p16<=1/22,0<=p17<=1/22,0<=p18<=1/22,0<=p19<=1/22,0<=p20<=1/22,0<=p21<=1/22' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -4951,17 +5443,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   37.96 millis    fish           external
+   usr time    9.79 millis  101.00 micros    9.69 millis
+   sys time   28.17 millis    0.00 micros   28.17 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=22
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:56:26 2025
+Date: Thu Jan 23 11:32:38 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/22,0<=p2<=2/22,0<=p3<=2/22,0<=p4<=2/22,0<=p5<=2/22,0<=p6<=2/22,0<=p7<=2/22,0<=p8<=2/22,0<=p9<=2/22,0<=p10<=2/22,0<=p11<=2/22,0<=p12<=2/22,0<=p13<=2/22,0<=p14<=2/22,0<=p15<=2/22,0<=p16<=2/22,0<=p17<=2/22,0<=p18<=2/22,0<=p19<=2/22,0<=p20<=2/22,0<=p21<=2/22' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -5011,12 +5509,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   36.10 millis    fish           external
+   usr time   21.90 millis  100.00 micros   21.80 millis
+   sys time   14.35 millis    0.00 micros   14.35 millis
+
 Running on MDP with i=23
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:56:26 2025
+Date: Thu Jan 23 11:32:38 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/23,1e-6<=p2<=1/23,1e-6<=p3<=1/23,1e-6<=p4<=1/23,1e-6<=p5<=1/23,1e-6<=p6<=1/23,1e-6<=p7<=1/23,1e-6<=p8<=1/23,1e-6<=p9<=1/23,1e-6<=p10<=1/23,1e-6<=p11<=1/23,1e-6<=p12<=1/23,1e-6<=p13<=1/23,1e-6<=p14<=1/23,1e-6<=p15<=1/23,1e-6<=p16<=1/23,1e-6<=p17<=1/23,1e-6<=p18<=1/23,1e-6<=p19<=1/23,1e-6<=p20<=1/23,1e-6<=p21<=1/23,1e-6<=p22<=1/23' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -5065,15 +5569,21 @@ Extremal value: 7416221464605667/72057594037927936
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 124.789s.
+ INFO (storm-pars.cpp:387): Time for model checking: 124.884s.
 
-Time for model checking: 124.789s.
+Time for model checking: 124.884s.
 
-------------------------------
+________________________________________________________
+Executed in  126.01 secs    fish           external
+   usr time  118.72 secs   44.00 micros  118.72 secs
+   sys time    7.27 secs  146.00 micros    7.27 secs
+
+
+==new run==
 Running on iMC with i=23
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:58:32 2025
+Date: Thu Jan 23 11:34:44 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/23,1e-6<=p2<=1/23,1e-6<=p3<=1/23,1e-6<=p4<=1/23,1e-6<=p5<=1/23,1e-6<=p6<=1/23,1e-6<=p7<=1/23,1e-6<=p8<=1/23,1e-6<=p9<=1/23,1e-6<=p10<=1/23,1e-6<=p11<=1/23,1e-6<=p12<=1/23,1e-6<=p13<=1/23,1e-6<=p14<=1/23,1e-6<=p15<=1/23,1e-6<=p16<=1/23,1e-6<=p17<=1/23,1e-6<=p18<=1/23,1e-6<=p19<=1/23,1e-6<=p20<=1/23,1e-6<=p21<=1/23,1e-6<=p22<=1/23' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -5129,17 +5639,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   37.87 millis    fish           external
+   usr time   20.64 millis  201.00 micros   20.44 millis
+   sys time   17.35 millis    0.00 micros   17.35 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=23
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:58:32 2025
+Date: Thu Jan 23 11:34:45 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/23,0<=p2<=1/23,0<=p3<=1/23,0<=p4<=1/23,0<=p5<=1/23,0<=p6<=1/23,0<=p7<=1/23,0<=p8<=1/23,0<=p9<=1/23,0<=p10<=1/23,0<=p11<=1/23,0<=p12<=1/23,0<=p13<=1/23,0<=p14<=1/23,0<=p15<=1/23,0<=p16<=1/23,0<=p17<=1/23,0<=p18<=1/23,0<=p19<=1/23,0<=p20<=1/23,0<=p21<=1/23,0<=p22<=1/23' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -5190,11 +5706,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   36.88 millis    fish           external
+   usr time   17.08 millis   97.00 micros   16.98 millis
+   sys time   19.89 millis    0.00 micros   19.89 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=23
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:58:32 2025
+Date: Thu Jan 23 11:34:45 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/23,0<=p2<=2/23,0<=p3<=2/23,0<=p4<=2/23,0<=p5<=2/23,0<=p6<=2/23,0<=p7<=2/23,0<=p8<=2/23,0<=p9<=2/23,0<=p10<=2/23,0<=p11<=2/23,0<=p12<=2/23,0<=p13<=2/23,0<=p14<=2/23,0<=p15<=2/23,0<=p16<=2/23,0<=p17<=2/23,0<=p18<=2/23,0<=p19<=2/23,0<=p20<=2/23,0<=p21<=2/23,0<=p22<=2/23' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -5250,18 +5772,24 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   34.51 millis    fish           external
+   usr time    8.65 millis  152.00 micros    8.50 millis
+   sys time   26.05 millis    0.00 micros   26.05 millis
+
 Running on MDP with i=24
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 15:58:32 2025
+Date: Thu Jan 23 11:34:45 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/24,1e-6<=p2<=1/24,1e-6<=p3<=1/24,1e-6<=p4<=1/24,1e-6<=p5<=1/24,1e-6<=p6<=1/24,1e-6<=p7<=1/24,1e-6<=p8<=1/24,1e-6<=p9<=1/24,1e-6<=p10<=1/24,1e-6<=p11<=1/24,1e-6<=p12<=1/24,1e-6<=p13<=1/24,1e-6<=p14<=1/24,1e-6<=p15<=1/24,1e-6<=p16<=1/24,1e-6<=p17<=1/24,1e-6<=p18<=1/24,1e-6<=p19<=1/24,1e-6<=p20<=1/24,1e-6<=p21<=1/24,1e-6<=p22<=1/24,1e-6<=p23<=1/24' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -5295,11 +5823,17 @@ Choice Labels: 	none
  INFO (storm-pars.cpp:555): Verification mode started.
 ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
 
-------------------------------
+________________________________________________________
+Executed in  136.59 secs    fish           external
+   usr time  126.55 secs   50.00 micros  126.55 secs
+   sys time   10.02 secs  143.00 micros   10.02 secs
+
+
+==new run==
 Running on iMC with i=24
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:00:48 2025
+Date: Thu Jan 23 11:37:01 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/24,1e-6<=p2<=1/24,1e-6<=p3<=1/24,1e-6<=p4<=1/24,1e-6<=p5<=1/24,1e-6<=p6<=1/24,1e-6<=p7<=1/24,1e-6<=p8<=1/24,1e-6<=p9<=1/24,1e-6<=p10<=1/24,1e-6<=p11<=1/24,1e-6<=p12<=1/24,1e-6<=p13<=1/24,1e-6<=p14<=1/24,1e-6<=p15<=1/24,1e-6<=p16<=1/24,1e-6<=p17<=1/24,1e-6<=p18<=1/24,1e-6<=p19<=1/24,1e-6<=p20<=1/24,1e-6<=p21<=1/24,1e-6<=p22<=1/24,1e-6<=p23<=1/24' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -5355,17 +5889,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   36.66 millis    fish           external
+   usr time   23.54 millis    0.00 micros   23.54 millis
+   sys time   13.27 millis  203.00 micros   13.07 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=24
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:00:48 2025
+Date: Thu Jan 23 11:37:01 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/24,0<=p2<=1/24,0<=p3<=1/24,0<=p4<=1/24,0<=p5<=1/24,0<=p6<=1/24,0<=p7<=1/24,0<=p8<=1/24,0<=p9<=1/24,0<=p10<=1/24,0<=p11<=1/24,0<=p12<=1/24,0<=p13<=1/24,0<=p14<=1/24,0<=p15<=1/24,0<=p16<=1/24,0<=p17<=1/24,0<=p18<=1/24,0<=p19<=1/24,0<=p20<=1/24,0<=p21<=1/24,0<=p22<=1/24,0<=p23<=1/24' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -5416,17 +5956,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   35.09 millis    fish           external
+   usr time   15.78 millis    0.00 micros   15.78 millis
+   sys time   19.39 millis  152.00 micros   19.24 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=24
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:00:49 2025
+Date: Thu Jan 23 11:37:01 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/24,0<=p2<=2/24,0<=p3<=2/24,0<=p4<=2/24,0<=p5<=2/24,0<=p6<=2/24,0<=p7<=2/24,0<=p8<=2/24,0<=p9<=2/24,0<=p10<=2/24,0<=p11<=2/24,0<=p12<=2/24,0<=p13<=2/24,0<=p14<=2/24,0<=p15<=2/24,0<=p16<=2/24,0<=p17<=2/24,0<=p18<=2/24,0<=p19<=2/24,0<=p20<=2/24,0<=p21<=2/24,0<=p22<=2/24,0<=p23<=2/24' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -5476,12 +6022,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   33.58 millis    fish           external
+   usr time   21.63 millis    0.00 micros   21.63 millis
+   sys time   12.03 millis  149.00 micros   11.88 millis
+
 Running on MDP with i=25
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:00:49 2025
+Date: Thu Jan 23 11:37:01 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/25,1e-6<=p2<=1/25,1e-6<=p3<=1/25,1e-6<=p4<=1/25,1e-6<=p5<=1/25,1e-6<=p6<=1/25,1e-6<=p7<=1/25,1e-6<=p8<=1/25,1e-6<=p9<=1/25,1e-6<=p10<=1/25,1e-6<=p11<=1/25,1e-6<=p12<=1/25,1e-6<=p13<=1/25,1e-6<=p14<=1/25,1e-6<=p15<=1/25,1e-6<=p16<=1/25,1e-6<=p17<=1/25,1e-6<=p18<=1/25,1e-6<=p19<=1/25,1e-6<=p20<=1/25,1e-6<=p21<=1/25,1e-6<=p22<=1/25,1e-6<=p23<=1/25,1e-6<=p24<=1/25' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -5521,17 +6073,23 @@ Choice Labels: 	none
  INFO (storm-pars.cpp:555): Verification mode started.
 ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
 
-------------------------------
+________________________________________________________
+Executed in   73.70 secs    fish           external
+   usr time   63.47 secs    0.00 micros   63.47 secs
+   sys time   10.21 secs  197.00 micros   10.21 secs
+
+
+==new run==
 Running on iMC with i=25
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:02:03 2025
+Date: Thu Jan 23 11:38:15 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/25,1e-6<=p2<=1/25,1e-6<=p3<=1/25,1e-6<=p4<=1/25,1e-6<=p5<=1/25,1e-6<=p6<=1/25,1e-6<=p7<=1/25,1e-6<=p8<=1/25,1e-6<=p9<=1/25,1e-6<=p10<=1/25,1e-6<=p11<=1/25,1e-6<=p12<=1/25,1e-6<=p13<=1/25,1e-6<=p14<=1/25,1e-6<=p15<=1/25,1e-6<=p16<=1/25,1e-6<=p17<=1/25,1e-6<=p18<=1/25,1e-6<=p19<=1/25,1e-6<=p20<=1/25,1e-6<=p21<=1/25,1e-6<=p22<=1/25,1e-6<=p23<=1/25,1e-6<=p24<=1/25' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -5581,17 +6139,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   36.60 millis    fish           external
+   usr time   16.15 millis    0.00 micros   16.15 millis
+   sys time   20.62 millis  217.00 micros   20.40 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=25
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:02:03 2025
+Date: Thu Jan 23 11:38:15 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/25,0<=p2<=1/25,0<=p3<=1/25,0<=p4<=1/25,0<=p5<=1/25,0<=p6<=1/25,0<=p7<=1/25,0<=p8<=1/25,0<=p9<=1/25,0<=p10<=1/25,0<=p11<=1/25,0<=p12<=1/25,0<=p13<=1/25,0<=p14<=1/25,0<=p15<=1/25,0<=p16<=1/25,0<=p17<=1/25,0<=p18<=1/25,0<=p19<=1/25,0<=p20<=1/25,0<=p21<=1/25,0<=p22<=1/25,0<=p23<=1/25,0<=p24<=1/25' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -5642,17 +6206,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   34.11 millis    fish           external
+   usr time   16.78 millis    0.00 micros   16.78 millis
+   sys time   17.42 millis  151.00 micros   17.27 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=25
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:02:03 2025
+Date: Thu Jan 23 11:38:15 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/25,0<=p2<=2/25,0<=p3<=2/25,0<=p4<=2/25,0<=p5<=2/25,0<=p6<=2/25,0<=p7<=2/25,0<=p8<=2/25,0<=p9<=2/25,0<=p10<=2/25,0<=p11<=2/25,0<=p12<=2/25,0<=p13<=2/25,0<=p14<=2/25,0<=p15<=2/25,0<=p16<=2/25,0<=p17<=2/25,0<=p18<=2/25,0<=p19<=2/25,0<=p20<=2/25,0<=p21<=2/25,0<=p22<=2/25,0<=p23<=2/25,0<=p24<=2/25' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -5702,18 +6272,24 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   34.16 millis    fish           external
+   usr time   30.20 millis    0.00 micros   30.20 millis
+   sys time    4.15 millis   93.00 micros    4.06 millis
+
 Running on MDP with i=26
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:02:03 2025
+Date: Thu Jan 23 11:38:15 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/26,1e-6<=p2<=1/26,1e-6<=p3<=1/26,1e-6<=p4<=1/26,1e-6<=p5<=1/26,1e-6<=p6<=1/26,1e-6<=p7<=1/26,1e-6<=p8<=1/26,1e-6<=p9<=1/26,1e-6<=p10<=1/26,1e-6<=p11<=1/26,1e-6<=p12<=1/26,1e-6<=p13<=1/26,1e-6<=p14<=1/26,1e-6<=p15<=1/26,1e-6<=p16<=1/26,1e-6<=p17<=1/26,1e-6<=p18<=1/26,1e-6<=p19<=1/26,1e-6<=p20<=1/26,1e-6<=p21<=1/26,1e-6<=p22<=1/26,1e-6<=p23<=1/26,1e-6<=p24<=1/26,1e-6<=p25<=1/26' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -5747,17 +6323,23 @@ Choice Labels: 	none
  INFO (storm-pars.cpp:555): Verification mode started.
 ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
 
-------------------------------
+________________________________________________________
+Executed in   35.99 secs    fish           external
+   usr time   25.77 secs    0.00 micros   25.77 secs
+   sys time   10.22 secs  172.00 micros   10.22 secs
+
+
+==new run==
 Running on iMC with i=26
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:02:40 2025
+Date: Thu Jan 23 11:38:51 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/26,1e-6<=p2<=1/26,1e-6<=p3<=1/26,1e-6<=p4<=1/26,1e-6<=p5<=1/26,1e-6<=p6<=1/26,1e-6<=p7<=1/26,1e-6<=p8<=1/26,1e-6<=p9<=1/26,1e-6<=p10<=1/26,1e-6<=p11<=1/26,1e-6<=p12<=1/26,1e-6<=p13<=1/26,1e-6<=p14<=1/26,1e-6<=p15<=1/26,1e-6<=p16<=1/26,1e-6<=p17<=1/26,1e-6<=p18<=1/26,1e-6<=p19<=1/26,1e-6<=p20<=1/26,1e-6<=p21<=1/26,1e-6<=p22<=1/26,1e-6<=p23<=1/26,1e-6<=p24<=1/26,1e-6<=p25<=1/26' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -5807,17 +6389,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   36.63 millis    fish           external
+   usr time   18.34 millis    0.00 micros   18.34 millis
+   sys time   18.46 millis  170.00 micros   18.29 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=26
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:02:41 2025
+Date: Thu Jan 23 11:38:51 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/26,0<=p2<=1/26,0<=p3<=1/26,0<=p4<=1/26,0<=p5<=1/26,0<=p6<=1/26,0<=p7<=1/26,0<=p8<=1/26,0<=p9<=1/26,0<=p10<=1/26,0<=p11<=1/26,0<=p12<=1/26,0<=p13<=1/26,0<=p14<=1/26,0<=p15<=1/26,0<=p16<=1/26,0<=p17<=1/26,0<=p18<=1/26,0<=p19<=1/26,0<=p20<=1/26,0<=p21<=1/26,0<=p22<=1/26,0<=p23<=1/26,0<=p24<=1/26,0<=p25<=1/26' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -5868,17 +6456,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   35.34 millis    fish           external
+   usr time   16.21 millis    0.00 micros   16.21 millis
+   sys time   19.27 millis  105.00 micros   19.16 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=26
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:02:41 2025
+Date: Thu Jan 23 11:38:51 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/26,0<=p2<=2/26,0<=p3<=2/26,0<=p4<=2/26,0<=p5<=2/26,0<=p6<=2/26,0<=p7<=2/26,0<=p8<=2/26,0<=p9<=2/26,0<=p10<=2/26,0<=p11<=2/26,0<=p12<=2/26,0<=p13<=2/26,0<=p14<=2/26,0<=p15<=2/26,0<=p16<=2/26,0<=p17<=2/26,0<=p18<=2/26,0<=p19<=2/26,0<=p20<=2/26,0<=p21<=2/26,0<=p22<=2/26,0<=p23<=2/26,0<=p24<=2/26,0<=p25<=2/26' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -5928,12 +6522,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   34.08 millis    fish           external
+   usr time   17.18 millis    0.00 micros   17.18 millis
+   sys time   17.05 millis  105.00 micros   16.95 millis
+
 Running on MDP with i=27
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:02:41 2025
+Date: Thu Jan 23 11:38:51 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/27,1e-6<=p2<=1/27,1e-6<=p3<=1/27,1e-6<=p4<=1/27,1e-6<=p5<=1/27,1e-6<=p6<=1/27,1e-6<=p7<=1/27,1e-6<=p8<=1/27,1e-6<=p9<=1/27,1e-6<=p10<=1/27,1e-6<=p11<=1/27,1e-6<=p12<=1/27,1e-6<=p13<=1/27,1e-6<=p14<=1/27,1e-6<=p15<=1/27,1e-6<=p16<=1/27,1e-6<=p17<=1/27,1e-6<=p18<=1/27,1e-6<=p19<=1/27,1e-6<=p20<=1/27,1e-6<=p21<=1/27,1e-6<=p22<=1/27,1e-6<=p23<=1/27,1e-6<=p24<=1/27,1e-6<=p25<=1/27,1e-6<=p26<=1/27' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -5973,17 +6573,23 @@ Choice Labels: 	none
  INFO (storm-pars.cpp:555): Verification mode started.
 ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
 
-------------------------------
+________________________________________________________
+Executed in   30.47 secs    fish           external
+   usr time   21.29 secs    0.00 micros   21.29 secs
+   sys time    9.18 secs  154.00 micros    9.18 secs
+
+
+==new run==
 Running on iMC with i=27
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:11 2025
+Date: Thu Jan 23 11:39:22 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/27,1e-6<=p2<=1/27,1e-6<=p3<=1/27,1e-6<=p4<=1/27,1e-6<=p5<=1/27,1e-6<=p6<=1/27,1e-6<=p7<=1/27,1e-6<=p8<=1/27,1e-6<=p9<=1/27,1e-6<=p10<=1/27,1e-6<=p11<=1/27,1e-6<=p12<=1/27,1e-6<=p13<=1/27,1e-6<=p14<=1/27,1e-6<=p15<=1/27,1e-6<=p16<=1/27,1e-6<=p17<=1/27,1e-6<=p18<=1/27,1e-6<=p19<=1/27,1e-6<=p20<=1/27,1e-6<=p21<=1/27,1e-6<=p22<=1/27,1e-6<=p23<=1/27,1e-6<=p24<=1/27,1e-6<=p25<=1/27,1e-6<=p26<=1/27' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -6033,11 +6639,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   39.56 millis    fish           external
+   usr time   25.82 millis    0.00 micros   25.82 millis
+   sys time   13.92 millis  162.00 micros   13.76 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=27
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:11 2025
+Date: Thu Jan 23 11:39:22 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/27,0<=p2<=1/27,0<=p3<=1/27,0<=p4<=1/27,0<=p5<=1/27,0<=p6<=1/27,0<=p7<=1/27,0<=p8<=1/27,0<=p9<=1/27,0<=p10<=1/27,0<=p11<=1/27,0<=p12<=1/27,0<=p13<=1/27,0<=p14<=1/27,0<=p15<=1/27,0<=p16<=1/27,0<=p17<=1/27,0<=p18<=1/27,0<=p19<=1/27,0<=p20<=1/27,0<=p21<=1/27,0<=p22<=1/27,0<=p23<=1/27,0<=p24<=1/27,0<=p25<=1/27,0<=p26<=1/27' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -6094,15 +6706,21 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   36.94 millis    fish           external
+   usr time    8.80 millis    0.00 micros    8.80 millis
+   sys time   28.20 millis  107.00 micros   28.10 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=27
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:11 2025
+Date: Thu Jan 23 11:39:22 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/27,0<=p2<=2/27,0<=p3<=2/27,0<=p4<=2/27,0<=p5<=2/27,0<=p6<=2/27,0<=p7<=2/27,0<=p8<=2/27,0<=p9<=2/27,0<=p10<=2/27,0<=p11<=2/27,0<=p12<=2/27,0<=p13<=2/27,0<=p14<=2/27,0<=p15<=2/27,0<=p16<=2/27,0<=p17<=2/27,0<=p18<=2/27,0<=p19<=2/27,0<=p20<=2/27,0<=p21<=2/27,0<=p22<=2/27,0<=p23<=2/27,0<=p24<=2/27,0<=p25<=2/27,0<=p26<=2/27' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.002s.
+Time for model input parsing: 0.001s.
 
 Time for model construction: 0.011s.
 
@@ -6151,19 +6769,25 @@ Extremal value: 5192759461888733/36028797018963968
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
+ INFO (storm-pars.cpp:387): Time for model checking: 0.001s.
 
-Time for model checking: 0.000s.
+Time for model checking: 0.001s.
+
+________________________________________________________
+Executed in   35.93 millis    fish           external
+   usr time   12.83 millis    0.00 micros   12.83 millis
+   sys time   23.23 millis  105.00 micros   23.12 millis
+
 Running on MDP with i=28
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:11 2025
+Date: Thu Jan 23 11:39:22 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/28,1e-6<=p2<=1/28,1e-6<=p3<=1/28,1e-6<=p4<=1/28,1e-6<=p5<=1/28,1e-6<=p6<=1/28,1e-6<=p7<=1/28,1e-6<=p8<=1/28,1e-6<=p9<=1/28,1e-6<=p10<=1/28,1e-6<=p11<=1/28,1e-6<=p12<=1/28,1e-6<=p13<=1/28,1e-6<=p14<=1/28,1e-6<=p15<=1/28,1e-6<=p16<=1/28,1e-6<=p17<=1/28,1e-6<=p18<=1/28,1e-6<=p19<=1/28,1e-6<=p20<=1/28,1e-6<=p21<=1/28,1e-6<=p22<=1/28,1e-6<=p23<=1/28,1e-6<=p24<=1/28,1e-6<=p25<=1/28,1e-6<=p26<=1/28,1e-6<=p27<=1/28' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.001s.
+Time for model input parsing: 0.002s.
 
 Time for model construction: 0.011s.
 
@@ -6199,15 +6823,21 @@ Choice Labels: 	none
  INFO (storm-pars.cpp:555): Verification mode started.
 ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
 
-------------------------------
+________________________________________________________
+Executed in   19.69 secs    fish           external
+   usr time   13.40 secs    0.00 micros   13.40 secs
+   sys time    6.28 secs  186.00 micros    6.28 secs
+
+
+==new run==
 Running on iMC with i=28
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:31 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/28,1e-6<=p2<=1/28,1e-6<=p3<=1/28,1e-6<=p4<=1/28,1e-6<=p5<=1/28,1e-6<=p6<=1/28,1e-6<=p7<=1/28,1e-6<=p8<=1/28,1e-6<=p9<=1/28,1e-6<=p10<=1/28,1e-6<=p11<=1/28,1e-6<=p12<=1/28,1e-6<=p13<=1/28,1e-6<=p14<=1/28,1e-6<=p15<=1/28,1e-6<=p16<=1/28,1e-6<=p17<=1/28,1e-6<=p18<=1/28,1e-6<=p19<=1/28,1e-6<=p20<=1/28,1e-6<=p21<=1/28,1e-6<=p22<=1/28,1e-6<=p23<=1/28,1e-6<=p24<=1/28,1e-6<=p25<=1/28,1e-6<=p26<=1/28,1e-6<=p27<=1/28' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.001s.
+Time for model input parsing: 0.002s.
 
 Time for model construction: 0.011s.
 
@@ -6259,17 +6889,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   37.31 millis    fish           external
+   usr time   24.22 millis   51.00 micros   24.17 millis
+   sys time   13.27 millis  177.00 micros   13.10 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=28
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:31 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/28,0<=p2<=1/28,0<=p3<=1/28,0<=p4<=1/28,0<=p5<=1/28,0<=p6<=1/28,0<=p7<=1/28,0<=p8<=1/28,0<=p9<=1/28,0<=p10<=1/28,0<=p11<=1/28,0<=p12<=1/28,0<=p13<=1/28,0<=p14<=1/28,0<=p15<=1/28,0<=p16<=1/28,0<=p17<=1/28,0<=p18<=1/28,0<=p19<=1/28,0<=p20<=1/28,0<=p21<=1/28,0<=p22<=1/28,0<=p23<=1/28,0<=p24<=1/28,0<=p25<=1/28,0<=p26<=1/28,0<=p27<=1/28' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -6320,11 +6956,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   35.20 millis    fish           external
+   usr time   20.76 millis   32.00 micros   20.73 millis
+   sys time   14.47 millis  112.00 micros   14.36 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=28
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:31 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/28,0<=p2<=2/28,0<=p3<=2/28,0<=p4<=2/28,0<=p5<=2/28,0<=p6<=2/28,0<=p7<=2/28,0<=p8<=2/28,0<=p9<=2/28,0<=p10<=2/28,0<=p11<=2/28,0<=p12<=2/28,0<=p13<=2/28,0<=p14<=2/28,0<=p15<=2/28,0<=p16<=2/28,0<=p17<=2/28,0<=p18<=2/28,0<=p19<=2/28,0<=p20<=2/28,0<=p21<=2/28,0<=p22<=2/28,0<=p23<=2/28,0<=p24<=2/28,0<=p25<=2/28,0<=p26<=2/28,0<=p27<=2/28' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -6377,21 +7019,27 @@ Extremal value: 2526629432529877/18014398509481984
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 0.001s.
+ INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
-Time for model checking: 0.001s.
+Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   33.45 millis    fish           external
+   usr time   25.44 millis   32.00 micros   25.41 millis
+   sys time    8.12 millis  113.00 micros    8.00 millis
+
 Running on MDP with i=29
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:31 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/29,1e-6<=p2<=1/29,1e-6<=p3<=1/29,1e-6<=p4<=1/29,1e-6<=p5<=1/29,1e-6<=p6<=1/29,1e-6<=p7<=1/29,1e-6<=p8<=1/29,1e-6<=p9<=1/29,1e-6<=p10<=1/29,1e-6<=p11<=1/29,1e-6<=p12<=1/29,1e-6<=p13<=1/29,1e-6<=p14<=1/29,1e-6<=p15<=1/29,1e-6<=p16<=1/29,1e-6<=p17<=1/29,1e-6<=p18<=1/29,1e-6<=p19<=1/29,1e-6<=p20<=1/29,1e-6<=p21<=1/29,1e-6<=p22<=1/29,1e-6<=p23<=1/29,1e-6<=p24<=1/29,1e-6<=p25<=1/29,1e-6<=p26<=1/29,1e-6<=p27<=1/29,1e-6<=p28<=1/29' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.002s.
+Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -6425,17 +7073,23 @@ Choice Labels: 	none
  INFO (storm-pars.cpp:555): Verification mode started.
 ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
 
-------------------------------
+________________________________________________________
+Executed in   34.56 millis    fish           external
+   usr time   26.67 millis    0.00 micros   26.67 millis
+   sys time    8.07 millis  208.00 micros    7.86 millis
+
+
+==new run==
 Running on iMC with i=29
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:31 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/29,1e-6<=p2<=1/29,1e-6<=p3<=1/29,1e-6<=p4<=1/29,1e-6<=p5<=1/29,1e-6<=p6<=1/29,1e-6<=p7<=1/29,1e-6<=p8<=1/29,1e-6<=p9<=1/29,1e-6<=p10<=1/29,1e-6<=p11<=1/29,1e-6<=p12<=1/29,1e-6<=p13<=1/29,1e-6<=p14<=1/29,1e-6<=p15<=1/29,1e-6<=p16<=1/29,1e-6<=p17<=1/29,1e-6<=p18<=1/29,1e-6<=p19<=1/29,1e-6<=p20<=1/29,1e-6<=p21<=1/29,1e-6<=p22<=1/29,1e-6<=p23<=1/29,1e-6<=p24<=1/29,1e-6<=p25<=1/29,1e-6<=p26<=1/29,1e-6<=p27<=1/29,1e-6<=p28<=1/29' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.011s.
+Time for model construction: 0.010s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -6485,17 +7139,23 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   34.63 millis    fish           external
+   usr time   15.17 millis  201.00 micros   14.97 millis
+   sys time   19.53 millis    0.00 micros   19.53 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=29
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:31 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/29,0<=p2<=1/29,0<=p3<=1/29,0<=p4<=1/29,0<=p5<=1/29,0<=p6<=1/29,0<=p7<=1/29,0<=p8<=1/29,0<=p9<=1/29,0<=p10<=1/29,0<=p11<=1/29,0<=p12<=1/29,0<=p13<=1/29,0<=p14<=1/29,0<=p15<=1/29,0<=p16<=1/29,0<=p17<=1/29,0<=p18<=1/29,0<=p19<=1/29,0<=p20<=1/29,0<=p21<=1/29,0<=p22<=1/29,0<=p23<=1/29,0<=p24<=1/29,0<=p25<=1/29,0<=p26<=1/29,0<=p27<=1/29,0<=p28<=1/29' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.001s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -6546,11 +7206,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   34.25 millis    fish           external
+   usr time   26.33 millis  139.00 micros   26.19 millis
+   sys time    8.01 millis    0.00 micros    8.01 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=29
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:31 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/29,0<=p2<=2/29,0<=p3<=2/29,0<=p4<=2/29,0<=p5<=2/29,0<=p6<=2/29,0<=p7<=2/29,0<=p8<=2/29,0<=p9<=2/29,0<=p10<=2/29,0<=p11<=2/29,0<=p12<=2/29,0<=p13<=2/29,0<=p14<=2/29,0<=p15<=2/29,0<=p16<=2/29,0<=p17<=2/29,0<=p18<=2/29,0<=p19<=2/29,0<=p20<=2/29,0<=p21<=2/29,0<=p22<=2/29,0<=p23<=2/29,0<=p24<=2/29,0<=p25<=2/29,0<=p26<=2/29,0<=p27<=2/29,0<=p28<=2/29' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -6606,18 +7272,24 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   34.30 millis    fish           external
+   usr time   18.39 millis   31.00 micros   18.35 millis
+   sys time   16.09 millis  105.00 micros   15.98 millis
+
 Running on MDP with i=30
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:31 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/30,1e-6<=p2<=1/30,1e-6<=p3<=1/30,1e-6<=p4<=1/30,1e-6<=p5<=1/30,1e-6<=p6<=1/30,1e-6<=p7<=1/30,1e-6<=p8<=1/30,1e-6<=p9<=1/30,1e-6<=p10<=1/30,1e-6<=p11<=1/30,1e-6<=p12<=1/30,1e-6<=p13<=1/30,1e-6<=p14<=1/30,1e-6<=p15<=1/30,1e-6<=p16<=1/30,1e-6<=p17<=1/30,1e-6<=p18<=1/30,1e-6<=p19<=1/30,1e-6<=p20<=1/30,1e-6<=p21<=1/30,1e-6<=p22<=1/30,1e-6<=p23<=1/30,1e-6<=p24<=1/30,1e-6<=p25<=1/30,1e-6<=p26<=1/30,1e-6<=p27<=1/30,1e-6<=p28<=1/30,1e-6<=p29<=1/30' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
 Time for model input parsing: 0.002s.
 
-Time for model construction: 0.010s.
+Time for model construction: 0.011s.
 
 -------------------------------------------------------------- 
 Model type: 	DTMC (sparse)
@@ -6651,11 +7323,17 @@ Choice Labels: 	none
  INFO (storm-pars.cpp:555): Verification mode started.
 ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
 
-------------------------------
+________________________________________________________
+Executed in   39.39 millis    fish           external
+   usr time   20.26 millis   37.00 micros   20.22 millis
+   sys time   19.30 millis  123.00 micros   19.18 millis
+
+
+==new run==
 Running on iMC with i=30
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:31 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/30,1e-6<=p2<=1/30,1e-6<=p3<=1/30,1e-6<=p4<=1/30,1e-6<=p5<=1/30,1e-6<=p6<=1/30,1e-6<=p7<=1/30,1e-6<=p8<=1/30,1e-6<=p9<=1/30,1e-6<=p10<=1/30,1e-6<=p11<=1/30,1e-6<=p12<=1/30,1e-6<=p13<=1/30,1e-6<=p14<=1/30,1e-6<=p15<=1/30,1e-6<=p16<=1/30,1e-6<=p17<=1/30,1e-6<=p18<=1/30,1e-6<=p19<=1/30,1e-6<=p20<=1/30,1e-6<=p21<=1/30,1e-6<=p22<=1/30,1e-6<=p23<=1/30,1e-6<=p24<=1/30,1e-6<=p25<=1/30,1e-6<=p26<=1/30,1e-6<=p27<=1/30,1e-6<=p28<=1/30,1e-6<=p29<=1/30' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -6711,15 +7389,21 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   35.88 millis    fish           external
+   usr time   16.99 millis   33.00 micros   16.95 millis
+   sys time   18.99 millis  111.00 micros   18.88 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=30
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:31 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/30,0<=p2<=1/30,0<=p3<=1/30,0<=p4<=1/30,0<=p5<=1/30,0<=p6<=1/30,0<=p7<=1/30,0<=p8<=1/30,0<=p9<=1/30,0<=p10<=1/30,0<=p11<=1/30,0<=p12<=1/30,0<=p13<=1/30,0<=p14<=1/30,0<=p15<=1/30,0<=p16<=1/30,0<=p17<=1/30,0<=p18<=1/30,0<=p19<=1/30,0<=p20<=1/30,0<=p21<=1/30,0<=p22<=1/30,0<=p23<=1/30,0<=p24<=1/30,0<=p25<=1/30,0<=p26<=1/30,0<=p27<=1/30,0<=p28<=1/30,0<=p29<=1/30' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
-Time for model input parsing: 0.001s.
+Time for model input parsing: 0.002s.
 
 Time for model construction: 0.011s.
 
@@ -6772,11 +7456,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.000s.
 
-------------------------------
+________________________________________________________
+Executed in   34.30 millis    fish           external
+   usr time   17.48 millis    0.00 micros   17.48 millis
+   sys time   16.94 millis   94.00 micros   16.84 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=30
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:32 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/30,0<=p2<=2/30,0<=p3<=2/30,0<=p4<=2/30,0<=p5<=2/30,0<=p6<=2/30,0<=p7<=2/30,0<=p8<=2/30,0<=p9<=2/30,0<=p10<=2/30,0<=p11<=2/30,0<=p12<=2/30,0<=p13<=2/30,0<=p14<=2/30,0<=p15<=2/30,0<=p16<=2/30,0<=p17<=2/30,0<=p18<=2/30,0<=p19<=2/30,0<=p20<=2/30,0<=p21<=2/30,0<=p22<=2/30,0<=p23<=2/30,0<=p24<=2/30,0<=p25<=2/30,0<=p26<=2/30,0<=p27<=2/30,0<=p28<=2/30,0<=p29<=2/30' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -6829,15 +7519,21 @@ Extremal value: 149931854618025/1125899906842624
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 0.001s.
+ INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
-Time for model checking: 0.001s.
+Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   36.99 millis    fish           external
+   usr time   16.82 millis   92.00 micros   16.72 millis
+   sys time   20.15 millis    0.00 micros   20.15 millis
+
 Running on MDP with i=31
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:32 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/31,1e-6<=p2<=1/31,1e-6<=p3<=1/31,1e-6<=p4<=1/31,1e-6<=p5<=1/31,1e-6<=p6<=1/31,1e-6<=p7<=1/31,1e-6<=p8<=1/31,1e-6<=p9<=1/31,1e-6<=p10<=1/31,1e-6<=p11<=1/31,1e-6<=p12<=1/31,1e-6<=p13<=1/31,1e-6<=p14<=1/31,1e-6<=p15<=1/31,1e-6<=p16<=1/31,1e-6<=p17<=1/31,1e-6<=p18<=1/31,1e-6<=p19<=1/31,1e-6<=p20<=1/31,1e-6<=p21<=1/31,1e-6<=p22<=1/31,1e-6<=p23<=1/31,1e-6<=p24<=1/31,1e-6<=p25<=1/31,1e-6<=p26<=1/31,1e-6<=p27<=1/31,1e-6<=p28<=1/31,1e-6<=p29<=1/31,1e-6<=p30<=1/31' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -6877,11 +7573,17 @@ Choice Labels: 	none
  INFO (storm-pars.cpp:555): Verification mode started.
 ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
 
-------------------------------
+________________________________________________________
+Executed in   34.50 millis    fish           external
+   usr time   12.24 millis  121.00 micros   12.12 millis
+   sys time   22.43 millis    0.00 micros   22.43 millis
+
+
+==new run==
 Running on iMC with i=31
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:32 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/31,1e-6<=p2<=1/31,1e-6<=p3<=1/31,1e-6<=p4<=1/31,1e-6<=p5<=1/31,1e-6<=p6<=1/31,1e-6<=p7<=1/31,1e-6<=p8<=1/31,1e-6<=p9<=1/31,1e-6<=p10<=1/31,1e-6<=p11<=1/31,1e-6<=p12<=1/31,1e-6<=p13<=1/31,1e-6<=p14<=1/31,1e-6<=p15<=1/31,1e-6<=p16<=1/31,1e-6<=p17<=1/31,1e-6<=p18<=1/31,1e-6<=p19<=1/31,1e-6<=p20<=1/31,1e-6<=p21<=1/31,1e-6<=p22<=1/31,1e-6<=p23<=1/31,1e-6<=p24<=1/31,1e-6<=p25<=1/31,1e-6<=p26<=1/31,1e-6<=p27<=1/31,1e-6<=p28<=1/31,1e-6<=p29<=1/31,1e-6<=p30<=1/31' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -6937,11 +7639,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   38.95 millis    fish           external
+   usr time   20.19 millis  186.00 micros   20.01 millis
+   sys time   19.09 millis    0.00 micros   19.09 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=31
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:32 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/31,0<=p2<=1/31,0<=p3<=1/31,0<=p4<=1/31,0<=p5<=1/31,0<=p6<=1/31,0<=p7<=1/31,0<=p8<=1/31,0<=p9<=1/31,0<=p10<=1/31,0<=p11<=1/31,0<=p12<=1/31,0<=p13<=1/31,0<=p14<=1/31,0<=p15<=1/31,0<=p16<=1/31,0<=p17<=1/31,0<=p18<=1/31,0<=p19<=1/31,0<=p20<=1/31,0<=p21<=1/31,0<=p22<=1/31,0<=p23<=1/31,0<=p24<=1/31,0<=p25<=1/31,0<=p26<=1/31,0<=p27<=1/31,0<=p28<=1/31,0<=p29<=1/31,0<=p30<=1/31' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -6994,15 +7702,21 @@ Extremal value: 2921380592112003/36028797018963968
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
+ INFO (storm-pars.cpp:387): Time for model checking: 0.001s.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   37.21 millis    fish           external
+   usr time   25.69 millis  100.00 micros   25.59 millis
+   sys time   11.63 millis    0.00 micros   11.63 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=31
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:32 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/31,0<=p2<=2/31,0<=p3<=2/31,0<=p4<=2/31,0<=p5<=2/31,0<=p6<=2/31,0<=p7<=2/31,0<=p8<=2/31,0<=p9<=2/31,0<=p10<=2/31,0<=p11<=2/31,0<=p12<=2/31,0<=p13<=2/31,0<=p14<=2/31,0<=p15<=2/31,0<=p16<=2/31,0<=p17<=2/31,0<=p18<=2/31,0<=p19<=2/31,0<=p20<=2/31,0<=p21<=2/31,0<=p22<=2/31,0<=p23<=2/31,0<=p24<=2/31,0<=p25<=2/31,0<=p26<=2/31,0<=p27<=2/31,0<=p28<=2/31,0<=p29<=2/31,0<=p30<=2/31' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -7058,12 +7772,18 @@ Formula is satisfied by all parameter instantiations.
  INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
 
 Time for model checking: 0.000s.
+
+________________________________________________________
+Executed in   35.16 millis    fish           external
+   usr time   20.84 millis   22.00 micros   20.81 millis
+   sys time   14.48 millis   68.00 micros   14.41 millis
+
 Running on MDP with i=32
 
-------------------------------
+==new run==
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:32 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' pl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/32,1e-6<=p2<=1/32,1e-6<=p3<=1/32,1e-6<=p4<=1/32,1e-6<=p5<=1/32,1e-6<=p6<=1/32,1e-6<=p7<=1/32,1e-6<=p8<=1/32,1e-6<=p9<=1/32,1e-6<=p10<=1/32,1e-6<=p11<=1/32,1e-6<=p12<=1/32,1e-6<=p13<=1/32,1e-6<=p14<=1/32,1e-6<=p15<=1/32,1e-6<=p16<=1/32,1e-6<=p17<=1/32,1e-6<=p18<=1/32,1e-6<=p19<=1/32,1e-6<=p20<=1/32,1e-6<=p21<=1/32,1e-6<=p22<=1/32,1e-6<=p23<=1/32,1e-6<=p24<=1/32,1e-6<=p25<=1/32,1e-6<=p26<=1/32,1e-6<=p27<=1/32,1e-6<=p28<=1/32,1e-6<=p29<=1/32,1e-6<=p30<=1/32,1e-6<=p31<=1/32' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -7103,11 +7823,17 @@ Choice Labels: 	none
  INFO (storm-pars.cpp:555): Verification mode started.
 ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
 
-------------------------------
+________________________________________________________
+Executed in   36.78 millis    fish           external
+   usr time   14.49 millis   37.00 micros   14.46 millis
+   sys time   22.47 millis  114.00 micros   22.36 millis
+
+
+==new run==
 Running on iMC with i=32
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:32 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '1e-6<=p1<=1/32,1e-6<=p2<=1/32,1e-6<=p3<=1/32,1e-6<=p4<=1/32,1e-6<=p5<=1/32,1e-6<=p6<=1/32,1e-6<=p7<=1/32,1e-6<=p8<=1/32,1e-6<=p9<=1/32,1e-6<=p10<=1/32,1e-6<=p11<=1/32,1e-6<=p12<=1/32,1e-6<=p13<=1/32,1e-6<=p14<=1/32,1e-6<=p15<=1/32,1e-6<=p16<=1/32,1e-6<=p17<=1/32,1e-6<=p18<=1/32,1e-6<=p19<=1/32,1e-6<=p20<=1/32,1e-6<=p21<=1/32,1e-6<=p22<=1/32,1e-6<=p23<=1/32,1e-6<=p24<=1/32,1e-6<=p25<=1/32,1e-6<=p26<=1/32,1e-6<=p27<=1/32,1e-6<=p28<=1/32,1e-6<=p29<=1/32,1e-6<=p30<=1/32,1e-6<=p31<=1/32' -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -7163,11 +7889,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   36.36 millis    fish           external
+   usr time   15.95 millis   34.00 micros   15.92 millis
+   sys time   20.58 millis  105.00 micros   20.47 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving) with i=32
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:32 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=1/32,0<=p2<=1/32,0<=p3<=1/32,0<=p4<=1/32,0<=p5<=1/32,0<=p6<=1/32,0<=p7<=1/32,0<=p8<=1/32,0<=p9<=1/32,0<=p10<=1/32,0<=p11<=1/32,0<=p12<=1/32,0<=p13<=1/32,0<=p14<=1/32,0<=p15<=1/32,0<=p16<=1/32,0<=p17<=1/32,0<=p18<=1/32,0<=p19<=1/32,0<=p20<=1/32,0<=p21<=1/32,0<=p22<=1/32,0<=p23<=1/32,0<=p24<=1/32,0<=p25<=1/32,0<=p26<=1/32,0<=p27<=1/32,0<=p28<=1/32,0<=p29<=1/32,0<=p30<=1/32,0<=p31<=1/32' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -7224,11 +7956,17 @@ Formula is satisfied by all parameter instantiations.
 
 Time for model checking: 0.001s.
 
-------------------------------
+________________________________________________________
+Executed in   35.26 millis    fish           external
+   usr time   17.65 millis   23.00 micros   17.62 millis
+   sys time   17.62 millis   72.00 micros   17.55 millis
+
+
+==new run==
 Running on iMC (not-graph-preserving and not-well-defined) with i=32
 Storm-pars 1.9.0
 
-Date: Thu Jan 16 16:03:32 2025
+Date: Thu Jan 23 11:39:42 2025
 Command line arguments: --prism nonsimple.pm -prop 'P>=0.01 [F "target"]' --mode verification --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --region '0<=p1<=2/32,0<=p2<=2/32,0<=p3<=2/32,0<=p4<=2/32,0<=p5<=2/32,0<=p6<=2/32,0<=p7<=2/32,0<=p8<=2/32,0<=p9<=2/32,0<=p10<=2/32,0<=p11<=2/32,0<=p12<=2/32,0<=p13<=2/32,0<=p14<=2/32,0<=p15<=2/32,0<=p16<=2/32,0<=p17<=2/32,0<=p18<=2/32,0<=p19<=2/32,0<=p20<=2/32,0<=p21<=2/32,0<=p22<=2/32,0<=p23<=2/32,0<=p24<=2/32,0<=p25<=2/32,0<=p26<=2/32,0<=p27<=2/32,0<=p28<=2/32,0<=p29<=2/32,0<=p30<=2/32,0<=p31<=2/32' --not-graph-preserving -v --timeout 6000
 Current working directory: /home/lheck/git/bigsteptest/casestudies/nonsimple
 
@@ -7281,6 +8019,12 @@ Extremal value: 285591210153951/2251799813685248
  INFO (storm-pars.cpp:383): Formula is satisfied by all parameter instantiations.
 
 Formula is satisfied by all parameter instantiations.
- INFO (storm-pars.cpp:387): Time for model checking: 0.000s.
+ INFO (storm-pars.cpp:387): Time for model checking: 0.001s.
 
-Time for model checking: 0.000s.
+Time for model checking: 0.001s.
+
+________________________________________________________
+Executed in   35.56 millis    fish           external
+   usr time   16.81 millis   23.00 micros   16.79 millis
+   sys time   18.90 millis   74.00 micros   18.82 millis
+

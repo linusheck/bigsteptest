@@ -109,7 +109,7 @@ for epsilon in sorted(list(epsilons), key=lambda x: float(x)):
             benchmark["Model"],
             shorten_constants(benchmark["Const"]),
             benchmark["#States (after)"],
-            len(benchmark["Region"].split(",")),
+            int(benchmark["Region"]),
             benchmark["Region Bound"],
             prop
         ]

@@ -1,499 +1,499 @@
 Model,Const,Mem,Prop,Region,Region Bound,Epsilon,RobustPLA,BigStep,SplitStrat,Estimate,Simple,#States (after),Time (wall),% Known,Regions
-4x4grid-avoid,N/A,1,0.84615781362063_probability_min_notbad U goal,?,0.1,0.0001,false,false,estimate,delta,true,	45,0.317,100.0,6305
-4x4grid-avoid,N/A,1,0.8545339383630001_probability_min_notbad U goal,?,0.1,0.01,false,false,estimate,delta,true,	45,0.045,100.0,489
-4x4grid-avoid,N/A,1,0.8545339383630001_probability_min_notbad U goal,?,0.1,0.01,true,false,estimate,delta,true,	45,0.062,100.0,489
-4x4grid-avoid,N/A,1,0.8460816670320631_probability_min_notbad U goal,?,0.1,1e-05,true,false,estimate,delta,true,	45,1.242,100.0,19585
-4x4grid-avoid,N/A,1,0.8460816670320631_probability_min_notbad U goal,?,0.1,1e-05,true,true,estimate,delta,true,	47,1.04,100.0,13377
-4x4grid-avoid,N/A,1,0.8460816670320631_probability_min_notbad U goal,?,0.1,1e-05,false,false,estimate,delta,true,	45,0.96,100.0,19585
-4x4grid-avoid,N/A,1,0.9306805269300001_probability_min_notbad U goal,?,0.1,0.1,true,true,estimate,delta,true,	47,0.023,100.0,25
-4x4grid-avoid,N/A,1,0.9306805269300001_probability_min_notbad U goal,?,0.1,0.1,true,false,estimate,delta,true,	45,0.023,100.0,33
-4x4grid-avoid,N/A,1,0.84615781362063_probability_min_notbad U goal,?,0.1,0.0001,true,false,estimate,delta,true,	45,0.415,100.0,6305
-4x4grid-avoid,N/A,1,0.9306805269300001_probability_min_notbad U goal,?,0.1,0.1,false,false,estimate,delta,true,	45,0.022,100.0,33
-4x4grid-avoid,N/A,1,0.84615781362063_probability_min_notbad U goal,?,0.1,0.0001,true,true,estimate,delta,true,	47,0.364,100.0,4489
-4x4grid-avoid,N/A,1,0.8545339383630001_probability_min_notbad U goal,?,0.1,0.01,true,true,estimate,delta,true,	47,0.058,100.0,361
-4x4grid-avoid,N/A,1,0.9286640347177599_probability_min_notbad U goal,?,1e-06,0.0001,false,false,estimate,delta,true,	45,7.744,100.0,9961
-4x4grid-avoid,N/A,1,0.937856889376_probability_min_notbad U goal,?,1e-06,0.01,true,true,estimate,delta,true,	47,0.038,100.0,73
-4x4grid-avoid,N/A,1,0.9286640347177599_probability_min_notbad U goal,?,1e-06,0.0001,true,false,estimate,delta,true,	45,27.87,100.0,9833
-4x4grid-avoid,N/A,1,0.937856889376_probability_min_notbad U goal,?,1e-06,0.01,false,false,estimate,delta,true,	45,0.08,100.0,265
-4x4grid-avoid,N/A,1,0.937856889376_probability_min_notbad U goal,?,1e-06,0.01,true,false,estimate,delta,true,	45,0.262,100.0,265
-4x4grid-avoid,N/A,1,0.928580463311776_probability_min_notbad U goal,?,1e-06,1e-05,false,false,estimate,delta,true,	45,10.529,100.0,48889
-4x4grid-avoid,N/A,1,0.928580463311776_probability_min_notbad U goal,?,1e-06,1e-05,true,false,estimate,delta,true,	45,38.189,100.0,49569
-4x4grid-avoid,N/A,1,0.928580463311776_probability_min_notbad U goal,?,1e-06,1e-05,true,true,estimate,delta,true,	47,5.004,100.0,1497
-4x4grid-avoid,N/A,1,0.9286640347177599_probability_min_notbad U goal,?,1e-06,0.0001,true,true,estimate,delta,true,	47,0.636,100.0,481
-4x4grid,N/A,1,5.777541243_reward_max_goal,?,0.1,0.1,false,false,estimate,delta,true,	47,0.019,100.0,41
-4x4grid,N/A,1,6.3552953673_reward_max_goal,?,0.1,0.01,true,true,estimate,delta,true,	49,0.028,100.0,121
-4x4grid,N/A,1,6.418848320973_reward_max_goal,?,0.1,0.0001,true,true,estimate,delta,true,	49,0.114,100.0,1273
-4x4grid,N/A,1,6.418848320973_reward_max_goal,?,0.1,0.0001,false,false,estimate,delta,true,	47,0.08,100.0,1369
-4x4grid,N/A,1,5.777541243_reward_max_goal,?,0.1,0.1,true,true,estimate,delta,true,	49,0.028,100.0,41
-4x4grid,N/A,1,6.3552953673_reward_max_goal,?,0.1,0.01,true,false,estimate,delta,true,	47,0.027,100.0,137
-4x4grid,N/A,1,6.3552953673_reward_max_goal,?,0.1,0.01,false,false,estimate,delta,true,	47,0.023,100.0,137
-4x4grid,N/A,1,6.4194260750973005_reward_max_goal,?,0.1,1e-05,true,false,estimate,delta,true,	47,0.286,100.0,4361
-4x4grid,N/A,1,6.4194260750973005_reward_max_goal,?,0.1,1e-05,true,true,estimate,delta,true,	49,0.304,100.0,3745
-4x4grid,N/A,1,6.4194260750973005_reward_max_goal,?,0.1,1e-05,false,false,estimate,delta,true,	47,0.215,100.0,4361
-4x4grid,N/A,1,5.777541243_reward_max_goal,?,0.1,0.1,true,false,estimate,delta,true,	47,0.021,100.0,41
-4x4grid,N/A,1,6.418848320973_reward_max_goal,?,0.1,0.0001,true,false,estimate,delta,true,	47,0.101,100.0,1369
-4x4grid,N/A,1,5.04162717022413_reward_max_goal,?,1e-06,1e-05,false,false,estimate,delta,true,	47,0.219,100.0,4281
-4x4grid,N/A,1,5.04162717022413_reward_max_goal,?,1e-06,1e-05,true,false,estimate,delta,true,	47,0.289,100.0,4281
-4x4grid,N/A,1,5.0411734192413_reward_max_goal,?,1e-06,0.0001,true,true,estimate,delta,true,	49,0.103,100.0,1097
-4x4grid,N/A,1,4.5375098283_reward_max_goal,?,1e-06,0.1,false,false,estimate,delta,true,	47,0.019,100.0,41
-4x4grid,N/A,1,4.5375098283_reward_max_goal,?,1e-06,0.1,true,false,estimate,delta,true,	47,0.02,100.0,41
-4x4grid,N/A,1,4.991260811129999_reward_max_goal,?,1e-06,0.01,true,true,estimate,delta,true,	49,0.028,100.0,121
-4x4grid,N/A,1,4.5375098283_reward_max_goal,?,1e-06,0.1,true,true,estimate,delta,true,	49,0.021,100.0,41
-4x4grid,N/A,1,5.0411734192413_reward_max_goal,?,1e-06,0.0001,true,false,estimate,delta,true,	47,0.095,100.0,1257
-4x4grid,N/A,1,4.991260811129999_reward_max_goal,?,1e-06,0.01,true,false,estimate,delta,true,	47,0.027,100.0,153
-4x4grid,N/A,1,4.991260811129999_reward_max_goal,?,1e-06,0.01,false,false,estimate,delta,true,	47,0.024,100.0,153
-4x4grid,N/A,1,5.0411734192413_reward_max_goal,?,1e-06,0.0001,false,false,estimate,delta,true,	47,0.075,100.0,1257
-4x4grid,N/A,1,5.04162717022413_reward_max_goal,?,1e-06,1e-05,true,true,estimate,delta,true,	49,0.298,100.0,3561
-alarm,N/A,N/A,0.23584159106050503_probability_max_VENTTUBE=0,?,0.1,1e-05,true,false,estimate,delta,true,	31,0.067,100.0,89
-alarm,N/A,N/A,0.21225955455_probability_max_VENTTUBE=0,?,0.1,0.1,true,false,estimate,delta,true,	31,0.064,100.0,21
-alarm,N/A,N/A,0.23582036510505_probability_max_VENTTUBE=0,?,0.1,0.0001,true,false,estimate,delta,true,	31,0.066,100.0,73
-alarm,N/A,N/A,0.233485510005_probability_max_VENTTUBE=0,?,0.1,0.01,true,true,estimate,delta,true,	15,0.067,100.0,41
-alarm,N/A,N/A,0.23582036510505_probability_max_VENTTUBE=0,?,0.1,0.0001,false,false,estimate,delta,true,	31,0.065,100.0,73
-alarm,N/A,N/A,0.23582036510505_probability_max_VENTTUBE=0,?,0.1,0.0001,true,true,estimate,delta,true,	15,0.068,100.0,73
-alarm,N/A,N/A,0.23584159106050503_probability_max_VENTTUBE=0,?,0.1,1e-05,false,false,estimate,delta,true,	31,0.065,100.0,89
-alarm,N/A,N/A,0.233485510005_probability_max_VENTTUBE=0,?,0.1,0.01,false,false,estimate,delta,true,	31,0.064,100.0,49
-alarm,N/A,N/A,0.21225955455_probability_max_VENTTUBE=0,?,0.1,0.1,false,false,estimate,delta,true,	31,0.063,100.0,21
-alarm,N/A,N/A,0.233485510005_probability_max_VENTTUBE=0,?,0.1,0.01,true,false,estimate,delta,true,	31,0.066,100.0,49
-alarm,N/A,N/A,0.23584159106050503_probability_max_VENTTUBE=0,?,0.1,1e-05,true,true,estimate,delta,true,	15,0.069,100.0,85
-alarm,N/A,N/A,0.21225955455_probability_max_VENTTUBE=0,?,0.1,0.1,true,true,estimate,delta,true,	15,0.066,100.0,17
-alarm,N/A,N/A,0.0364098635901_probability_max_VENTTUBE=0,?,1e-06,0.01,true,true,estimate,delta,true,	15,0.064,100.0,5
-alarm,N/A,N/A,0.0364098635901_probability_max_VENTTUBE=0,?,1e-06,0.01,false,false,estimate,delta,true,	31,0.063,100.0,29
-alarm,N/A,N/A,0.0367772722136001_probability_max_VENTTUBE=0,?,1e-06,1e-05,true,false,estimate,delta,true,	31,0.067,100.0,69
-alarm,N/A,N/A,0.036773962226001_probability_max_VENTTUBE=0,?,1e-06,0.0001,true,true,estimate,delta,true,	15,0.064,100.0,5
-alarm,N/A,N/A,0.036773962226001_probability_max_VENTTUBE=0,?,1e-06,0.0001,false,false,estimate,delta,true,	31,0.064,100.0,57
-alarm,N/A,N/A,0.036773962226001_probability_max_VENTTUBE=0,?,1e-06,0.0001,true,false,estimate,delta,true,	31,0.067,100.0,57
-alarm,N/A,N/A,0.0367772722136001_probability_max_VENTTUBE=0,?,1e-06,1e-05,false,false,estimate,delta,true,	31,0.064,100.0,69
-alarm,N/A,N/A,0.0367772722136001_probability_max_VENTTUBE=0,?,1e-06,1e-05,true,true,estimate,delta,true,	15,0.064,100.0,5
-alarm,N/A,N/A,0.033099875991_probability_max_VENTTUBE=0,?,1e-06,0.1,true,false,estimate,delta,true,	31,0.065,100.0,17
-alarm,N/A,N/A,0.0364098635901_probability_max_VENTTUBE=0,?,1e-06,0.01,true,false,estimate,delta,true,	31,0.066,100.0,29
-alarm,N/A,N/A,0.033099875991_probability_max_VENTTUBE=0,?,1e-06,0.1,true,true,estimate,delta,true,	15,0.064,100.0,5
-alarm,N/A,N/A,0.033099875991_probability_max_VENTTUBE=0,?,1e-06,0.1,false,false,estimate,delta,true,	31,0.063,100.0,17
-brp,N=16 MAX=2 ,N/A,0.026111989574000002_probability_min_uncertain,?,0.1,0.1,true,true,estimate,delta,true,	177,0.22,100.0,1185
-brp,N=16 MAX=2 ,N/A,0.0239755540634_probability_min_uncertain,?,0.1,0.01,true,true,estimate,delta,true,	177,5.01,100.0,27709
-brp,N=16 MAX=2 ,N/A,0.023738409721723402_probability_min_uncertain,?,0.1,1e-05,false,false,estimate,delta,true,	324,MO,MO,MO
-brp,N=16 MAX=2 ,N/A,0.023740546157233998_probability_min_uncertain,?,0.1,0.0001,true,false,estimate,delta,true,	324,MO,MO,MO
-brp,N=16 MAX=2 ,N/A,0.026111989574000002_probability_min_uncertain,?,0.1,0.1,true,false,estimate,delta,true,	324,0.155,100.0,1185
-brp,N=16 MAX=2 ,N/A,0.023738409721723402_probability_min_uncertain,?,0.1,1e-05,true,true,estimate,delta,true,	177,MO,MO,MO
-brp,N=16 MAX=2 ,N/A,0.0239755540634_probability_min_uncertain,?,0.1,0.01,false,false,estimate,delta,true,	324,2.24,100.0,27709
-brp,N=16 MAX=2 ,N/A,0.026111989574000002_probability_min_uncertain,?,0.1,0.1,false,false,estimate,delta,true,	324,0.122,100.0,1185
-brp,N=16 MAX=2 ,N/A,0.023738409721723402_probability_min_uncertain,?,0.1,1e-05,true,false,estimate,delta,true,	324,MO,MO,MO
-brp,N=16 MAX=2 ,N/A,0.023740546157233998_probability_min_uncertain,?,0.1,0.0001,false,false,estimate,delta,true,	324,MO,MO,MO
-brp,N=16 MAX=2 ,N/A,0.0239755540634_probability_min_uncertain,?,0.1,0.01,true,false,estimate,delta,true,	324,3.093,100.0,27709
-brp,N=16 MAX=2 ,N/A,0.023740546157233998_probability_min_uncertain,?,0.1,0.0001,true,true,estimate,delta,true,	177,MO,MO,MO
-brp,N=16 MAX=2 ,N/A,0.026112095427_probability_min_uncertain,?,1e-06,0.1,true,false,estimate,delta,true,	324,0.201,100.0,1569
-brp,N=16 MAX=2 ,N/A,0.023740642396856998_probability_min_uncertain,?,1e-06,0.0001,true,false,estimate,delta,true,	324,MO,MO,MO
-brp,N=16 MAX=2 ,N/A,0.0237385059526857_probability_min_uncertain,?,1e-06,1e-05,true,true,estimate,delta,true,	177,MO,MO,MO
-brp,N=16 MAX=2 ,N/A,0.023740642396856998_probability_min_uncertain,?,1e-06,0.0001,false,false,estimate,delta,true,	324,MO,MO,MO
-brp,N=16 MAX=2 ,N/A,0.0237385059526857_probability_min_uncertain,?,1e-06,1e-05,true,false,estimate,delta,true,	324,MO,MO,MO
-brp,N=16 MAX=2 ,N/A,0.026112095427_probability_min_uncertain,?,1e-06,0.1,false,false,estimate,delta,true,	324,0.149,100.0,1569
-brp,N=16 MAX=2 ,N/A,0.026112095427_probability_min_uncertain,?,1e-06,0.1,true,true,estimate,delta,true,	177,0.282,100.0,1569
-brp,N=16 MAX=2 ,N/A,0.023740642396856998_probability_min_uncertain,?,1e-06,0.0001,true,true,estimate,delta,true,	177,MO,MO,MO
-brp,N=16 MAX=2 ,N/A,0.0237385059526857_probability_min_uncertain,?,1e-06,1e-05,false,false,estimate,delta,true,	324,MO,MO,MO
-brp,N=16 MAX=2 ,N/A,0.0239756512557_probability_min_uncertain,?,1e-06,0.01,true,false,estimate,delta,true,	324,7.886,100.0,67677
-brp,N=16 MAX=2 ,N/A,0.0239756512557_probability_min_uncertain,?,1e-06,0.01,false,false,estimate,delta,true,	324,6.576,100.0,67677
-brp,N=16 MAX=2 ,N/A,0.0239756512557_probability_min_uncertain,?,1e-06,0.01,true,true,estimate,delta,true,	177,12.168,100.0,67677
-brp,N=32 MAX=4 ,N/A,0.012847122794_probability_min_uncertain,?,0.1,0.1,true,true,estimate,delta,true,	545,0.991,100.0,1741
-brp,N=32 MAX=4 ,N/A,0.0117959945654_probability_min_uncertain,?,0.1,0.01,false,false,estimate,delta,true,	1094,15.843,100.0,71389
-brp,N=32 MAX=4 ,N/A,0.012847122794_probability_min_uncertain,?,0.1,0.1,false,false,estimate,delta,true,	1094,0.388,100.0,1741
-brp,N=32 MAX=4 ,N/A,0.0117959945654_probability_min_uncertain,?,0.1,0.01,true,false,estimate,delta,true,	1094,21.331,100.0,71389
-brp,N=32 MAX=4 ,N/A,0.0116793193320254_probability_min_uncertain,?,0.1,1e-05,true,true,estimate,delta,true,	545,TO,TO,TO
-brp,N=32 MAX=4 ,N/A,0.012847122794_probability_min_uncertain,?,0.1,0.1,true,false,estimate,delta,true,	1094,0.529,100.0,1741
-brp,N=32 MAX=4 ,N/A,0.011680370460253999_probability_min_uncertain,?,0.1,0.0001,false,false,estimate,delta,true,	1094,TO,TO,TO
-brp,N=32 MAX=4 ,N/A,0.0117959945654_probability_min_uncertain,?,0.1,0.01,true,true,estimate,delta,true,	545,44.398,100.0,71389
-brp,N=32 MAX=4 ,N/A,0.0116793193320254_probability_min_uncertain,?,0.1,1e-05,false,false,estimate,delta,true,	1094,TO,TO,TO
-brp,N=32 MAX=4 ,N/A,0.0116793193320254_probability_min_uncertain,?,0.1,1e-05,true,false,estimate,delta,true,	1094,TO,TO,TO
-brp,N=32 MAX=4 ,N/A,0.011680370460253999_probability_min_uncertain,?,0.1,0.0001,true,false,estimate,delta,true,	1094,TO,TO,TO
-brp,N=32 MAX=4 ,N/A,0.011680370460253999_probability_min_uncertain,?,0.1,0.0001,true,true,estimate,delta,true,	545,TO,TO,TO
-brp,N=32 MAX=4 ,N/A,0.011679319502027101_probability_min_uncertain,?,1e-06,1e-05,true,true,estimate,delta,true,	545,TO,TO,TO
-brp,N=32 MAX=4 ,N/A,0.011679319502027101_probability_min_uncertain,?,1e-06,1e-05,true,false,estimate,delta,true,	1094,TO,TO,TO
-brp,N=32 MAX=4 ,N/A,0.012847122981_probability_min_uncertain,?,1e-06,0.1,false,false,estimate,delta,true,	1094,0.76,100.0,3569
-brp,N=32 MAX=4 ,N/A,0.011679319502027101_probability_min_uncertain,?,1e-06,1e-05,false,false,estimate,delta,true,	1094,TO,TO,TO
-brp,N=32 MAX=4 ,N/A,0.012847122981_probability_min_uncertain,?,1e-06,0.1,true,true,estimate,delta,true,	545,2.028,100.0,3569
-brp,N=32 MAX=4 ,N/A,0.011680370630271_probability_min_uncertain,?,1e-06,0.0001,true,true,estimate,delta,true,	545,TO,TO,TO
-brp,N=32 MAX=4 ,N/A,0.0117959947371_probability_min_uncertain,?,1e-06,0.01,false,false,estimate,delta,true,	1094,31.342,100.0,96681
-brp,N=32 MAX=4 ,N/A,0.011680370630271_probability_min_uncertain,?,1e-06,0.0001,true,false,estimate,delta,true,	1094,TO,TO,TO
-brp,N=32 MAX=4 ,N/A,0.0117959947371_probability_min_uncertain,?,1e-06,0.01,true,true,estimate,delta,true,	545,60.751,100.0,96681
-brp,N=32 MAX=4 ,N/A,0.011680370630271_probability_min_uncertain,?,1e-06,0.0001,false,false,estimate,delta,true,	1094,TO,TO,TO
-brp,N=32 MAX=4 ,N/A,0.0117959947371_probability_min_uncertain,?,1e-06,0.01,true,false,estimate,delta,true,	1094,33.386,100.0,96681
-brp,N=32 MAX=4 ,N/A,0.012847122981_probability_min_uncertain,?,1e-06,0.1,true,false,estimate,delta,true,	1094,1.061,100.0,3569
-brp,N=64 MAX=8 ,N/A,0.006372776505749293_probability_min_uncertain,?,0.1,0.1,true,true,estimate,delta,true,	1857,11.975,100.0,4357
-brp,N=64 MAX=8 ,N/A,0.005793491121376683_probability_min_uncertain,?,0.1,1e-05,true,false,estimate,delta,true,	3978,TO,TO,TO
-brp,N=64 MAX=8 ,N/A,0.005794012530363516_probability_min_uncertain,?,0.1,0.0001,false,false,estimate,delta,true,	3978,TO,TO,TO
-brp,N=64 MAX=8 ,N/A,0.00585136751891526_probability_min_uncertain,?,0.1,0.01,false,false,estimate,delta,true,	3978,129.276,100.0,118741
-brp,N=64 MAX=8 ,N/A,0.005793491121376683_probability_min_uncertain,?,0.1,1e-05,false,false,estimate,delta,true,	3978,TO,TO,TO
-brp,N=64 MAX=8 ,N/A,0.005794012530363516_probability_min_uncertain,?,0.1,0.0001,true,false,estimate,delta,true,	3978,TO,TO,TO
-brp,N=64 MAX=8 ,N/A,0.00585136751891526_probability_min_uncertain,?,0.1,0.01,true,true,estimate,delta,true,	1857,360.975,100.0,118741
-brp,N=64 MAX=8 ,N/A,0.005793491121376683_probability_min_uncertain,?,0.1,1e-05,true,true,estimate,delta,true,	1857,TO,TO,TO
-brp,N=64 MAX=8 ,N/A,0.005794012530363516_probability_min_uncertain,?,0.1,0.0001,true,true,estimate,delta,true,	1857,TO,TO,TO
-brp,N=64 MAX=8 ,N/A,0.006372776505749293_probability_min_uncertain,?,0.1,0.1,true,false,estimate,delta,true,	3978,4.32,100.0,4357
-brp,N=64 MAX=8 ,N/A,0.00585136751891526_probability_min_uncertain,?,0.1,0.01,true,false,estimate,delta,true,	3978,160.485,100.0,118741
-brp,N=64 MAX=8 ,N/A,0.006372776505749293_probability_min_uncertain,?,0.1,0.1,false,false,estimate,delta,true,	3978,2.962,100.0,4357
-brp,N=64 MAX=8 ,N/A,0.005794009963062_probability_min_uncertain,?,1e-06,0.0001,true,true,estimate,delta,true,	1857,TO,TO,TO
-brp,N=64 MAX=8 ,N/A,0.0057934885543062_probability_min_uncertain,?,1e-06,1e-05,true,false,estimate,delta,true,	3978,TO,TO,TO
-brp,N=64 MAX=8 ,N/A,0.006372773682_probability_min_uncertain,?,1e-06,0.1,true,false,estimate,delta,true,	3978,5.2,100.0,5057
-brp,N=64 MAX=8 ,N/A,0.005794009963062_probability_min_uncertain,?,1e-06,0.0001,true,false,estimate,delta,true,	3978,TO,TO,TO
-brp,N=64 MAX=8 ,N/A,0.0058513649262_probability_min_uncertain,?,1e-06,0.01,true,false,estimate,delta,true,	3978,184.07,100.0,124681
-brp,N=64 MAX=8 ,N/A,0.0057934885543062_probability_min_uncertain,?,1e-06,1e-05,true,true,estimate,delta,true,	1857,TO,TO,TO
-brp,N=64 MAX=8 ,N/A,0.006372773682_probability_min_uncertain,?,1e-06,0.1,true,true,estimate,delta,true,	1857,14.518,100.0,5057
-brp,N=64 MAX=8 ,N/A,0.0058513649262_probability_min_uncertain,?,1e-06,0.01,false,false,estimate,delta,true,	3978,151.103,100.0,124681
-brp,N=64 MAX=8 ,N/A,0.005794009963062_probability_min_uncertain,?,1e-06,0.0001,false,false,estimate,delta,true,	3978,TO,TO,TO
-brp,N=64 MAX=8 ,N/A,0.0057934885543062_probability_min_uncertain,?,1e-06,1e-05,false,false,estimate,delta,true,	3978,TO,TO,TO
-brp,N=64 MAX=8 ,N/A,0.006372773682_probability_min_uncertain,?,1e-06,0.1,false,false,estimate,delta,true,	3978,3.704,100.0,5057
-brp,N=64 MAX=8 ,N/A,0.0058513649262_probability_min_uncertain,?,1e-06,0.01,true,true,estimate,delta,true,	1857,393.669,100.0,124681
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.005397531197772231_probability_min_observeIGreater1,?,0.1,1e-05,true,true,estimate,delta,true,	11,0.346,100.0,6909
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.00545145199523_probability_min_observeIGreater1,?,0.1,0.01,true,false,estimate,delta,true,	20,0.057,100.0,397
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0059372249453_probability_min_observeIGreater1,?,0.1,0.1,true,false,estimate,delta,true,	20,0.045,100.0,97
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.005397531197772231_probability_min_observeIGreater1,?,0.1,1e-05,true,false,estimate,delta,true,	20,0.585,100.0,12557
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0053980169707223_probability_min_observeIGreater1,?,0.1,0.0001,true,true,estimate,delta,true,	11,0.123,100.0,1969
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0053980169707223_probability_min_observeIGreater1,?,0.1,0.0001,false,false,estimate,delta,true,	20,0.18,100.0,4109
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0059372249453_probability_min_observeIGreater1,?,0.1,0.1,true,true,estimate,delta,true,	11,0.044,100.0,53
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0059372249453_probability_min_observeIGreater1,?,0.1,0.1,false,false,estimate,delta,true,	20,0.045,100.0,97
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.00545145199523_probability_min_observeIGreater1,?,0.1,0.01,true,true,estimate,delta,true,	11,0.05,100.0,201
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.005397531197772231_probability_min_observeIGreater1,?,0.1,1e-05,false,false,estimate,delta,true,	20,0.499,100.0,12557
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.00545145199523_probability_min_observeIGreater1,?,0.1,0.01,false,false,estimate,delta,true,	20,0.054,100.0,397
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0053980169707223_probability_min_observeIGreater1,?,0.1,0.0001,true,false,estimate,delta,true,	20,0.212,100.0,4109
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.019922067627562_probability_min_observeIGreater1,?,1e-06,0.0001,false,false,estimate,delta,true,	20,2.617,100.0,67121
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0201192763762_probability_min_observeIGreater1,?,1e-06,0.01,true,false,estimate,delta,true,	20,0.221,100.0,4237
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.021912083182000004_probability_min_observeIGreater1,?,1e-06,0.1,true,true,estimate,delta,true,	11,0.058,100.0,381
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.019920274820756204_probability_min_observeIGreater1,?,1e-06,1e-05,true,false,estimate,delta,true,	20,15.284,100.0,304285
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0201192763762_probability_min_observeIGreater1,?,1e-06,0.01,true,true,estimate,delta,true,	11,0.129,100.0,2009
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.021912083182000004_probability_min_observeIGreater1,?,1e-06,0.1,false,false,estimate,delta,true,	20,0.069,100.0,809
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.019922067627562_probability_min_observeIGreater1,?,1e-06,0.0001,true,true,estimate,delta,true,	11,1.48,100.0,29993
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.019920274820756204_probability_min_observeIGreater1,?,1e-06,1e-05,true,true,estimate,delta,true,	11,6.656,100.0,132209
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.021912083182000004_probability_min_observeIGreater1,?,1e-06,0.1,true,false,estimate,delta,true,	20,0.076,100.0,809
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.019922067627562_probability_min_observeIGreater1,?,1e-06,0.0001,true,false,estimate,delta,true,	20,3.124,100.0,67121
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0201192763762_probability_min_observeIGreater1,?,1e-06,0.01,false,false,estimate,delta,true,	20,0.188,100.0,4237
-crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.019920274820756204_probability_min_observeIGreater1,?,1e-06,1e-05,false,false,estimate,delta,true,	20,13.664,100.0,336381
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.033155866821_probability_min_observeIGreater1,?,0.1,0.1,false,false,estimate,delta,true,	84,0.203,100.0,89
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030144711279711002_probability_min_observeIGreater1,?,0.1,0.0001,true,true,estimate,delta,true,	42,0.72,100.0,3253
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030443114081100002_probability_min_observeIGreater1,?,0.1,0.01,false,false,estimate,delta,true,	84,0.218,100.0,369
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030141998526971102_probability_min_observeIGreater1,?,0.1,1e-05,true,true,estimate,delta,true,	42,1.801,100.0,9813
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030443114081100002_probability_min_observeIGreater1,?,0.1,0.01,true,true,estimate,delta,true,	42,0.242,100.0,277
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.033155866821_probability_min_observeIGreater1,?,0.1,0.1,true,false,estimate,delta,true,	84,0.201,100.0,89
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030141998526971102_probability_min_observeIGreater1,?,0.1,1e-05,false,false,estimate,delta,true,	84,0.922,100.0,11801
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030144711279711002_probability_min_observeIGreater1,?,0.1,0.0001,false,false,estimate,delta,true,	84,0.432,100.0,3961
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.033155866821_probability_min_observeIGreater1,?,0.1,0.1,true,true,estimate,delta,true,	42,0.212,100.0,77
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030144711279711002_probability_min_observeIGreater1,?,0.1,0.0001,true,false,estimate,delta,true,	84,0.487,100.0,3961
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030141998526971102_probability_min_observeIGreater1,?,0.1,1e-05,true,false,estimate,delta,true,	84,1.067,100.0,11801
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030443114081100002_probability_min_observeIGreater1,?,0.1,0.01,true,false,estimate,delta,true,	84,0.219,100.0,369
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.11397833062000001_probability_min_observeIGreater1,?,1e-06,0.1,false,false,estimate,delta,true,	84,0.244,100.0,733
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.10362702586642_probability_min_observeIGreater1,?,1e-06,0.0001,false,false,estimate,delta,true,	84,3.83,100.0,56641
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.103617700366642_probability_min_observeIGreater1,?,1e-06,1e-05,true,true,estimate,delta,true,	42,27.302,100.0,144577
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.10362702586642_probability_min_observeIGreater1,?,1e-06,0.0001,true,false,estimate,delta,true,	84,4.519,100.0,56641
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.103617700366642_probability_min_observeIGreater1,?,1e-06,1e-05,true,false,estimate,delta,true,	84,14.95,100.0,189297
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.103617700366642_probability_min_observeIGreater1,?,1e-06,1e-05,false,false,estimate,delta,true,	84,12.432,100.0,189381
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.104652830842_probability_min_observeIGreater1,?,1e-06,0.01,true,false,estimate,delta,true,	84,0.489,100.0,3873
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.104652830842_probability_min_observeIGreater1,?,1e-06,0.01,true,true,estimate,delta,true,	42,0.703,100.0,2905
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.10362702586642_probability_min_observeIGreater1,?,1e-06,0.0001,true,true,estimate,delta,true,	42,8.597,100.0,45745
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.104652830842_probability_min_observeIGreater1,?,1e-06,0.01,false,false,estimate,delta,true,	84,0.428,100.0,3873
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.11397833062000001_probability_min_observeIGreater1,?,1e-06,0.1,true,false,estimate,delta,true,	84,0.272,100.0,733
-crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.11397833062000001_probability_min_observeIGreater1,?,1e-06,0.1,true,true,estimate,delta,true,	42,0.296,100.0,561
-herman5_pla,N/A,N/A,1.933142846382_reward_max_stable,?,0.1,0.0001,true,true,estimate,delta,true,	89,0.113,100.0,237
-herman5_pla,N/A,N/A,1.740002562_reward_max_stable,?,0.1,0.1,false,false,estimate,delta,true,	196,0.039,100.0,23
-herman5_pla,N/A,N/A,1.9140028182_reward_max_stable,?,0.1,0.01,true,false,estimate,delta,true,	196,0.052,100.0,107
-herman5_pla,N/A,N/A,1.9333168466382_reward_max_stable,?,0.1,1e-05,true,true,estimate,delta,true,	89,0.243,100.0,823
-herman5_pla,N/A,N/A,1.740002562_reward_max_stable,?,0.1,0.1,true,true,estimate,delta,true,	89,0.067,100.0,5
-herman5_pla,N/A,N/A,1.933142846382_reward_max_stable,?,0.1,0.0001,true,false,estimate,delta,true,	196,0.183,100.0,1075
-herman5_pla,N/A,N/A,1.9333168466382_reward_max_stable,?,0.1,1e-05,true,false,estimate,delta,true,	196,0.548,100.0,3993
-herman5_pla,N/A,N/A,1.9333168466382_reward_max_stable,?,0.1,1e-05,false,false,estimate,delta,true,	196,0.444,100.0,3977
-herman5_pla,N/A,N/A,1.740002562_reward_max_stable,?,0.1,0.1,true,false,estimate,delta,true,	196,0.04,100.0,23
-herman5_pla,N/A,N/A,1.9140028182_reward_max_stable,?,0.1,0.01,false,false,estimate,delta,true,	196,0.047,100.0,103
-herman5_pla,N/A,N/A,1.933142846382_reward_max_stable,?,0.1,0.0001,false,false,estimate,delta,true,	196,0.155,100.0,1075
-herman5_pla,N/A,N/A,1.9140028182_reward_max_stable,?,0.1,0.01,true,true,estimate,delta,true,	89,0.069,100.0,21
-herman5_pla,N/A,N/A,1.91400082731_reward_max_stable,?,1e-06,0.01,false,false,estimate,delta,true,	196,0.058,100.0,103
-herman5_pla,N/A,N/A,1.93331483565831_reward_max_stable,?,1e-06,1e-05,false,false,estimate,delta,true,	196,0.419,100.0,3679
-herman5_pla,N/A,N/A,1.7400007521_reward_max_stable,?,1e-06,0.1,true,false,estimate,delta,true,	196,0.042,100.0,25
-herman5_pla,N/A,N/A,1.7400007521_reward_max_stable,?,1e-06,0.1,true,true,estimate,delta,true,	89,0.082,100.0,7
-herman5_pla,N/A,N/A,1.9331408355831001_reward_max_stable,?,1e-06,0.0001,true,false,estimate,delta,true,	196,0.207,100.0,1167
-herman5_pla,N/A,N/A,1.9331408355831001_reward_max_stable,?,1e-06,0.0001,true,true,estimate,delta,true,	89,0.133,100.0,235
-herman5_pla,N/A,N/A,1.91400082731_reward_max_stable,?,1e-06,0.01,true,false,estimate,delta,true,	196,0.056,100.0,103
-herman5_pla,N/A,N/A,1.9331408355831001_reward_max_stable,?,1e-06,0.0001,false,false,estimate,delta,true,	196,0.166,100.0,1161
-herman5_pla,N/A,N/A,1.93331483565831_reward_max_stable,?,1e-06,1e-05,true,true,estimate,delta,true,	89,0.265,100.0,777
-herman5_pla,N/A,N/A,1.91400082731_reward_max_stable,?,1e-06,0.01,true,true,estimate,delta,true,	89,0.084,100.0,25
-herman5_pla,N/A,N/A,1.7400007521_reward_max_stable,?,1e-06,0.1,false,false,estimate,delta,true,	196,0.038,100.0,23
-herman5_pla,N/A,N/A,1.93331483565831_reward_max_stable,?,1e-06,1e-05,true,false,estimate,delta,true,	196,0.622,100.0,3687
-herman7_pla,N/A,N/A,4.4928743206347_reward_max_stable,?,0.1,0.0001,true,false,estimate,delta,true,	1422,2.456,100.0,2551
-herman7_pla,N/A,N/A,4.49327871976347_reward_max_stable,?,0.1,1e-05,false,false,estimate,delta,true,	1422,5.392,100.0,7773
-herman7_pla,N/A,N/A,4.49327871976347_reward_max_stable,?,0.1,1e-05,true,false,estimate,delta,true,	1422,6.629,100.0,7767
-herman7_pla,N/A,N/A,4.0439912877_reward_max_stable,?,0.1,0.1,true,true,estimate,delta,true,	680,0.214,100.0,11
-herman7_pla,N/A,N/A,4.44839041647_reward_max_stable,?,0.1,0.01,true,false,estimate,delta,true,	1422,0.331,100.0,179
-herman7_pla,N/A,N/A,4.49327871976347_reward_max_stable,?,0.1,1e-05,true,true,estimate,delta,true,	680,2.44,100.0,2055
-herman7_pla,N/A,N/A,4.4928743206347_reward_max_stable,?,0.1,0.0001,false,false,estimate,delta,true,	1422,2.012,100.0,2553
-herman7_pla,N/A,N/A,4.4928743206347_reward_max_stable,?,0.1,0.0001,true,true,estimate,delta,true,	680,0.954,100.0,691
-herman7_pla,N/A,N/A,4.44839041647_reward_max_stable,?,0.1,0.01,true,true,estimate,delta,true,	680,0.443,100.0,51
-herman7_pla,N/A,N/A,4.44839041647_reward_max_stable,?,0.1,0.01,false,false,estimate,delta,true,	1422,0.263,100.0,179
-herman7_pla,N/A,N/A,4.0439912877_reward_max_stable,?,0.1,0.1,false,false,estimate,delta,true,	1422,0.131,100.0,39
-herman7_pla,N/A,N/A,4.0439912877_reward_max_stable,?,0.1,0.1,true,false,estimate,delta,true,	1422,0.161,100.0,39
-herman7_pla,N/A,N/A,4.0439912877_reward_max_stable,?,1e-06,0.1,false,false,estimate,delta,true,	1422,0.132,100.0,39
-herman7_pla,N/A,N/A,4.4928743206347_reward_max_stable,?,1e-06,0.0001,false,false,estimate,delta,true,	1422,1.94,100.0,2423
-herman7_pla,N/A,N/A,4.49327871976347_reward_max_stable,?,1e-06,1e-05,true,true,estimate,delta,true,	680,2.954,100.0,2167
-herman7_pla,N/A,N/A,4.4928743206347_reward_max_stable,?,1e-06,0.0001,true,false,estimate,delta,true,	1422,2.481,100.0,2423
-herman7_pla,N/A,N/A,4.44839041647_reward_max_stable,?,1e-06,0.01,true,false,estimate,delta,true,	1422,0.393,100.0,203
-herman7_pla,N/A,N/A,4.44839041647_reward_max_stable,?,1e-06,0.01,false,false,estimate,delta,true,	1422,0.281,100.0,203
-herman7_pla,N/A,N/A,4.0439912877_reward_max_stable,?,1e-06,0.1,true,false,estimate,delta,true,	1422,0.174,100.0,39
-herman7_pla,N/A,N/A,4.49327871976347_reward_max_stable,?,1e-06,1e-05,false,false,estimate,delta,true,	1422,5.378,100.0,7719
-herman7_pla,N/A,N/A,4.4928743206347_reward_max_stable,?,1e-06,0.0001,true,true,estimate,delta,true,	680,1.036,100.0,655
-herman7_pla,N/A,N/A,4.44839041647_reward_max_stable,?,1e-06,0.01,true,true,estimate,delta,true,	680,0.286,100.0,59
-herman7_pla,N/A,N/A,4.0439912877_reward_max_stable,?,1e-06,0.1,true,true,estimate,delta,true,	680,0.237,100.0,11
-herman7_pla,N/A,N/A,4.49327871976347_reward_max_stable,?,1e-06,1e-05,true,false,estimate,delta,true,	1422,6.902,100.0,7709
-herman9_pla,N/A,N/A,7.9202573180577005_reward_max_stable,?,0.1,0.0001,false,false,estimate,delta,true,	8008,60.647,100.0,12185
-herman9_pla,N/A,N/A,7.1289444807_reward_max_stable,?,0.1,0.1,false,false,estimate,delta,true,	8008,1.042,100.0,51
-herman9_pla,N/A,N/A,7.9202573180577005_reward_max_stable,?,0.1,0.0001,true,false,estimate,delta,true,	8008,75.419,100.0,12189
-herman9_pla,N/A,N/A,7.9202573180577005_reward_max_stable,?,0.1,0.0001,true,true,estimate,delta,true,	3707,31.717,100.0,4853
-herman9_pla,N/A,N/A,7.8418389287700005_reward_max_stable,?,0.1,0.01,true,false,estimate,delta,true,	8008,4.645,100.0,403
-herman9_pla,N/A,N/A,7.920970212505771_reward_max_stable,?,0.1,1e-05,true,true,estimate,delta,true,	3707,126.174,100.0,20271
-herman9_pla,N/A,N/A,7.8418389287700005_reward_max_stable,?,0.1,0.01,true,true,estimate,delta,true,	3707,2.139,100.0,123
-herman9_pla,N/A,N/A,7.920970212505771_reward_max_stable,?,0.1,1e-05,true,false,estimate,delta,true,	8008,326.875,100.0,57897
-herman9_pla,N/A,N/A,7.1289444807_reward_max_stable,?,0.1,0.1,true,true,estimate,delta,true,	3707,1.493,100.0,23
-herman9_pla,N/A,N/A,7.8418389287700005_reward_max_stable,?,0.1,0.01,false,false,estimate,delta,true,	8008,3.151,100.0,403
-herman9_pla,N/A,N/A,7.920970212505771_reward_max_stable,?,0.1,1e-05,false,false,estimate,delta,true,	8008,272.382,100.0,57799
-herman9_pla,N/A,N/A,7.1289444807_reward_max_stable,?,0.1,0.1,true,false,estimate,delta,true,	8008,1.564,100.0,51
-herman9_pla,N/A,N/A,7.1289347139000006_reward_max_stable,?,1e-06,0.1,true,true,estimate,delta,true,	3707,1.667,100.0,23
-herman9_pla,N/A,N/A,7.920959360614291_reward_max_stable,?,1e-06,1e-05,true,true,estimate,delta,true,	3707,133.97899999999998,100.0,20363
-herman9_pla,N/A,N/A,7.920246467142901_reward_max_stable,?,1e-06,0.0001,false,false,estimate,delta,true,	8008,65.019,100.0,13041
-herman9_pla,N/A,N/A,7.920246467142901_reward_max_stable,?,1e-06,0.0001,true,false,estimate,delta,true,	8008,83.39699999999999,100.0,13061
-herman9_pla,N/A,N/A,7.920959360614291_reward_max_stable,?,1e-06,1e-05,false,false,estimate,delta,true,	8008,241.232,100.0,52187
-herman9_pla,N/A,N/A,7.920959360614291_reward_max_stable,?,1e-06,1e-05,true,false,estimate,delta,true,	8008,294.72,100.0,52227
-herman9_pla,N/A,N/A,7.841828185290001_reward_max_stable,?,1e-06,0.01,false,false,estimate,delta,true,	8008,3.02,100.0,363
-herman9_pla,N/A,N/A,7.1289347139000006_reward_max_stable,?,1e-06,0.1,true,false,estimate,delta,true,	8008,1.848,100.0,67
-herman9_pla,N/A,N/A,7.920246467142901_reward_max_stable,?,1e-06,0.0001,true,true,estimate,delta,true,	3707,32.411,100.0,4815
-herman9_pla,N/A,N/A,7.841828185290001_reward_max_stable,?,1e-06,0.01,true,false,estimate,delta,true,	8008,4.733,100.0,365
-herman9_pla,N/A,N/A,7.841828185290001_reward_max_stable,?,1e-06,0.01,true,true,estimate,delta,true,	3707,2.645,100.0,159
-herman9_pla,N/A,N/A,7.1289347139000006_reward_max_stable,?,1e-06,0.1,false,false,estimate,delta,true,	8008,1.177,100.0,67
-herman11_pla,N/A,N/A,11.9811079971_reward_max_stable,?,0.1,0.01,false,false,estimate,delta,true,	40690,26.384,100.0,467
-herman11_pla,N/A,N/A,12.100919077071001_reward_max_stable,?,0.1,0.0001,true,true,estimate,delta,true,	18872,115.38300000000001,100.0,2387
-herman11_pla,N/A,N/A,12.1020082687071_reward_max_stable,?,0.1,1e-05,true,true,estimate,delta,true,	18872,309.613,100.0,7771
-herman11_pla,N/A,N/A,12.1020082687071_reward_max_stable,?,0.1,1e-05,true,false,estimate,delta,true,	40690,696.858,100.0,20041
-herman11_pla,N/A,N/A,10.891916361000002_reward_max_stable,?,0.1,0.1,true,false,estimate,delta,true,	40690,15.853,100.0,87
-herman11_pla,N/A,N/A,10.891916361000002_reward_max_stable,?,0.1,0.1,false,false,estimate,delta,true,	40690,11.008,100.0,87
-herman11_pla,N/A,N/A,12.100919077071001_reward_max_stable,?,0.1,0.0001,false,false,estimate,delta,true,	40690,213.577,100.0,6507
-herman11_pla,N/A,N/A,10.891916361000002_reward_max_stable,?,0.1,0.1,true,true,estimate,delta,true,	18872,21.234,100.0,27
-herman11_pla,N/A,N/A,12.100919077071001_reward_max_stable,?,0.1,0.0001,true,false,estimate,delta,true,	40690,278.82,100.0,6517
-herman11_pla,N/A,N/A,11.9811079971_reward_max_stable,?,0.1,0.01,true,true,estimate,delta,true,	18872,30.01,100.0,195
-herman11_pla,N/A,N/A,12.1020082687071_reward_max_stable,?,0.1,1e-05,false,false,estimate,delta,true,	40690,559.407,100.0,20021
-herman11_pla,N/A,N/A,11.9811079971_reward_max_stable,?,0.1,0.01,true,false,estimate,delta,true,	40690,38.973,100.0,467
-herman11_pla,N/A,N/A,11.981111719500001_reward_max_stable,?,1e-06,0.01,false,false,estimate,delta,true,	40690,27.106,100.0,467
-herman11_pla,N/A,N/A,12.100922836695_reward_max_stable,?,1e-06,0.0001,true,true,estimate,delta,true,	18872,126.237,100.0,2583
-herman11_pla,N/A,N/A,12.1020120286695_reward_max_stable,?,1e-06,1e-05,true,true,estimate,delta,true,	18872,330.182,100.0,7983
-herman11_pla,N/A,N/A,10.891919745000001_reward_max_stable,?,1e-06,0.1,true,true,estimate,delta,true,	18872,22.174,100.0,39
-herman11_pla,N/A,N/A,11.981111719500001_reward_max_stable,?,1e-06,0.01,true,true,estimate,delta,true,	18872,30.882,100.0,195
-herman11_pla,N/A,N/A,12.1020120286695_reward_max_stable,?,1e-06,1e-05,true,false,estimate,delta,true,	40690,670.871,100.0,19225
-herman11_pla,N/A,N/A,10.891919745000001_reward_max_stable,?,1e-06,0.1,true,false,estimate,delta,true,	40690,17.587,100.0,87
-herman11_pla,N/A,N/A,10.891919745000001_reward_max_stable,?,1e-06,0.1,false,false,estimate,delta,true,	40690,11.706,100.0,87
-herman11_pla,N/A,N/A,12.100922836695_reward_max_stable,?,1e-06,0.0001,true,false,estimate,delta,true,	40690,271.044,100.0,6455
-herman11_pla,N/A,N/A,12.1020120286695_reward_max_stable,?,1e-06,1e-05,false,false,estimate,delta,true,	40690,540.72,100.0,19231
-herman11_pla,N/A,N/A,11.981111719500001_reward_max_stable,?,1e-06,0.01,true,false,estimate,delta,true,	40690,40.2,100.0,467
-herman11_pla,N/A,N/A,12.100922836695_reward_max_stable,?,1e-06,0.0001,false,false,estimate,delta,true,	40690,208.324,100.0,6453
-maze2,N/A,1,17.519902199226003_reward_max_goal,?,0.1,1e-05,true,true,estimate,delta,true,	50,MO,MO,MO
-maze2,N/A,1,17.518325392260003_reward_max_goal,?,0.1,0.0001,false,false,estimate,delta,true,	41,MO,MO,MO
-maze2,N/A,1,15.768069660000002_reward_max_goal,?,0.1,0.1,true,true,estimate,delta,true,	50,0.217,100.0,1537
-maze2,N/A,1,17.519902199226003_reward_max_goal,?,0.1,1e-05,true,false,estimate,delta,true,	41,MO,MO,MO
-maze2,N/A,1,15.768069660000002_reward_max_goal,?,0.1,0.1,false,false,estimate,delta,true,	41,0.138,100.0,1537
-maze2,N/A,1,15.768069660000002_reward_max_goal,?,0.1,0.1,true,false,estimate,delta,true,	41,0.192,100.0,1537
-maze2,N/A,1,17.344876626_reward_max_goal,?,0.1,0.01,true,true,estimate,delta,true,	50,9.556,100.0,74033
-maze2,N/A,1,17.344876626_reward_max_goal,?,0.1,0.01,true,false,estimate,delta,true,	41,8.567,100.0,74049
-maze2,N/A,1,17.344876626_reward_max_goal,?,0.1,0.01,false,false,estimate,delta,true,	41,6.06,100.0,74049
-maze2,N/A,1,17.518325392260003_reward_max_goal,?,0.1,0.0001,true,false,estimate,delta,true,	41,MO,MO,MO
-maze2,N/A,1,17.518325392260003_reward_max_goal,?,0.1,0.0001,true,true,estimate,delta,true,	50,MO,MO,MO
-maze2,N/A,1,17.519902199226003_reward_max_goal,?,0.1,1e-05,false,false,estimate,delta,true,	41,MO,MO,MO
-maze2,N/A,1,12.884479155000001_reward_max_goal,?,1e-06,0.1,true,true,estimate,delta,true,	50,0.648,100.0,1297
-maze2,N/A,1,14.1729270705_reward_max_goal,?,1e-06,0.01,true,false,estimate,delta,true,	41,4.409,100.0,33937
-maze2,N/A,1,14.314656341205_reward_max_goal,?,1e-06,0.0001,false,false,estimate,delta,true,	41,MO,MO,MO
-maze2,N/A,1,14.3159447891205_reward_max_goal,?,1e-06,1e-05,false,false,estimate,delta,true,	41,MO,MO,MO
-maze2,N/A,1,12.884479155000001_reward_max_goal,?,1e-06,0.1,false,false,estimate,delta,true,	41,0.169,100.0,1825
-maze2,N/A,1,14.314656341205_reward_max_goal,?,1e-06,0.0001,true,false,estimate,delta,true,	41,740.74,100.0,5884913
-maze2,N/A,1,14.1729270705_reward_max_goal,?,1e-06,0.01,true,true,estimate,delta,true,	50,4.952,100.0,33937
-maze2,N/A,1,14.1729270705_reward_max_goal,?,1e-06,0.01,false,false,estimate,delta,true,	41,8.79,100.0,101617
-maze2,N/A,1,14.314656341205_reward_max_goal,?,1e-06,0.0001,true,true,estimate,delta,true,	50,819.368,100.0,5885425
-maze2,N/A,1,14.3159447891205_reward_max_goal,?,1e-06,1e-05,true,true,estimate,delta,true,	50,MO,MO,MO
-maze2,N/A,1,12.884479155000001_reward_max_goal,?,1e-06,0.1,true,false,estimate,delta,true,	41,0.566,100.0,1297
-maze2,N/A,1,14.3159447891205_reward_max_goal,?,1e-06,1e-05,true,false,estimate,delta,true,	41,MO,MO,MO
-nand,N=5 K=5 ,N/A,0.500743005338_probability_min_target,?,0.1,0.01,false,false,estimate,delta,true,	2687,0.088,100.0,125
-nand,N=5 K=5 ,N/A,0.500743005338_probability_min_target,?,0.1,0.01,true,false,estimate,delta,true,	2687,0.108,100.0,125
-nand,N=5 K=5 ,N/A,0.49583473231538_probability_min_target,?,0.1,0.0001,true,true,estimate,delta,true,	112,3.578,100.0,25
-nand,N=5 K=5 ,N/A,0.54536366918_probability_min_target,?,0.1,0.1,false,false,estimate,delta,true,	2687,0.058,100.0,13
-nand,N=5 K=5 ,N/A,0.54536366918_probability_min_target,?,0.1,0.1,true,true,estimate,delta,true,	112,0.79,100.0,1
-nand,N=5 K=5 ,N/A,0.495790111651538_probability_min_target,?,0.1,1e-05,true,true,estimate,delta,true,	112,4.534,100.0,33
-nand,N=5 K=5 ,N/A,0.54536366918_probability_min_target,?,0.1,0.1,true,false,estimate,delta,true,	2687,0.064,100.0,13
-nand,N=5 K=5 ,N/A,0.49583473231538_probability_min_target,?,0.1,0.0001,true,false,estimate,delta,true,	2687,2.377,100.0,5609
-nand,N=5 K=5 ,N/A,0.495790111651538_probability_min_target,?,0.1,1e-05,true,false,estimate,delta,true,	2687,8.698,100.0,20501
-nand,N=5 K=5 ,N/A,0.495790111651538_probability_min_target,?,0.1,1e-05,false,false,estimate,delta,true,	2687,5.923,100.0,20501
-nand,N=5 K=5 ,N/A,0.49583473231538_probability_min_target,?,0.1,0.0001,false,false,estimate,delta,true,	2687,1.569,100.0,5609
-nand,N=5 K=5 ,N/A,0.500743005338_probability_min_target,?,0.1,0.01,true,true,estimate,delta,true,	112,0.791,100.0,1
-nand,N=5 K=10 ,N/A,0.49581834457677_probability_min_target,?,0.1,0.0001,true,true,estimate,delta,true,	162,16.1,100.0,29
-nand,N=5 K=10 ,N/A,0.49581834457677_probability_min_target,?,0.1,0.0001,false,false,estimate,delta,true,	5447,8.654,100.0,14929
-nand,N=5 K=10 ,N/A,0.500726455377_probability_min_target,?,0.1,0.01,true,true,estimate,delta,true,	162,3.72,100.0,1
-nand,N=5 K=10 ,N/A,0.49577372538767706_probability_min_target,?,0.1,1e-05,false,false,estimate,delta,true,	5447,68.008,100.0,97753
-nand,N=5 K=10 ,N/A,0.500726455377_probability_min_target,?,0.1,0.01,true,false,estimate,delta,true,	5447,0.192,100.0,125
-nand,N=5 K=10 ,N/A,0.49577372538767706_probability_min_target,?,0.1,1e-05,true,false,estimate,delta,true,	5447,93.51599999999999,100.0,97753
-nand,N=5 K=10 ,N/A,0.49577372538767706_probability_min_target,?,0.1,1e-05,true,true,estimate,delta,true,	162,20.082,100.0,57
-nand,N=5 K=10 ,N/A,0.54534564447_probability_min_target,?,0.1,0.1,true,false,estimate,delta,true,	5447,0.106,100.0,13
-nand,N=5 K=10 ,N/A,0.54534564447_probability_min_target,?,0.1,0.1,true,true,estimate,delta,true,	162,3.641,100.0,1
-nand,N=5 K=10 ,N/A,0.54534564447_probability_min_target,?,0.1,0.1,false,false,estimate,delta,true,	5447,0.089,100.0,13
-nand,N=5 K=10 ,N/A,0.500726455377_probability_min_target,?,0.1,0.01,false,false,estimate,delta,true,	5447,0.145,100.0,125
-nand,N=5 K=10 ,N/A,0.49581834457677_probability_min_target,?,0.1,0.0001,true,false,estimate,delta,true,	5447,12.835,100.0,14929
-nand,N=5 K=25 ,N/A,0.495773626786691_probability_min_target,?,0.1,1e-05,true,false,estimate,delta,true,	13727,435.983,100.0,131069
-nand,N=5 K=25 ,N/A,0.49581824596691_probability_min_target,?,0.1,0.0001,true,false,estimate,delta,true,	13727,35.243,100.0,16381
-nand,N=5 K=25 ,N/A,0.54534553601_probability_min_target,?,0.1,0.1,false,false,estimate,delta,true,	13727,0.19,100.0,13
-nand,N=5 K=25 ,N/A,0.500726355791_probability_min_target,?,0.1,0.01,false,false,estimate,delta,true,	13727,0.326,100.0,125
-nand,N=5 K=25 ,N/A,0.495773626786691_probability_min_target,?,0.1,1e-05,true,true,estimate,delta,true,	312,204.551,100.0,93
-nand,N=5 K=25 ,N/A,0.49581824596691_probability_min_target,?,0.1,0.0001,true,true,estimate,delta,true,	312,143.707,100.0,33
-nand,N=5 K=25 ,N/A,0.49581824596691_probability_min_target,?,0.1,0.0001,false,false,estimate,delta,true,	13727,23.424,100.0,16381
-nand,N=5 K=25 ,N/A,0.500726355791_probability_min_target,?,0.1,0.01,true,true,estimate,delta,true,	312,37.111,100.0,1
-nand,N=5 K=25 ,N/A,0.495773626786691_probability_min_target,?,0.1,1e-05,false,false,estimate,delta,true,	13727,337.391,100.0,131069
-nand,N=5 K=25 ,N/A,0.54534553601_probability_min_target,?,0.1,0.1,true,false,estimate,delta,true,	13727,0.281,100.0,13
-nand,N=5 K=25 ,N/A,0.54534553601_probability_min_target,?,0.1,0.1,true,true,estimate,delta,true,	312,37.546,100.0,1
-nand,N=5 K=25 ,N/A,0.500726355791_probability_min_target,?,0.1,0.01,true,false,estimate,delta,true,	13727,0.491,100.0,125
-nand,N=5 K=50 ,N/A,0.495773626786691_probability_min_target,?,0.1,1e-05,true,true,estimate,delta,true,	562,997.27,100.0,117
-nand,N=5 K=50 ,N/A,0.495773626786691_probability_min_target,?,0.1,1e-05,false,false,estimate,delta,true,	27527,770.811,100.0,131069
-nand,N=5 K=50 ,N/A,0.49581824596691_probability_min_target,?,0.1,0.0001,true,true,estimate,delta,true,	562,799.653,100.0,33
-nand,N=5 K=50 ,N/A,0.54534553601_probability_min_target,?,0.1,0.1,false,false,estimate,delta,true,	27527,0.417,100.0,13
-nand,N=5 K=50 ,N/A,0.495773626786691_probability_min_target,?,0.1,1e-05,true,false,estimate,delta,true,	27527,788.536,100.0,131069
-nand,N=5 K=50 ,N/A,0.49581824596691_probability_min_target,?,0.1,0.0001,false,false,estimate,delta,true,	27527,47.733,100.0,16381
-nand,N=5 K=50 ,N/A,0.500726355791_probability_min_target,?,0.1,0.01,true,true,estimate,delta,true,	562,268.011,100.0,1
-nand,N=5 K=50 ,N/A,0.49581824596691_probability_min_target,?,0.1,0.0001,true,false,estimate,delta,true,	27527,66.31,100.0,16381
-nand,N=5 K=50 ,N/A,0.500726355791_probability_min_target,?,0.1,0.01,true,false,estimate,delta,true,	27527,1.182,100.0,125
-nand,N=5 K=50 ,N/A,0.500726355791_probability_min_target,?,0.1,0.01,false,false,estimate,delta,true,	27527,0.704,100.0,125
-nand,N=5 K=50 ,N/A,0.54534553601_probability_min_target,?,0.1,0.1,true,false,estimate,delta,true,	27527,0.708,100.0,13
-nand,N=5 K=50 ,N/A,0.54534553601_probability_min_target,?,0.1,0.1,true,true,estimate,delta,true,	562,223.985,100.0,1
-nand,N=10 K=50 ,N/A,0.282375226124024_probability_min_target,?,0.1,1e-05,true,true,estimate,delta,true,	346962,TO,TO,TO
-nand,N=10 K=50 ,N/A,0.285196126424_probability_min_target,?,0.1,0.01,true,false,estimate,delta,true,	250402,20.159,100.0,125
-nand,N=10 K=50 ,N/A,0.31060964264_probability_min_target,?,0.1,0.1,true,true,estimate,delta,true,	346962,TO,TO,TO
-nand,N=10 K=50 ,N/A,0.285196126424_probability_min_target,?,0.1,0.01,true,true,estimate,delta,true,	346962,TO,TO,TO
-nand,N=10 K=50 ,N/A,0.282375226124024_probability_min_target,?,0.1,1e-05,true,false,estimate,delta,true,	250402,TO,TO,TO
-nand,N=10 K=50 ,N/A,0.28240063964024_probability_min_target,?,0.1,0.0001,true,false,estimate,delta,true,	250402,1267.541,100.0,16381
-nand,N=10 K=50 ,N/A,0.28240063964024_probability_min_target,?,0.1,0.0001,true,true,estimate,delta,true,	346962,TO,TO,TO
-nand,N=10 K=50 ,N/A,0.31060964264_probability_min_target,?,0.1,0.1,true,false,estimate,delta,true,	250402,11.702,100.0,13
-nand,N=10 K=50 ,N/A,0.285196126424_probability_min_target,?,0.1,0.01,false,false,estimate,delta,true,	250402,10.513,100.0,125
-nand,N=10 K=50 ,N/A,0.31060964264_probability_min_target,?,0.1,0.1,false,false,estimate,delta,true,	250402,5.662,100.0,13
-nand,N=10 K=50 ,N/A,0.282375226124024_probability_min_target,?,0.1,1e-05,false,false,estimate,delta,true,	250402,MO,MO,MO
-nand,N=10 K=50 ,N/A,0.28240063964024_probability_min_target,?,0.1,0.0001,false,false,estimate,delta,true,	250402,822.385,100.0,16381
-nand,N=10 K=100 ,N/A,0.282375226124024_probability_min_target,?,0.1,1e-05,true,true,estimate,delta,true,	693462,MO,MO,MO
-nand,N=10 K=100 ,N/A,0.285196126424_probability_min_target,?,0.1,0.01,false,false,estimate,delta,true,	502402,29.598,100.0,125
-nand,N=10 K=100 ,N/A,0.28240063964024_probability_min_target,?,0.1,0.0001,false,false,estimate,delta,true,	502402,MO,MO,MO
-nand,N=10 K=100 ,N/A,0.31060964264_probability_min_target,?,0.1,0.1,false,false,estimate,delta,true,	502402,17.792,100.0,13
-nand,N=10 K=100 ,N/A,0.282375226124024_probability_min_target,?,0.1,1e-05,false,false,estimate,delta,true,	502402,MO,MO,MO
-nand,N=10 K=100 ,N/A,0.31060964264_probability_min_target,?,0.1,0.1,true,false,estimate,delta,true,	502402,40.196,100.0,13
-nand,N=10 K=100 ,N/A,0.28240063964024_probability_min_target,?,0.1,0.0001,true,false,estimate,delta,true,	502402,2917.055,100.0,16381
-nand,N=10 K=100 ,N/A,0.31060964264_probability_min_target,?,0.1,0.1,true,true,estimate,delta,true,	693462,MO,MO,MO
-nand,N=10 K=100 ,N/A,0.285196126424_probability_min_target,?,0.1,0.01,true,false,estimate,delta,true,	502402,60.005,100.0,125
-nand,N=10 K=100 ,N/A,0.282375226124024_probability_min_target,?,0.1,1e-05,true,false,estimate,delta,true,	502402,TO,TO,TO
-nand,N=10 K=100 ,N/A,0.28240063964024_probability_min_target,?,0.1,0.0001,true,true,estimate,delta,true,	693462,MO,MO,MO
-nand,N=10 K=100 ,N/A,0.285196126424_probability_min_target,?,0.1,0.01,true,true,estimate,delta,true,	693462,MO,MO,MO
-newgrid,N=2 ,1,0.8941507868184541_probability_min_notbad U goal,?,0.1,1e-05,true,false,estimate,delta,true,	32,3.168,100.0,56585
-newgrid,N=2 ,1,0.903083263854_probability_min_notbad U goal,?,0.1,0.01,false,false,estimate,delta,true,	32,0.043,100.0,609
-newgrid,N=2 ,1,0.89423125958454_probability_min_notbad U goal,?,0.1,0.0001,true,false,estimate,delta,true,	32,0.91,100.0,16393
-newgrid,N=2 ,1,0.89423125958454_probability_min_notbad U goal,?,0.1,0.0001,true,true,estimate,delta,true,	32,1.145,100.0,15937
-newgrid,N=2 ,1,0.8941507868184541_probability_min_notbad U goal,?,0.1,1e-05,false,false,estimate,delta,true,	32,2.504,100.0,56585
-newgrid,N=2 ,1,0.903083263854_probability_min_notbad U goal,?,0.1,0.01,true,false,estimate,delta,true,	32,0.051,100.0,609
-newgrid,N=2 ,1,0.98355602994_probability_min_notbad U goal,?,0.1,0.1,true,false,estimate,delta,true,	32,0.02,100.0,17
-newgrid,N=2 ,1,0.98355602994_probability_min_notbad U goal,?,0.1,0.1,true,true,estimate,delta,true,	32,0.021,100.0,17
-newgrid,N=2 ,1,0.98355602994_probability_min_notbad U goal,?,0.1,0.1,false,false,estimate,delta,true,	32,0.019,100.0,17
-newgrid,N=2 ,1,0.89423125958454_probability_min_notbad U goal,?,0.1,0.0001,false,false,estimate,delta,true,	32,0.72,100.0,16393
-newgrid,N=2 ,1,0.8941507868184541_probability_min_notbad U goal,?,0.1,1e-05,true,true,estimate,delta,true,	32,3.968,100.0,55129
-newgrid,N=2 ,1,0.903083263854_probability_min_notbad U goal,?,0.1,0.01,true,true,estimate,delta,true,	32,0.061,100.0,601
-newgrid,N=4 ,1,0.976458263903_probability_min_notbad U goal,?,0.1,0.01,true,true,estimate,delta,true,	74,0.046,100.0,177
-newgrid,N=4 ,1,0.976458263903_probability_min_notbad U goal,?,0.1,0.01,false,false,estimate,delta,true,	72,0.035,100.0,177
-newgrid,N=4 ,1,0.966800028203603_probability_min_notbad U goal,?,0.1,1e-05,true,false,estimate,delta,true,	72,0.814,100.0,10201
-newgrid,N=4 ,1,0.9668870393360299_probability_min_notbad U goal,?,0.1,0.0001,true,true,estimate,delta,true,	74,0.541,100.0,5065
-newgrid,N=4 ,1,0.966800028203603_probability_min_notbad U goal,?,0.1,1e-05,true,true,estimate,delta,true,	74,1.026,100.0,10073
-newgrid,N=4 ,1,0.976458263903_probability_min_notbad U goal,?,0.1,0.01,true,false,estimate,delta,true,	72,0.042,100.0,177
-newgrid,N=4 ,1,0.9668870393360299_probability_min_notbad U goal,?,0.1,0.0001,false,false,estimate,delta,true,	72,0.325,100.0,5081
-newgrid,N=4 ,1,0.966800028203603_probability_min_notbad U goal,?,0.1,1e-05,false,false,estimate,delta,true,	72,0.618,100.0,10201
-newgrid,N=4 ,1,0.9668870393360299_probability_min_notbad U goal,?,0.1,0.0001,true,false,estimate,delta,true,	72,0.431,100.0,5081
-nrp,K=5 ,1,0.20001072377247_probability_min_unfair,?,0.1,0.0001,true,true,estimate,delta,true,	12,0.017,100.0,1
-nrp,K=5 ,1,0.199992724607247_probability_min_unfair,?,0.1,1e-05,true,true,estimate,delta,true,	12,MO,MO,MO
-nrp,K=5 ,1,0.201990631947_probability_min_unfair,?,0.1,0.01,true,true,estimate,delta,true,	12,0.018,100.0,1
-nrp,K=5 ,1,0.201990631947_probability_min_unfair,?,0.1,0.01,false,false,estimate,delta,true,	33,MO,MO,MO
-nrp,K=5 ,1,0.21998979717000003_probability_min_unfair,?,0.1,0.1,true,true,estimate,delta,true,	12,0.017,100.0,1
-nrp,K=5 ,1,0.21998979717000003_probability_min_unfair,?,0.1,0.1,false,false,estimate,delta,true,	33,14.646,100.0,388897
-nrp,K=5 ,1,0.20001072377247_probability_min_unfair,?,0.1,0.0001,false,false,estimate,delta,true,	33,MO,MO,MO
-nrp,K=5 ,1,0.21998979717000003_probability_min_unfair,?,0.1,0.1,true,false,estimate,delta,true,	33,20.127,100.0,388897
-nrp,K=5 ,1,0.201990631947_probability_min_unfair,?,0.1,0.01,true,false,estimate,delta,true,	33,MO,MO,MO
-nrp,K=5 ,1,0.199992724607247_probability_min_unfair,?,0.1,1e-05,true,false,estimate,delta,true,	33,MO,MO,MO
-nrp,K=5 ,1,0.20001072377247_probability_min_unfair,?,0.1,0.0001,true,false,estimate,delta,true,	33,MO,MO,MO
-nrp,K=5 ,1,0.199992724607247_probability_min_unfair,?,0.1,1e-05,false,false,estimate,delta,true,	33,MO,MO,MO
-nrp,K=5 ,1,0.20001999969996997_probability_min_unfair,?,1e-06,0.0001,true,true,estimate,delta,true,	12,0.017,100.0,1
-nrp,K=5 ,1,0.20001999969996997_probability_min_unfair,?,1e-06,0.0001,false,false,estimate,delta,true,	33,MO,MO,MO
-nrp,K=5 ,1,0.21999999967_probability_min_unfair,?,1e-06,0.1,true,false,estimate,delta,true,	33,63.557,100.0,1194257
-nrp,K=5 ,1,0.200001999699997_probability_min_unfair,?,1e-06,1e-05,true,true,estimate,delta,true,	12,0.016,100.0,1
-nrp,K=5 ,1,0.20001999969996997_probability_min_unfair,?,1e-06,0.0001,true,false,estimate,delta,true,	33,MO,MO,MO
-nrp,K=5 ,1,0.201999999697_probability_min_unfair,?,1e-06,0.01,true,false,estimate,delta,true,	33,MO,MO,MO
-nrp,K=5 ,1,0.200001999699997_probability_min_unfair,?,1e-06,1e-05,true,false,estimate,delta,true,	33,MO,MO,MO
-nrp,K=5 ,1,0.200001999699997_probability_min_unfair,?,1e-06,1e-05,false,false,estimate,delta,true,	33,MO,MO,MO
-nrp,K=5 ,1,0.201999999697_probability_min_unfair,?,1e-06,0.01,true,true,estimate,delta,true,	12,0.017,100.0,1
-nrp,K=5 ,1,0.21999999967_probability_min_unfair,?,1e-06,0.1,false,false,estimate,delta,true,	33,47.343,100.0,1194257
-nrp,K=5 ,1,0.201999999697_probability_min_unfair,?,1e-06,0.01,false,false,estimate,delta,true,	33,MO,MO,MO
-nrp,K=5 ,1,0.21999999967_probability_min_unfair,?,1e-06,0.1,true,true,estimate,delta,true,	12,0.017,100.0,1
-nrp,K=10 ,1,0.10099999947480001_probability_min_unfair,?,0.1,0.01,false,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.10999999942800001_probability_min_unfair,?,0.1,0.1,true,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.10999999942800001_probability_min_unfair,?,0.1,0.1,false,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.10000099947999481_probability_min_unfair,?,0.1,1e-05,false,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.10999999942800001_probability_min_unfair,?,0.1,0.1,true,true,estimate,delta,true,	22,0.019,100.0,1
-nrp,K=10 ,1,0.10000099947999481_probability_min_unfair,?,0.1,1e-05,true,true,estimate,delta,true,	22,0.019,100.0,1
-nrp,K=10 ,1,0.10000099947999481_probability_min_unfair,?,0.1,1e-05,true,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.10099999947480001_probability_min_unfair,?,0.1,0.01,true,true,estimate,delta,true,	22,0.02,100.0,1
-nrp,K=10 ,1,0.100009999479948_probability_min_unfair,?,0.1,0.0001,false,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.100009999479948_probability_min_unfair,?,0.1,0.0001,true,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.100009999479948_probability_min_unfair,?,0.1,0.0001,true,true,estimate,delta,true,	22,0.019,100.0,1
-nrp,K=10 ,1,0.10099999947480001_probability_min_unfair,?,0.1,0.01,true,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.101_probability_min_unfair,?,1e-06,0.01,true,true,estimate,delta,true,	22,0.019,100.0,1
-nrp,K=10 ,1,0.11000000000000001_probability_min_unfair,?,1e-06,0.1,true,true,estimate,delta,true,	22,0.02,100.0,1
-nrp,K=10 ,1,0.10001_probability_min_unfair,?,1e-06,0.0001,true,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.11000000000000001_probability_min_unfair,?,1e-06,0.1,true,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.10001_probability_min_unfair,?,1e-06,0.0001,false,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.11000000000000001_probability_min_unfair,?,1e-06,0.1,false,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.101_probability_min_unfair,?,1e-06,0.01,false,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.100001_probability_min_unfair,?,1e-06,1e-05,true,true,estimate,delta,true,	22,0.019,100.0,1
-nrp,K=10 ,1,0.100001_probability_min_unfair,?,1e-06,1e-05,false,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.100001_probability_min_unfair,?,1e-06,1e-05,true,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=10 ,1,0.10001_probability_min_unfair,?,1e-06,0.0001,true,true,estimate,delta,true,	22,0.019,100.0,1
-nrp,K=10 ,1,0.101_probability_min_unfair,?,1e-06,0.01,true,false,estimate,delta,true,	113,MO,MO,MO
-nrp,K=100 ,1,0.011000000000000001_probability_min_unfair,?,0.1,0.1,true,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.010000100000000001_probability_min_unfair,?,0.1,1e-05,false,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.010000100000000001_probability_min_unfair,?,0.1,1e-05,true,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.010001_probability_min_unfair,?,0.1,0.0001,false,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.011000000000000001_probability_min_unfair,?,0.1,0.1,false,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.010000100000000001_probability_min_unfair,?,0.1,1e-05,true,true,estimate,delta,true,	202,1.049,100.0,1
-nrp,K=100 ,1,0.010001_probability_min_unfair,?,0.1,0.0001,true,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.0101_probability_min_unfair,?,0.1,0.01,true,true,estimate,delta,true,	202,1.058,100.0,1
-nrp,K=100 ,1,0.0101_probability_min_unfair,?,0.1,0.01,true,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.0101_probability_min_unfair,?,0.1,0.01,false,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.011000000000000001_probability_min_unfair,?,0.1,0.1,true,true,estimate,delta,true,	202,1.062,100.0,1
-nrp,K=100 ,1,0.010001_probability_min_unfair,?,0.1,0.0001,true,true,estimate,delta,true,	202,1.039,100.0,1
-nrp,K=100 ,1,0.010000100000000001_probability_min_unfair,?,1e-06,1e-05,true,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.010001_probability_min_unfair,?,1e-06,0.0001,true,true,estimate,delta,true,	202,1.047,100.0,1
-nrp,K=100 ,1,0.0101_probability_min_unfair,?,1e-06,0.01,true,true,estimate,delta,true,	202,1.072,100.0,1
-nrp,K=100 ,1,0.011000000000000001_probability_min_unfair,?,1e-06,0.1,false,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.010000100000000001_probability_min_unfair,?,1e-06,1e-05,false,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.010000100000000001_probability_min_unfair,?,1e-06,1e-05,true,true,estimate,delta,true,	202,1.07,100.0,1
-nrp,K=100 ,1,0.011000000000000001_probability_min_unfair,?,1e-06,0.1,true,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.010001_probability_min_unfair,?,1e-06,0.0001,false,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.0101_probability_min_unfair,?,1e-06,0.01,false,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.010001_probability_min_unfair,?,1e-06,0.0001,true,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.0101_probability_min_unfair,?,1e-06,0.01,true,false,estimate,delta,true,	10103,MO,MO,MO
-nrp,K=100 ,1,0.011000000000000001_probability_min_unfair,?,1e-06,0.1,true,true,estimate,delta,true,	202,1.049,100.0,1
-refuel,N=3 ,1,0.057049728652425_probability_min_notbad U goal,?,0.1,0.0001,false,false,estimate,delta,true,	34,0.143,100.0,1841
-refuel,N=3 ,1,0.0570445946902425_probability_min_notbad U goal,?,0.1,1e-05,true,false,estimate,delta,true,	34,0.28,100.0,2641
-refuel,N=3 ,1,0.06274842667500001_probability_min_notbad U goal,?,0.1,0.1,true,false,estimate,delta,true,	34,0.024,100.0,17
-refuel,N=3 ,1,0.057614464492499996_probability_min_notbad U goal,?,0.1,0.01,true,true,estimate,delta,true,	32,0.03,100.0,81
-refuel,N=3 ,1,0.057614464492499996_probability_min_notbad U goal,?,0.1,0.01,false,false,estimate,delta,true,	34,0.043,100.0,337
-refuel,N=3 ,1,0.057049728652425_probability_min_notbad U goal,?,0.1,0.0001,true,true,estimate,delta,true,	32,0.051,100.0,305
-refuel,N=3 ,1,0.0570445946902425_probability_min_notbad U goal,?,0.1,1e-05,false,false,estimate,delta,true,	34,0.201,100.0,2641
-refuel,N=3 ,1,0.06274842667500001_probability_min_notbad U goal,?,0.1,0.1,false,false,estimate,delta,true,	34,0.032,100.0,17
-refuel,N=3 ,1,0.057049728652425_probability_min_notbad U goal,?,0.1,0.0001,true,false,estimate,delta,true,	34,0.204,100.0,1841
-refuel,N=3 ,1,0.0570445946902425_probability_min_notbad U goal,?,0.1,1e-05,true,true,estimate,delta,true,	32,0.061,100.0,401
-refuel,N=3 ,1,0.057614464492499996_probability_min_notbad U goal,?,0.1,0.01,true,false,estimate,delta,true,	34,0.056,100.0,337
-refuel,N=3 ,1,0.06274842667500001_probability_min_notbad U goal,?,0.1,0.1,true,true,estimate,delta,true,	32,0.023,100.0,1
-refuel,N=3 ,1,0.086478901745472_probability_min_notbad U goal,?,1e-06,0.0001,true,false,estimate,delta,true,	34,18.538,100.0,169409
-refuel,N=3 ,1,0.0873349572672_probability_min_notbad U goal,?,1e-06,0.01,true,false,estimate,delta,true,	34,0.151,100.0,1233
-refuel,N=3 ,1,0.09511728019200001_probability_min_notbad U goal,?,1e-06,0.1,false,false,estimate,delta,true,	34,0.031,100.0,1
-refuel,N=3 ,1,0.0864711194225472_probability_min_notbad U goal,?,1e-06,1e-05,true,true,estimate,delta,true,	32,0.021,100.0,1
-refuel,N=3 ,1,0.086478901745472_probability_min_notbad U goal,?,1e-06,0.0001,true,true,estimate,delta,true,	32,0.022,100.0,1
-refuel,N=3 ,1,0.086478901745472_probability_min_notbad U goal,?,1e-06,0.0001,false,false,estimate,delta,true,	34,13.222,100.0,169409
-refuel,N=3 ,1,0.0864711194225472_probability_min_notbad U goal,?,1e-06,1e-05,false,false,estimate,delta,true,	34,161.829,100.0,2065713
-refuel,N=3 ,1,0.0873349572672_probability_min_notbad U goal,?,1e-06,0.01,true,true,estimate,delta,true,	32,0.022,100.0,1
-refuel,N=3 ,1,0.0864711194225472_probability_min_notbad U goal,?,1e-06,1e-05,true,false,estimate,delta,true,	34,229.89,100.0,2064865
-refuel,N=3 ,1,0.09511728019200001_probability_min_notbad U goal,?,1e-06,0.1,true,true,estimate,delta,true,	32,0.022,100.0,1
-refuel,N=3 ,1,0.0873349572672_probability_min_notbad U goal,?,1e-06,0.01,false,false,estimate,delta,true,	34,0.109,100.0,1233
-refuel,N=3 ,1,0.09511728019200001_probability_min_notbad U goal,?,1e-06,0.1,true,false,estimate,delta,true,	34,0.022,100.0,1
+4x4grid-avoid,N/A,1,0.84615781362063_probability_min_notbad U goal,3,0.1,0.0001,false,false,estimate,delta,true,	45,0.317,100.0,6305
+4x4grid-avoid,N/A,1,0.8545339383630001_probability_min_notbad U goal,3,0.1,0.01,false,false,estimate,delta,true,	45,0.045,100.0,489
+4x4grid-avoid,N/A,1,0.8545339383630001_probability_min_notbad U goal,3,0.1,0.01,true,false,estimate,delta,true,	45,0.062,100.0,489
+4x4grid-avoid,N/A,1,0.8460816670320631_probability_min_notbad U goal,3,0.1,1e-05,true,false,estimate,delta,true,	45,1.242,100.0,19585
+4x4grid-avoid,N/A,1,0.8460816670320631_probability_min_notbad U goal,3,0.1,1e-05,true,true,estimate,delta,true,	47,1.04,100.0,13377
+4x4grid-avoid,N/A,1,0.8460816670320631_probability_min_notbad U goal,3,0.1,1e-05,false,false,estimate,delta,true,	45,0.96,100.0,19585
+4x4grid-avoid,N/A,1,0.9306805269300001_probability_min_notbad U goal,3,0.1,0.1,true,true,estimate,delta,true,	47,0.023,100.0,25
+4x4grid-avoid,N/A,1,0.9306805269300001_probability_min_notbad U goal,3,0.1,0.1,true,false,estimate,delta,true,	45,0.023,100.0,33
+4x4grid-avoid,N/A,1,0.84615781362063_probability_min_notbad U goal,3,0.1,0.0001,true,false,estimate,delta,true,	45,0.415,100.0,6305
+4x4grid-avoid,N/A,1,0.9306805269300001_probability_min_notbad U goal,3,0.1,0.1,false,false,estimate,delta,true,	45,0.022,100.0,33
+4x4grid-avoid,N/A,1,0.84615781362063_probability_min_notbad U goal,3,0.1,0.0001,true,true,estimate,delta,true,	47,0.364,100.0,4489
+4x4grid-avoid,N/A,1,0.8545339383630001_probability_min_notbad U goal,3,0.1,0.01,true,true,estimate,delta,true,	47,0.058,100.0,361
+4x4grid-avoid,N/A,1,0.9286640347177599_probability_min_notbad U goal,3,1e-06,0.0001,false,false,estimate,delta,true,	45,7.744,100.0,9961
+4x4grid-avoid,N/A,1,0.937856889376_probability_min_notbad U goal,3,1e-06,0.01,true,true,estimate,delta,true,	47,0.038,100.0,73
+4x4grid-avoid,N/A,1,0.9286640347177599_probability_min_notbad U goal,3,1e-06,0.0001,true,false,estimate,delta,true,	45,27.87,100.0,9833
+4x4grid-avoid,N/A,1,0.937856889376_probability_min_notbad U goal,3,1e-06,0.01,false,false,estimate,delta,true,	45,0.08,100.0,265
+4x4grid-avoid,N/A,1,0.937856889376_probability_min_notbad U goal,3,1e-06,0.01,true,false,estimate,delta,true,	45,0.262,100.0,265
+4x4grid-avoid,N/A,1,0.928580463311776_probability_min_notbad U goal,3,1e-06,1e-05,false,false,estimate,delta,true,	45,10.529,100.0,48889
+4x4grid-avoid,N/A,1,0.928580463311776_probability_min_notbad U goal,3,1e-06,1e-05,true,false,estimate,delta,true,	45,38.189,100.0,49569
+4x4grid-avoid,N/A,1,0.928580463311776_probability_min_notbad U goal,3,1e-06,1e-05,true,true,estimate,delta,true,	47,5.004,100.0,1497
+4x4grid-avoid,N/A,1,0.9286640347177599_probability_min_notbad U goal,3,1e-06,0.0001,true,true,estimate,delta,true,	47,0.636,100.0,481
+4x4grid,N/A,1,5.777541243_reward_max_goal,3,0.1,0.1,false,false,estimate,delta,true,	47,0.019,100.0,41
+4x4grid,N/A,1,6.3552953673_reward_max_goal,3,0.1,0.01,true,true,estimate,delta,true,	49,0.028,100.0,121
+4x4grid,N/A,1,6.418848320973_reward_max_goal,3,0.1,0.0001,true,true,estimate,delta,true,	49,0.114,100.0,1273
+4x4grid,N/A,1,6.418848320973_reward_max_goal,3,0.1,0.0001,false,false,estimate,delta,true,	47,0.08,100.0,1369
+4x4grid,N/A,1,5.777541243_reward_max_goal,3,0.1,0.1,true,true,estimate,delta,true,	49,0.028,100.0,41
+4x4grid,N/A,1,6.3552953673_reward_max_goal,3,0.1,0.01,true,false,estimate,delta,true,	47,0.027,100.0,137
+4x4grid,N/A,1,6.3552953673_reward_max_goal,3,0.1,0.01,false,false,estimate,delta,true,	47,0.023,100.0,137
+4x4grid,N/A,1,6.4194260750973005_reward_max_goal,3,0.1,1e-05,true,false,estimate,delta,true,	47,0.286,100.0,4361
+4x4grid,N/A,1,6.4194260750973005_reward_max_goal,3,0.1,1e-05,true,true,estimate,delta,true,	49,0.304,100.0,3745
+4x4grid,N/A,1,6.4194260750973005_reward_max_goal,3,0.1,1e-05,false,false,estimate,delta,true,	47,0.215,100.0,4361
+4x4grid,N/A,1,5.777541243_reward_max_goal,3,0.1,0.1,true,false,estimate,delta,true,	47,0.021,100.0,41
+4x4grid,N/A,1,6.418848320973_reward_max_goal,3,0.1,0.0001,true,false,estimate,delta,true,	47,0.101,100.0,1369
+4x4grid,N/A,1,5.04162717022413_reward_max_goal,3,1e-06,1e-05,false,false,estimate,delta,true,	47,0.219,100.0,4281
+4x4grid,N/A,1,5.04162717022413_reward_max_goal,3,1e-06,1e-05,true,false,estimate,delta,true,	47,0.289,100.0,4281
+4x4grid,N/A,1,5.0411734192413_reward_max_goal,3,1e-06,0.0001,true,true,estimate,delta,true,	49,0.103,100.0,1097
+4x4grid,N/A,1,4.5375098283_reward_max_goal,3,1e-06,0.1,false,false,estimate,delta,true,	47,0.019,100.0,41
+4x4grid,N/A,1,4.5375098283_reward_max_goal,3,1e-06,0.1,true,false,estimate,delta,true,	47,0.02,100.0,41
+4x4grid,N/A,1,4.991260811129999_reward_max_goal,3,1e-06,0.01,true,true,estimate,delta,true,	49,0.028,100.0,121
+4x4grid,N/A,1,4.5375098283_reward_max_goal,3,1e-06,0.1,true,true,estimate,delta,true,	49,0.021,100.0,41
+4x4grid,N/A,1,5.0411734192413_reward_max_goal,3,1e-06,0.0001,true,false,estimate,delta,true,	47,0.095,100.0,1257
+4x4grid,N/A,1,4.991260811129999_reward_max_goal,3,1e-06,0.01,true,false,estimate,delta,true,	47,0.027,100.0,153
+4x4grid,N/A,1,4.991260811129999_reward_max_goal,3,1e-06,0.01,false,false,estimate,delta,true,	47,0.024,100.0,153
+4x4grid,N/A,1,5.0411734192413_reward_max_goal,3,1e-06,0.0001,false,false,estimate,delta,true,	47,0.075,100.0,1257
+4x4grid,N/A,1,5.04162717022413_reward_max_goal,3,1e-06,1e-05,true,true,estimate,delta,true,	49,0.298,100.0,3561
+alarm,N/A,N/A,0.23584159106050503_probability_max_VENTTUBE=0,2,0.1,1e-05,true,false,estimate,delta,true,	31,0.067,100.0,89
+alarm,N/A,N/A,0.21225955455_probability_max_VENTTUBE=0,2,0.1,0.1,true,false,estimate,delta,true,	31,0.064,100.0,21
+alarm,N/A,N/A,0.23582036510505_probability_max_VENTTUBE=0,2,0.1,0.0001,true,false,estimate,delta,true,	31,0.066,100.0,73
+alarm,N/A,N/A,0.233485510005_probability_max_VENTTUBE=0,2,0.1,0.01,true,true,estimate,delta,true,	15,0.067,100.0,41
+alarm,N/A,N/A,0.23582036510505_probability_max_VENTTUBE=0,2,0.1,0.0001,false,false,estimate,delta,true,	31,0.065,100.0,73
+alarm,N/A,N/A,0.23582036510505_probability_max_VENTTUBE=0,2,0.1,0.0001,true,true,estimate,delta,true,	15,0.068,100.0,73
+alarm,N/A,N/A,0.23584159106050503_probability_max_VENTTUBE=0,2,0.1,1e-05,false,false,estimate,delta,true,	31,0.065,100.0,89
+alarm,N/A,N/A,0.233485510005_probability_max_VENTTUBE=0,2,0.1,0.01,false,false,estimate,delta,true,	31,0.064,100.0,49
+alarm,N/A,N/A,0.21225955455_probability_max_VENTTUBE=0,2,0.1,0.1,false,false,estimate,delta,true,	31,0.063,100.0,21
+alarm,N/A,N/A,0.233485510005_probability_max_VENTTUBE=0,2,0.1,0.01,true,false,estimate,delta,true,	31,0.066,100.0,49
+alarm,N/A,N/A,0.23584159106050503_probability_max_VENTTUBE=0,2,0.1,1e-05,true,true,estimate,delta,true,	15,0.069,100.0,85
+alarm,N/A,N/A,0.21225955455_probability_max_VENTTUBE=0,2,0.1,0.1,true,true,estimate,delta,true,	15,0.066,100.0,17
+alarm,N/A,N/A,0.0364098635901_probability_max_VENTTUBE=0,2,1e-06,0.01,true,true,estimate,delta,true,	15,0.064,100.0,5
+alarm,N/A,N/A,0.0364098635901_probability_max_VENTTUBE=0,2,1e-06,0.01,false,false,estimate,delta,true,	31,0.063,100.0,29
+alarm,N/A,N/A,0.0367772722136001_probability_max_VENTTUBE=0,2,1e-06,1e-05,true,false,estimate,delta,true,	31,0.067,100.0,69
+alarm,N/A,N/A,0.036773962226001_probability_max_VENTTUBE=0,2,1e-06,0.0001,true,true,estimate,delta,true,	15,0.064,100.0,5
+alarm,N/A,N/A,0.036773962226001_probability_max_VENTTUBE=0,2,1e-06,0.0001,false,false,estimate,delta,true,	31,0.064,100.0,57
+alarm,N/A,N/A,0.036773962226001_probability_max_VENTTUBE=0,2,1e-06,0.0001,true,false,estimate,delta,true,	31,0.067,100.0,57
+alarm,N/A,N/A,0.0367772722136001_probability_max_VENTTUBE=0,2,1e-06,1e-05,false,false,estimate,delta,true,	31,0.064,100.0,69
+alarm,N/A,N/A,0.0367772722136001_probability_max_VENTTUBE=0,2,1e-06,1e-05,true,true,estimate,delta,true,	15,0.064,100.0,5
+alarm,N/A,N/A,0.033099875991_probability_max_VENTTUBE=0,2,1e-06,0.1,true,false,estimate,delta,true,	31,0.065,100.0,17
+alarm,N/A,N/A,0.0364098635901_probability_max_VENTTUBE=0,2,1e-06,0.01,true,false,estimate,delta,true,	31,0.066,100.0,29
+alarm,N/A,N/A,0.033099875991_probability_max_VENTTUBE=0,2,1e-06,0.1,true,true,estimate,delta,true,	15,0.064,100.0,5
+alarm,N/A,N/A,0.033099875991_probability_max_VENTTUBE=0,2,1e-06,0.1,false,false,estimate,delta,true,	31,0.063,100.0,17
+brp,N=16 MAX=2 ,N/A,0.026111989574000002_probability_min_uncertain,4,0.1,0.1,true,true,estimate,delta,true,	177,0.22,100.0,1185
+brp,N=16 MAX=2 ,N/A,0.0239755540634_probability_min_uncertain,4,0.1,0.01,true,true,estimate,delta,true,	177,5.01,100.0,27709
+brp,N=16 MAX=2 ,N/A,0.023738409721723402_probability_min_uncertain,4,0.1,1e-05,false,false,estimate,delta,true,	324,MO,MO,MO
+brp,N=16 MAX=2 ,N/A,0.023740546157233998_probability_min_uncertain,4,0.1,0.0001,true,false,estimate,delta,true,	324,MO,MO,MO
+brp,N=16 MAX=2 ,N/A,0.026111989574000002_probability_min_uncertain,4,0.1,0.1,true,false,estimate,delta,true,	324,0.155,100.0,1185
+brp,N=16 MAX=2 ,N/A,0.023738409721723402_probability_min_uncertain,4,0.1,1e-05,true,true,estimate,delta,true,	177,MO,MO,MO
+brp,N=16 MAX=2 ,N/A,0.0239755540634_probability_min_uncertain,4,0.1,0.01,false,false,estimate,delta,true,	324,2.24,100.0,27709
+brp,N=16 MAX=2 ,N/A,0.026111989574000002_probability_min_uncertain,4,0.1,0.1,false,false,estimate,delta,true,	324,0.122,100.0,1185
+brp,N=16 MAX=2 ,N/A,0.023738409721723402_probability_min_uncertain,4,0.1,1e-05,true,false,estimate,delta,true,	324,MO,MO,MO
+brp,N=16 MAX=2 ,N/A,0.023740546157233998_probability_min_uncertain,4,0.1,0.0001,false,false,estimate,delta,true,	324,MO,MO,MO
+brp,N=16 MAX=2 ,N/A,0.0239755540634_probability_min_uncertain,4,0.1,0.01,true,false,estimate,delta,true,	324,3.093,100.0,27709
+brp,N=16 MAX=2 ,N/A,0.023740546157233998_probability_min_uncertain,4,0.1,0.0001,true,true,estimate,delta,true,	177,MO,MO,MO
+brp,N=16 MAX=2 ,N/A,0.026112095427_probability_min_uncertain,4,1e-06,0.1,true,false,estimate,delta,true,	324,0.201,100.0,1569
+brp,N=16 MAX=2 ,N/A,0.023740642396856998_probability_min_uncertain,4,1e-06,0.0001,true,false,estimate,delta,true,	324,MO,MO,MO
+brp,N=16 MAX=2 ,N/A,0.0237385059526857_probability_min_uncertain,4,1e-06,1e-05,true,true,estimate,delta,true,	177,MO,MO,MO
+brp,N=16 MAX=2 ,N/A,0.023740642396856998_probability_min_uncertain,4,1e-06,0.0001,false,false,estimate,delta,true,	324,MO,MO,MO
+brp,N=16 MAX=2 ,N/A,0.0237385059526857_probability_min_uncertain,4,1e-06,1e-05,true,false,estimate,delta,true,	324,MO,MO,MO
+brp,N=16 MAX=2 ,N/A,0.026112095427_probability_min_uncertain,4,1e-06,0.1,false,false,estimate,delta,true,	324,0.149,100.0,1569
+brp,N=16 MAX=2 ,N/A,0.026112095427_probability_min_uncertain,4,1e-06,0.1,true,true,estimate,delta,true,	177,0.282,100.0,1569
+brp,N=16 MAX=2 ,N/A,0.023740642396856998_probability_min_uncertain,4,1e-06,0.0001,true,true,estimate,delta,true,	177,MO,MO,MO
+brp,N=16 MAX=2 ,N/A,0.0237385059526857_probability_min_uncertain,4,1e-06,1e-05,false,false,estimate,delta,true,	324,MO,MO,MO
+brp,N=16 MAX=2 ,N/A,0.0239756512557_probability_min_uncertain,4,1e-06,0.01,true,false,estimate,delta,true,	324,7.886,100.0,67677
+brp,N=16 MAX=2 ,N/A,0.0239756512557_probability_min_uncertain,4,1e-06,0.01,false,false,estimate,delta,true,	324,6.576,100.0,67677
+brp,N=16 MAX=2 ,N/A,0.0239756512557_probability_min_uncertain,4,1e-06,0.01,true,true,estimate,delta,true,	177,12.168,100.0,67677
+brp,N=32 MAX=4 ,N/A,0.012847122794_probability_min_uncertain,4,0.1,0.1,true,true,estimate,delta,true,	545,0.991,100.0,1741
+brp,N=32 MAX=4 ,N/A,0.0117959945654_probability_min_uncertain,4,0.1,0.01,false,false,estimate,delta,true,	1094,15.843,100.0,71389
+brp,N=32 MAX=4 ,N/A,0.012847122794_probability_min_uncertain,4,0.1,0.1,false,false,estimate,delta,true,	1094,0.388,100.0,1741
+brp,N=32 MAX=4 ,N/A,0.0117959945654_probability_min_uncertain,4,0.1,0.01,true,false,estimate,delta,true,	1094,21.331,100.0,71389
+brp,N=32 MAX=4 ,N/A,0.0116793193320254_probability_min_uncertain,4,0.1,1e-05,true,true,estimate,delta,true,	545,TO,TO,TO
+brp,N=32 MAX=4 ,N/A,0.012847122794_probability_min_uncertain,4,0.1,0.1,true,false,estimate,delta,true,	1094,0.529,100.0,1741
+brp,N=32 MAX=4 ,N/A,0.011680370460253999_probability_min_uncertain,4,0.1,0.0001,false,false,estimate,delta,true,	1094,TO,TO,TO
+brp,N=32 MAX=4 ,N/A,0.0117959945654_probability_min_uncertain,4,0.1,0.01,true,true,estimate,delta,true,	545,44.398,100.0,71389
+brp,N=32 MAX=4 ,N/A,0.0116793193320254_probability_min_uncertain,4,0.1,1e-05,false,false,estimate,delta,true,	1094,TO,TO,TO
+brp,N=32 MAX=4 ,N/A,0.0116793193320254_probability_min_uncertain,4,0.1,1e-05,true,false,estimate,delta,true,	1094,TO,TO,TO
+brp,N=32 MAX=4 ,N/A,0.011680370460253999_probability_min_uncertain,4,0.1,0.0001,true,false,estimate,delta,true,	1094,TO,TO,TO
+brp,N=32 MAX=4 ,N/A,0.011680370460253999_probability_min_uncertain,4,0.1,0.0001,true,true,estimate,delta,true,	545,TO,TO,TO
+brp,N=32 MAX=4 ,N/A,0.011679319502027101_probability_min_uncertain,4,1e-06,1e-05,true,true,estimate,delta,true,	545,TO,TO,TO
+brp,N=32 MAX=4 ,N/A,0.011679319502027101_probability_min_uncertain,4,1e-06,1e-05,true,false,estimate,delta,true,	1094,TO,TO,TO
+brp,N=32 MAX=4 ,N/A,0.012847122981_probability_min_uncertain,4,1e-06,0.1,false,false,estimate,delta,true,	1094,0.76,100.0,3569
+brp,N=32 MAX=4 ,N/A,0.011679319502027101_probability_min_uncertain,4,1e-06,1e-05,false,false,estimate,delta,true,	1094,TO,TO,TO
+brp,N=32 MAX=4 ,N/A,0.012847122981_probability_min_uncertain,4,1e-06,0.1,true,true,estimate,delta,true,	545,2.028,100.0,3569
+brp,N=32 MAX=4 ,N/A,0.011680370630271_probability_min_uncertain,4,1e-06,0.0001,true,true,estimate,delta,true,	545,TO,TO,TO
+brp,N=32 MAX=4 ,N/A,0.0117959947371_probability_min_uncertain,4,1e-06,0.01,false,false,estimate,delta,true,	1094,31.342,100.0,96681
+brp,N=32 MAX=4 ,N/A,0.011680370630271_probability_min_uncertain,4,1e-06,0.0001,true,false,estimate,delta,true,	1094,TO,TO,TO
+brp,N=32 MAX=4 ,N/A,0.0117959947371_probability_min_uncertain,4,1e-06,0.01,true,true,estimate,delta,true,	545,60.751,100.0,96681
+brp,N=32 MAX=4 ,N/A,0.011680370630271_probability_min_uncertain,4,1e-06,0.0001,false,false,estimate,delta,true,	1094,TO,TO,TO
+brp,N=32 MAX=4 ,N/A,0.0117959947371_probability_min_uncertain,4,1e-06,0.01,true,false,estimate,delta,true,	1094,33.386,100.0,96681
+brp,N=32 MAX=4 ,N/A,0.012847122981_probability_min_uncertain,4,1e-06,0.1,true,false,estimate,delta,true,	1094,1.061,100.0,3569
+brp,N=64 MAX=8 ,N/A,0.006372776505749293_probability_min_uncertain,4,0.1,0.1,true,true,estimate,delta,true,	1857,11.975,100.0,4357
+brp,N=64 MAX=8 ,N/A,0.005793491121376683_probability_min_uncertain,4,0.1,1e-05,true,false,estimate,delta,true,	3978,TO,TO,TO
+brp,N=64 MAX=8 ,N/A,0.005794012530363516_probability_min_uncertain,4,0.1,0.0001,false,false,estimate,delta,true,	3978,TO,TO,TO
+brp,N=64 MAX=8 ,N/A,0.00585136751891526_probability_min_uncertain,4,0.1,0.01,false,false,estimate,delta,true,	3978,129.276,100.0,118741
+brp,N=64 MAX=8 ,N/A,0.005793491121376683_probability_min_uncertain,4,0.1,1e-05,false,false,estimate,delta,true,	3978,TO,TO,TO
+brp,N=64 MAX=8 ,N/A,0.005794012530363516_probability_min_uncertain,4,0.1,0.0001,true,false,estimate,delta,true,	3978,TO,TO,TO
+brp,N=64 MAX=8 ,N/A,0.00585136751891526_probability_min_uncertain,4,0.1,0.01,true,true,estimate,delta,true,	1857,360.975,100.0,118741
+brp,N=64 MAX=8 ,N/A,0.005793491121376683_probability_min_uncertain,4,0.1,1e-05,true,true,estimate,delta,true,	1857,TO,TO,TO
+brp,N=64 MAX=8 ,N/A,0.005794012530363516_probability_min_uncertain,4,0.1,0.0001,true,true,estimate,delta,true,	1857,TO,TO,TO
+brp,N=64 MAX=8 ,N/A,0.006372776505749293_probability_min_uncertain,4,0.1,0.1,true,false,estimate,delta,true,	3978,4.32,100.0,4357
+brp,N=64 MAX=8 ,N/A,0.00585136751891526_probability_min_uncertain,4,0.1,0.01,true,false,estimate,delta,true,	3978,160.485,100.0,118741
+brp,N=64 MAX=8 ,N/A,0.006372776505749293_probability_min_uncertain,4,0.1,0.1,false,false,estimate,delta,true,	3978,2.962,100.0,4357
+brp,N=64 MAX=8 ,N/A,0.005794009963062_probability_min_uncertain,4,1e-06,0.0001,true,true,estimate,delta,true,	1857,TO,TO,TO
+brp,N=64 MAX=8 ,N/A,0.0057934885543062_probability_min_uncertain,4,1e-06,1e-05,true,false,estimate,delta,true,	3978,TO,TO,TO
+brp,N=64 MAX=8 ,N/A,0.006372773682_probability_min_uncertain,4,1e-06,0.1,true,false,estimate,delta,true,	3978,5.2,100.0,5057
+brp,N=64 MAX=8 ,N/A,0.005794009963062_probability_min_uncertain,4,1e-06,0.0001,true,false,estimate,delta,true,	3978,TO,TO,TO
+brp,N=64 MAX=8 ,N/A,0.0058513649262_probability_min_uncertain,4,1e-06,0.01,true,false,estimate,delta,true,	3978,184.07,100.0,124681
+brp,N=64 MAX=8 ,N/A,0.0057934885543062_probability_min_uncertain,4,1e-06,1e-05,true,true,estimate,delta,true,	1857,TO,TO,TO
+brp,N=64 MAX=8 ,N/A,0.006372773682_probability_min_uncertain,4,1e-06,0.1,true,true,estimate,delta,true,	1857,14.518,100.0,5057
+brp,N=64 MAX=8 ,N/A,0.0058513649262_probability_min_uncertain,4,1e-06,0.01,false,false,estimate,delta,true,	3978,151.103,100.0,124681
+brp,N=64 MAX=8 ,N/A,0.005794009963062_probability_min_uncertain,4,1e-06,0.0001,false,false,estimate,delta,true,	3978,TO,TO,TO
+brp,N=64 MAX=8 ,N/A,0.0057934885543062_probability_min_uncertain,4,1e-06,1e-05,false,false,estimate,delta,true,	3978,TO,TO,TO
+brp,N=64 MAX=8 ,N/A,0.006372773682_probability_min_uncertain,4,1e-06,0.1,false,false,estimate,delta,true,	3978,3.704,100.0,5057
+brp,N=64 MAX=8 ,N/A,0.0058513649262_probability_min_uncertain,4,1e-06,0.01,true,true,estimate,delta,true,	1857,393.669,100.0,124681
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.005397531197772231_probability_min_observeIGreater1,2,0.1,1e-05,true,true,estimate,delta,true,	11,0.346,100.0,6909
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.00545145199523_probability_min_observeIGreater1,2,0.1,0.01,true,false,estimate,delta,true,	20,0.057,100.0,397
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0059372249453_probability_min_observeIGreater1,2,0.1,0.1,true,false,estimate,delta,true,	20,0.045,100.0,97
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.005397531197772231_probability_min_observeIGreater1,2,0.1,1e-05,true,false,estimate,delta,true,	20,0.585,100.0,12557
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0053980169707223_probability_min_observeIGreater1,2,0.1,0.0001,true,true,estimate,delta,true,	11,0.123,100.0,1969
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0053980169707223_probability_min_observeIGreater1,2,0.1,0.0001,false,false,estimate,delta,true,	20,0.18,100.0,4109
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0059372249453_probability_min_observeIGreater1,2,0.1,0.1,true,true,estimate,delta,true,	11,0.044,100.0,53
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0059372249453_probability_min_observeIGreater1,2,0.1,0.1,false,false,estimate,delta,true,	20,0.045,100.0,97
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.00545145199523_probability_min_observeIGreater1,2,0.1,0.01,true,true,estimate,delta,true,	11,0.05,100.0,201
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.005397531197772231_probability_min_observeIGreater1,2,0.1,1e-05,false,false,estimate,delta,true,	20,0.499,100.0,12557
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.00545145199523_probability_min_observeIGreater1,2,0.1,0.01,false,false,estimate,delta,true,	20,0.054,100.0,397
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0053980169707223_probability_min_observeIGreater1,2,0.1,0.0001,true,false,estimate,delta,true,	20,0.212,100.0,4109
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.019922067627562_probability_min_observeIGreater1,2,1e-06,0.0001,false,false,estimate,delta,true,	20,2.617,100.0,67121
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0201192763762_probability_min_observeIGreater1,2,1e-06,0.01,true,false,estimate,delta,true,	20,0.221,100.0,4237
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.021912083182000004_probability_min_observeIGreater1,2,1e-06,0.1,true,true,estimate,delta,true,	11,0.058,100.0,381
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.019920274820756204_probability_min_observeIGreater1,2,1e-06,1e-05,true,false,estimate,delta,true,	20,15.284,100.0,304285
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0201192763762_probability_min_observeIGreater1,2,1e-06,0.01,true,true,estimate,delta,true,	11,0.129,100.0,2009
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.021912083182000004_probability_min_observeIGreater1,2,1e-06,0.1,false,false,estimate,delta,true,	20,0.069,100.0,809
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.019922067627562_probability_min_observeIGreater1,2,1e-06,0.0001,true,true,estimate,delta,true,	11,1.48,100.0,29993
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.019920274820756204_probability_min_observeIGreater1,2,1e-06,1e-05,true,true,estimate,delta,true,	11,6.656,100.0,132209
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.021912083182000004_probability_min_observeIGreater1,2,1e-06,0.1,true,false,estimate,delta,true,	20,0.076,100.0,809
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.019922067627562_probability_min_observeIGreater1,2,1e-06,0.0001,true,false,estimate,delta,true,	20,3.124,100.0,67121
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.0201192763762_probability_min_observeIGreater1,2,1e-06,0.01,false,false,estimate,delta,true,	20,0.188,100.0,4237
+crowds,CrowdSize=10 TotalRuns=2 ,N/A,0.019920274820756204_probability_min_observeIGreater1,2,1e-06,1e-05,false,false,estimate,delta,true,	20,13.664,100.0,336381
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.033155866821_probability_min_observeIGreater1,2,0.1,0.1,false,false,estimate,delta,true,	84,0.203,100.0,89
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030144711279711002_probability_min_observeIGreater1,2,0.1,0.0001,true,true,estimate,delta,true,	42,0.72,100.0,3253
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030443114081100002_probability_min_observeIGreater1,2,0.1,0.01,false,false,estimate,delta,true,	84,0.218,100.0,369
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030141998526971102_probability_min_observeIGreater1,2,0.1,1e-05,true,true,estimate,delta,true,	42,1.801,100.0,9813
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030443114081100002_probability_min_observeIGreater1,2,0.1,0.01,true,true,estimate,delta,true,	42,0.242,100.0,277
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.033155866821_probability_min_observeIGreater1,2,0.1,0.1,true,false,estimate,delta,true,	84,0.201,100.0,89
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030141998526971102_probability_min_observeIGreater1,2,0.1,1e-05,false,false,estimate,delta,true,	84,0.922,100.0,11801
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030144711279711002_probability_min_observeIGreater1,2,0.1,0.0001,false,false,estimate,delta,true,	84,0.432,100.0,3961
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.033155866821_probability_min_observeIGreater1,2,0.1,0.1,true,true,estimate,delta,true,	42,0.212,100.0,77
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030144711279711002_probability_min_observeIGreater1,2,0.1,0.0001,true,false,estimate,delta,true,	84,0.487,100.0,3961
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030141998526971102_probability_min_observeIGreater1,2,0.1,1e-05,true,false,estimate,delta,true,	84,1.067,100.0,11801
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.030443114081100002_probability_min_observeIGreater1,2,0.1,0.01,true,false,estimate,delta,true,	84,0.219,100.0,369
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.11397833062000001_probability_min_observeIGreater1,2,1e-06,0.1,false,false,estimate,delta,true,	84,0.244,100.0,733
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.10362702586642_probability_min_observeIGreater1,2,1e-06,0.0001,false,false,estimate,delta,true,	84,3.83,100.0,56641
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.103617700366642_probability_min_observeIGreater1,2,1e-06,1e-05,true,true,estimate,delta,true,	42,27.302,100.0,144577
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.10362702586642_probability_min_observeIGreater1,2,1e-06,0.0001,true,false,estimate,delta,true,	84,4.519,100.0,56641
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.103617700366642_probability_min_observeIGreater1,2,1e-06,1e-05,true,false,estimate,delta,true,	84,14.95,100.0,189297
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.103617700366642_probability_min_observeIGreater1,2,1e-06,1e-05,false,false,estimate,delta,true,	84,12.432,100.0,189381
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.104652830842_probability_min_observeIGreater1,2,1e-06,0.01,true,false,estimate,delta,true,	84,0.489,100.0,3873
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.104652830842_probability_min_observeIGreater1,2,1e-06,0.01,true,true,estimate,delta,true,	42,0.703,100.0,2905
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.10362702586642_probability_min_observeIGreater1,2,1e-06,0.0001,true,true,estimate,delta,true,	42,8.597,100.0,45745
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.104652830842_probability_min_observeIGreater1,2,1e-06,0.01,false,false,estimate,delta,true,	84,0.428,100.0,3873
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.11397833062000001_probability_min_observeIGreater1,2,1e-06,0.1,true,false,estimate,delta,true,	84,0.272,100.0,733
+crowds,CrowdSize=10 TotalRuns=4 ,N/A,0.11397833062000001_probability_min_observeIGreater1,2,1e-06,0.1,true,true,estimate,delta,true,	42,0.296,100.0,561
+herman5_pla,N/A,N/A,1.933142846382_reward_max_stable,1,0.1,0.0001,true,true,estimate,delta,true,	89,0.113,100.0,237
+herman5_pla,N/A,N/A,1.740002562_reward_max_stable,1,0.1,0.1,false,false,estimate,delta,true,	196,0.039,100.0,23
+herman5_pla,N/A,N/A,1.9140028182_reward_max_stable,1,0.1,0.01,true,false,estimate,delta,true,	196,0.052,100.0,107
+herman5_pla,N/A,N/A,1.9333168466382_reward_max_stable,1,0.1,1e-05,true,true,estimate,delta,true,	89,0.243,100.0,823
+herman5_pla,N/A,N/A,1.740002562_reward_max_stable,1,0.1,0.1,true,true,estimate,delta,true,	89,0.067,100.0,5
+herman5_pla,N/A,N/A,1.933142846382_reward_max_stable,1,0.1,0.0001,true,false,estimate,delta,true,	196,0.183,100.0,1075
+herman5_pla,N/A,N/A,1.9333168466382_reward_max_stable,1,0.1,1e-05,true,false,estimate,delta,true,	196,0.548,100.0,3993
+herman5_pla,N/A,N/A,1.9333168466382_reward_max_stable,1,0.1,1e-05,false,false,estimate,delta,true,	196,0.444,100.0,3977
+herman5_pla,N/A,N/A,1.740002562_reward_max_stable,1,0.1,0.1,true,false,estimate,delta,true,	196,0.04,100.0,23
+herman5_pla,N/A,N/A,1.9140028182_reward_max_stable,1,0.1,0.01,false,false,estimate,delta,true,	196,0.047,100.0,103
+herman5_pla,N/A,N/A,1.933142846382_reward_max_stable,1,0.1,0.0001,false,false,estimate,delta,true,	196,0.155,100.0,1075
+herman5_pla,N/A,N/A,1.9140028182_reward_max_stable,1,0.1,0.01,true,true,estimate,delta,true,	89,0.069,100.0,21
+herman5_pla,N/A,N/A,1.91400082731_reward_max_stable,1,1e-06,0.01,false,false,estimate,delta,true,	196,0.058,100.0,103
+herman5_pla,N/A,N/A,1.93331483565831_reward_max_stable,1,1e-06,1e-05,false,false,estimate,delta,true,	196,0.419,100.0,3679
+herman5_pla,N/A,N/A,1.7400007521_reward_max_stable,1,1e-06,0.1,true,false,estimate,delta,true,	196,0.042,100.0,25
+herman5_pla,N/A,N/A,1.7400007521_reward_max_stable,1,1e-06,0.1,true,true,estimate,delta,true,	89,0.082,100.0,7
+herman5_pla,N/A,N/A,1.9331408355831001_reward_max_stable,1,1e-06,0.0001,true,false,estimate,delta,true,	196,0.207,100.0,1167
+herman5_pla,N/A,N/A,1.9331408355831001_reward_max_stable,1,1e-06,0.0001,true,true,estimate,delta,true,	89,0.133,100.0,235
+herman5_pla,N/A,N/A,1.91400082731_reward_max_stable,1,1e-06,0.01,true,false,estimate,delta,true,	196,0.056,100.0,103
+herman5_pla,N/A,N/A,1.9331408355831001_reward_max_stable,1,1e-06,0.0001,false,false,estimate,delta,true,	196,0.166,100.0,1161
+herman5_pla,N/A,N/A,1.93331483565831_reward_max_stable,1,1e-06,1e-05,true,true,estimate,delta,true,	89,0.265,100.0,777
+herman5_pla,N/A,N/A,1.91400082731_reward_max_stable,1,1e-06,0.01,true,true,estimate,delta,true,	89,0.084,100.0,25
+herman5_pla,N/A,N/A,1.7400007521_reward_max_stable,1,1e-06,0.1,false,false,estimate,delta,true,	196,0.038,100.0,23
+herman5_pla,N/A,N/A,1.93331483565831_reward_max_stable,1,1e-06,1e-05,true,false,estimate,delta,true,	196,0.622,100.0,3687
+herman7_pla,N/A,N/A,4.4928743206347_reward_max_stable,1,0.1,0.0001,true,false,estimate,delta,true,	1422,2.456,100.0,2551
+herman7_pla,N/A,N/A,4.49327871976347_reward_max_stable,1,0.1,1e-05,false,false,estimate,delta,true,	1422,5.392,100.0,7773
+herman7_pla,N/A,N/A,4.49327871976347_reward_max_stable,1,0.1,1e-05,true,false,estimate,delta,true,	1422,6.629,100.0,7767
+herman7_pla,N/A,N/A,4.0439912877_reward_max_stable,1,0.1,0.1,true,true,estimate,delta,true,	680,0.214,100.0,11
+herman7_pla,N/A,N/A,4.44839041647_reward_max_stable,1,0.1,0.01,true,false,estimate,delta,true,	1422,0.331,100.0,179
+herman7_pla,N/A,N/A,4.49327871976347_reward_max_stable,1,0.1,1e-05,true,true,estimate,delta,true,	680,2.44,100.0,2055
+herman7_pla,N/A,N/A,4.4928743206347_reward_max_stable,1,0.1,0.0001,false,false,estimate,delta,true,	1422,2.012,100.0,2553
+herman7_pla,N/A,N/A,4.4928743206347_reward_max_stable,1,0.1,0.0001,true,true,estimate,delta,true,	680,0.954,100.0,691
+herman7_pla,N/A,N/A,4.44839041647_reward_max_stable,1,0.1,0.01,true,true,estimate,delta,true,	680,0.443,100.0,51
+herman7_pla,N/A,N/A,4.44839041647_reward_max_stable,1,0.1,0.01,false,false,estimate,delta,true,	1422,0.263,100.0,179
+herman7_pla,N/A,N/A,4.0439912877_reward_max_stable,1,0.1,0.1,false,false,estimate,delta,true,	1422,0.131,100.0,39
+herman7_pla,N/A,N/A,4.0439912877_reward_max_stable,1,0.1,0.1,true,false,estimate,delta,true,	1422,0.161,100.0,39
+herman7_pla,N/A,N/A,4.0439912877_reward_max_stable,1,1e-06,0.1,false,false,estimate,delta,true,	1422,0.132,100.0,39
+herman7_pla,N/A,N/A,4.4928743206347_reward_max_stable,1,1e-06,0.0001,false,false,estimate,delta,true,	1422,1.94,100.0,2423
+herman7_pla,N/A,N/A,4.49327871976347_reward_max_stable,1,1e-06,1e-05,true,true,estimate,delta,true,	680,2.954,100.0,2167
+herman7_pla,N/A,N/A,4.4928743206347_reward_max_stable,1,1e-06,0.0001,true,false,estimate,delta,true,	1422,2.481,100.0,2423
+herman7_pla,N/A,N/A,4.44839041647_reward_max_stable,1,1e-06,0.01,true,false,estimate,delta,true,	1422,0.393,100.0,203
+herman7_pla,N/A,N/A,4.44839041647_reward_max_stable,1,1e-06,0.01,false,false,estimate,delta,true,	1422,0.281,100.0,203
+herman7_pla,N/A,N/A,4.0439912877_reward_max_stable,1,1e-06,0.1,true,false,estimate,delta,true,	1422,0.174,100.0,39
+herman7_pla,N/A,N/A,4.49327871976347_reward_max_stable,1,1e-06,1e-05,false,false,estimate,delta,true,	1422,5.378,100.0,7719
+herman7_pla,N/A,N/A,4.4928743206347_reward_max_stable,1,1e-06,0.0001,true,true,estimate,delta,true,	680,1.036,100.0,655
+herman7_pla,N/A,N/A,4.44839041647_reward_max_stable,1,1e-06,0.01,true,true,estimate,delta,true,	680,0.286,100.0,59
+herman7_pla,N/A,N/A,4.0439912877_reward_max_stable,1,1e-06,0.1,true,true,estimate,delta,true,	680,0.237,100.0,11
+herman7_pla,N/A,N/A,4.49327871976347_reward_max_stable,1,1e-06,1e-05,true,false,estimate,delta,true,	1422,6.902,100.0,7709
+herman9_pla,N/A,N/A,7.9202573180577005_reward_max_stable,1,0.1,0.0001,false,false,estimate,delta,true,	8008,60.647,100.0,12185
+herman9_pla,N/A,N/A,7.1289444807_reward_max_stable,1,0.1,0.1,false,false,estimate,delta,true,	8008,1.042,100.0,51
+herman9_pla,N/A,N/A,7.9202573180577005_reward_max_stable,1,0.1,0.0001,true,false,estimate,delta,true,	8008,75.419,100.0,12189
+herman9_pla,N/A,N/A,7.9202573180577005_reward_max_stable,1,0.1,0.0001,true,true,estimate,delta,true,	3707,31.717,100.0,4853
+herman9_pla,N/A,N/A,7.8418389287700005_reward_max_stable,1,0.1,0.01,true,false,estimate,delta,true,	8008,4.645,100.0,403
+herman9_pla,N/A,N/A,7.920970212505771_reward_max_stable,1,0.1,1e-05,true,true,estimate,delta,true,	3707,126.174,100.0,20271
+herman9_pla,N/A,N/A,7.8418389287700005_reward_max_stable,1,0.1,0.01,true,true,estimate,delta,true,	3707,2.139,100.0,123
+herman9_pla,N/A,N/A,7.920970212505771_reward_max_stable,1,0.1,1e-05,true,false,estimate,delta,true,	8008,326.875,100.0,57897
+herman9_pla,N/A,N/A,7.1289444807_reward_max_stable,1,0.1,0.1,true,true,estimate,delta,true,	3707,1.493,100.0,23
+herman9_pla,N/A,N/A,7.8418389287700005_reward_max_stable,1,0.1,0.01,false,false,estimate,delta,true,	8008,3.151,100.0,403
+herman9_pla,N/A,N/A,7.920970212505771_reward_max_stable,1,0.1,1e-05,false,false,estimate,delta,true,	8008,272.382,100.0,57799
+herman9_pla,N/A,N/A,7.1289444807_reward_max_stable,1,0.1,0.1,true,false,estimate,delta,true,	8008,1.564,100.0,51
+herman9_pla,N/A,N/A,7.1289347139000006_reward_max_stable,1,1e-06,0.1,true,true,estimate,delta,true,	3707,1.667,100.0,23
+herman9_pla,N/A,N/A,7.920959360614291_reward_max_stable,1,1e-06,1e-05,true,true,estimate,delta,true,	3707,133.97899999999998,100.0,20363
+herman9_pla,N/A,N/A,7.920246467142901_reward_max_stable,1,1e-06,0.0001,false,false,estimate,delta,true,	8008,65.019,100.0,13041
+herman9_pla,N/A,N/A,7.920246467142901_reward_max_stable,1,1e-06,0.0001,true,false,estimate,delta,true,	8008,83.39699999999999,100.0,13061
+herman9_pla,N/A,N/A,7.920959360614291_reward_max_stable,1,1e-06,1e-05,false,false,estimate,delta,true,	8008,241.232,100.0,52187
+herman9_pla,N/A,N/A,7.920959360614291_reward_max_stable,1,1e-06,1e-05,true,false,estimate,delta,true,	8008,294.72,100.0,52227
+herman9_pla,N/A,N/A,7.841828185290001_reward_max_stable,1,1e-06,0.01,false,false,estimate,delta,true,	8008,3.02,100.0,363
+herman9_pla,N/A,N/A,7.1289347139000006_reward_max_stable,1,1e-06,0.1,true,false,estimate,delta,true,	8008,1.848,100.0,67
+herman9_pla,N/A,N/A,7.920246467142901_reward_max_stable,1,1e-06,0.0001,true,true,estimate,delta,true,	3707,32.411,100.0,4815
+herman9_pla,N/A,N/A,7.841828185290001_reward_max_stable,1,1e-06,0.01,true,false,estimate,delta,true,	8008,4.733,100.0,365
+herman9_pla,N/A,N/A,7.841828185290001_reward_max_stable,1,1e-06,0.01,true,true,estimate,delta,true,	3707,2.645,100.0,159
+herman9_pla,N/A,N/A,7.1289347139000006_reward_max_stable,1,1e-06,0.1,false,false,estimate,delta,true,	8008,1.177,100.0,67
+herman11_pla,N/A,N/A,11.9811079971_reward_max_stable,1,0.1,0.01,false,false,estimate,delta,true,	40690,26.384,100.0,467
+herman11_pla,N/A,N/A,12.100919077071001_reward_max_stable,1,0.1,0.0001,true,true,estimate,delta,true,	18872,115.38300000000001,100.0,2387
+herman11_pla,N/A,N/A,12.1020082687071_reward_max_stable,1,0.1,1e-05,true,true,estimate,delta,true,	18872,309.613,100.0,7771
+herman11_pla,N/A,N/A,12.1020082687071_reward_max_stable,1,0.1,1e-05,true,false,estimate,delta,true,	40690,696.858,100.0,20041
+herman11_pla,N/A,N/A,10.891916361000002_reward_max_stable,1,0.1,0.1,true,false,estimate,delta,true,	40690,15.853,100.0,87
+herman11_pla,N/A,N/A,10.891916361000002_reward_max_stable,1,0.1,0.1,false,false,estimate,delta,true,	40690,11.008,100.0,87
+herman11_pla,N/A,N/A,12.100919077071001_reward_max_stable,1,0.1,0.0001,false,false,estimate,delta,true,	40690,213.577,100.0,6507
+herman11_pla,N/A,N/A,10.891916361000002_reward_max_stable,1,0.1,0.1,true,true,estimate,delta,true,	18872,21.234,100.0,27
+herman11_pla,N/A,N/A,12.100919077071001_reward_max_stable,1,0.1,0.0001,true,false,estimate,delta,true,	40690,278.82,100.0,6517
+herman11_pla,N/A,N/A,11.9811079971_reward_max_stable,1,0.1,0.01,true,true,estimate,delta,true,	18872,30.01,100.0,195
+herman11_pla,N/A,N/A,12.1020082687071_reward_max_stable,1,0.1,1e-05,false,false,estimate,delta,true,	40690,559.407,100.0,20021
+herman11_pla,N/A,N/A,11.9811079971_reward_max_stable,1,0.1,0.01,true,false,estimate,delta,true,	40690,38.973,100.0,467
+herman11_pla,N/A,N/A,11.981111719500001_reward_max_stable,1,1e-06,0.01,false,false,estimate,delta,true,	40690,27.106,100.0,467
+herman11_pla,N/A,N/A,12.100922836695_reward_max_stable,1,1e-06,0.0001,true,true,estimate,delta,true,	18872,126.237,100.0,2583
+herman11_pla,N/A,N/A,12.1020120286695_reward_max_stable,1,1e-06,1e-05,true,true,estimate,delta,true,	18872,330.182,100.0,7983
+herman11_pla,N/A,N/A,10.891919745000001_reward_max_stable,1,1e-06,0.1,true,true,estimate,delta,true,	18872,22.174,100.0,39
+herman11_pla,N/A,N/A,11.981111719500001_reward_max_stable,1,1e-06,0.01,true,true,estimate,delta,true,	18872,30.882,100.0,195
+herman11_pla,N/A,N/A,12.1020120286695_reward_max_stable,1,1e-06,1e-05,true,false,estimate,delta,true,	40690,670.871,100.0,19225
+herman11_pla,N/A,N/A,10.891919745000001_reward_max_stable,1,1e-06,0.1,true,false,estimate,delta,true,	40690,17.587,100.0,87
+herman11_pla,N/A,N/A,10.891919745000001_reward_max_stable,1,1e-06,0.1,false,false,estimate,delta,true,	40690,11.706,100.0,87
+herman11_pla,N/A,N/A,12.100922836695_reward_max_stable,1,1e-06,0.0001,true,false,estimate,delta,true,	40690,271.044,100.0,6455
+herman11_pla,N/A,N/A,12.1020120286695_reward_max_stable,1,1e-06,1e-05,false,false,estimate,delta,true,	40690,540.72,100.0,19231
+herman11_pla,N/A,N/A,11.981111719500001_reward_max_stable,1,1e-06,0.01,true,false,estimate,delta,true,	40690,40.2,100.0,467
+herman11_pla,N/A,N/A,12.100922836695_reward_max_stable,1,1e-06,0.0001,false,false,estimate,delta,true,	40690,208.324,100.0,6453
+maze2,N/A,1,17.519902199226003_reward_max_goal,15,0.1,1e-05,true,true,estimate,delta,true,	50,MO,MO,MO
+maze2,N/A,1,17.518325392260003_reward_max_goal,15,0.1,0.0001,false,false,estimate,delta,true,	41,MO,MO,MO
+maze2,N/A,1,15.768069660000002_reward_max_goal,15,0.1,0.1,true,true,estimate,delta,true,	50,0.217,100.0,1537
+maze2,N/A,1,17.519902199226003_reward_max_goal,15,0.1,1e-05,true,false,estimate,delta,true,	41,MO,MO,MO
+maze2,N/A,1,15.768069660000002_reward_max_goal,15,0.1,0.1,false,false,estimate,delta,true,	41,0.138,100.0,1537
+maze2,N/A,1,15.768069660000002_reward_max_goal,15,0.1,0.1,true,false,estimate,delta,true,	41,0.192,100.0,1537
+maze2,N/A,1,17.344876626_reward_max_goal,15,0.1,0.01,true,true,estimate,delta,true,	50,9.556,100.0,74033
+maze2,N/A,1,17.344876626_reward_max_goal,15,0.1,0.01,true,false,estimate,delta,true,	41,8.567,100.0,74049
+maze2,N/A,1,17.344876626_reward_max_goal,15,0.1,0.01,false,false,estimate,delta,true,	41,6.06,100.0,74049
+maze2,N/A,1,17.518325392260003_reward_max_goal,15,0.1,0.0001,true,false,estimate,delta,true,	41,MO,MO,MO
+maze2,N/A,1,17.518325392260003_reward_max_goal,15,0.1,0.0001,true,true,estimate,delta,true,	50,MO,MO,MO
+maze2,N/A,1,17.519902199226003_reward_max_goal,15,0.1,1e-05,false,false,estimate,delta,true,	41,MO,MO,MO
+maze2,N/A,1,12.884479155000001_reward_max_goal,15,1e-06,0.1,true,true,estimate,delta,true,	50,0.648,100.0,1297
+maze2,N/A,1,14.1729270705_reward_max_goal,15,1e-06,0.01,true,false,estimate,delta,true,	41,4.409,100.0,33937
+maze2,N/A,1,14.314656341205_reward_max_goal,15,1e-06,0.0001,false,false,estimate,delta,true,	41,MO,MO,MO
+maze2,N/A,1,14.3159447891205_reward_max_goal,15,1e-06,1e-05,false,false,estimate,delta,true,	41,MO,MO,MO
+maze2,N/A,1,12.884479155000001_reward_max_goal,15,1e-06,0.1,false,false,estimate,delta,true,	41,0.169,100.0,1825
+maze2,N/A,1,14.314656341205_reward_max_goal,15,1e-06,0.0001,true,false,estimate,delta,true,	41,740.74,100.0,5884913
+maze2,N/A,1,14.1729270705_reward_max_goal,15,1e-06,0.01,true,true,estimate,delta,true,	50,4.952,100.0,33937
+maze2,N/A,1,14.1729270705_reward_max_goal,15,1e-06,0.01,false,false,estimate,delta,true,	41,8.79,100.0,101617
+maze2,N/A,1,14.314656341205_reward_max_goal,15,1e-06,0.0001,true,true,estimate,delta,true,	50,819.368,100.0,5885425
+maze2,N/A,1,14.3159447891205_reward_max_goal,15,1e-06,1e-05,true,true,estimate,delta,true,	50,MO,MO,MO
+maze2,N/A,1,12.884479155000001_reward_max_goal,15,1e-06,0.1,true,false,estimate,delta,true,	41,0.566,100.0,1297
+maze2,N/A,1,14.3159447891205_reward_max_goal,15,1e-06,1e-05,true,false,estimate,delta,true,	41,MO,MO,MO
+nand,N=5 K=5 ,N/A,0.500743005338_probability_min_target,2,0.1,0.01,false,false,estimate,delta,true,	2687,0.088,100.0,125
+nand,N=5 K=5 ,N/A,0.500743005338_probability_min_target,2,0.1,0.01,true,false,estimate,delta,true,	2687,0.108,100.0,125
+nand,N=5 K=5 ,N/A,0.49583473231538_probability_min_target,2,0.1,0.0001,true,true,estimate,delta,true,	112,3.578,100.0,25
+nand,N=5 K=5 ,N/A,0.54536366918_probability_min_target,2,0.1,0.1,false,false,estimate,delta,true,	2687,0.058,100.0,13
+nand,N=5 K=5 ,N/A,0.54536366918_probability_min_target,2,0.1,0.1,true,true,estimate,delta,true,	112,0.79,100.0,1
+nand,N=5 K=5 ,N/A,0.495790111651538_probability_min_target,2,0.1,1e-05,true,true,estimate,delta,true,	112,4.534,100.0,33
+nand,N=5 K=5 ,N/A,0.54536366918_probability_min_target,2,0.1,0.1,true,false,estimate,delta,true,	2687,0.064,100.0,13
+nand,N=5 K=5 ,N/A,0.49583473231538_probability_min_target,2,0.1,0.0001,true,false,estimate,delta,true,	2687,2.377,100.0,5609
+nand,N=5 K=5 ,N/A,0.495790111651538_probability_min_target,2,0.1,1e-05,true,false,estimate,delta,true,	2687,8.698,100.0,20501
+nand,N=5 K=5 ,N/A,0.495790111651538_probability_min_target,2,0.1,1e-05,false,false,estimate,delta,true,	2687,5.923,100.0,20501
+nand,N=5 K=5 ,N/A,0.49583473231538_probability_min_target,2,0.1,0.0001,false,false,estimate,delta,true,	2687,1.569,100.0,5609
+nand,N=5 K=5 ,N/A,0.500743005338_probability_min_target,2,0.1,0.01,true,true,estimate,delta,true,	112,0.791,100.0,1
+nand,N=5 K=10 ,N/A,0.49581834457677_probability_min_target,2,0.1,0.0001,true,true,estimate,delta,true,	162,16.1,100.0,29
+nand,N=5 K=10 ,N/A,0.49581834457677_probability_min_target,2,0.1,0.0001,false,false,estimate,delta,true,	5447,8.654,100.0,14929
+nand,N=5 K=10 ,N/A,0.500726455377_probability_min_target,2,0.1,0.01,true,true,estimate,delta,true,	162,3.72,100.0,1
+nand,N=5 K=10 ,N/A,0.49577372538767706_probability_min_target,2,0.1,1e-05,false,false,estimate,delta,true,	5447,68.008,100.0,97753
+nand,N=5 K=10 ,N/A,0.500726455377_probability_min_target,2,0.1,0.01,true,false,estimate,delta,true,	5447,0.192,100.0,125
+nand,N=5 K=10 ,N/A,0.49577372538767706_probability_min_target,2,0.1,1e-05,true,false,estimate,delta,true,	5447,93.51599999999999,100.0,97753
+nand,N=5 K=10 ,N/A,0.49577372538767706_probability_min_target,2,0.1,1e-05,true,true,estimate,delta,true,	162,20.082,100.0,57
+nand,N=5 K=10 ,N/A,0.54534564447_probability_min_target,2,0.1,0.1,true,false,estimate,delta,true,	5447,0.106,100.0,13
+nand,N=5 K=10 ,N/A,0.54534564447_probability_min_target,2,0.1,0.1,true,true,estimate,delta,true,	162,3.641,100.0,1
+nand,N=5 K=10 ,N/A,0.54534564447_probability_min_target,2,0.1,0.1,false,false,estimate,delta,true,	5447,0.089,100.0,13
+nand,N=5 K=10 ,N/A,0.500726455377_probability_min_target,2,0.1,0.01,false,false,estimate,delta,true,	5447,0.145,100.0,125
+nand,N=5 K=10 ,N/A,0.49581834457677_probability_min_target,2,0.1,0.0001,true,false,estimate,delta,true,	5447,12.835,100.0,14929
+nand,N=5 K=25 ,N/A,0.495773626786691_probability_min_target,2,0.1,1e-05,true,false,estimate,delta,true,	13727,435.983,100.0,131069
+nand,N=5 K=25 ,N/A,0.49581824596691_probability_min_target,2,0.1,0.0001,true,false,estimate,delta,true,	13727,35.243,100.0,16381
+nand,N=5 K=25 ,N/A,0.54534553601_probability_min_target,2,0.1,0.1,false,false,estimate,delta,true,	13727,0.19,100.0,13
+nand,N=5 K=25 ,N/A,0.500726355791_probability_min_target,2,0.1,0.01,false,false,estimate,delta,true,	13727,0.326,100.0,125
+nand,N=5 K=25 ,N/A,0.495773626786691_probability_min_target,2,0.1,1e-05,true,true,estimate,delta,true,	312,204.551,100.0,93
+nand,N=5 K=25 ,N/A,0.49581824596691_probability_min_target,2,0.1,0.0001,true,true,estimate,delta,true,	312,143.707,100.0,33
+nand,N=5 K=25 ,N/A,0.49581824596691_probability_min_target,2,0.1,0.0001,false,false,estimate,delta,true,	13727,23.424,100.0,16381
+nand,N=5 K=25 ,N/A,0.500726355791_probability_min_target,2,0.1,0.01,true,true,estimate,delta,true,	312,37.111,100.0,1
+nand,N=5 K=25 ,N/A,0.495773626786691_probability_min_target,2,0.1,1e-05,false,false,estimate,delta,true,	13727,337.391,100.0,131069
+nand,N=5 K=25 ,N/A,0.54534553601_probability_min_target,2,0.1,0.1,true,false,estimate,delta,true,	13727,0.281,100.0,13
+nand,N=5 K=25 ,N/A,0.54534553601_probability_min_target,2,0.1,0.1,true,true,estimate,delta,true,	312,37.546,100.0,1
+nand,N=5 K=25 ,N/A,0.500726355791_probability_min_target,2,0.1,0.01,true,false,estimate,delta,true,	13727,0.491,100.0,125
+nand,N=5 K=50 ,N/A,0.495773626786691_probability_min_target,2,0.1,1e-05,true,true,estimate,delta,true,	562,997.27,100.0,117
+nand,N=5 K=50 ,N/A,0.495773626786691_probability_min_target,2,0.1,1e-05,false,false,estimate,delta,true,	27527,770.811,100.0,131069
+nand,N=5 K=50 ,N/A,0.49581824596691_probability_min_target,2,0.1,0.0001,true,true,estimate,delta,true,	562,799.653,100.0,33
+nand,N=5 K=50 ,N/A,0.54534553601_probability_min_target,2,0.1,0.1,false,false,estimate,delta,true,	27527,0.417,100.0,13
+nand,N=5 K=50 ,N/A,0.495773626786691_probability_min_target,2,0.1,1e-05,true,false,estimate,delta,true,	27527,788.536,100.0,131069
+nand,N=5 K=50 ,N/A,0.49581824596691_probability_min_target,2,0.1,0.0001,false,false,estimate,delta,true,	27527,47.733,100.0,16381
+nand,N=5 K=50 ,N/A,0.500726355791_probability_min_target,2,0.1,0.01,true,true,estimate,delta,true,	562,268.011,100.0,1
+nand,N=5 K=50 ,N/A,0.49581824596691_probability_min_target,2,0.1,0.0001,true,false,estimate,delta,true,	27527,66.31,100.0,16381
+nand,N=5 K=50 ,N/A,0.500726355791_probability_min_target,2,0.1,0.01,true,false,estimate,delta,true,	27527,1.182,100.0,125
+nand,N=5 K=50 ,N/A,0.500726355791_probability_min_target,2,0.1,0.01,false,false,estimate,delta,true,	27527,0.704,100.0,125
+nand,N=5 K=50 ,N/A,0.54534553601_probability_min_target,2,0.1,0.1,true,false,estimate,delta,true,	27527,0.708,100.0,13
+nand,N=5 K=50 ,N/A,0.54534553601_probability_min_target,2,0.1,0.1,true,true,estimate,delta,true,	562,223.985,100.0,1
+nand,N=10 K=50 ,N/A,0.282375226124024_probability_min_target,2,0.1,1e-05,true,true,estimate,delta,true,	346962,TO,TO,TO
+nand,N=10 K=50 ,N/A,0.285196126424_probability_min_target,2,0.1,0.01,true,false,estimate,delta,true,	250402,20.159,100.0,125
+nand,N=10 K=50 ,N/A,0.31060964264_probability_min_target,2,0.1,0.1,true,true,estimate,delta,true,	346962,TO,TO,TO
+nand,N=10 K=50 ,N/A,0.285196126424_probability_min_target,2,0.1,0.01,true,true,estimate,delta,true,	346962,TO,TO,TO
+nand,N=10 K=50 ,N/A,0.282375226124024_probability_min_target,2,0.1,1e-05,true,false,estimate,delta,true,	250402,TO,TO,TO
+nand,N=10 K=50 ,N/A,0.28240063964024_probability_min_target,2,0.1,0.0001,true,false,estimate,delta,true,	250402,1267.541,100.0,16381
+nand,N=10 K=50 ,N/A,0.28240063964024_probability_min_target,2,0.1,0.0001,true,true,estimate,delta,true,	346962,TO,TO,TO
+nand,N=10 K=50 ,N/A,0.31060964264_probability_min_target,2,0.1,0.1,true,false,estimate,delta,true,	250402,11.702,100.0,13
+nand,N=10 K=50 ,N/A,0.285196126424_probability_min_target,2,0.1,0.01,false,false,estimate,delta,true,	250402,10.513,100.0,125
+nand,N=10 K=50 ,N/A,0.31060964264_probability_min_target,2,0.1,0.1,false,false,estimate,delta,true,	250402,5.662,100.0,13
+nand,N=10 K=50 ,N/A,0.282375226124024_probability_min_target,2,0.1,1e-05,false,false,estimate,delta,true,	250402,MO,MO,MO
+nand,N=10 K=50 ,N/A,0.28240063964024_probability_min_target,2,0.1,0.0001,false,false,estimate,delta,true,	250402,822.385,100.0,16381
+nand,N=10 K=100 ,N/A,0.282375226124024_probability_min_target,2,0.1,1e-05,true,true,estimate,delta,true,	693462,MO,MO,MO
+nand,N=10 K=100 ,N/A,0.285196126424_probability_min_target,2,0.1,0.01,false,false,estimate,delta,true,	502402,29.598,100.0,125
+nand,N=10 K=100 ,N/A,0.28240063964024_probability_min_target,2,0.1,0.0001,false,false,estimate,delta,true,	502402,MO,MO,MO
+nand,N=10 K=100 ,N/A,0.31060964264_probability_min_target,2,0.1,0.1,false,false,estimate,delta,true,	502402,17.792,100.0,13
+nand,N=10 K=100 ,N/A,0.282375226124024_probability_min_target,2,0.1,1e-05,false,false,estimate,delta,true,	502402,MO,MO,MO
+nand,N=10 K=100 ,N/A,0.31060964264_probability_min_target,2,0.1,0.1,true,false,estimate,delta,true,	502402,40.196,100.0,13
+nand,N=10 K=100 ,N/A,0.28240063964024_probability_min_target,2,0.1,0.0001,true,false,estimate,delta,true,	502402,2917.055,100.0,16381
+nand,N=10 K=100 ,N/A,0.31060964264_probability_min_target,2,0.1,0.1,true,true,estimate,delta,true,	693462,MO,MO,MO
+nand,N=10 K=100 ,N/A,0.285196126424_probability_min_target,2,0.1,0.01,true,false,estimate,delta,true,	502402,60.005,100.0,125
+nand,N=10 K=100 ,N/A,0.282375226124024_probability_min_target,2,0.1,1e-05,true,false,estimate,delta,true,	502402,TO,TO,TO
+nand,N=10 K=100 ,N/A,0.28240063964024_probability_min_target,2,0.1,0.0001,true,true,estimate,delta,true,	693462,MO,MO,MO
+nand,N=10 K=100 ,N/A,0.285196126424_probability_min_target,2,0.1,0.01,true,true,estimate,delta,true,	693462,MO,MO,MO
+newgrid,N=2 ,1,0.8941507868184541_probability_min_notbad U goal,3,0.1,1e-05,true,false,estimate,delta,true,	32,3.168,100.0,56585
+newgrid,N=2 ,1,0.903083263854_probability_min_notbad U goal,3,0.1,0.01,false,false,estimate,delta,true,	32,0.043,100.0,609
+newgrid,N=2 ,1,0.89423125958454_probability_min_notbad U goal,3,0.1,0.0001,true,false,estimate,delta,true,	32,0.91,100.0,16393
+newgrid,N=2 ,1,0.89423125958454_probability_min_notbad U goal,3,0.1,0.0001,true,true,estimate,delta,true,	32,1.145,100.0,15937
+newgrid,N=2 ,1,0.8941507868184541_probability_min_notbad U goal,3,0.1,1e-05,false,false,estimate,delta,true,	32,2.504,100.0,56585
+newgrid,N=2 ,1,0.903083263854_probability_min_notbad U goal,3,0.1,0.01,true,false,estimate,delta,true,	32,0.051,100.0,609
+newgrid,N=2 ,1,0.98355602994_probability_min_notbad U goal,3,0.1,0.1,true,false,estimate,delta,true,	32,0.02,100.0,17
+newgrid,N=2 ,1,0.98355602994_probability_min_notbad U goal,3,0.1,0.1,true,true,estimate,delta,true,	32,0.021,100.0,17
+newgrid,N=2 ,1,0.98355602994_probability_min_notbad U goal,3,0.1,0.1,false,false,estimate,delta,true,	32,0.019,100.0,17
+newgrid,N=2 ,1,0.89423125958454_probability_min_notbad U goal,3,0.1,0.0001,false,false,estimate,delta,true,	32,0.72,100.0,16393
+newgrid,N=2 ,1,0.8941507868184541_probability_min_notbad U goal,3,0.1,1e-05,true,true,estimate,delta,true,	32,3.968,100.0,55129
+newgrid,N=2 ,1,0.903083263854_probability_min_notbad U goal,3,0.1,0.01,true,true,estimate,delta,true,	32,0.061,100.0,601
+newgrid,N=4 ,1,0.976458263903_probability_min_notbad U goal,3,0.1,0.01,true,true,estimate,delta,true,	74,0.046,100.0,177
+newgrid,N=4 ,1,0.976458263903_probability_min_notbad U goal,3,0.1,0.01,false,false,estimate,delta,true,	72,0.035,100.0,177
+newgrid,N=4 ,1,0.966800028203603_probability_min_notbad U goal,3,0.1,1e-05,true,false,estimate,delta,true,	72,0.814,100.0,10201
+newgrid,N=4 ,1,0.9668870393360299_probability_min_notbad U goal,3,0.1,0.0001,true,true,estimate,delta,true,	74,0.541,100.0,5065
+newgrid,N=4 ,1,0.966800028203603_probability_min_notbad U goal,3,0.1,1e-05,true,true,estimate,delta,true,	74,1.026,100.0,10073
+newgrid,N=4 ,1,0.976458263903_probability_min_notbad U goal,3,0.1,0.01,true,false,estimate,delta,true,	72,0.042,100.0,177
+newgrid,N=4 ,1,0.9668870393360299_probability_min_notbad U goal,3,0.1,0.0001,false,false,estimate,delta,true,	72,0.325,100.0,5081
+newgrid,N=4 ,1,0.966800028203603_probability_min_notbad U goal,3,0.1,1e-05,false,false,estimate,delta,true,	72,0.618,100.0,10201
+newgrid,N=4 ,1,0.9668870393360299_probability_min_notbad U goal,3,0.1,0.0001,true,false,estimate,delta,true,	72,0.431,100.0,5081
+nrp,K=5 ,1,0.20001072377247_probability_min_unfair,5,0.1,0.0001,true,true,estimate,delta,true,	12,0.017,100.0,1
+nrp,K=5 ,1,0.199992724607247_probability_min_unfair,5,0.1,1e-05,true,true,estimate,delta,true,	12,MO,MO,MO
+nrp,K=5 ,1,0.201990631947_probability_min_unfair,5,0.1,0.01,true,true,estimate,delta,true,	12,0.018,100.0,1
+nrp,K=5 ,1,0.201990631947_probability_min_unfair,5,0.1,0.01,false,false,estimate,delta,true,	33,MO,MO,MO
+nrp,K=5 ,1,0.21998979717000003_probability_min_unfair,5,0.1,0.1,true,true,estimate,delta,true,	12,0.017,100.0,1
+nrp,K=5 ,1,0.21998979717000003_probability_min_unfair,5,0.1,0.1,false,false,estimate,delta,true,	33,14.646,100.0,388897
+nrp,K=5 ,1,0.20001072377247_probability_min_unfair,5,0.1,0.0001,false,false,estimate,delta,true,	33,MO,MO,MO
+nrp,K=5 ,1,0.21998979717000003_probability_min_unfair,5,0.1,0.1,true,false,estimate,delta,true,	33,20.127,100.0,388897
+nrp,K=5 ,1,0.201990631947_probability_min_unfair,5,0.1,0.01,true,false,estimate,delta,true,	33,MO,MO,MO
+nrp,K=5 ,1,0.199992724607247_probability_min_unfair,5,0.1,1e-05,true,false,estimate,delta,true,	33,MO,MO,MO
+nrp,K=5 ,1,0.20001072377247_probability_min_unfair,5,0.1,0.0001,true,false,estimate,delta,true,	33,MO,MO,MO
+nrp,K=5 ,1,0.199992724607247_probability_min_unfair,5,0.1,1e-05,false,false,estimate,delta,true,	33,MO,MO,MO
+nrp,K=5 ,1,0.20001999969996997_probability_min_unfair,5,1e-06,0.0001,true,true,estimate,delta,true,	12,0.017,100.0,1
+nrp,K=5 ,1,0.20001999969996997_probability_min_unfair,5,1e-06,0.0001,false,false,estimate,delta,true,	33,MO,MO,MO
+nrp,K=5 ,1,0.21999999967_probability_min_unfair,5,1e-06,0.1,true,false,estimate,delta,true,	33,63.557,100.0,1194257
+nrp,K=5 ,1,0.200001999699997_probability_min_unfair,5,1e-06,1e-05,true,true,estimate,delta,true,	12,0.016,100.0,1
+nrp,K=5 ,1,0.20001999969996997_probability_min_unfair,5,1e-06,0.0001,true,false,estimate,delta,true,	33,MO,MO,MO
+nrp,K=5 ,1,0.201999999697_probability_min_unfair,5,1e-06,0.01,true,false,estimate,delta,true,	33,MO,MO,MO
+nrp,K=5 ,1,0.200001999699997_probability_min_unfair,5,1e-06,1e-05,true,false,estimate,delta,true,	33,MO,MO,MO
+nrp,K=5 ,1,0.200001999699997_probability_min_unfair,5,1e-06,1e-05,false,false,estimate,delta,true,	33,MO,MO,MO
+nrp,K=5 ,1,0.201999999697_probability_min_unfair,5,1e-06,0.01,true,true,estimate,delta,true,	12,0.017,100.0,1
+nrp,K=5 ,1,0.21999999967_probability_min_unfair,5,1e-06,0.1,false,false,estimate,delta,true,	33,47.343,100.0,1194257
+nrp,K=5 ,1,0.201999999697_probability_min_unfair,5,1e-06,0.01,false,false,estimate,delta,true,	33,MO,MO,MO
+nrp,K=5 ,1,0.21999999967_probability_min_unfair,5,1e-06,0.1,true,true,estimate,delta,true,	12,0.017,100.0,1
+nrp,K=10 ,1,0.10099999947480001_probability_min_unfair,10,0.1,0.01,false,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.10999999942800001_probability_min_unfair,10,0.1,0.1,true,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.10999999942800001_probability_min_unfair,10,0.1,0.1,false,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.10000099947999481_probability_min_unfair,10,0.1,1e-05,false,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.10999999942800001_probability_min_unfair,10,0.1,0.1,true,true,estimate,delta,true,	22,0.019,100.0,1
+nrp,K=10 ,1,0.10000099947999481_probability_min_unfair,10,0.1,1e-05,true,true,estimate,delta,true,	22,0.019,100.0,1
+nrp,K=10 ,1,0.10000099947999481_probability_min_unfair,10,0.1,1e-05,true,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.10099999947480001_probability_min_unfair,10,0.1,0.01,true,true,estimate,delta,true,	22,0.02,100.0,1
+nrp,K=10 ,1,0.100009999479948_probability_min_unfair,10,0.1,0.0001,false,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.100009999479948_probability_min_unfair,10,0.1,0.0001,true,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.100009999479948_probability_min_unfair,10,0.1,0.0001,true,true,estimate,delta,true,	22,0.019,100.0,1
+nrp,K=10 ,1,0.10099999947480001_probability_min_unfair,10,0.1,0.01,true,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.101_probability_min_unfair,10,1e-06,0.01,true,true,estimate,delta,true,	22,0.019,100.0,1
+nrp,K=10 ,1,0.11000000000000001_probability_min_unfair,10,1e-06,0.1,true,true,estimate,delta,true,	22,0.02,100.0,1
+nrp,K=10 ,1,0.10001_probability_min_unfair,10,1e-06,0.0001,true,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.11000000000000001_probability_min_unfair,10,1e-06,0.1,true,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.10001_probability_min_unfair,10,1e-06,0.0001,false,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.11000000000000001_probability_min_unfair,10,1e-06,0.1,false,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.101_probability_min_unfair,10,1e-06,0.01,false,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.100001_probability_min_unfair,10,1e-06,1e-05,true,true,estimate,delta,true,	22,0.019,100.0,1
+nrp,K=10 ,1,0.100001_probability_min_unfair,10,1e-06,1e-05,false,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.100001_probability_min_unfair,10,1e-06,1e-05,true,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=10 ,1,0.10001_probability_min_unfair,10,1e-06,0.0001,true,true,estimate,delta,true,	22,0.019,100.0,1
+nrp,K=10 ,1,0.101_probability_min_unfair,10,1e-06,0.01,true,false,estimate,delta,true,	113,MO,MO,MO
+nrp,K=100 ,1,0.011000000000000001_probability_min_unfair,100,0.1,0.1,true,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.010000100000000001_probability_min_unfair,100,0.1,1e-05,false,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.010000100000000001_probability_min_unfair,100,0.1,1e-05,true,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.010001_probability_min_unfair,100,0.1,0.0001,false,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.011000000000000001_probability_min_unfair,100,0.1,0.1,false,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.010000100000000001_probability_min_unfair,100,0.1,1e-05,true,true,estimate,delta,true,	202,1.049,100.0,1
+nrp,K=100 ,1,0.010001_probability_min_unfair,100,0.1,0.0001,true,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.0101_probability_min_unfair,100,0.1,0.01,true,true,estimate,delta,true,	202,1.058,100.0,1
+nrp,K=100 ,1,0.0101_probability_min_unfair,100,0.1,0.01,true,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.0101_probability_min_unfair,100,0.1,0.01,false,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.011000000000000001_probability_min_unfair,100,0.1,0.1,true,true,estimate,delta,true,	202,1.062,100.0,1
+nrp,K=100 ,1,0.010001_probability_min_unfair,100,0.1,0.0001,true,true,estimate,delta,true,	202,1.039,100.0,1
+nrp,K=100 ,1,0.010000100000000001_probability_min_unfair,100,1e-06,1e-05,true,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.010001_probability_min_unfair,100,1e-06,0.0001,true,true,estimate,delta,true,	202,1.047,100.0,1
+nrp,K=100 ,1,0.0101_probability_min_unfair,100,1e-06,0.01,true,true,estimate,delta,true,	202,1.072,100.0,1
+nrp,K=100 ,1,0.011000000000000001_probability_min_unfair,100,1e-06,0.1,false,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.010000100000000001_probability_min_unfair,100,1e-06,1e-05,false,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.010000100000000001_probability_min_unfair,100,1e-06,1e-05,true,true,estimate,delta,true,	202,1.07,100.0,1
+nrp,K=100 ,1,0.011000000000000001_probability_min_unfair,100,1e-06,0.1,true,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.010001_probability_min_unfair,100,1e-06,0.0001,false,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.0101_probability_min_unfair,100,1e-06,0.01,false,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.010001_probability_min_unfair,100,1e-06,0.0001,true,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.0101_probability_min_unfair,100,1e-06,0.01,true,false,estimate,delta,true,	10103,MO,MO,MO
+nrp,K=100 ,1,0.011000000000000001_probability_min_unfair,100,1e-06,0.1,true,true,estimate,delta,true,	202,1.049,100.0,1
+refuel,N=3 ,1,0.057049728652425_probability_min_notbad U goal,18,0.1,0.0001,false,false,estimate,delta,true,	34,0.143,100.0,1841
+refuel,N=3 ,1,0.0570445946902425_probability_min_notbad U goal,18,0.1,1e-05,true,false,estimate,delta,true,	34,0.28,100.0,2641
+refuel,N=3 ,1,0.06274842667500001_probability_min_notbad U goal,18,0.1,0.1,true,false,estimate,delta,true,	34,0.024,100.0,17
+refuel,N=3 ,1,0.057614464492499996_probability_min_notbad U goal,18,0.1,0.01,true,true,estimate,delta,true,	32,0.03,100.0,81
+refuel,N=3 ,1,0.057614464492499996_probability_min_notbad U goal,18,0.1,0.01,false,false,estimate,delta,true,	34,0.043,100.0,337
+refuel,N=3 ,1,0.057049728652425_probability_min_notbad U goal,18,0.1,0.0001,true,true,estimate,delta,true,	32,0.051,100.0,305
+refuel,N=3 ,1,0.0570445946902425_probability_min_notbad U goal,18,0.1,1e-05,false,false,estimate,delta,true,	34,0.201,100.0,2641
+refuel,N=3 ,1,0.06274842667500001_probability_min_notbad U goal,18,0.1,0.1,false,false,estimate,delta,true,	34,0.032,100.0,17
+refuel,N=3 ,1,0.057049728652425_probability_min_notbad U goal,18,0.1,0.0001,true,false,estimate,delta,true,	34,0.204,100.0,1841
+refuel,N=3 ,1,0.0570445946902425_probability_min_notbad U goal,18,0.1,1e-05,true,true,estimate,delta,true,	32,0.061,100.0,401
+refuel,N=3 ,1,0.057614464492499996_probability_min_notbad U goal,18,0.1,0.01,true,false,estimate,delta,true,	34,0.056,100.0,337
+refuel,N=3 ,1,0.06274842667500001_probability_min_notbad U goal,18,0.1,0.1,true,true,estimate,delta,true,	32,0.023,100.0,1
+refuel,N=3 ,1,0.086478901745472_probability_min_notbad U goal,18,1e-06,0.0001,true,false,estimate,delta,true,	34,18.538,100.0,169409
+refuel,N=3 ,1,0.0873349572672_probability_min_notbad U goal,18,1e-06,0.01,true,false,estimate,delta,true,	34,0.151,100.0,1233
+refuel,N=3 ,1,0.09511728019200001_probability_min_notbad U goal,18,1e-06,0.1,false,false,estimate,delta,true,	34,0.031,100.0,1
+refuel,N=3 ,1,0.0864711194225472_probability_min_notbad U goal,18,1e-06,1e-05,true,true,estimate,delta,true,	32,0.021,100.0,1
+refuel,N=3 ,1,0.086478901745472_probability_min_notbad U goal,18,1e-06,0.0001,true,true,estimate,delta,true,	32,0.022,100.0,1
+refuel,N=3 ,1,0.086478901745472_probability_min_notbad U goal,18,1e-06,0.0001,false,false,estimate,delta,true,	34,13.222,100.0,169409
+refuel,N=3 ,1,0.0864711194225472_probability_min_notbad U goal,18,1e-06,1e-05,false,false,estimate,delta,true,	34,161.829,100.0,2065713
+refuel,N=3 ,1,0.0873349572672_probability_min_notbad U goal,18,1e-06,0.01,true,true,estimate,delta,true,	32,0.022,100.0,1
+refuel,N=3 ,1,0.0864711194225472_probability_min_notbad U goal,18,1e-06,1e-05,true,false,estimate,delta,true,	34,229.89,100.0,2064865
+refuel,N=3 ,1,0.09511728019200001_probability_min_notbad U goal,18,1e-06,0.1,true,true,estimate,delta,true,	32,0.022,100.0,1
+refuel,N=3 ,1,0.0873349572672_probability_min_notbad U goal,18,1e-06,0.01,false,false,estimate,delta,true,	34,0.109,100.0,1233
+refuel,N=3 ,1,0.09511728019200001_probability_min_notbad U goal,18,1e-06,0.1,true,false,estimate,delta,true,	34,0.022,100.0,1

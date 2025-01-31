@@ -85,12 +85,29 @@ for file in args.files:
     current_line.append(prop_str)
     # current_line.append("?")
 
+    def get_number_of_parameters(lines, info_json):
+        model_file = [x for x in lines if x.startswith("Command line arguments:")][0].split(" ")[4]
+        model_file_content = None
+        with open(model_file) as f:
+            model_file_content = f.read()
+        model_file_lines = model_file_content.split("\n")
+        if "prism" in info_json:
+            # in a prism file, number of constants is number of lines starting with "const" that are not assigned
+            constants_lines = [x for x in model_file_lines if x.startswith("const") and "=" not in x]
+            # minus length of constants in info_json
+            constants_lines = len(constants_lines) - len(info_json["constants"])
+            return constants_lines
+        elif "drn" in info_json or "pomdp" in info_json:
+            # get index of line that contains @parameters
+            parameters_line_index = [i for i, x in enumerate(model_file_lines) if "@parameters" in x][0]
+            params_line = model_file_lines[parameters_line_index + 1]
+            return len([x for x in params_line.split(" ") if x])
+        elif "jani" in info_json:
+            as_json = json.loads(model_file_content)
+            return len(as_json["constants"])
+
     # Number of parameters
-    variables_lines = [x for x in lines if x.startswith("Analyzing parameter region")]
-    if len(variables_lines) == 0:
-        current_line.append("?")
-    else:
-        current_line.append(variables_lines[-1].split(" ")[3].replace(";", ""))
+    current_line.append(get_number_of_parameters(lines, info_json))
     
     if "region_interval" in info_json:
         current_line.append(info_json["region_interval"])

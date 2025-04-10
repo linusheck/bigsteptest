@@ -1,0 +1,1 @@
+cat experiments/bigstep-2025-04-08-16-15-10/manual_commands.sh | parallel --progress -j24 bash -c {}

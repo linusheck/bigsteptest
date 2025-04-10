@@ -1,0 +1,43 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {}, "pomdp": "4x4grid.prism", "prop": {"type": "reward", "dir": "max", "label": "goal", "bound": 6.62042120454}, "big_step": false, "use_robust_pla": true, "epsilon": 0.01, "estimate_method": "delta", "splitting_strategy": "roundrobin", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0,0.8"}
+Storm-pars 1.9.0
+
+Date: Tue Apr  8 19:42:36 2025
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/grids/4x4grid_reward_max_goal________afeb1e19b91f55c416c3616f61b61df069ee707067e01ee6f79bcef91972ef65_1.drn -prop 'Rmax>=6.62042120454 [F "goal"]' --mode verification --region '0<=p1_0<=0.8,0<=p3_0<=0.8,0<=p4_0<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic roundrobin --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.002s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	47
+Transitions: 	106
+Reward Models:  (default)
+State Labels: 	2 labels
+   * goal -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	47
+Transitions: 	106
+Reward Models:  (default)
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ERROR (RegionVerificationSettings.cpp:93): Setting an estimate method requires setting the estimate splitting strategy
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 129 regions.
+	0% of the parameter space are not covered.
+Extremal value: 3832623693929567/562949953421312
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.026s.
+
+real	0m0.058s
+user	0m0.050s
+sys	0m0.008s

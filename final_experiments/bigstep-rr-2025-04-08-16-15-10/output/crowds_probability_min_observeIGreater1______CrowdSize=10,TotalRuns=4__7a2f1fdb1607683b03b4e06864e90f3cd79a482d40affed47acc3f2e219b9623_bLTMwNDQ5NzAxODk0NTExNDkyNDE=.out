@@ -1,0 +1,48 @@
+{"constants": {"CrowdSize": 10, "TotalRuns": 4}, "prism": "crowds.pm", "prop": {"type": "probability", "dir": "min", "label": "observeIGreater1", "bound": 0.030144718560438998}, "region_bound": 0.1, "big_step": true, "use_robust_pla": true, "epsilon": 0.0001, "estimate_method": "delta", "splitting_strategy": "roundrobin", "splitting_threshold": 4, "simple": true}
+Storm-pars 1.9.0
+
+Date: Tue Apr  8 20:01:32 2025
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/crowds/crowds.pm -const 'CrowdSize=10,TotalRuns=4' -prop 'Pmin<=0.030144718560438998 [F "observeIGreater1"]' --big-step --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic roundrobin --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.010s.
+
+Time for model construction: 0.360s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	27883
+Transitions: 	65283
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 870 item(s)
+   * init -> 1 item(s)
+   * observeIGreater1 -> 130 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.035s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	42
+Transitions: 	123
+Reward Models:  none
+State Labels: 	2 labels
+   * observeIGreater1 -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ERROR (RegionVerificationSettings.cpp:93): Setting an estimate method requires setting the estimate splitting strategy
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '(4/5 * (pL^2))/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:180): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 3249 regions.
+	0% of the parameter space are not covered.
+Extremal value: 8687035649028217/288230376151711744
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.710s.
+
+real	0m1.157s
+user	0m1.123s
+sys	0m0.034s

@@ -1,0 +1,45 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {"N": 4}, "pomdp": "newgrid.prism", "prop": {"type": "probability", "dir": "min", "label": "notbad U goal", "bound": 0.929333560077}, "big_step": false, "use_robust_pla": true, "epsilon": 0.01, "estimate_method": "delta", "splitting_strategy": "roundrobin", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0,0.8"}
+Storm-pars 1.9.0
+
+Date: Tue Apr  8 19:43:24 2025
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/grids/newgrid_probability_min_notbad_U_goal______N=4__afeb1e19b91f55c416c3616f61b61df069ee707067e01ee6f79bcef91972ef65_1.drn -prop 'Pmin<=0.929333560077 ["notbad" U "goal"]' --mode verification --region '0<=p1_0<=0.8,0<=p4_0<=0.8,0<=p5_0<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic roundrobin --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.016s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	78
+Transitions: 	152
+Reward Models:  (default)
+State Labels: 	3 labels
+   * goal -> 1 item(s)
+   * notbad -> 77 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	76
+Transitions: 	148
+Reward Models:  none
+State Labels: 	3 labels
+   * notbad -> 75 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ERROR (RegionVerificationSettings.cpp:93): Setting an estimate method requires setting the estimate splitting strategy
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 1097 regions.
+	0% of the parameter space are not covered.
+Extremal value: 8230946473035777/9007199254740992
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 10.704s.
+
+real	0m10.750s
+user	0m10.742s
+sys	0m0.008s

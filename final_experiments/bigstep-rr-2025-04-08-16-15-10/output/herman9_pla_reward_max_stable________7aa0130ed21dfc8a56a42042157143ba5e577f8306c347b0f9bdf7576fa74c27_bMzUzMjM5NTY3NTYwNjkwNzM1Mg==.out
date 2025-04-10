@@ -1,0 +1,46 @@
+{"constants": {}, "region_bound": 1e-06, "prism": "herman9_pla.pm", "prop": {"type": "reward", "dir": "max", "label": "stable", "bound": 7.920249397849799}, "big_step": false, "use_robust_pla": true, "epsilon": 0.0001, "estimate_method": "delta", "splitting_strategy": "roundrobin", "splitting_threshold": 4, "simple": true}
+Storm-pars 1.9.0
+
+Date: Tue Apr  8 16:15:47 2025
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/herman/herman9_pla.pm -prop 'Rmax>=7.920249397849799 [F "stable"]' --mode verification --regionbound 1e-06 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic roundrobin --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.006s.
+
+Time for model construction: 1.280s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	86078
+Transitions: 	119973
+Reward Models:  steps
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * stable -> 36 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.146s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	8008
+Transitions: 	12070
+Reward Models:  steps
+State Labels: 	2 labels
+   * stable -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ERROR (RegionVerificationSettings.cpp:93): Setting an estimate method requires setting the estimate splitting strategy
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 13101 regions.
+	0% of the parameter space are not covered.
+Extremal value: 557393068607519/70368744177664
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 164.297s.
+
+real	2m45.773s
+user	2m45.724s
+sys	0m0.046s

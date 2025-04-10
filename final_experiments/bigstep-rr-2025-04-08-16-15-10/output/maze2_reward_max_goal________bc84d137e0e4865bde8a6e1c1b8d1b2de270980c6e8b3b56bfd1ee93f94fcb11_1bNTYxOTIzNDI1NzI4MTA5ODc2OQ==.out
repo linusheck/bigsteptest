@@ -1,0 +1,41 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {}, "pomdp": "maze2.prism", "prop": {"type": "reward", "dir": "max", "label": "goal", "bound": 19.642831240428002}, "big_step": false, "use_robust_pla": true, "epsilon": 0.0001, "estimate_method": "delta", "splitting_strategy": "roundrobin", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving", "region_interval": "0.2,1"}
+Storm-pars 1.9.0
+
+Date: Tue Apr  8 20:39:38 2025
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/maze/maze2_reward_max_goal________bc84d137e0e4865bde8a6e1c1b8d1b2de270980c6e8b3b56bfd1ee93f94fcb11_1.drn -prop 'Rmax>=19.642831240428002 [F "goal"]' --mode verification --region '0.2<=p1_0<=1,0.2<=p2_0<=1,0.2<=p3_0<=1,0.2<=p4_0<=1,0.2<=p5_0<=1,0.2<=p6_0<=1,0.2<=p8_0<=1,0.2<=p9_0<=1,0.2<=p10_0<=1,0.2<=p12_0<=1,0.2<=p13_0<=1,0.2<=p14_0<=1,0.2<=p15_0<=1,0.2<=p17_0<=1,0.2<=p19_0<=1' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic roundrobin --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.008s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41
+Transitions: 	82
+Reward Models:  (default)
+State Labels: 	3 labels
+   * goal -> 1 item(s)
+   * notbad -> 35 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41
+Transitions: 	82
+Reward Models:  (default)
+State Labels: 	3 labels
+   * notbad -> 35 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ERROR (RegionVerificationSettings.cpp:93): Setting an estimate method requires setting the estimate splitting strategy
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
+
+real	6m51.084s
+user	6m17.304s
+sys	0m33.550s

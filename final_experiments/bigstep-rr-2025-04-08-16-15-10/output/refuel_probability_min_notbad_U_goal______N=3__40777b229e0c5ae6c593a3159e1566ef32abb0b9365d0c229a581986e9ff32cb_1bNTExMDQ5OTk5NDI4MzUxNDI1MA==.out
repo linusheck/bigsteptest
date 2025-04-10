@@ -1,0 +1,45 @@
+{"region_bound": 0, "memory_bound": 1, "constants": {"N": 3}, "pomdp": "refuel.prism", "prop": {"type": "probability", "dir": "min", "label": "notbad U goal", "bound": 0.0864714529458824}, "big_step": true, "use_robust_pla": true, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "roundrobin", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-graph-preserving"}
+Storm-pars 1.9.0
+
+Date: Tue Apr  8 21:54:04 2025
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/refuel/refuel_probability_min_notbad_U_goal______N=3__40777b229e0c5ae6c593a3159e1566ef32abb0b9365d0c229a581986e9ff32cb_1.drn -prop 'Pmin<=0.0864714529458824 ["notbad" U "goal"]' --big-step --mode verification --regionbound 0 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic roundrobin --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.013s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	72
+Transitions: 	127
+Reward Models:  costs, refuels, steps
+State Labels: 	5 labels
+   * goal -> 1 item(s)
+   * traps -> 6 item(s)
+   * stationvisit -> 17 item(s)
+   * notbad -> 53 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	51
+Transitions: 	96
+Reward Models:  none
+State Labels: 	5 labels
+   * traps -> 6 item(s)
+   * stationvisit -> 16 item(s)
+   * notbad -> 43 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ERROR (RegionVerificationSettings.cpp:93): Setting an estimate method requires setting the estimate splitting strategy
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+ERROR (storm-pars.cpp:626): An unexpected exception occurred and caused Storm-pars to terminate. The message of this exception is: std::bad_alloc
+
+real	9m16.632s
+user	8m45.958s
+sys	0m30.651s

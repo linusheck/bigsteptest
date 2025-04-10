@@ -1,0 +1,46 @@
+{"constants": {"N": 5, "K": 25}, "region_bound": 0.1, "prism": "nand.pm", "prop": {"type": "probability", "dir": "min", "label": "target", "bound": 0.49581824596691}, "big_step": false, "use_robust_pla": true, "epsilon": 0.0001, "estimate_method": "delta", "splitting_strategy": "roundrobin", "splitting_threshold": 4, "simple": true}
+Storm-pars 1.9.0
+
+Date: Tue Apr  8 20:43:21 2025
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/nand/nand.pm -const 'N=5,K=25' -prop 'Pmin<=0.49581824596691 [F "target"]' --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic roundrobin --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 0.205s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	20082
+Transitions: 	28587
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.045s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	13727
+Transitions: 	18534
+Reward Models:  none
+State Labels: 	2 labels
+   * target -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ERROR (RegionVerificationSettings.cpp:93): Setting an estimate method requires setting the estimate splitting strategy
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 16381 regions.
+	0% of the parameter space are not covered.
+Extremal value: 4458775091883697/9007199254740992
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 53.524s.
+
+real	0m53.815s
+user	0m53.769s
+sys	0m0.044s

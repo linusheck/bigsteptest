@@ -1,0 +1,46 @@
+{"constants": {"N": 10, "K": 50}, "region_bound": 0.1, "prism": "nand.pm", "prop": {"type": "probability", "dir": "min", "label": "target", "bound": 0.31060964264}, "big_step": false, "use_robust_pla": true, "epsilon": 0.1, "estimate_method": "delta", "splitting_strategy": "roundrobin", "splitting_threshold": 4, "simple": true}
+Storm-pars 1.9.0
+
+Date: Tue Apr  8 20:46:32 2025
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/nand/nand.pm -const 'N=10,K=50' -prop 'Pmin<=0.31060964264 [F "target"]' --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic roundrobin --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 3.288s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	346962
+Transitions: 	518847
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.993s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	250402
+Transitions: 	360792
+Reward Models:  none
+State Labels: 	2 labels
+   * target -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ERROR (RegionVerificationSettings.cpp:93): Setting an estimate method requires setting the estimate splitting strategy
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 13 regions.
+	0% of the parameter space are not covered.
+Extremal value: 7197377138300427/576460752303423488
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 20.482s.
+
+real	0m25.852s
+user	0m25.671s
+sys	0m0.180s

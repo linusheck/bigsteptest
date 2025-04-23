@@ -1,0 +1,45 @@
+{"constants": {}, "region_bound": 0.1, "prism": "herman5_pla.pm", "prop": {"type": "reward", "dir": "max", "label": "stable", "bound": 1.9140028182}, "big_step": false, "use_robust_pla": true, "epsilon": 0.01, "splitting_strategy": "estimate", "estimate_method": "delta", "simple": true, "splitting_threshold": 4}
+Storm-pars 1.9.0
+
+Date: Wed Jan 15 17:02:14 2025
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases_standard/herman/herman5_pla.pm -prop 'Rmax>=1.9140028182 [F "stable"]' --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.001s.
+
+Time for model construction: 0.015s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	838
+Transitions: 	1211
+Reward Models:  steps
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * stable -> 20 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	196
+Transitions: 	306
+Reward Models:  steps
+State Labels: 	2 labels
+   * stable -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 107 regions.
+	0% of the parameter space are not covered.
+Extremal value: 1088369926332357/562949953421312
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.019s.
+
+real	0m0.052s
+user	0m0.040s
+sys	0m0.012s

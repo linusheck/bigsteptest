@@ -1,0 +1,43 @@
+{"constants": {"N": 32, "MAX": 4}, "prism": "brp.pm", "prop": {"type": "probability", "dir": "min", "label": "uncertain", "bound": 0.0116793193320254}, "region_bound": 0.1, "big_step": false, "use_robust_pla": true, "epsilon": 1e-05, "splitting_strategy": "estimate", "estimate_method": "delta", "simple": true, "splitting_threshold": 4}
+Storm-pars 1.9.0
+
+Date: Wed Jan 15 17:14:24 2025
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases_standard/brp/brp.pm -const 'N=32,MAX=4' -prop 'Pmin<=0.0116793193320254 [F "uncertain"]' --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.002s.
+
+ WARN (FormulaParserGrammar.cpp:325): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+Time for model construction: 0.024s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	2179
+Transitions: 	2879
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 67 item(s)
+   * init -> 1 item(s)
+   * uncertain -> 2 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1094
+Transitions: 	1542
+Reward Models:  none
+State Labels: 	2 labels
+   * uncertain -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+ERROR: The program received signal 15 and will be aborted in 3s.
+Received signal 15
+
+real	60m1.171s
+user	59m49.078s
+sys	0m11.996s

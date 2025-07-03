@@ -1,0 +1,46 @@
+{"constants": {}, "region_bound": 0, "prism": "herman5_pla.pm", "prop": {"type": "reward", "dir": "max", "label": "stable", "bound": 1.93331542265244}, "big_step": false, "use_robust_pla": true, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "region_interval": "0,0.8", "additional_storm_args": "--not-graph-preserving"}
+Storm-pars 1.9.0
+
+Date: Thu Apr 24 14:07:50 2025
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/herman/herman5_pla.pm -prop 'Rmax>=1.93331542265244 [F "stable"]' --mode verification --region '0<=p<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.035s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	838
+Transitions: 	1211
+Reward Models:  steps
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * stable -> 20 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	196
+Transitions: 	306
+Reward Models:  steps
+State Labels: 	3 labels
+   * stable -> 1 item(s)
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 3827 regions.
+	0% of the parameter space are not covered.
+Extremal value: 2176737779127139/1125899906842624
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 1.871s.
+
+real	0m1.944s
+user	0m1.922s
+sys	0m0.021s

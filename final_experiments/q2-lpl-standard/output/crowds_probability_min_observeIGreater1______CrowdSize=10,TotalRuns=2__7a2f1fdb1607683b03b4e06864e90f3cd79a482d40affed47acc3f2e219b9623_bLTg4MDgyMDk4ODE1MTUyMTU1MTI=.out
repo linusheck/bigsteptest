@@ -1,0 +1,47 @@
+{"constants": {"CrowdSize": 10, "TotalRuns": 2}, "prism": "crowds.pm", "prop": {"type": "probability", "dir": "min", "label": "observeIGreater1", "bound": 0.00539753117377199}, "region_bound": 0.1, "big_step": true, "use_robust_pla": true, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": ""}
+Storm-pars 1.9.0
+
+Date: Thu Apr 24 15:47:51 2025
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/crowds/crowds.pm -const 'CrowdSize=10,TotalRuns=2' -prop 'Pmin<=0.00539753117377199 [F "observeIGreater1"]' --big-step --mode verification --regionbound 0.1 --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.010s.
+
+Time for model construction: 0.039s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1037
+Transitions: 	2357
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 64 item(s)
+   * init -> 1 item(s)
+   * observeIGreater1 -> 2 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	11
+Transitions: 	18
+Reward Models:  none
+State Labels: 	2 labels
+   * observeIGreater1 -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (parameterlifting.h:40): The input model contains a non-linear polynomial as transition: '(1/5 * (pL^2+4*pL))/(1)'. Can not validate that parameter lifting is sound on this model.
+ WARN (region.h:180): Could not validate whether parameter lifting is applicable. Please validate manually...
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 6909 regions.
+	0% of the parameter space are not covered.
+Extremal value: 6222800891883987/1152921504606846976
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 0.692s.
+
+real	0m0.781s
+user	0m0.757s
+sys	0m0.024s

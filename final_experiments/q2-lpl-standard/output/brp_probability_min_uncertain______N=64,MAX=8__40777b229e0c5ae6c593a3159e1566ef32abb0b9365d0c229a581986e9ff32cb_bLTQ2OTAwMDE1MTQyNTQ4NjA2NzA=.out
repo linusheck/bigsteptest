@@ -1,0 +1,13 @@
+{"constants": {"N": 64, "MAX": 8}, "prism": "brp.pm", "prop": {"type": "probability", "dir": "min", "label": "uncertain", "bound": 0.005800058}, "region_bound": 0, "big_step": false, "use_robust_pla": false, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-supported"}
+Storm-pars 1.9.0
+
+Date: Thu Apr 24 14:28:21 2025
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/brp/brp.pm -const 'N=64,MAX=8' -prop 'Pmin<=0.005800058 [F "uncertain"]' --mode verification --regionbound 0 --terminationCondition 0 '--minmax:method' vi -bisim --not-supported --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+ERROR (SettingsManager.cpp:116): Unknown option '--not-supported'.
+ERROR (cli.cpp:25): Unable to parse command line options. Type '../storm/build_release/bin/storm-pars --help' or '../storm/build_release/bin/storm-pars --help all' for help.
+
+real	0m0.027s
+user	0m0.016s
+sys	0m0.011s

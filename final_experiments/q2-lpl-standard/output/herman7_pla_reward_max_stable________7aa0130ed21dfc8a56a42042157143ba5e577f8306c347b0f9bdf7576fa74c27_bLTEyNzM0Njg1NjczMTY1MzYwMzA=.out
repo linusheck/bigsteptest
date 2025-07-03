@@ -1,0 +1,44 @@
+{"constants": {}, "region_bound": 1e-06, "prism": "herman7_pla.pm", "prop": {"type": "reward", "dir": "max", "label": "stable", "bound": 4.49327871976347}, "big_step": false, "use_robust_pla": false, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true}
+Storm-pars 1.9.0
+
+Date: Thu Apr 24 13:45:42 2025
+Command line arguments: --prism /home/lheck/git/bigsteptest/testcases/herman/herman7_pla.pm -prop 'Rmax>=4.49327871976347 [F "stable"]' --mode verification --regionbound 1e-06 --terminationCondition 0 '--minmax:method' vi -bisim --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.149s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	9066
+Transitions: 	12736
+Reward Models:  steps
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * stable -> 28 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.012s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1422
+Transitions: 	2164
+Reward Models:  steps
+State Labels: 	2 labels
+   * stable -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Region partitioning for extremal value terminated after analyzing 7719 regions.
+	0% of the parameter space are not covered.
+Extremal value: 5059031500216527/1125899906842624
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 12.996s.
+
+real	0m13.199s
+user	0m13.175s
+sys	0m0.024s

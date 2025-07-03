@@ -1,0 +1,1 @@
+cat experiments/lpl-standard-2025-04-24-13-45-41/manual_commands.sh | parallel --progress -j24 bash -c {}

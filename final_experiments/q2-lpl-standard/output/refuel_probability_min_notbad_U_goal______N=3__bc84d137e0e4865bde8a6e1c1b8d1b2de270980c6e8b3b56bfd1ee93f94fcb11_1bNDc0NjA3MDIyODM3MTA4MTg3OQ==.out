@@ -1,0 +1,13 @@
+{"region_bound": 0, "memory_bound": 1, "constants": {"N": 3}, "pomdp": "refuel.prism", "prop": {"type": "probability", "dir": "min", "label": "notbad U goal", "bound": 0.0696322752657895}, "big_step": false, "use_robust_pla": false, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "region_interval": "0.2,1", "additional_storm_args": "--not-supported"}
+Storm-pars 1.9.0
+
+Date: Thu Apr 24 16:48:11 2025
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/refuel/refuel_probability_min_notbad_U_goal______N=3__bc84d137e0e4865bde8a6e1c1b8d1b2de270980c6e8b3b56bfd1ee93f94fcb11_1.drn -prop 'Pmin<=0.0696322752657895 ["notbad" U "goal"]' --mode verification --region '0.2<=p1_0<=1,0.2<=p2_0<=1,0.2<=p3_0<=1,0.2<=p12_0<=1,0.2<=p13_0<=1,0.2<=p14_0<=1,0.2<=p15_0<=1,0.2<=p16_0<=1,0.2<=p23_0<=1,0.2<=p25_0<=1,0.2<=p26_0<=1,0.2<=p27_0<=1,0.2<=p28_0<=1,0.2<=p29_0<=1,0.2<=p30_0<=1,0.2<=p31_0<=1,0.2<=p33_0<=1,0.2<=p35_0<=1' --terminationCondition 0 '--minmax:method' vi -bisim --not-supported --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+ERROR (SettingsManager.cpp:116): Unknown option '--not-supported'.
+ERROR (cli.cpp:25): Unable to parse command line options. Type '../storm/build_release/bin/storm-pars --help' or '../storm/build_release/bin/storm-pars --help all' for help.
+
+real	0m0.040s
+user	0m0.021s
+sys	0m0.019s

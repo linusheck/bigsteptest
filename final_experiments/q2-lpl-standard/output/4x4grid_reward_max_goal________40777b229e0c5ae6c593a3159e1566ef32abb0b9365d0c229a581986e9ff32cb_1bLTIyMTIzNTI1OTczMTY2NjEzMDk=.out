@@ -1,0 +1,13 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {}, "pomdp": "4x4grid.prism", "prop": {"type": "reward", "dir": "max", "label": "goal", "bound": 5.04161625033333}, "big_step": false, "use_robust_pla": false, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "additional_storm_args": "--not-supported"}
+Storm-pars 1.9.0
+
+Date: Thu Apr 24 15:45:51 2025
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/grids/4x4grid_reward_max_goal________40777b229e0c5ae6c593a3159e1566ef32abb0b9365d0c229a581986e9ff32cb_1.drn -prop 'Rmax>=5.04161625033333 [F "goal"]' --mode verification --regionbound 0 --terminationCondition 0 '--minmax:method' vi -bisim --not-supported --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+ERROR (SettingsManager.cpp:116): Unknown option '--not-supported'.
+ERROR (cli.cpp:25): Unable to parse command line options. Type '../storm/build_release/bin/storm-pars --help' or '../storm/build_release/bin/storm-pars --help all' for help.
+
+real	0m0.027s
+user	0m0.014s
+sys	0m0.013s

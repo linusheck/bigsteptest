@@ -3,7 +3,7 @@
 python --version
 
 mkdir -p experiments
-set folder experiments/bigstep-$(date '+%Y-%m-%d-%H-%M-%S')
+set folder experiments/q1-bigstep-$(date '+%Y-%m-%d-%H-%M-%S')
 mkdir $folder
 
 # set jobs to --jobs <number>

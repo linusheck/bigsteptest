@@ -18,7 +18,7 @@ if test (count $argv) -gt 1
         echo "Unknown argument $argv[2]"
         exit 1
     end
-    set timeout 300
+    set timeout 100
 end
 
 python3 generate_commands.py --folder testcases --global-override benchmarks/bigstep_roundrobin.json --storm-location ../storm/build_release/bin/ --output $folder --jobs $jobs --timeout $timeout

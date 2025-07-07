@@ -18,7 +18,7 @@ if test (count $argv) -gt 1
         echo "Unknown argument $argv[2]"
         exit 1
     end
-    set timeout 300
+    set timeout 100
 end
 
 

@@ -1,0 +1,168 @@
+[
+
+    {
+        "big_step": false,
+        "use_robust_pla": false,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_bound": 0.1
+    },
+    {
+        "big_step": false,
+        "use_robust_pla": false,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_bound": 1e-6
+    },
+    {
+        "big_step": false,
+        "use_robust_pla": false,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_bound": 0,
+        "additional_storm_args": "--not-supported"
+    },
+    {
+        "big_step": false,
+        "use_robust_pla": false,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_interval": "0.2,1",
+        "additional_storm_args": "--not-supported"
+    },
+    {
+        "big_step": false,
+        "use_robust_pla": false,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_interval": "0,0.8",
+        "additional_storm_args": "--not-supported"
+    },
+
+    {
+        "big_step": true,
+        "use_robust_pla": true,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_bound": 0.1,
+        "additional_storm_args": ""
+    },
+    {
+        "big_step": true,
+        "use_robust_pla": true,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_bound": 1e-6,
+        "additional_storm_args": ""
+    },
+    {
+        "big_step": true,
+        "use_robust_pla": true,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_bound": 0,
+        "additional_storm_args": "--not-graph-preserving"
+    },
+    {
+        "big_step": true,
+        "use_robust_pla": true,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_interval": "0,0.8",
+        "additional_storm_args": "--not-graph-preserving"
+    },
+    {
+        "big_step": true,
+        "use_robust_pla": true,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_interval": "0.2,1",
+        "additional_storm_args": "--not-graph-preserving"
+    },
+
+    {
+        "big_step": false,
+        "use_robust_pla": true,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_bound": 0.1,
+        "additional_storm_args": ""
+    },
+    {
+        "big_step": false,
+        "use_robust_pla": true,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_bound": 1e-6,
+        "additional_storm_args": ""
+    },
+    {
+        "big_step": false,
+        "use_robust_pla": true,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_bound": 0,
+        "additional_storm_args": "--not-graph-preserving"
+    },
+    {
+        "big_step": false,
+        "use_robust_pla": true,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_interval": "0,0.8",
+        "additional_storm_args": "--not-graph-preserving"
+    },
+    {
+        "big_step": false,
+        "use_robust_pla": true,
+        "epsilon": 0.00001,
+        "estimate_method": "delta",
+        "splitting_strategy": "estimate",
+        "splitting_threshold": 4,
+        "simple": true,
+        "region_interval": "0.2,1",
+        "additional_storm_args": "--not-graph-preserving"
+    }
+]

@@ -1,0 +1,48 @@
+{"region_bound": 0, "memory_bound": 1, "constants": {"N": 3}, "pomdp": "refuel.prism", "prop": {"type": "probability", "dir": "min", "label": "notbad U goal", "bound": 0.0696322752657895}, "big_step": true, "use_robust_pla": true, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "region_interval": "0.2,1", "additional_storm_args": "--not-graph-preserving"}
+Storm-pars 1.9.0
+
+Date: Thu Apr 24 16:48:41 2025
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/refuel/refuel_probability_min_notbad_U_goal______N=3__bc84d137e0e4865bde8a6e1c1b8d1b2de270980c6e8b3b56bfd1ee93f94fcb11_1.drn -prop 'Pmin<=0.0696322752657895 ["notbad" U "goal"]' --big-step --mode verification --region '0.2<=p1_0<=1,0.2<=p2_0<=1,0.2<=p3_0<=1,0.2<=p12_0<=1,0.2<=p13_0<=1,0.2<=p14_0<=1,0.2<=p15_0<=1,0.2<=p16_0<=1,0.2<=p23_0<=1,0.2<=p25_0<=1,0.2<=p26_0<=1,0.2<=p27_0<=1,0.2<=p28_0<=1,0.2<=p29_0<=1,0.2<=p30_0<=1,0.2<=p31_0<=1,0.2<=p33_0<=1,0.2<=p35_0<=1' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.013s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	72
+Transitions: 	127
+Reward Models:  costs, refuels, steps
+State Labels: 	5 labels
+   * goal -> 1 item(s)
+   * traps -> 6 item(s)
+   * stationvisit -> 17 item(s)
+   * notbad -> 53 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	51
+Transitions: 	96
+Reward Models:  none
+State Labels: 	5 labels
+   * traps -> 6 item(s)
+   * stationvisit -> 16 item(s)
+   * notbad -> 43 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 32753 regions.
+	0% of the parameter space are not covered.
+Extremal value: 1037596309049387/72057594037927936
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 9.693s.
+
+real	0m9.940s
+user	0m9.735s
+sys	0m0.204s

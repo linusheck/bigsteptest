@@ -10,6 +10,7 @@ if test (count $argv) -gt 0
 end
 
 ./benchmarks/bigstep.sh $jobs --short
+./benchmarks/bigstep_roundrobin.sh $jobs --short
 ./benchmarks/lpl_vs_standard.sh $jobs --short
 ./benchmarks/families.sh
 ./benchmarks/nonsimple.sh

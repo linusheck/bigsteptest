@@ -1,0 +1,44 @@
+{"memory_bound": 1, "region_bound": 0, "constants": {"N": 2}, "pomdp": "newgrid.prism", "prop": {"type": "probability", "dir": "min", "label": "notbad U goal", "bound": 0.791952831549121}, "big_step": false, "use_robust_pla": true, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "region_interval": "0,0.8", "additional_storm_args": "--not-graph-preserving"}
+Storm-pars 1.9.0
+
+Date: Thu Apr 24 15:46:34 2025
+Command line arguments: --explicit-drn /home/lheck/git/bigsteptest/build/testcases/grids/newgrid_probability_min_notbad_U_goal______N=2__afeb1e19b91f55c416c3616f61b61df069ee707067e01ee6f79bcef91972ef65_1.drn -prop 'Pmin<=0.791952831549121 ["notbad" U "goal"]' --mode verification --region '0<=p1_0<=0.8,0<=p4_0<=0.8,0<=p5_0<=0.8' --terminationCondition 0 '--regionverif:engine' robustpl '--minmax:method' vi -bisim --not-graph-preserving --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+Time for model construction: 0.008s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	39
+Transitions: 	71
+Reward Models:  (default)
+State Labels: 	3 labels
+   * goal -> 1 item(s)
+   * notbad -> 38 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	37
+Transitions: 	67
+Reward Models:  none
+State Labels: 	3 labels
+   * notbad -> 36 item(s)
+   * init -> 1 item(s)
+   * goal -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+ WARN (RobustParameterLifter.cpp:54): Cannot use graph monotonicity in robust mode.
+Region partitioning for extremal value terminated after analyzing 25689 regions.
+	0% of the parameter space are not covered.
+Extremal value: 7133103726447091/9007199254740992
+Formula is satisfied by all parameter instantiations.
+Time for model checking: 5.334s.
+
+real	0m5.399s
+user	0m5.335s
+sys	0m0.064s

@@ -1,0 +1,13 @@
+{"constants": {}, "jani": "alarm.jani", "prop": {"type": "probability", "dir": "max", "label": "VENTTUBE=0", "bound": 0.0367749358169643}, "region_bound": 0, "big_step": false, "use_robust_pla": false, "epsilon": 1e-05, "estimate_method": "delta", "splitting_strategy": "estimate", "splitting_threshold": 4, "simple": true, "region_interval": "0,0.8", "additional_storm_args": "--not-supported"}
+Storm-pars 1.9.0
+
+Date: Thu Apr 24 15:45:46 2025
+Command line arguments: --jani /home/lheck/git/bigsteptest/testcases/alarm/alarm.jani -prop 'Pmax>=0.0367749358169643 [F VENTTUBE=0]' --mode verification --region '0<=y<=0.8,0<=x<=0.8' --terminationCondition 0 '--minmax:method' vi -bisim --not-supported --splitting-heuristic estimate --estimate-method delta --splitting-threshold 4
+Current working directory: /home/lheck/git/bigsteptest
+
+ERROR (SettingsManager.cpp:116): Unknown option '--not-supported'.
+ERROR (cli.cpp:25): Unable to parse command line options. Type '../storm/build_release/bin/storm-pars --help' or '../storm/build_release/bin/storm-pars --help all' for help.
+
+real	0m0.028s
+user	0m0.010s
+sys	0m0.018s

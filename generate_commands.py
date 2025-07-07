@@ -11,6 +11,7 @@ import hashlib
 import re
 import time
 from concurrent.futures import ThreadPoolExecutor
+import copy
 
 # Preprocess json config by unwrapping all arrays in x into multiple objects of x
 def unwrap_config(config: dict, global_override: dict) -> dict:
@@ -19,6 +20,7 @@ def unwrap_config(config: dict, global_override: dict) -> dict:
         global_override = [global_override]
     for override in global_override:
         for invocation in config:
+            invocation = copy.deepcopy(invocation)
             for key in override:
                 invocation[key] = override[key]
             list_children = []
@@ -146,7 +148,7 @@ def create_file_name(invocation: dict, constant_string: str, simple: bool) -> st
                 "nonsimple" if not simple else "",
                 constant_string,
                 prop_dict["region_bound"] if "region_bound" in prop_dict else "",
-                str(hashlib.sha256(get_region(invocation).encode()).hexdigest()),
+                str(hashlib.sha256(str(get_region(invocation)).encode()).hexdigest()),
                 str(invocation["memory_bound"]) if "memory_bound" in invocation else "",
             ]
         )
